@@ -45,4 +45,4 @@ Le code pouvant contenir un grand nombre de fichiers, il est recommandé de rang
 
 ## Exercices
 
- - [HTML](./html/exercices.md)
+ - [HTML](./html/README.md)
