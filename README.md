@@ -46,3 +46,37 @@ Le code pouvant contenir un grand nombre de fichiers, il est recommandé de rang
 ## Exercices
 
  - [HTML](./html/README.md)
+ 
+ 
+## Lectures
+
+### Web
+
+ 1. https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/How_the_Web_works
+ 2. https://developer.mozilla.org/fr/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines
+ 3. https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_URL
+ 4. https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_are_hyperlinks
+ 5. https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_web_server
+ 6. https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_domain_name​
+
+### Réseaux
+
+ 1. https://developer.mozilla.org/fr/docs/Learn/Common_questions/How_does_the_Internet_work
+
+### HTML
+
+ 1. https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML
+ 2. https://developer.mozilla.org/fr/docs/Learn/HTML 
+
+### CSS
+
+ 1. https://developer.mozilla.org/fr/docs/Learn/CSS/First_steps
+ 2. https://developer.mozilla.org/fr/docs/Learn/CSS
+
+### JS
+
+ 1. https://developer.mozilla.org/fr/docs/Learn/JavaScript/First_steps
+ 2. https://developer.mozilla.org/fr/docs/Learn/JavaScript
+
+
+
