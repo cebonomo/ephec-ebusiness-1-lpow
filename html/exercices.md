@@ -52,7 +52,7 @@ Le code produit doit être validé par le [W3C validator](https://validator.w3.o
     - Une jonction de colonne
     - Une jonction de ligne
 
-## Exercice 5
+## Exercice 6
 
  1. Dans toutes les pages HTML, ajouter un menu de navigation interne, avec chemins relatifs.
  2. Dans une des pages, jouter un lien vers un website externe.
