@@ -35,7 +35,10 @@ Le code produit doit être validé par le [W3C validator](https://validator.w3.o
 ## Exercice 4
 
  1. Créer un fichier `listes.*`
- 2. Dans ce fichier, afficher 3 types de listes
+ 2. Dans ce fichier, afficher 3 types de listes:
+    - Liste à puces
+    - Liste ordonnée
+    - Liste de description
 
 [Corrections](./v4)
 
