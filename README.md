@@ -18,7 +18,7 @@ Chaque dossier contient les différentes étapes d'élaboration du code.
 Au préalable de tout code, il est nécessaire de créer un dossier spécifique visant à contenir (uniquement) le projet.
 (Par exemple: `Documents\MesSites\lpow`.) Dans le cadre d'un site, c'est ce dossier qui sera déployé (via FTP, par exemple) sur le serveur d'hébergement.
 
-### Extension de fichier
+### Extensions de fichier cachées
 
 Attention que, généralement, les explorateurs de fichiers cachent par défaut les extensions de fichier (`.html`, `.php`, `.jpg`, ...),
 ce qui peut poser problème lors du nommage des fichiers ou de la lecture des noms de fichier.
