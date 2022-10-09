@@ -1,4 +1,4 @@
-# ephec-lpow-site
+# EPHEC - LPOW - TP
 
 Est présenté ici le code développé durant les TP du cours de LPOW de l'EPHEC.
 
