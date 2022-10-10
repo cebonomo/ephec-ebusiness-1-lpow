@@ -47,7 +47,7 @@ Le code produit doit être validé par le [W3C validator](https://validator.w3.o
 
  1. Créer un fichier `tableaux/index.*`
  2. Dans ce fichier, afficher un tableau complexe, avec au moins:
-    - Un titre de tableau
+    - Une légende de tableau
     - Un en-tête de tableau
     - Un pied de tableau
     - Une jonction de colonne
