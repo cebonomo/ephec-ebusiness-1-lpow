@@ -63,3 +63,5 @@ Exemple:
 
  1. Dans toutes les pages HTML, ajouter un menu de navigation interne (vers toutes les pages), avec chemins relatifs.
  2. Dans une des pages, ajouter un lien vers un website externe (avec URL absolue).
+ 
+[Corrections](./v6)
