@@ -1,28 +1,25 @@
 # EPHEC - LPOW - TP
 
-Est présenté ici le code développé durant les TP du cours de LPOW de l'EPHEC.
+Est présenté ici le code développé durant mes TP du cours de LPOW de l'EPHEC.
 
-Les TP sont organisés en 3 temps, selon la matière abordée durant les cours de théorie.
-Chaque matière se retrouve dans dossier spécifique:
+Les TP sont organisés en 3 temps, selon les langages abordés durant les cours de théorie, et répartis ici en 3 dossiers contenant les exercices et leurs corrections:
  1. [HTML](./html)
  2. CSS (à venir)
  3. Javascript (à venir)
-
-Chaque dossier contient les différentes étapes d'élaboration du code.
 
 
 ## Bonnes pratiques
 
 ### Création du dossier de projet
 
-Au préalable de tout code, il est nécessaire de créer un dossier spécifique visant à contenir (uniquement) le projet.
-(Par exemple: `Documents\MesSites\lpow`.) Dans le cadre d'un site, c'est ce dossier qui sera déployé (via FTP, par exemple) sur le serveur d'hébergement.
+Au préalable de tout code, il est nécessaire de créer un [dossier](https://fr.wikipedia.org/wiki/R%C3%A9pertoire_(informatique)) spécifique visant à contenir (uniquement) le projet.
+(Par exemple: `Documents\MesSites\lpow`.) Dans le cadre d'un site, c'est ce dossier qui sera déployé (via [FTP](https://fr.wikipedia.org/wiki/File_Transfer_Protocol), par exemple) sur le serveur d'hébergement.
 
 ### Extensions de fichier cachées
 
-Attention que, généralement, les explorateurs de fichiers cachent par défaut les extensions de fichier (`.html`, `.php`, `.jpg`, ...),
-ce qui peut poser problème lors du nommage des fichiers ou de la lecture des noms de fichier.
-Dès lors qu'est utilisé un explorateur de fichier dans le cadre des TP, il est conseillé d'activer l'affichage des extensions de fichiers.
+Attention que, généralement, les [gestionnaires de fichiers](https://fr.wikipedia.org/wiki/Gestionnaire_de_fichiers) ("Eplorateur de fichier" sous Windows, "Finder" sous MacOS, ...) cachent par défaut les [extensions de nom de fichier](https://fr.wikipedia.org/wiki/Extension_de_nom_de_fichier) (`.html`, `.php`, `.jpg`, ...),
+ce qui peut poser problème lors du nommage des fichiers ou de la lecture de leurs noms.
+Dès lors qu'est utilisé un gestionnaire de fichier dans le cadre des TP, il est conseillé d'activer l'affichage des extensions de nom de fichiers ([support pour Windows](https://support.microsoft.com/fr-fr/windows/extensions-de-nom-de-fichier-courantes-dans-windows-da4a4430-8e76-89c5-59f7-1cdbbc75cb01)).
 
 ### Nommage des fichiers
 
@@ -33,10 +30,10 @@ Le nommage des fichiers posant souvent problème, il est recommandé de suivre l
 
 ### Fichiers de code
 
-Par convention, les fichiers `index.*` sont utilisés par les serveurs web (par exemple: Apache) lorsque aucun fichier n'est précisé dans le chemin de l'URL.
+Par convention, les fichiers `index.*` sont utilisés par les serveurs web (par exemple: [Apache](https://fr.wikipedia.org/wiki/Apache_HTTP_Server)) lorsque aucun fichier n'est précisé dans le chemin de l'[URL](https://fr.wikipedia.org/wiki/Uniform_Resource_Locator).
 
-Dans le cours, les fichiers contenant du HTML peuvent se terminer l'extension `.html` ou `.php` (pour faire la jonction avec le cours de PP). 
-Attention toutefois que, dans le cas d'une extension `.php`, il est nécessaire de passer par un serveur web.
+Dans le cours, les noms des fichiers contenant du HTML peuvent se terminer par l'extension `.html` ou `.php` (pour faire la jonction avec le cours de PP). 
+Attention toutefois que, même dans le cas d'utilisation d'extentions `.html`, il est fortement recommandé de passer par un serveur web.
 
 ### Organisation du code
 
@@ -45,10 +42,14 @@ Le code pouvant contenir un grand nombre de fichiers, il est recommandé de rang
 
 ## Exercices
 
+Attention: les exercices présentés ici visent à mettre en pratique un maximum de matière théorique. Ils représentent des exemples d'utilisation, mais ne couvrent pas forcément l'entièreté de la matière abordée, ni évidemment l'entièreté des cas possibles.
+
  - [HTML](./html/README.md)
  
  
 ## Lectures
+
+Les lectures suivantes ne sont pas obligatoires dans le cadre du cours, mais représentent un support d'étude complémentaire.
 
 ### Web
 
