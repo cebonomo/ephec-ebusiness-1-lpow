@@ -26,10 +26,10 @@ Dès lors qu'est utilisé un explorateur de fichier dans le cadre des TP, il est
 
 ### Nommage des fichiers
 
-Le nommage des fichiers posant souvent problème, il est recommandé de suivre les règles de bonne pratique suivantes `[a-z]|-`:
+Le nommage des fichiers posant souvent problème, il est recommandé de suivre les règles de bonne pratique suivantes:
  - Tout en minuscule.
  - Remplacer les espaces ` ` par des tirets `-`.
- - Utiliser uniquement des caractères alphabétiques sans accent.
+ - Utiliser uniquement des caractères alphanumériques sans accent.
 
 ### Fichiers de code
 
