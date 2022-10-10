@@ -27,15 +27,15 @@ Le code produit doit être validé par le [W3C validator](https://validator.w3.o
 
 ## Exercice 3
 
- 1. Dans ce fichier, afficher des images.
+ 1. Par ce fichier, afficher des images.
 
 [Corrections](./v3)
 
 
 ## Exercice 4
 
- 1. Créer un fichier `listes.*`
- 2. Dans ce fichier, afficher 3 types de listes:
+ 1. Créer un fichier `listes.*`.
+ 2. Par ce fichier, afficher 3 types de listes:
     - Liste à puces
     - Liste ordonnée
     - Liste de description
@@ -45,15 +45,16 @@ Le code produit doit être validé par le [W3C validator](https://validator.w3.o
 
 ## Exercice 5
 
- 1. Créer un fichier `tableaux/index.*`
- 2. Dans ce fichier, afficher un tableau complexe, avec au moins:
+ 1. Créer un fichier `tableaux/index.*`.
+ 2. Par ce fichier, afficher un tableau complexe, avec au moins:
     - Une légende de tableau
     - Un en-tête de tableau
+    - UN corps de tableau
     - Un pied de tableau
     - Une jonction de colonne
     - Une jonction de ligne
 
 ## Exercice 6
 
- 1. Dans toutes les pages HTML, ajouter un menu de navigation interne, avec chemins relatifs.
- 2. Dans une des pages, jouter un lien vers un website externe.
+ 1. Dans toutes les pages HTML, ajouter un menu de navigation interne (vers toutes les pages), avec chemins relatifs.
+ 2. Dans une des pages, ajouter un lien vers un website externe (avec URL absolue).
