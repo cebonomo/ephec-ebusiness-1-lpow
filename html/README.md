@@ -54,6 +54,9 @@ Le code produit doit être validé par le [W3C validator](https://validator.w3.o
     - Une jonction de colonne
     - Une jonction de ligne
 
+Exemple:
+![Tableau complexe](../resources/images/tableau.png)
+
 ## Exercice 6
 
  1. Dans toutes les pages HTML, ajouter un menu de navigation interne (vers toutes les pages), avec chemins relatifs.
