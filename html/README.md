@@ -4,7 +4,7 @@
 Le code produit doit être validé par le [W3C validator](https://validator.w3.org/). 
 
 
-## Exercice 1
+## Exercice 1: document de base
 
  1. Créer un fichier `index.*`.
  2. Dans ce fichier, créer la structure de base d'un document HTML.
@@ -12,7 +12,7 @@ Le code produit doit être validé par le [W3C validator](https://validator.w3.o
 [Corrections](./v1)
 
 
-## Exercice 2
+## Exercice 2: textes
 
  1. Dans ce fichier, utiliser des balises de structure et de texte, de sorte à:
     - Afficher un en-tête
@@ -25,14 +25,14 @@ Le code produit doit être validé par le [W3C validator](https://validator.w3.o
 [Corrections](./v2)
 
 
-## Exercice 3
+## Exercice 3: images
 
  1. Par ce fichier, afficher des images.
 
 [Corrections](./v3)
 
 
-## Exercice 4
+## Exercice 4: listes
 
  1. Créer un fichier `listes.*`.
  2. Par ce fichier, afficher 3 types de listes:
@@ -43,7 +43,7 @@ Le code produit doit être validé par le [W3C validator](https://validator.w3.o
 [Corrections](./v4)
 
 
-## Exercice 5
+## Exercice 5: tableaux
 
  1. Créer un fichier `tableaux/index.*`.
  2. Par ce fichier, afficher un tableau complexe, avec au moins:
@@ -59,7 +59,7 @@ Exemple:
 
 [Corrections](./v5)
 
-## Exercice 6
+## Exercice 6: liens
 
  1. Dans toutes les pages HTML, ajouter un menu de navigation interne (vers toutes les pages), avec chemins relatifs.
  2. Dans une des pages, ajouter un lien vers un website externe (avec URL absolue).
