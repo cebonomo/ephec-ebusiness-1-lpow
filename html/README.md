@@ -7,7 +7,8 @@ Le code produit doit être validé par le [W3C validator](https://validator.w3.o
 ## Exercice 1: document de base
 
  1. Créer un fichier `index.*`.
- 2. Dans ce fichier, créer la structure de base d'un document HTML.
+ 2. Veiller à comprendre pour quelle raison ce fichier est ainsi nommé et par quelles URL y accéder en HTTP.
+ 3. Dans ce fichier, créer la structure de base d'un document HTML.
 
 [Corrections](./v1)
 
@@ -27,7 +28,7 @@ Le code produit doit être validé par le [W3C validator](https://validator.w3.o
 
 ## Exercice 3: images
 
- 1. Par ce fichier, afficher des images.
+ 1. Par ce fichier, afficher des images propres au site (c'est-à-dire se trouvant dans le même [domaine](https://fr.wikipedia.org/wiki/Domain_Name_System)), via des **chemins relatifs**.
 
 Si l'image ne s'affiche pas correctement, appliquer la procédure de débuggage suivante:
 
@@ -42,7 +43,8 @@ Si l'image ne s'affiche pas correctement, appliquer la procédure de débuggage 
 ## Exercice 4: listes
 
  1. Créer un fichier `listes.*`.
- 2. Par ce fichier, afficher 3 types de listes:
+ 2. Veiller à comprendre par quelle URL y accéder en HTTP.
+ 3. Par ce fichier, afficher 3 types de listes:
     - Liste à puces
     - Liste ordonnée
     - Liste de description
@@ -53,10 +55,11 @@ Si l'image ne s'affiche pas correctement, appliquer la procédure de débuggage 
 ## Exercice 5: tableaux
 
  1. Créer un fichier `tableaux/index.*`.
- 2. Par ce fichier, afficher un tableau simple, avec au moins:
+ 2. Veiller à comprendre par quelles URL y accéder en HTTP.
+ 3. Par ce fichier, afficher un tableau simple, avec au moins:
     - Plusieurs lignes
     - Plusieurs colonnes
- 3. Complexifier le tableau, avec au moins:
+ 4. Complexifier le tableau, avec au moins:
     - Une légende de tableau
     - Un en-tête de tableau
     - Un corps de tableau
@@ -71,7 +74,7 @@ Exemple de tableau complexe:
 
 ## Exercice 6: liens
 
- 1. Dans toutes les pages HTML, ajouter un menu de navigation interne (vers toutes les pages), avec chemins relatifs.
- 2. Dans une des pages, ajouter un lien vers un website externe (avec URL absolue).
+ 1. Dans toutes les pages HTML, ajouter un menu de navigation interne (vers toutes les pages), avec **chemins relatifs**.
+ 2. Dans une des pages, ajouter un lien vers un website externe (avec **URL absolue**).
  
 [Corrections](./v6)
