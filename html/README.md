@@ -29,6 +29,13 @@ Le code produit doit être validé par le [W3C validator](https://validator.w3.o
 
  1. Par ce fichier, afficher des images.
 
+Si l'image ne s'affiche pas correctement, appliquer la procédure de débuggage suivante:
+
+ 1. Valider le code HTML auprès [W3C validator](https://validator.w3.org/).
+ 2. S'assurer que le fichier d'image à bien été déployé sur le serveur.
+ 3. Vérifier que le fichier HTML est bien à jour sur le serveur. Pour ce faire, par exemple, inspecter le code affiché à l'aide du DevTools.
+ 4. Vérifier le chemin de fichier indiqué dans le code HTML. Pour ce faire, dans l'onglet "Network" du DevTools du navigateur, vérifier le statut HTTP du chargement de l'image (Sicode `200`, tout est OK. Si code `404`, la ressource n'a pas été trouvée.) 
+
 [Corrections](./v3)
 
 
@@ -46,15 +53,18 @@ Le code produit doit être validé par le [W3C validator](https://validator.w3.o
 ## Exercice 5: tableaux
 
  1. Créer un fichier `tableaux/index.*`.
- 2. Par ce fichier, afficher un tableau complexe, avec au moins:
+ 2. Par ce fichier, afficher un tableau simple, avec au moins:
+    - Plusieurs lignes
+    - Plusieurs colonnes
+ 3. Complexifier le tableau, avec au moins:
     - Une légende de tableau
     - Un en-tête de tableau
-    - UN corps de tableau
+    - Un corps de tableau
     - Un pied de tableau
     - Une jonction de colonne
     - Une jonction de ligne
 
-Exemple:
+Exemple de tableau complexe:
 ![Tableau complexe](../resources/images/tableau.png)
 
 [Corrections](./v5)
