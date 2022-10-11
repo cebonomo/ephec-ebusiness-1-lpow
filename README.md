@@ -54,7 +54,7 @@ Procédure pour écrire du HTML valide (principe général du "quand on l'ouvre,
 
 ## Exercices
 
-Attention: les exercices présentés ici visent à mettre en pratique un maximum de matière théorique. Ils représentent des exemples d'utilisation, mais ne couvrent pas forcément l'entièreté de la matière abordée, ni évidemment l'entièreté des cas possibles.
+**Attention:** les exercices présentés ici visent à mettre en pratique un maximum de matière théorique. Ils représentent des exemples d'utilisation, mais ne couvrent pas forcément l'entièreté de la matière abordée, ni évidemment l'entièreté des cas possibles.
 
  - [HTML](./html/README.md)
  
