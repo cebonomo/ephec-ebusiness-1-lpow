@@ -7,13 +7,15 @@ Les TP sont organisés en 3 temps, selon les langages abordés durant les cours 
  2. CSS (à venir)
  3. Javascript (à venir)
 
+**Attention:** les exercices présentés ici visent à mettre en pratique un maximum de matière théorique. Ils représentent des exemples d'utilisation, mais ne couvrent pas forcément l'entièreté de la matière abordée, ni évidemment l'entièreté des cas possibles.
+
 
 ## Bonnes pratiques
 
 ### Création du dossier de projet
 
-Au préalable de tout code, il est nécessaire de créer un [dossier](https://fr.wikipedia.org/wiki/R%C3%A9pertoire_(informatique)) spécifique visant à contenir (uniquement) le projet.
-(Par exemple: `Documents\MesSites\lpow`.) Dans le cadre d'un site, c'est ce dossier qui sera déployé (via [FTP](https://fr.wikipedia.org/wiki/File_Transfer_Protocol), par exemple) sur le serveur d'hébergement.
+Au préalable de tout code, il est nécessaire de créer un [dossier (ou répertoire)](https://fr.wikipedia.org/wiki/R%C3%A9pertoire_(informatique)) spécifique visant à contenir (uniquement) le projet.
+(Par exemple, sous Windows: `Documents\MesSites\lpow`.) Dans le cadre d'un site, c'est ce dossier qui sera déployé (via [FTP](https://fr.wikipedia.org/wiki/File_Transfer_Protocol), par exemple) sur le serveur d'hébergement.
 
 ### Extensions de fichier cachées
 
@@ -32,7 +34,7 @@ Le nommage des fichiers posant souvent problème, il est recommandé de suivre l
 
 Par convention, les fichiers `index.*` sont utilisés par les serveurs web (par exemple: [Apache](https://fr.wikipedia.org/wiki/Apache_HTTP_Server)) lorsque aucun fichier n'est précisé dans le chemin de l'[URL](https://fr.wikipedia.org/wiki/Uniform_Resource_Locator).
 
-Dans le cours, les noms des fichiers contenant du HTML peuvent se terminer par l'extension `.html` ou `.php` (pour faire la jonction avec le cours de PP). 
+Dans le cours, les noms des fichiers contenant du HTML peuvent se terminer par l'extension `.html` ou `.php` (notamment pour la gestion des formulaires, ainsi que pour faire la jonction avec le cours de PP). 
 Attention toutefois que, même dans le cas d'utilisation d'extentions `.html`, il est fortement recommandé de passer par un serveur web.
 
 ### Organisation du code
@@ -41,7 +43,11 @@ Le code pouvant contenir un grand nombre de fichiers, il est recommandé de rang
 
 ### Validité du code
 
-Lors de l'écriture du code, il est important de conserver un code valide à tout moment. Pour déterminer si un code HTML est valide, il faut le soumettre au [W3C validator](https://validator.w3.org/).
+Lors de l'écriture du code, il est important de conserver un code valide à tout moment. 
+
+#### HTML
+
+Pour déterminer si un code HTML est valide, il faut le soumettre au [W3C validator](https://validator.w3.org/).
 
 Procédure pour écrire du HTML valide (principe général du "quand on l'ouvre, on la ferme"):
  1. Ecrire la balise ouvrante dans son entièreté. (Une balise ouvrante valide se rapporte à la syntaxe suivante: `<` + mot-clé + `>`.) Ex: `<a>`
@@ -52,13 +58,6 @@ Procédure pour écrire du HTML valide (principe général du "quand on l'ouvre,
  6. Si l'élément doit contenir un contenu: se positionner entre la balise ouvrante et fermante et indiquer le contenu. Ex: `<a href="uri">Cliquez ici</a>`
 
 
-## Exercices
-
-**Attention:** les exercices présentés ici visent à mettre en pratique un maximum de matière théorique. Ils représentent des exemples d'utilisation, mais ne couvrent pas forcément l'entièreté de la matière abordée, ni évidemment l'entièreté des cas possibles.
-
- - [HTML](./html/README.md)
-
-
 ## Documentation
 
  1. [MDN - Documentation HTML](https://developer.mozilla.org/fr/docs/Web/HTML)
@@ -66,25 +65,18 @@ Procédure pour écrire du HTML valide (principe général du "quand on l'ouvre,
  3. [MDN - Documentation JavaScript](https://developer.mozilla.org/fr/docs/Web/JavaScript)
 
 
-## Ressources externes
-
- 1. [openclassrooms - cours HTML5 et CSS3](https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3)
- 2. [alsacréation](https://www.alsacreations.com/)
- 3. [grafikart](https://grafikart.fr/)
- 
- 
 ## Prérequis
 
-Les lectures suivantes ne sont pas obligatoires dans le cadre du cours, mais représentent un support d'étude complémentaire.
+La bonne réalisation des exercices proposés ici nécessite impérativement une connaissance générale du web et de ses langages, telle que présentée préalablement au cours théorique.
+
+Les lectures qui suivent ne sont pas obligatoires dans le cadre du cours, mais représentent un support d'étude complémentaire.
 
 ### Web
 
- 1. [MDN - Le fonctionnement du Web](https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
- 2. [MDN - Page web, site web, serveur web](https://developer.mozilla.org/fr/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines)
+ 1. [MDN - Page web, site web, serveur web](https://developer.mozilla.org/fr/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines)
+ 2. [MDN - Le fonctionnement du Web](https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
  3. [MDN - Comprendre les URL et leur structure](https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_URL)
  4. [MDN - Le fonctionnement des liens sur le Web](https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_are_hyperlinks)
- 5. [MDN - Qu'est-ce qu'un serveur web ?](https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_web_server)
- 6. [MDN - https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_domain_name](https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_domain_name​)
 
 ### Réseaux
 
@@ -98,7 +90,7 @@ Les lectures suivantes ne sont pas obligatoires dans le cadre du cours, mais rep
 
  1. [MDN - Introduction au HTML](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML)
  2. [MDN - Apprendre le HTML : guides et didacticiels](https://developer.mozilla.org/fr/docs/Learn/HTML)
- 3. [alsacréations - Structure de document HTML 5](https://www.alsacreations.com/article/lire/1374-html5-structure-globale-document.html)
+ 4. [alsacréations - Structure de document HTML 5](https://www.alsacreations.com/article/lire/1374-html5-structure-globale-document.html)
 
 ### CSS
 
@@ -110,5 +102,16 @@ Les lectures suivantes ne sont pas obligatoires dans le cadre du cours, mais rep
  1. [MDN - Premiers pas en JavaScript](https://developer.mozilla.org/fr/docs/Learn/JavaScript/First_steps)
  2. [MDN - JavaScript](https://developer.mozilla.org/fr/docs/Learn/JavaScript)
 
+
+## Tutoriels
+
+Quelques exemples des nombreuses ressources didactiques présentes sur le web:
+
+  1. [openclassrooms - Cours HTML5 et CSS3](https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3)
+  2. [grafikart - Tutos vidéo HTML](https://grafikart.fr/tutoriels/introduction-1019)
+  3. [FormationVidéo - Tutos vidéo HTML5 et CSS3](https://www.youtube.com/watch?v=bLPONCBPDeQ&list=PLrSOXFDHBtfG1_4HrfPttdwF8aLpgdsRL)
+  4. [FormationVidéo - Tutos vidéo JavaScript](https://www.youtube.com/watch?v=02Xs2ySaXcs&list=PLrSOXFDHBtfGxf_PtXLu_OrjFKt4_dqB_)
+  5. ...
+ 
 
 
