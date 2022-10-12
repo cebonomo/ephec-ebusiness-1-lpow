@@ -28,7 +28,7 @@ Le code produit doit être validé par le [W3C validator](https://validator.w3.o
 
 ## Exercice 3: images
 
- 1. Par ce fichier, afficher des images propres au site (c'est-à-dire se trouvant dans le même [domaine](https://fr.wikipedia.org/wiki/Domain_Name_System)), via des **chemins relatifs**.
+ 1. Par ce fichier, afficher des images propres au site (c'est-à-dire se trouvant dans le même [domaine](https://developer.mozilla.org/fr/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines)), via des **chemins relatifs**.
 
 Si l'image ne s'affiche pas correctement, appliquer la procédure de débuggage suivante:
 
