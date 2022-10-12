@@ -4,7 +4,7 @@ Est présenté ici le code développé durant mes TP du cours de LPOW de l'EPHEC
 
 Les TP sont organisés en 3 temps, selon les langages abordés durant les cours de théorie, et répartis ici en 3 dossiers contenant les exercices et leurs corrections:
  1. [HTML](./html)
- 2. CSS (à venir)
+ 2. [CSS](./css)
  3. Javascript (à venir)
 
 **Attention:** les exercices présentés ici visent à mettre en pratique un maximum de matière théorique. Ils représentent des exemples d'utilisation, mais ne couvrent pas forcément l'entièreté de la matière abordée, ni évidemment l'entièreté des cas possibles.
