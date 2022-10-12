@@ -13,12 +13,6 @@
 
 ## Exercice 3: textes couleurs
 
- 1. Appliquer des styles de texte et de couleur selon les sélecteurs suivants:
-    - all
-    - id
-    - class
-    - tag
-
 Exemples:
 
 ### All
@@ -38,3 +32,4 @@ Exemples:
  2. Appliquer une couleur uniquement aux titres (autre que celle par défaut).
  3. Souligner les titres qui se trouvent uniquement dans des balises `article`.
  4. Centrer le titre principal et mettez-le en lettres capitales.
+
