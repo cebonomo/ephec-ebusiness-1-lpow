@@ -35,7 +35,10 @@ Si l'image ne s'affiche pas correctement, appliquer la procédure de débuggage 
  1. Valider le code HTML auprès [W3C validator](https://validator.w3.org/).
  2. S'assurer que le fichier d'image à bien été déployé sur le serveur.
  3. Vérifier que le fichier HTML est bien à jour sur le serveur. Pour ce faire, par exemple, inspecter le code affiché à l'aide du DevTools.
- 4. Vérifier le chemin de fichier indiqué dans le code HTML. Pour ce faire, dans l'onglet "Network" du DevTools du navigateur, vérifier le statut HTTP du chargement de l'image (Sicode `200`, tout est OK. Si code `404`, la ressource n'a pas été trouvée.) 
+ 4. Vérifier le chemin de fichier indiqué dans le code HTML. Pour ce faire, dans l'onglet "Network" du DevTools du navigateur, après rafraîchissement de la page, vérifier le statut HTTP du chargement de l'image (Si code `200`, tout est OK. Si code `404`, la ressource n'a pas été trouvée.) 
+
+ ![Erreur 404 sur une image](../resources/images/image-404.png)
+
 
 [Corrections](./v3)
 
