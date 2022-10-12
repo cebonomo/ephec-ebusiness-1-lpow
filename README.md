@@ -57,39 +57,58 @@ Procédure pour écrire du HTML valide (principe général du "quand on l'ouvre,
 **Attention:** les exercices présentés ici visent à mettre en pratique un maximum de matière théorique. Ils représentent des exemples d'utilisation, mais ne couvrent pas forcément l'entièreté de la matière abordée, ni évidemment l'entièreté des cas possibles.
 
  - [HTML](./html/README.md)
+
+
+## Documentation
+
+ 1. [MDN - Documentation HTML](https://developer.mozilla.org/fr/docs/Web/HTML)
+ 2. [MDN - Documentation CSS](https://developer.mozilla.org/fr/docs/Web/CSS)
+ 3. [MDN - Documentation JavaScript](https://developer.mozilla.org/fr/docs/Web/JavaScript)
+
+
+## Ressources externes
+
+ 1. [openclassrooms - cours HTML5 et CSS3](https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3)
+ 2. [alsacréation](https://www.alsacreations.com/)
+ 3. [grafikart](https://grafikart.fr/)
  
  
-## Lectures
+## Prérequis
 
 Les lectures suivantes ne sont pas obligatoires dans le cadre du cours, mais représentent un support d'étude complémentaire.
 
 ### Web
 
- 1. https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/How_the_Web_works
- 2. https://developer.mozilla.org/fr/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines
- 3. https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_URL
- 4. https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_are_hyperlinks
- 5. https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_web_server
- 6. https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_domain_name​
+ 1. [MDN - Le fonctionnement du Web](https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
+ 2. [MDN - Page web, site web, serveur web](https://developer.mozilla.org/fr/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines)
+ 3. [MDN - Comprendre les URL et leur structure](https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_URL)
+ 4. [MDN - Le fonctionnement des liens sur le Web](https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_are_hyperlinks)
+ 5. [MDN - Qu'est-ce qu'un serveur web ?](https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_web_server)
+ 6. [MDN - https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_domain_name](https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_domain_name​)
 
 ### Réseaux
 
- 1. https://developer.mozilla.org/fr/docs/Learn/Common_questions/How_does_the_Internet_work
+ 1. [MDN - Le fonctionnement de l'Internet](https://developer.mozilla.org/fr/docs/Learn/Common_questions/How_does_the_Internet_work)
+
+### Système de fichiers
+
+ 1. [alsacréations - Chemins relatifs et absolus](https://www.alsacreations.com/astuce/lire/78-Quelle-est-la-difference-entre-les-chemins-relatifs-et-absolus-.html)
 
 ### HTML
 
- 1. https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML
- 2. https://developer.mozilla.org/fr/docs/Learn/HTML 
+ 1. [MDN - Introduction au HTML](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML)
+ 2. [MDN - Apprendre le HTML : guides et didacticiels](https://developer.mozilla.org/fr/docs/Learn/HTML)
+ 3. [alsacréations - Structure de document HTML 5](https://www.alsacreations.com/article/lire/1374-html5-structure-globale-document.html)
 
 ### CSS
 
- 1. https://developer.mozilla.org/fr/docs/Learn/CSS/First_steps
- 2. https://developer.mozilla.org/fr/docs/Learn/CSS
+ 1. [MDN - Premiers pas avec CSS](https://developer.mozilla.org/fr/docs/Learn/CSS/First_steps)
+ 2. [MDN - Composer le HTML avec les CSS](https://developer.mozilla.org/fr/docs/Learn/CSS)
 
 ### JS
 
- 1. https://developer.mozilla.org/fr/docs/Learn/JavaScript/First_steps
- 2. https://developer.mozilla.org/fr/docs/Learn/JavaScript
+ 1. [MDN - Premiers pas en JavaScript](https://developer.mozilla.org/fr/docs/Learn/JavaScript/First_steps)
+ 2. [MDN - JavaScript](https://developer.mozilla.org/fr/docs/Learn/JavaScript)
 
 
 
