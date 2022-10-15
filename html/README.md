@@ -16,12 +16,12 @@ Le code produit doit être validé par le [W3C validator](https://validator.w3.o
 ## Exercice 2: textes
 
  1. Dans ce fichier, utiliser des balises de structure et de texte, de sorte à:
-    - Afficher un en-tête
-    - Afficher un pied de page
+    - Afficher un en-tête de page/section
+    - Afficher un pied de page/section
     - Afficher des articles
-    - Afficher des titres
+    - Afficher des titres de section
     - Afficher des paragraphes
-    - Afficher des retours à la ligne
+    - Afficher des saut de ligne
 
 [Corrections](./v2)
 
@@ -50,7 +50,7 @@ Si l'image ne s'affiche pas correctement, appliquer la procédure de débuggage 
  3. Par ce fichier, afficher 3 types de listes:
     - Liste à puces
     - Liste ordonnée
-    - Liste de description
+    - Liste de descriptions
 
 [Corrections](./v4)
 
@@ -67,8 +67,8 @@ Si l'image ne s'affiche pas correctement, appliquer la procédure de débuggage 
     - Un en-tête de tableau
     - Un corps de tableau
     - Un pied de tableau
-    - Une jonction de colonne
-    - Une jonction de ligne
+    - Une fusion de cellules par colonne
+    - Une fusion de cellules par ligne
 
 Exemple de tableau complexe:
 ![Tableau complexe](../resources/images/tableau.png)
