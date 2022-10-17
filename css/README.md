@@ -5,6 +5,8 @@
  1. Créer une feuille de style `styles/main.css` vide.
  2. Inclure cette feuille de style dans toutes les pages du site (méthode "linked").
 
+ [Corrections](./v1)
+
 ### Remarques théoriques
 
 **Attention:** ne sont pas abordés ici les autres types d'inclusion de style:
