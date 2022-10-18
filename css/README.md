@@ -25,7 +25,7 @@ Ne sont abordés ici que les principes théoriques suivants:
  - La combinaison de sélecteurs.
 
 **Attention:** ne sont pas abordés ici notamment les principes théoriques suivants:
- - L'association de style: un élément HTML hérite des règles de style de l'ensemble des sélecteurs qui le désigne.
+ - L'association de style: un élément HTML hérite des règles de style de l'ensemble des sélecteurs qui le désignent.
  - La surcharge des déclarations: une déclaration de style écrase les mêmes déclarations qui la précédent, à poids de sélecteur égal ou supérieur.
  - La priorité (ou poids) des sélecteurs: `!important`, inline, #id, .class (ou pseudo-class), tag (ou pseudo-element), default (le sélecteur universel `*` n'étant pas pris en compte).
 
