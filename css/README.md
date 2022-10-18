@@ -1,5 +1,8 @@
 # Exercices CSS
 
+Ces exercices complètent les exercices [HTML](../html) en rajoutant au code une couche de style CSS. Il est donc nécessaire d'avoir terminé la partie HTML pour débuter celle-ci, de même qu'il est, d'une manière générale, impératif de comprendre le HTML avant de débuter l'étude du CSS.
+
+
 ## Exercice 1: linked CSS
 
  1. Créer une feuille de style `styles/main.css` vide.

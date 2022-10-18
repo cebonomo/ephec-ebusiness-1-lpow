@@ -1,7 +1,9 @@
 
 # Exercices HTML
 
-Le code produit doit être validé par le [W3C validator](https://validator.w3.org/). 
+Les différents exercices présentés dans cette partie se complètent les uns les autres, et visent, au final, à créer une sorte de mini site contenant les balises HTML principales. Chaque exercice est donc la suite de celui qui le précède, et représente une nouvelle étape (une nouvelle version) dans la création d'un site en construction. Il est nécessaire d'aborder les exercices dans l'ordre pour une meilleure compréhension.
+
+**Attention:** le code produit doit être validé par le [W3C validator](https://validator.w3.org/). 
 
 
 ## Exercice 1: document de base
@@ -77,7 +79,12 @@ Exemple de tableau complexe:
 
 ## Exercice 6: liens
 
+**Attention:** cet exercice vise à relier entre elles plusieurs pages d'un même site, par l'intermédiaire d'une navigation interne. Il est donc impératif d'avoir créé au préalable plusieurs fichiers HTML. Pour une compréhension totale des **chemins relatifs**, il est important qu'un de ces fichiers soit situé dans un dossier. Se reporter à la [v5](./v5) pour la structure des fichiers.
+
  1. Dans toutes les pages HTML, ajouter un menu de navigation interne (vers toutes les pages), avec **chemins relatifs**.
  2. Dans une des pages, ajouter un lien vers un website externe (avec **URL absolue**).
  
+
+
+
 [Corrections](./v6)
