@@ -1,0 +1,26 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color:darkslategrey;
+}
+
+.bigger {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.italic {
+    font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:darkslateblue;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+article h2 {
+    text-decoration: underline;
+}

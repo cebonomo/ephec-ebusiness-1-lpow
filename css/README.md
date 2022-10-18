@@ -12,7 +12,7 @@ Ces exercices complètent les exercices [HTML](../html) en rajoutant au code une
 
 ### Remarques théoriques
 
-**Attention:** ne sont pas abordés ici les autres types d'inclusion de style:
+**Attention:** ne sont pas abordés ici les autres types possibles d'inclusion de style:
  - "inline"
  - "embedded" 
 
@@ -25,12 +25,14 @@ Ces exercices complètent les exercices [HTML](../html) en rajoutant au code une
 
 Ne sont abordés ici que les principes théoriques suivants:
  - Les principaux types de sélecteurs: id, class, tag, ...
- - La combinaison de sélecteurs.
+ - La combinaison de sélecteurs (ou combinateurs).
+
+(Sur ce sujet, voir [MDN docs - sélecteurs](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Selectors).)
 
 **Attention:** ne sont pas abordés ici notamment les principes théoriques suivants:
  - L'association de style: un élément HTML hérite des règles de style de l'ensemble des sélecteurs qui le désignent.
  - La surcharge des déclarations: une déclaration de style écrase les mêmes déclarations qui la précédent, à poids de sélecteur égal ou supérieur.
- - La priorité (ou poids) des sélecteurs: `!important`, inline, #id, .class (ou pseudo-class), tag (ou pseudo-element), default (le sélecteur universel `*` n'étant pas pris en compte).
+ - La spécificité (ou priorité, ou poids) des sélecteurs (voir [MDN docs - spécificité](https://developer.mozilla.org/fr/docs/Web/CSS/Specificity)).
 
 
 ## Exercice 3: polices et textes
@@ -39,23 +41,23 @@ Ne sont abordés ici que les principes théoriques suivants:
     - famille
     - taille
     - style
-    - poids
+    - graisse
  2. Utiliser les propriétés de texte:
     - couleur
     - alignement
     - décoration
     - transformation
 
+[Corrections](./v2)
 
 ### Exemples
 
 #### Universel
  1. Appliquer une police de caractère à l'ensemble des textes.
  2. Appliquer une couleur à l'ensemble des textes.
- 3. Appliquer une taille à l'ensemble des textes.
 
 #### Id
- 1. Appliquer une couleur particulière au texte d'un parapgraphe particulier via son id.
+ 1. Appliquer une couleur particulière au texte d'un paragraphe particulier via son id.
 
 #### Class
  1. Définir une classe "big", avec une taille de police plus grande et un poids plus gras, et appliquer cette classe à un `span` dans un paragraphe.
@@ -69,19 +71,30 @@ Ne sont abordés ici que les principes théoriques suivants:
 
 ### Remarques théoriques
 
- 1. Les couleurs (d'une manière générale) peuvent potentiellement être définies de plusieurs façons:
-    - Par mot-clé (noms anglais).
-    - Par valeur hexadécimale (pécédée du symbole `#`).
-    - Par valeur RGB ou RGBa (red, green, blue, alpha).
- 2. Les tailles (d'une manière générale) peuvent être exprimées de plusieurs façons:
-    - Valeur numérique absolue pour écran (px, ...)
-    - Valeur numérique absolue pour papier (pt, ...)
-    - Valeur numérique relative à l'élément parent (%, em (taille de police), rem, ...)
-    - Valeur numérique relative au viewport
-    - Par mot-clé absolu (small, medium, large, ...)
-    - Par mot-clé relatif à l'élément parent (smaller, larger, ...)
+#### Les couleurs
 
-## Exercice 4: arrière-plans
+Les [couleurs](https://developer.mozilla.org/fr/docs/Web/CSS/color_value) (d'une manière générale) peuvent potentiellement être définies de plusieurs façons:
+   - Par mot-clé (noms anglais).
+   - Par valeur hexadécimale (pécédée du symbole `#`).
+   - Par valeur RGB ou RGBa (red, green, blue, alpha).
+
+#### Les tailles
+
+Les tailles (d'une manière générale) peuvent être exprimées de plusieurs façons:
+   - Valeur numérique absolue pour écran (px, ...)
+   - Valeur numérique absolue pour papier (pt, ...)
+   - Valeur numérique relative à l'élément parent (%, em (taille de police), rem, ...)
+   - Valeur numérique relative au viewport
+   - Par mot-clé absolu (small, medium, large, ...)
+   - Par mot-clé relatif à l'élément parent (smaller, larger, ...)
+
+
+## Exercice 4: polices importées
+
+ 1. Utiliser une police qu'un navigateur ne supporte pas par défaut.
+
+
+## Exercice 5: arrière-plans
 
  1. Utiliser les propriétés d'arrière-plan:
     - Couleur de fond
@@ -93,9 +106,9 @@ Ne sont abordés ici que les principes théoriques suivants:
  2. Appliquer une image de fond à une page entière.
 
 
-## Exercice 5: affichage
+## Exercice 6: affichage (exercice optionnel)
 
- 1. Utiliser les propriétés de visibilité (pas vues en théorie, donc étape optionnelle):
+ 1. Utiliser les propriétés de visibilité (ces propriétés n'ayant pas été vues durant le cours de théorie, cette étape ets donc optionnelle):
    - Visibilité
    - Opacité
 
