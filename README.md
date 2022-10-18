@@ -2,7 +2,7 @@
 
 Est présenté ici le code développé durant mes TP du cours de LPOW de l'EPHEC.
 
-Les TP sont organisés en 3 temps, selon les langages abordés durant les cours de théorie, et répartis ici en 3 dossiers contenant les exercices et leurs corrections:
+Les TP sont organisés en 3 dossiers contenant les exercices et leurs corrections, selon les langages abordés durant les cours de théorie:
  1. [HTML](./html)
  2. [CSS](./css)
  3. Javascript (à venir)
@@ -11,6 +11,8 @@ Les TP sont organisés en 3 temps, selon les langages abordés durant les cours 
 
 
 ## Bonnes pratiques
+
+> C'est en codant qu'on devient codeur.
 
 ### Création du dossier de projet
 
