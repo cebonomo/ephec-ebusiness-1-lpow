@@ -43,11 +43,9 @@ Attention toutefois que, même dans le cas d'utilisation d'extentions `.html`, i
 
 Le code pouvant contenir un grand nombre de fichiers, il est recommandé de ranger les ressources (images, styles, scripts, fonts, ...) dans des dossiers spécifiques.
 
-### Validité du code
+### Validité du code HTML
 
 Lors de l'écriture du code, il est important de conserver un code valide à tout moment. 
-
-#### HTML
 
 Pour déterminer si un code HTML est valide, il faut le soumettre au [W3C validator](https://validator.w3.org/).
 
@@ -58,6 +56,10 @@ Procédure pour écrire du HTML valide (principe général du "quand on l'ouvre,
  4. Si l'attribut possède une valeur: faire suivre le nom de l'attribut par `=""`, en veillant à bien écrire 2 fois les doubles-guillemets. Ex: `<a href=""></a>`
  5. S'il faut préciser une valeur non nulle à l'attribut: revenir entre les guillemets et préciser la valeur. Ex: `<a href="uri"></a>`
  6. Si l'élément doit contenir un contenu: se positionner entre la balise ouvrante et fermante et indiquer le contenu. Ex: `<a href="uri">Cliquez ici</a>`
+
+### Ordre des règles CSS
+
+Pour facilité la gestion des [cascades](https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance), les règles CSS s'écrivent des plus générales aux plus spécifiques.
 
 
 ## Documentation
