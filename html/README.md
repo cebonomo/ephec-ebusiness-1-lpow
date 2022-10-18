@@ -75,7 +75,7 @@ Si l'image ne s'affiche pas correctement, appliquer la procédure de débuggage 
 Exemple de tableau complexe:
 ![Tableau complexe](../resources/images/tableau.png)
 
-Pour afficher les bordures du tableau, appliquer le style suivant à la page:
+Pour afficher les bordures du tableau, appliquer le style suivant à la balise `head` de la page:
 ```html
 	<style>
 		table {
