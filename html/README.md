@@ -75,6 +75,18 @@ Si l'image ne s'affiche pas correctement, appliquer la procédure de débuggage 
 Exemple de tableau complexe:
 ![Tableau complexe](../resources/images/tableau.png)
 
+Pour afficher les bordures du tableau, appliquer le style suivant à la page:
+```html
+	<style>
+		table {
+			width: 50%;
+		}
+		table, th, td {
+			border: 1px solid black;
+		}
+	</style>
+```   
+
 [Corrections](./v5)
 
 ## Exercice 6: liens
@@ -84,7 +96,5 @@ Exemple de tableau complexe:
  1. Dans toutes les pages HTML, ajouter un menu de navigation interne (vers toutes les pages), avec **chemins relatifs**.
  2. Dans une des pages, ajouter un lien vers un website externe (avec **URL absolue**).
  
-
-
 
 [Corrections](./v6)
