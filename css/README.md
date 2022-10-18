@@ -14,7 +14,9 @@ Ces exercices complètent les exercices [HTML](../html) en rajoutant au code une
 
 **Attention:** ne sont pas abordés ici les autres types possibles d'inclusion de style:
  - "inline"
- - "embedded" 
+ - "embedded"
+
+(Sur ce sujet, voir [MDN docs - Appliquer CSS à votre document HTML](https://developer.mozilla.org/fr/docs/Learn/CSS/First_steps/How_CSS_is_structured#appliquer_css_%C3%A0_votre_document_html)) 
 
 ## Exercice 2: sélecteurs
 
@@ -30,9 +32,12 @@ Ne sont abordés ici que les principes théoriques suivants:
 (Sur ce sujet, voir [MDN docs - sélecteurs](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Selectors).)
 
 **Attention:** ne sont pas abordés ici notamment les principes théoriques suivants:
- - L'association de style: un élément HTML hérite des règles de style de l'ensemble des sélecteurs qui le désignent.
- - La surcharge des déclarations: une déclaration de style écrase les mêmes déclarations qui la précédent, à poids de sélecteur égal ou supérieur.
- - La spécificité (ou priorité, ou poids) des sélecteurs (voir [MDN docs - spécificité](https://developer.mozilla.org/fr/docs/Web/CSS/Specificity)).
+ - L'association des règles: un élément HTML bénéficie des règles de style de l'ensemble des sélecteurs qui le désignent.
+ - La cascade (ou surcharge) des déclarations: une déclaration de style écrase les mêmes déclarations qui la précédent, à poids de sélecteur égal ou supérieur.
+ - La [spécificité](https://developer.mozilla.org/fr/docs/Web/CSS/Specificity) (ou priorité, ou poids) des sélecteurs: un sélecteur peut être prioritaire sur un autre, ce qui annule *de facto* le principe de cascade.
+ - L'[héritage](https://developer.mozilla.org/fr/docs/Web/CSS/inheritance) des déclarations: un élément enfant peut hériter des déclarations d'un élément parent.
+
+ (Sur ce sujet, voir [MDN docs - Cascade, spécificité et héritage](https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance))
 
 
 ## Exercice 3: polices et textes
