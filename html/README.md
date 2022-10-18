@@ -32,6 +32,8 @@ Les différents exercices présentés dans cette partie se complètent les uns l
 
  1. Par ce fichier, afficher des images propres au site (c'est-à-dire se trouvant dans le même [domaine](https://developer.mozilla.org/fr/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines)), via des **chemins relatifs**.
 
+### Procédure de débuggage
+
 Si l'image ne s'affiche pas correctement, appliquer la procédure de débuggage suivante:
 
  1. Valider le code HTML auprès [W3C validator](https://validator.w3.org/).
