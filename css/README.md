@@ -113,7 +113,110 @@ Les tailles (d'une manière générale) peuvent être exprimées de plusieurs fa
 
 ## Exercice 6: affichage (exercice optionnel)
 
- 1. Utiliser les propriétés de visibilité (ces propriétés n'ayant pas été vues durant le cours de théorie, cette étape ets donc optionnelle):
+ 1. Utiliser les propriétés de visibilité (ces propriétés n'ayant pas été vues durant le cours de théorie, cette étape est donc optionnelle):
    - Visibilité
    - Opacité
+
+
+## Exercice 7: listes
+
+ 1. Utiliser les propriétés de liste:
+   - type
+   - (image)
+   - (position)
+
+### Exemples
+
+ 1. Elever les puces d'une liste.
+ 2. Changer la forme des puces d'une liste (ou utiliser une image pour définir les puces).
+ 3. Afficher une numérotation romaine à une liste ordonnée.
+
+
+## Exercice 8: tailles
+
+ 1. Utiliser les propriétés de taille sur un élément de type bloc ("block box"):
+    - Lageur
+    - Hauteur
+ 2. Utiliser les mêmes propriétés de taille sur un élément de type en ligne par défaut ("inline box").
+
+### Exemples
+
+#### Block box
+
+TODO
+
+#### Inline box
+
+TODO
+
+### Remarques théoriques
+
+#### Box model
+
+TODO
+
+https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/The_box_model
+
+
+## Exercice 9: bordures
+
+ 1. Utiliser les propriétés de bordure sur un élément de type bloc ("block box"):
+    - largeur
+    - style
+    - couleur
+    - position
+    - arrondi
+    - fusion/séparation
+ 2. Utiliser les mêmes propriétés de bordure sur un élément de type en ligne par défaut ("inline box").
+
+### Exemples
+
+#### Block box
+
+ 1. Afficher des bordures à un tableau.
+ 2. Afficher des bordures en pointillé aux cellules d'un tableau.
+ 3. Enlever l'espace entre les bordures des cellules d'un tableau.
+
+ 1. Afficher des bordures arrondies à un élément `nav`.
+
+#### Inline box
+
+ 1. Afficher une bordure verticale séparant chaque élément `a` dans un élément `nav` 
+
+### Remarques théoriques
+
+#### Gestion des déclarations multiples
+
+#### Plusieurs propriétés par déclaration
+
+TODO
+
+#### Plusieurs positions par déclaration
+
+TODO
+
+#### Affectation de la taille
+
+TODO
+
+
+## Exercice 10: marges
+
+ 1. Utiliser les propriétés de marge sur un élément de type bloc ("block box") possédant une bordure:
+    - Marges intérieures
+    - Marges extérieures
+ 2. Utiliser les mêmes propriétés de marge sur un élément de type en ligne par défaut ("inline box") possédant une bordure.
+
+
+### Exemples
+
+#### Block box
+
+TODO
+
+#### Inline box
+
+TODO
+
+
 
