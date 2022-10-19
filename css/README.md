@@ -121,9 +121,9 @@ Les tailles (d'une manière générale) peuvent être exprimées de plusieurs fa
 ## Exercice 7: listes
 
  1. Utiliser les propriétés de liste:
-   - type
-   - (image)
-   - (position)
+   - Type
+   - (Image)
+   - (Position)
 
 ### Exemples
 
@@ -135,7 +135,7 @@ Les tailles (d'une manière générale) peuvent être exprimées de plusieurs fa
 ## Exercice 8: tailles
 
  1. Utiliser les propriétés de taille sur un élément de type bloc ("block box"):
-    - Lageur
+    - Largeur
     - Hauteur
  2. Utiliser les mêmes propriétés de taille sur un élément de type en ligne par défaut ("inline box").
 
@@ -161,12 +161,12 @@ https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/The_box_model
 ## Exercice 9: bordures
 
  1. Utiliser les propriétés de bordure sur un élément de type bloc ("block box"):
-    - largeur
-    - style
-    - couleur
-    - position
-    - arrondi
-    - fusion/séparation
+    - Largeur
+    - Style
+    - Couleur
+    - Position
+    - Arrondi
+    - Fusion/séparation
  2. Utiliser les mêmes propriétés de bordure sur un élément de type en ligne par défaut ("inline box").
 
 ### Exemples
