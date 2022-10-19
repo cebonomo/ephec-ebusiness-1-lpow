@@ -43,15 +43,15 @@ Ne sont abordés ici que les principes théoriques suivants:
 ## Exercice 3: polices et textes
 
  1. Utiliser les propriétés de police:
-    - famille
-    - taille
-    - style
-    - graisse
+    - Famille
+    - Taille
+    - Style
+    - Graisse
  2. Utiliser les propriétés de texte:
-    - couleur
-    - alignement
-    - décoration
-    - transformation
+    - Couleur
+    - Alignement
+    - Décoration
+    - Transformation
 
 [Corrections](./v2)
 
