@@ -114,16 +114,16 @@ Les tailles (d'une manière générale) peuvent être exprimées de plusieurs fa
 ## Exercice 6: affichage (exercice optionnel)
 
  1. Utiliser les propriétés de visibilité (ces propriétés n'ayant pas été vues durant le cours de théorie, cette étape est donc optionnelle):
-   - Visibilité
-   - Opacité
+    - Visibilité
+    - Opacité
 
 
 ## Exercice 7: listes
 
  1. Utiliser les propriétés de liste:
-   - Type
-   - (Image)
-   - (Position)
+    - Type
+    - (Image)
+    - (Position)
 
 ### Exemples
 
