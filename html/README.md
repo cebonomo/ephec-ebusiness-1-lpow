@@ -56,7 +56,7 @@ Dans le cadre d'une URL relative, il est donc possible de n'indiquer que le chem
 
 De même, il existe plusieurs façons de définir, au sein d'une URL, le chemin:
    1. Chemin absolu (ou relatif à la racine)
-   2. Chemin relatif (au répertoire courant) (possible uniquement dans une URL relative)
+   2. Chemin relatif (au répertoire courant) (possible uniquement dans une URL relative n'incluant que le chemin)
 
 Dans le cadre de la définition d'un chemin, il faut noter les règles de navigation suivantes:
  - `/` indique, utilisé en tête de chemin, le répertoire racine.

@@ -176,7 +176,7 @@ La taille totale des boîtes de type bloc est définie non seulement par la haut
 
 Voir le commentaire sur les valeurs de taille pécédent.
 
-A noter également, dans le cas des dimensions d'affichage, la possibilité de définir des tailles maximales, c'est-à-dire qui ne peuvent pas être dépassées.
+A noter également, dans le cas des dimensions d'affichage, la possibilité de définir, à la place de tailles fixes, des tailles minimales et maximales, c'est-à-dire ne pouvant pas être dépassées.
 
 
 #### Dimensions des images
