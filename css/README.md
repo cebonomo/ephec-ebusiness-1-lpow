@@ -53,8 +53,6 @@ Ne sont abordés ici que les principes théoriques suivants:
     - Décoration
     - Transformation
 
-[Corrections](./v2)
-
 ### Exemples
 
 #### Universel
@@ -73,6 +71,7 @@ Ne sont abordés ici que les principes théoriques suivants:
  2. Souligner les titres qui se trouvent uniquement dans des balises `article`.
  3. Centrer le titre principal et mettez-le en lettres capitales.
 
+[Corrections](./v2)
 
 ### Remarques théoriques
 
