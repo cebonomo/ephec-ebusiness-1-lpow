@@ -181,7 +181,7 @@ A noter également, dans le cas des dimensions d'affichage, la possibilité de d
 
 #### Dimensions des images
 
-Il est à noter que les balises HTML `img` disposent également d'attributs de hauteur (`height`) et de largeur (`width`). Ces attributs représentent normalement les dimensions réelles de l'image en pixels (l'unité "px" ne devant normalement pas être mentionnée). Ces dimensions réelles seront normalement écrasées par les dimensions d'affichage, telles que définies par le CSS.
+Il est à noter que la balise HTML `img` dispose également d'attributs de hauteur (`height`) et de largeur (`width`). Ces attributs représentent normalement les dimensions intrinsèques de l'image en pixels (l'unité ne devant normalement pas être mentionnée). Ces dimensions intrinsèques sont normalement écrasées par les dimensions d'affichage, telles que définies par le CSS.
 
 Définir systématiquement les dimensions des images est une bonne pratique.
 
