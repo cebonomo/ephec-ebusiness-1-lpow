@@ -167,7 +167,7 @@ Les propriétés suivantes fonctionnent selon le [modèle de boîte](https://dev
  - Marges internes + externes
  - Bordures
 
-Ce modèle conditionne chaque élément grâce à la propriété d'affichage `display`, laquelle spécifie le type de comportement de boîte. Seuls les élément de type bloc (valeurs communes: `block`, `table`, `inline-block`) sont impactés par la modification de dimension d'affichage.
+Ce modèle conditionne chaque élément grâce à la propriété d'affichage `display`, laquelle spécifie le type de comportement de boîte. Seuls les éléments de type bloc (valeurs communes: `block`, `table`, `inline-block`) sont impactés par la modification de dimension d'affichage.
 
 La taille totale des boîtes de type bloc est définie non seulement par la hauteur et la largeur, lesquelles propriétés constituent la [taille intrinsèque](https://developer.mozilla.org/fr/docs/Glossary/Intrinsic_Size) de l'élément (càd sa taille interne), mais également, de manière additionnelle, par les bordures et les marges (internes et externes), lesquelles propriétés constituent la [taille extrinsèque](https://developer.mozilla.org/fr/docs/Glossary/Intrinsic_Size).
 
@@ -176,12 +176,14 @@ La taille totale des boîtes de type bloc est définie non seulement par la haut
 
 Voir le commentaire sur les valeurs de taille pécédent.
 
-A noter également, dans le cas des dimensions d'affichage, la possibilité de définir, à la place de tailles fixes, des tailles minimales et maximales, c'est-à-dire ne pouvant pas être dépassées.
+A noter également, dans le cas des dimensions d'affichage, la possibilité de définir des tailles minimales et maximales, c'est-à-dire ne pouvant pas être dépassées, à la place de tailles fixes.
 
 
 #### Dimensions des images
 
 Il est à noter que les balises HTML `img` disposent également d'attributs de hauteur (`height`) et de largeur (`width`). Ces attributs représentent normalement les dimensions réelles de l'image en pixels (l'unité "px" ne devant normalement pas être mentionnée). Ces dimensions réelles seront normalement écrasées par les dimensions d'affichage, telles que définies par le CSS.
+
+Définir systématiquement les dimensions des images est une bonne pratique.
 
 
 ## Exercice 9: bordures
