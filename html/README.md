@@ -32,6 +32,37 @@ Les différents exercices présentés dans cette partie se complètent les uns l
 
  1. Par ce fichier, afficher des images propres au site (c'est-à-dire se trouvant dans le même [domaine](https://developer.mozilla.org/fr/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines)), via des **chemins relatifs**.
 
+[Corrections](./v3)
+
+### Remarques théoriques
+
+#### URL
+
+Une URL représente une et une seule ressource.
+
+Une URL se compose d'au moins les parties suivantes:
+
+1. Le schéma
+2. Le nom de domaine
+3. Le port (optionnel)
+4. Le chemin (optionnel)
+
+Il existe plusieurs façons de définir une URL dans le HTML:
+
+1. URL absolue (càd commençant par le schéma)
+2. URL relative (à l'URL courante)
+
+Dans le cadre d'une URL relative, il est donc possible de n'indiquer que le chemin.
+
+De même, il existe plusieurs façons de définir, au sein d'une URL, le chemin:
+   1. Chemin absolu (ou relatif à la racine)
+   2. Chemin relatif (au répertoire courant) (possible uniquement dans une URL relative)
+
+Dans le cadre de la définition d'un chemin, il faut noter les règles de navigation suivantes:
+ - `/` indique, utilisé en tête de chemin, le répertoire racine.
+ - `./` indique le répertoire courant.
+ - `../` indique le répertoire parent. 
+
 ### Procédure de débuggage
 
 Si l'image ne s'affiche pas correctement, appliquer la procédure de débuggage suivante:
@@ -42,9 +73,6 @@ Si l'image ne s'affiche pas correctement, appliquer la procédure de débuggage 
  4. Vérifier le chemin de fichier indiqué dans le code HTML. Pour ce faire, dans l'onglet "Network" du DevTools du navigateur, après rafraîchissement de la page, vérifier le statut HTTP du chargement de l'image (Si code `200`, tout est OK. Si code `404`, la ressource n'a pas été trouvée.) 
 
  ![Erreur 404 sur une image](../resources/images/image-404.png)
-
-
-[Corrections](./v3)
 
 
 ## Exercice 4: listes
@@ -77,11 +105,11 @@ Si l'image ne s'affiche pas correctement, appliquer la procédure de débuggage 
 Exemple de tableau complexe:
 ![Tableau complexe](../resources/images/tableau.png)
 
-Pour afficher les bordures du tableau, appliquer le style suivant à la balise `head` de la page:
+Pour afficher les bordures du tableau, ainsi qu'une taille de tableau minimale, appliquer le style suivant à la balise `head` de la page:
 ```html
 	<style>
 		table {
-			width: 50%;
+			min-width: 50%;
 		}
 		table, th, td {
 			border: 1px solid black;
@@ -93,10 +121,18 @@ Pour afficher les bordures du tableau, appliquer le style suivant à la balise `
 
 ## Exercice 6: liens
 
-**Attention:** cet exercice vise à relier entre elles plusieurs pages d'un même site, par l'intermédiaire d'une navigation interne. Il est donc impératif d'avoir créé au préalable plusieurs fichiers HTML. Pour une compréhension totale des **chemins relatifs**, il est important qu'un de ces fichiers soit situé dans un dossier. Se reporter à la [v5](./v5) pour la structure des fichiers.
+**Attention:** cet exercice vise à relier entre elles plusieurs pages d'un même site, par l'intermédiaire d'une navigation interne. Il est donc impératif d'avoir créé au préalable plusieurs fichiers HTML. Pour une compréhension totale des **chemins relatifs**, il est important qu'un de ces fichiers soit situés dans un dossier. Se reporter à la [v5](./v5) pour la structure des fichiers.
 
  1. Dans toutes les pages HTML, ajouter un menu de navigation interne (vers toutes les pages), avec **chemins relatifs**.
  2. Dans une des pages, ajouter un lien vers un website externe (avec **URL absolue**).
  
-
 [Corrections](./v6)
+
+### Remarques théoriques
+
+### URL
+
+Voir la remarque sur les URL précédente.
+
+A noter également que, dans le cadre d'une requête HTTP d'un document HTML, si aucun fichier n'est spécifié dans le chemin, le serveur web (tel qu'habituellement configuré) retournera dans la réponse HTTP le contenu d'un fichier `index.*` présent dans le répertoire du chemin (et donc dans le répertoire racine si le chemin n'est pas mentionné du tout dans l'URL).
+ 
