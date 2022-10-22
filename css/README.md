@@ -173,14 +173,14 @@ Ce modèle conditionne chaque élément grâce à la propriété d'affichage `di
 La taille totale des boîtes de type bloc est définie non seulement par la hauteur et la largeur, lesquelles propriétés constituent la [taille intrinsèque](https://developer.mozilla.org/fr/docs/Glossary/Intrinsic_Size) de l'élément (càd sa taille interne), mais également, de manière additionnelle, par les bordures et les marges (internes et externes), lesquelles propriétés constituent la [taille extrinsèque](https://developer.mozilla.org/fr/docs/Glossary/Intrinsic_Size).
 
 
-### Valeurs de taille
+#### Valeurs de taille
 
 Voir le commentaire sur les valeurs de taille pécédent.
 
 A noter également, dans le cas des dimensions d'affichage, la possibilité de définir des tailles maximales, c'est-à-dire qui ne peuvent pas être dépassées.
 
 
-### Dimensions des images
+#### Dimensions des images
 
 Il est à noter que les balises HTML `img` disposent également d'attributs de hauteur (`height`) et de largeur (`width`). Ces attributs représentent normalement les dimensions réelles de l'image en pixels (l'unité "px" ne devant normalement pas être mentionnée). Ces dimensions réelles seront normalement écrasées par les dimensions d'affichage, telles que définies par le CSS.
 
