@@ -3,7 +3,7 @@
 Est présenté ici le code développé durant mes TP du cours de LPOW de l'EPHEC.
 
 Les TP sont organisés en 3 dossiers contenant les exercices et leurs corrections, selon les langages abordés durant les cours de théorie:
- 1. [ftp](./ftp) 
+ 1. [FTP](./ftp) 
  2. [HTML](./html)
  3. [CSS](./css)
  4. Javascript (à venir)

@@ -1,6 +1,6 @@
 # Exercices FTP
 
-Les différents exercices présentés dans cette partie vise à pouvoir utiliser de manière élémentaire un client [FTP](https://fr.wikipedia.org/wiki/File_Transfer_Protocol), et, pour l'exemple, seront basés sur le logiciel [FileZilla](https://fr.wikipedia.org/wiki/FileZilla).
+Les différents exercices présentés dans cette partie vise à utiliser de manière élémentaire un client [FTP](https://fr.wikipedia.org/wiki/File_Transfer_Protocol), et, pour l'exemple, seront basés sur le logiciel [FileZilla](https://fr.wikipedia.org/wiki/FileZilla).
 
 ## Exercice 1: connexion rapide
 
@@ -19,11 +19,13 @@ Les différents exercices présentés dans cette partie vise à pouvoir utiliser
 ## Exercice 3: téléverser
 
  1. Créer puis téléverser un fichier `index.*` à la racine du projet. 
- 2. Naviguer sur la homepage de l'adresse HTTP du serveur et s'assurer du satus HTTP "200 OK".
+ 2. Naviguer sur la homepage de l'adresse HTTP du serveur et s'assurer du satut HTTP "200 OK".
 
 ### Remarques
 
 Les extensions de fichier ne sont pas affichées par défaut par les gestionnaires de fichiers. Lire les [bonnes pratiques](../) à ce sujet.
+
+Le statut de la réponse HTTP peut être connu via le [web tools](https://en.wikipedia.org/wiki/Web_development_tools) du navigateur.
 
 ### Erreurs courantes
 
