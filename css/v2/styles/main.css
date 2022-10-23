@@ -1,6 +1,6 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    color: darkslategrey;
+    color: #2f4f4f;
 }
 
 .bigger {
@@ -12,8 +12,20 @@
     font-style: italic;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #a6a9a9;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    color: darkslateblue;
+    color: rgb(71, 61, 138);
 }
 
 h1 {
@@ -21,6 +33,15 @@ h1 {
     text-transform: uppercase;
 }
 
+article {
+    font-size: 15px;
+}
+
 article h2 {
     text-decoration: underline;
+    font-size: 20px;
+}
+
+article p {
+    text-align: justify;
 }

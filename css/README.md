@@ -57,19 +57,25 @@ Ne sont abordés ici que les principes théoriques suivants:
 
 #### Universel
  1. Appliquer une police de caractère à l'ensemble des textes.
- 2. Appliquer une couleur à l'ensemble des textes.
+ 2. Appliquer une couleur en hexadécimal à l'ensemble des textes.
 
 #### Id
  1. Appliquer une couleur particulière au texte d'un paragraphe particulier via son id.
 
 #### Class
- 1. Définir une classe "big", avec une taille de police plus grande et un poids plus gras, et appliquer cette classe à un `span` dans un paragraphe.
- 2. Définir une classe "italic", avec un style italique, et appliquer cette classe à un `span` dans un paragraphe.
+ 1. Définir une classe "italic", avec un style italique, et appliquer cette classe à un `span` dans un paragraphe.
+ 2. Définir une classe "bigger", avec une taille de police plus grande et un poids plus gras, et appliquer cette classe à un `span` dans un paragraphe.
 
 #### Tag
- 1. Appliquer une couleur uniquement aux titres (autre que celle par défaut).
- 2. Souligner les titres qui se trouvent uniquement dans des balises `article`.
- 3. Centrer le titre principal et mettez-le en lettres capitales.
+ 1. Centrer le titre principal et mettez-le en lettres capitales.
+ 2. Appliquer une couleur en RGB uniquement aux titres (autre que celle par défaut).
+ 3. Définir une taille en pixels pour les textes des des balises `article`.
+ 3. Souligner les titres qui se trouvent uniquement dans des balises `article`, ainsi qu'une taille en pixels, autre que la taille définie pour la balise `article`.
+ 4. Justifier les paragraphes présents uniquement dans des balises `article`.
+
+### Pseudo-class
+ 1. Appliquer un soulignage des liens uniquement au survol de la souris.
+ 2. Appliquer une couleur plus claire aux liens déjà visités.
 
 [Corrections](./v2)
 
@@ -81,16 +87,27 @@ Les [couleurs](https://developer.mozilla.org/fr/docs/Web/CSS/color_value) (d'une
    - Par mot-clé (noms anglais).
    - Par valeur hexadécimale (pécédée du symbole `#`).
    - Par valeur RGB ou RGBa (red, green, blue, alpha).
+   - A noter que d'autres types de valeur sont encore possible.
 
 #### Valeurs de taille
 
 Les tailles (d'une manière générale) peuvent être exprimées de plusieurs façons:
-   - Valeur numérique absolue pour écran (px, ...)
-   - Valeur numérique absolue pour papier (pt, ...)
-   - Valeur numérique relative à l'élément parent (%, em (taille de police), rem, ...)
-   - Valeur numérique relative au viewport
-   - Par mot-clé absolu (small, medium, large, ...)
-   - Par mot-clé relatif à l'élément parent (smaller, larger, ...)
+   - Valeur numérique absolue pour écran (px, ...).
+   - Valeur numérique absolue pour papier (pt, ...).
+   - Valeur numérique relative à l'élément parent (%, em (taille de police), rem, ...).
+   - Valeur numérique relative au viewport.
+   - Par mot-clé absolu (small, medium, large, ...).
+   - Par mot-clé relatif à l'élément parent (smaller, larger, ...).
+
+### Valeurs de réinitialisation
+
+A noter qu'il existe plusieurs valeurs de réinitialisation (d'une manière générale):
+   - `initial`: permet d'appliquer la valeur initiale ([MDN docs - initial](https://developer.mozilla.org/fr/docs/Web/CSS/initial)).
+   - `inherit`: permet d'appliquer la valeur héritée du parent ([MDN docs - inherit](https://developer.mozilla.org/fr/docs/Web/CSS/inherit)).
+   - `unset`: permet d'appliquer la valeur héritée du parent ou, si aucune valeur n'ets hérité, d'appliquer la valeur initiale ([MDN docs - unset](https://developer.mozilla.org/fr/docs/Web/CSS/unset)).
+   - (`revert`: variante de `unset` ([MDN docs - revert](https://developer.mozilla.org/fr/docs/Web/CSS/revert)).)
+
+Ces valeurs peuvent être utilisées avec n'importe quelle propriété, y compris la propriété raccourcie `all` ([MDN docs- all](https://developer.mozilla.org/fr/docs/Web/CSS/all)). 
 
 
 ## Exercice 4: polices importées
@@ -163,11 +180,11 @@ Les tailles (d'une manière générale) peuvent être exprimées de plusieurs fa
 #### Box model et dimensions d'affichage
 
 Les propriétés suivantes fonctionnent selon le [modèle de boîte](https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/The_box_model) CSS:
- - Hauteur + largeur
- - Marges internes + externes
- - Bordures
+ - Hauteur (`height`) + largeur (`width`)
+ - Marges internes (`padding`) + externes (`margin`)
+ - Bordures (`border`)
 
-Ce modèle conditionne chaque élément grâce à la propriété d'affichage `display`, laquelle spécifie le type de comportement de boîte. Seuls les éléments de type bloc (valeurs communes: `block`, `table`, `inline-block`) sont impactés par la modification de dimension d'affichage.
+Ce modèle conditionne chaque élément grâce à la propriété d'affichage `display`, laquelle spécifie le type de comportement de boîte. Seuls les éléments de type bloc (valeurs communes: `block`, `table`, `inline-block`) sont impactés par la modification de dimensions d'affichage.
 
 La taille totale des boîtes de type bloc est définie non seulement par la hauteur et la largeur, lesquelles propriétés constituent la [taille intrinsèque](https://developer.mozilla.org/fr/docs/Glossary/Intrinsic_Size) de l'élément (càd sa taille interne), mais également, de manière additionnelle, par les bordures et les marges (internes et externes), lesquelles propriétés constituent la [taille extrinsèque](https://developer.mozilla.org/fr/docs/Glossary/Intrinsic_Size).
 
@@ -202,13 +219,13 @@ Définir systématiquement les dimensions des images est une bonne pratique.
 #### Block box
 
 ##### Block
- 1. Afficher des bordures arrondies à un élément `nav`.
+ 1. Séparer chaque article par une bordure.
+ 2. Afficher des bordures arrondies à un élément `nav`.
 
 ##### Table
  1. Afficher des bordures à un tableau.
  2. Afficher des bordures en pointillé aux cellules d'un tableau.
  3. Enlever l'espace entre les bordures des cellules d'un tableau.
-
 
 #### Inline box
 
@@ -216,18 +233,20 @@ Définir systématiquement les dimensions des images est une bonne pratique.
 
 ### Remarques théoriques
 
-#### Gestion des déclarations multiples
-
 #### Plusieurs propriétés par déclaration
 
-TODO
+La propriété raccourcie `border` peut accueillir les valeurs de plusieurs autres propriétés. Dans l'ordre et aucune n'étant obligatoire:
+ 1. Largeur
+ 2. Style
+ 3. Couleur
 
-#### Plusieurs positions par déclaration
+#### Box model et dimensions d'affichage
 
-TODO
+Pour rappel, les bordures influent sur les dimensions d'affichage, selon le modèle de boîte CSS.
 
+#### Contours
 
-
+A noter qu'en plus des bordures, il existe des [contours](https://developer.mozilla.org/fr/docs/Web/CSS/outline) (non vu au cours), lesquels, à la différence des bordures, n'influent pas sur les dimensions de l'élement.
 
 
 ## Exercice 10: marges
@@ -237,16 +256,39 @@ TODO
     - Marges extérieures
  2. Utiliser les mêmes propriétés de marge sur un élément de type en ligne par défaut ("inline box") possédant une bordure.
 
-
 ### Exemples
 
 #### Block box
  
  1. Centrer un `body` possédant une largeur maximum inférieure à la largeur de l'écran.
-
-TODO
+ 2. Ajouter une marge extérieure uniquement entre chaque article.
+ 3. Ajouter une marge intérieure dans chaque article.
 
 #### Inline box
 
-TODO
+ 1. Ajouter une marge intérieure sur les liens du menu de navigation.
+ 2. Ajouter une marge extérieure sur les images des articles.
+
+### Remarques théoriques
+
+#### Plusieurs positions par déclaration
+
+Les propriétés raccourcies `margin` et `padding` peuvent accueillir plusieurs valeurs en fonction des positions.
+   1. Si 1 seule valeur est présente, elle s'applique communément aux positions `top`, `right`, `bottom`, `left`.
+   2. Si 2 valeurs sont présentes:
+      1. La première s'applique aux positions `top` et `bottom`.
+      2. La seconde s'applique aux positions `right` et `left`.
+   3. Si 3 valeurs sont présentes:
+      1. La première s'applique à la position `top`.
+      2. La deuxième s'applique aux positions `right` et `left`.
+      3. La troisième s'applique à la position `bottom`.
+   4. Si 4 valeurs sont présentes:
+      1. La première s'applique à la position `top`.
+      2. La deuxième s'applique aux positions `right`.
+      3. La troisième s'applique à la position `bottom`.
+      4. La quatrième s'applique à la position `left`.
+
+#### Box model et dimensions d'affichage
+
+Pour rappel, les marges influent sur les dimensions d'affichage, selon le modèle de boîte CSS.
 
