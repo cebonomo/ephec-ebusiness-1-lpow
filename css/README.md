@@ -114,6 +114,8 @@ Ces valeurs peuvent être utilisées avec n'importe quelle propriété, y compri
 
  1. Utiliser une police qu'un navigateur ne supporte pas par défaut.
 
+[Corrections](./v3)
+
 ### Remarques théoriques
 
 #### Inclusion de la police
