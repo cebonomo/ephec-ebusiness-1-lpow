@@ -177,6 +177,8 @@ A noter que l'URL de l'image ou encore le dégradé de couleur sont gérés via 
  2. Changer la forme des puces d'une liste (ou utiliser une image pour définir les puces).
  3. Afficher une numérotation romaine à une liste ordonnée.
 
+[Corrections](./v6)
+
 
 ## Exercice 8: dimensions d'affichage
 
