@@ -73,7 +73,7 @@ Ne sont abordés ici que les principes théoriques suivants:
  3. Souligner les titres qui se trouvent uniquement dans des balises `article`, ainsi qu'une taille en pixels, autre que la taille définie pour la balise `article`.
  4. Justifier les paragraphes présents uniquement dans des balises `article`.
 
-### Pseudo-class
+#### Pseudo-class
  1. Appliquer un soulignage des liens uniquement au survol de la souris.
  2. Appliquer une couleur plus claire aux liens déjà visités.
 
