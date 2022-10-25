@@ -31,7 +31,7 @@ Dans `/tableaux/index.php`, chemins relatifs:
    <!-- URL relative, chemin relatif -->
    <a href="../listes.html">Listes 2</a>
    
-   <a href="#">Tableaux<a>
+   <a href="#">Tableaux</a>
 		
 </nav>
 ```
