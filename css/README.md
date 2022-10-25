@@ -140,6 +140,18 @@ A noter qu'il existe plusieurs [@ rules](https://developer.mozilla.org/en-US/doc
  2. Appliquer une image de fond à une page entière.
  3. Appliquer un dégradé de couleur en arrière plan d'un élément header.
 
+[Corrections](./v3)
+
+### Remarques théoriques
+
+#### Plusieurs propriétés par déclaration
+
+A noter que la propriété raccourcie `background` permet de définir la valeur de plusieurs propriétés d'arrière-plan ([MDN docs - background](https://developer.mozilla.org/fr/docs/Web/CSS/background)).
+
+### Les fonctions CSS
+
+A noter que l'URL de l'image ou encore le dégradé de couleur sont gérés via des fonctions CSS ([MDN docs - fonctions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions)).
+
 
 ## Exercice 6: visibilité, opacité et transitions
 
