@@ -102,12 +102,13 @@ Les tailles (d'une manière générale) peuvent être exprimées de plusieurs fa
 ### Valeurs de réinitialisation
 
 A noter qu'il existe plusieurs valeurs de réinitialisation (d'une manière générale):
+   - `none`: permet de ne pas appliquer de style.
    - `initial`: permet d'appliquer la valeur initiale ([MDN docs - initial](https://developer.mozilla.org/fr/docs/Web/CSS/initial)).
    - `inherit`: permet d'appliquer la valeur héritée du parent ([MDN docs - inherit](https://developer.mozilla.org/fr/docs/Web/CSS/inherit)).
    - `unset`: permet d'appliquer la valeur héritée du parent ou, si aucune valeur n'ets hérité, d'appliquer la valeur initiale ([MDN docs - unset](https://developer.mozilla.org/fr/docs/Web/CSS/unset)).
    - (`revert`: variante de `unset` ([MDN docs - revert](https://developer.mozilla.org/fr/docs/Web/CSS/revert)).)
 
-Ces valeurs peuvent être utilisées avec n'importe quelle propriété, y compris la propriété raccourcie `all` ([MDN docs- all](https://developer.mozilla.org/fr/docs/Web/CSS/all)). 
+A noter que ces valeurs, à l'exception de `none` (qui est spécifique à quelques propriétés), peuvent être utilisées avec n'importe quelle propriété, y compris la propriété raccourcie `all` ([MDN docs- all](https://developer.mozilla.org/fr/docs/Web/CSS/all)). 
 
 
 ## Exercice 4: polices importées
@@ -120,7 +121,7 @@ Ces valeurs peuvent être utilisées avec n'importe quelle propriété, y compri
 
 #### Inclusion de la police
 
-A note que, au final, une police doit toujours être inclue par CSS via `@font-face` ([MDN docs - @font-face](https://developer.mozilla.org/fr/docs/Web/CSS/@font-face)). Il est toutefois possible, plutôt que d'inclure directement la police en CSS via cette méthode, soit d'inclure un fichier CSS dans le HTML (via `link`), soit d'inclure des règles CSS dans le fichier CSS via `@import` ([MDN docs - @import](https://developer.mozilla.org/fr/docs/Web/CSS/@import)), lesquels utiliseront `@font-face`.
+A noter que, au final, une police doit toujours être inclue par CSS via `@font-face` ([MDN docs - @font-face](https://developer.mozilla.org/fr/docs/Web/CSS/@font-face)). Il est toutefois possible, plutôt que d'inclure directement la police en CSS via cette méthode, soit d'inclure un fichier CSS dans le HTML (via `link`), soit d'inclure des règles CSS dans le fichier CSS via `@import` ([MDN docs - @import](https://developer.mozilla.org/fr/docs/Web/CSS/@import)), lesquels utiliseront `@font-face`.
 
 #### @ rules
 
