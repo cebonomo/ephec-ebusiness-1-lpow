@@ -140,7 +140,7 @@ A noter qu'il existe plusieurs [@ rules](https://developer.mozilla.org/en-US/doc
  2. Appliquer une image de fond à une page entière.
  3. Appliquer un dégradé de couleur en arrière plan d'un élément header.
 
-[Corrections](./v3)
+[Corrections](./v4)
 
 ### Remarques théoriques
 
