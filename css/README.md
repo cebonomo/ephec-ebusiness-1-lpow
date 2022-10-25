@@ -203,6 +203,10 @@ A noter que l'URL de l'image ou encore le dégradé de couleur sont gérés via 
 #### Inline box
 
  1. Harmoniser la dimension d'images présentes sur une même page.
+ 2. Afficher une largeur fixe au lien du menu de navigation.
+
+[Corrections](./v7)
+ 
 
 ### Remarques théoriques
 
