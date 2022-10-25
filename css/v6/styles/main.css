@@ -30,10 +30,6 @@ header {
     background: linear-gradient(#e64465, #9198e5);
 }
 
-img {
-    transition: opacity 2s;
-}
-
 a {
     text-decoration: none;
     transition: background-color 4s;
