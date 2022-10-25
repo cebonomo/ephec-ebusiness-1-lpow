@@ -215,13 +215,11 @@ Ce modèle conditionne chaque élément grâce à la propriété d'affichage `di
 
 La taille totale des boîtes de type bloc est définie non seulement par la hauteur et la largeur, lesquelles propriétés constituent la [taille intrinsèque](https://developer.mozilla.org/fr/docs/Glossary/Intrinsic_Size) de l'élément (càd sa taille interne), mais également, de manière additionnelle, par les bordures et les marges (internes et externes), lesquelles propriétés constituent la [taille extrinsèque](https://developer.mozilla.org/fr/docs/Glossary/Intrinsic_Size).
 
-
 #### Valeurs de taille
 
 Voir le commentaire sur les valeurs de taille pécédent.
 
 A noter également, dans le cas des dimensions d'affichage, la possibilité de définir des tailles minimales et maximales, c'est-à-dire ne pouvant pas être dépassées, à la place de tailles fixes.
-
 
 #### Dimensions des images
 
@@ -319,3 +317,29 @@ Les propriétés raccourcies `margin` et `padding` peuvent accueillir plusieurs 
 
 Pour rappel, les marges influent sur les dimensions d'affichage, selon le modèle de boîte CSS.
 
+
+## Exercice 11: position
+
+TODO
+
+### Remarques théorique
+
+#### Flux normal
+
+TODO https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Normal_Flow
+
+#### Positionnement
+
+TODO https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Positioning
+
+
+#### Autres dispositions
+
+Ceci n'est pas vu au cours.
+
+Pour information, pour ceux qui veulent aller plus loin, il existe d'autres techniques de disposition (ou layout) ([MDN docs - layout](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Introduction)):
+
+ - [MDN docs - flexbox](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
+ - [MDN docs - grilles (ou trame)](https://developer.mozilla.org/fr/docs/Web/CSS/grid)
+ - [MDN docs - flottement](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flow_Layout)
+ - [MDN docs - colonnes](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Multiple-column_Layout)
