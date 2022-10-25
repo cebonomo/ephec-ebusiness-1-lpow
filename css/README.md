@@ -149,7 +149,7 @@ A noter qu'il existe plusieurs [@ rules](https://developer.mozilla.org/en-US/doc
 
 A noter que la propriété raccourcie `background` permet de définir la valeur de plusieurs propriétés d'arrière-plan ([MDN docs - background](https://developer.mozilla.org/fr/docs/Web/CSS/background)).
 
-### Les fonctions CSS
+#### Les fonctions CSS
 
 A noter que l'URL de l'image ou encore le dégradé de couleur sont gérés via des fonctions CSS ([MDN docs - fonctions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions)).
 
