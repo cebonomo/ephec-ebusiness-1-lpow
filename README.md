@@ -9,10 +9,28 @@ Est présenté ici le code développé durant mes TP du cours de LPOW de l'EPHEC
 
 **Attention:** les exercices présentés ici visent à mettre en pratique un maximum de matière théorique. Ils représentent des exemples d'utilisation, mais ne couvrent pas forcément l'entièreté de la matière abordée, ni évidemment l'entièreté des cas possibles.
 
+## Objectifs généraux
+
+### Vous inciter à coder
+
+**C'est en codant qu'on devient codeur.** La seule possibilité de comprendre le cours, c'est de pratiquer régulièrement. De base, ne pas savoir est normal: il suffit alors d'apprendre.
+
+Sans la théorie, il est illusoire de réussir les exercices. La théorie est donc un prérequis indispensable à la pratique. Néanmoins, sans les exercices, la théorie demeure abstraite, et il n'est pas envisageable de savoir coder de manière autonome.
+
+Codez, testez, trompez-vous, et seulement vous progresserez.
+
+### Guider votre apprentissage
+
+Il est important de comprendre progressivement la matière. Chaque exercice est une brique supplémentaire de connaissance sur laquelle reposeront les exercices suivants. Progresser nécessite de comprendre dans l'ordre. Chaque étape est la base essentielle qui soutient l'étape suivante.
+
+### Vous rendre autonome
+
+Les exercices de codage sont accompagnés de corrections, de sorte que vous puissiez progresser de la manière la plus autonome possible. Un bon codeur ne connaît pas toujours tout: il sait par contre trouver l'information, la comprendre et l'appliquer par lui-même.
+
+Néanmoins, en cas de difficulté, il ne faut pas rester bloqué. Au cours de TP, posez vos questions. Demandez des explications sur ce que vous ne parvenez pas à comprendre. Si personne ne peut coder à votre place, demander de l'aide est normal lorsque l'on débute.
+
 
 ## Bonnes pratiques
-
-> C'est en codant qu'on devient codeur.
 
 ### Création du dossier de projet
 
