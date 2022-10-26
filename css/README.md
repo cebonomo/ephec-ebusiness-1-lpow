@@ -139,7 +139,7 @@ A noter qu'il existe plusieurs [@ rules](https://developer.mozilla.org/en-US/doc
 
  1. Appliquer une couleur de fond aux pages entières.
  2. Appliquer une image de fond à une page entière.
- 3. Appliquer un dégradé de couleur en arrière plan d'un élément header.
+ 3. Appliquer un dégradé de couleur en arrière-plan d'un élément `header`.
 
 [Corrections](./v4)
 
@@ -192,17 +192,17 @@ A noter que l'URL de l'image ou encore le dégradé de couleur sont gérés via 
 
 #### Block box
 
-##### Block
+##### display: block
  1. Afficher un paragraphe avec une hauteur et une largeur fixe.
  2. Optionnel (car propriété pas expliquée en théorie): remplissez l'élément avec plus de texte que ce dont ne dispose l'espace du paragraphe, et tester les différents types de dépassement.
  3. Afficher un `body` possédant une largeur maximum (ex: 1024px) inférieure à la largeur de l'écran (ex: 1920px), et jouer avec la taille de la fenêtre pour imaginer l'affichage sous différentes tailles d'écran.
 
-##### Table
+##### display: table
  1. Afficher un tableau à 50% de largeur de la page.
 
 #### Inline box
 
- 1. Harmoniser la dimension d'images présentes sur une même page.
+ 1. Harmoniser la dimension des images des articles.
  2. Afficher une largeur fixe au lien du menu de navigation.
 
 [Corrections](./v7)
@@ -229,7 +229,9 @@ A noter également, dans le cas des dimensions d'affichage, la possibilité de d
 
 #### Dimensions des images
 
-Il est à noter que la balise HTML `img` dispose également d'attributs de hauteur (`height`) et de largeur (`width`). Ces attributs représentent normalement les dimensions intrinsèques de l'image en pixels (l'unité ne devant normalement pas être mentionnée). Ces dimensions intrinsèques sont normalement écrasées par les dimensions d'affichage, telles que définies par le CSS.
+A noter que la balise HTML `img`, bien qu'étant "inline" par défaut (`display: inline`), possède un comportement intermédiaire avec les "block" (`display: inline-block`). Ceci est dû aux particularités des [éléments remplacés](https://developer.mozilla.org/fr/docs/Web/CSS/Replaced_element), qui accordent aux images un comportement spécifique ([MDN docs - img et CSS](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Img#mettre_en_forme_avec_css)).
+
+A noter que la balise HTML `img` dispose également d'attributs de hauteur (`height`) et de largeur (`width`). Ces attributs HTML représentent normalement les dimensions intrinsèques de l'image en pixels (l'unité ne devant normalement pas être mentionnée). Ces dimensions intrinsèques sont normalement écrasées par les dimensions d'affichage, telles que définies par le CSS.
 
 Définir systématiquement les dimensions des images est une bonne pratique.
 

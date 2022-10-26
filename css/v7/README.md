@@ -1,5 +1,7 @@
 # Changements
 
+## Block
+
  1. Ajout, dans `styles/main.css`, des proptiétés de dimension:
     - `height` ([MDN docs - hauteur](https://developer.mozilla.org/fr/docs/Web/CSS/height))))
     - `width` ([MDN docs - largeur](https://developer.mozilla.org/fr/docs/Web/CSS/width))))
@@ -31,3 +33,32 @@ body {
     overflow-y: scroll;
 }
 ``` 
+
+## Table
+
+ 1. Ajout, dans `tableaux/index.html`, des propriétés de dimension de table.
+   
+```css
+table {
+      width: 50%;
+   }
+```
+
+## Inline
+
+ 1. Ajout, dans `styles/main.css`, des propriétés de dimension d'images.
+
+```css
+article img {
+    width: 25%;
+}
+```
+
+ 2. Ajout, dans `styles/main.css`, des propriétés de dimension de liens.
+
+```css
+nav a {
+    display: inline-block;
+    width: 10%;
+}
+```
