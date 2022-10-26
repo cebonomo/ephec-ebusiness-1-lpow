@@ -32,7 +32,7 @@
 Color:
 ```css
 * {
-    color: #2f4f4f;
+    color: darkslategrey;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,6 +43,8 @@ a:visited {
     color: #a6a9a9;
 }
 ```
+Note: pour l'exemple, les valeurs des couleurs sont écrites selon des systèmes différents (mot-clé, rgb, hexadécimal). En vrai, mieux vaut choisir un seul système et s'y tenir.
+
 
 Text-align:
 ```css
