@@ -87,7 +87,7 @@ Les [couleurs](https://developer.mozilla.org/fr/docs/Web/CSS/color_value) (d'une
    - Par mot-clé (noms anglais).
    - Par valeur hexadécimale (pécédée du symbole `#`).
    - Par valeur RGB ou RGBa (red, green, blue, alpha).
-   - A noter que d'autres types de valeur sont encore possible.
+   - A noter que d'autres types de valeur sont encore possibles.
 
 #### Valeurs de taille
 
