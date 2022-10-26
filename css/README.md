@@ -262,7 +262,8 @@ Définir systématiquement les dimensions des images est une bonne pratique.
 
 #### Inline box
 
- 1. Afficher une bordure verticale séparant chaque élément `a` dans un élément `nav` 
+ 1. Afficher une bordure verticale séparant chaque élément `a` dans un élément `nav`.
+ 2. Afficher une image dans un cadre circulaire.
 
 ### Remarques théoriques
 
@@ -300,7 +301,6 @@ A noter qu'en plus des bordures, il existe des [contours](https://developer.mozi
 #### Inline box
 
  1. Ajouter une marge intérieure sur les liens du menu de navigation.
- 2. Ajouter une marge extérieure sur les images des articles.
 
 ### Remarques théoriques
 
