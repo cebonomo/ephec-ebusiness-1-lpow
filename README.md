@@ -46,6 +46,7 @@ Dès lors qu'est utilisé un gestionnaire de fichier dans le cadre des TP, il es
 ### Nommage des fichiers
 
 Le nommage des fichiers posant souvent problème, il est recommandé de suivre les règles de bonne pratique suivantes:
+ - Choisir des noms explicites.
  - Tout en minuscule.
  - Remplacer les espaces ` ` par des tirets `-`.
  - Utiliser uniquement des caractères alphanumériques sans accent.
@@ -59,7 +60,11 @@ Attention toutefois que, même dans le cas d'utilisation d'extentions `.html`, i
 
 ### Organisation du code
 
+Etre organisé dans son dossier de projet est impératif. Il faut accorder beaucoup de soin à organiser son code. 
+
 Le code pouvant contenir un grand nombre de fichiers, il est recommandé de ranger les ressources (images, styles, scripts, fonts, ...) dans des dossiers spécifiques.
+
+On ne travaille qu'en local, jamais directement sur le serveur. Les fichiers du serveur ne sont que le reflet parfait des fichiers locaaux.
 
 ### Validité du code HTML
 
