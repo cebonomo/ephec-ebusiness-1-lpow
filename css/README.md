@@ -212,7 +212,7 @@ A noter que l'URL de l'image ou encore le dégradé de couleur sont gérés via 
 
 #### Box model et dimensions d'affichage
 
-Les propriétés suivantes fonctionnent selon le [modèle de boîte](https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/The_box_model) CSS:
+Les propriétés suivantes fonctionnent selon le [modèle de boîte](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Box_Model) CSS:
  - Hauteur (`height`) + largeur (`width`)
  - Marges internes (`padding`) + externes (`margin`)
  - Bordures (`border`)
@@ -220,6 +220,8 @@ Les propriétés suivantes fonctionnent selon le [modèle de boîte](https://dev
 Ce modèle conditionne chaque élément grâce à la propriété d'affichage `display`, laquelle spécifie le type de comportement de boîte. Seuls les éléments de type bloc (valeurs communes: `block`, `table`, `inline-block`) sont impactés par la modification de dimensions d'affichage.
 
 La taille totale des boîtes de type bloc est définie non seulement par la hauteur et la largeur, lesquelles propriétés constituent la [taille intrinsèque](https://developer.mozilla.org/fr/docs/Glossary/Intrinsic_Size) de l'élément, mais également, de manière additionnelle, par les bordures et les marges (internes et externes), lesquelles propriétés constituent la [taille extrinsèque](https://developer.mozilla.org/fr/docs/Glossary/Intrinsic_Size).
+
+A noter que le modèle de boîte influe également sur la place prise par l'élément dans le [flux normal d'affichage](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Normal_Flow).
 
 #### Valeurs de taille
 
@@ -324,6 +326,10 @@ Les propriétés raccourcies `margin` et `padding` peuvent accueillir plusieurs 
 #### Box model et dimensions d'affichage
 
 Pour rappel, les marges influent sur les dimensions d'affichage, selon le modèle de boîte CSS.
+
+#### Fusion des marges
+
+A noter que, dans le cadre du flux normal d'affichage, si deux éléments adjacents possèdent tous deux une marge externe (`margin`) se touchant l'une et l'autre, seule la marge la plus importante des deux sera prise en considération. Deux marges ne s'aditionnent donc pas.
 
 
 ## Exercice 11: position
