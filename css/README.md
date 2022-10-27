@@ -20,7 +20,7 @@ Ces exercices complètent les exercices [HTML](../html) en rajoutant au code une
 
 ## Exercice 2: sélecteurs
 
- 1. Jouer sur https://flukeout.github.io/ (indiquer le bon sélecteur CSS).
+ 1. Jouer sur https://flukeout.github.io/ (indiquer le bon sélecteur CSS, sur au moins les 10 premiers exercices).
 
 
 ### Remarques théoriques
