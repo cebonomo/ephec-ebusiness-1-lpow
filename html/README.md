@@ -18,7 +18,7 @@ Les différents exercices présentés dans cette partie se complètent les uns l
 
 #### Charset UTF-8
 
-Le charset est l'encodage du jeux de caractères typographiques utilisés pour dans l'écriture des langues (caractères visibles et invisibles). (Pour plus d'information, voir [W3.org - characters](https://www.w3.org/International/getting-started/characters).)
+Le charset est l'encodage du jeux de caractères typographiques utilisés dans l'écriture des langues (caractères visibles et invisibles). (Pour plus d'information, voir [W3.org - characters](https://www.w3.org/International/getting-started/characters).)
 
 L'[UTF-8](https://fr.wikipedia.org/wiki/UTF-8) est un encodage Unicode permettant de supporter les caractères typographiques des principales langues. C'est aujourd'hui le format le plus adapté au web, et devrait être systématiquement utilisé.
 
@@ -85,9 +85,9 @@ De même, il existe plusieurs façons de définir, au sein d'une URL, le chemin:
    2. Chemin relatif (au répertoire courant) (possible uniquement dans une URL relative n'incluant que le chemin)
 
 Dans le cadre de la définition d'un chemin, il faut noter les règles de navigation suivantes:
- - `/` indique, utilisé en tête de chemin, le répertoire racine.
- - `./` indique le répertoire courant.
- - `../` indique le répertoire parent. 
+ - `/` (séparateur de répertoire) indique, utilisé en tête de chemin, le répertoire racine. 
+ - `./` (point simple) indique le répertoire courant.
+ - `../` (deux points se suivant) indique le répertoire parent. 
 
 ### Procédure de débuggage
 
@@ -151,6 +151,7 @@ Pour afficher les bordures du tableau, ainsi qu'une taille de tableau minimale, 
 ```   
 
 [Corrections](./v5)
+
 
 ## Exercice 6: liens
 
