@@ -300,8 +300,8 @@ A noter qu'en plus des bordures, il existe des [contours](https://developer.mozi
 ## Exercice 10: marges
 
  1. Utiliser les propriétés de marge sur un élément de type bloc ("block box") possédant une bordure:
-    - Marges intérieures
-    - Marges extérieures
+    - Marges internes
+    - Marges externes
  2. Utiliser les mêmes propriétés de marge sur un élément de type en ligne par défaut ("inline box") possédant une bordure.
 
 ### Exemples
@@ -309,12 +309,12 @@ A noter qu'en plus des bordures, il existe des [contours](https://developer.mozi
 #### Block box
  
  1. Centrer un `body` possédant une largeur maximum inférieure à la largeur de l'écran.
- 2. Ajouter une marge extérieure uniquement entre chaque article.
- 3. Ajouter une marge intérieure dans chaque article.
+ 2. Ajouter une marge externe uniquement entre chaque article.
+ 3. Ajouter une marge interne dans chaque article.
 
 #### Inline box
 
- 1. Ajouter une marge intérieure sur les liens du menu de navigation.
+ 1. Ajouter une marge interne sur les liens du menu de navigation.
 
 ### Remarques théoriques
 
