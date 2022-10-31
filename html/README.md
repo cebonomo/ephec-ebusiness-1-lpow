@@ -100,6 +100,12 @@ Si l'image ne s'affiche pas correctement, appliquer la procédure de débuggage 
 
  ![Erreur 404 sur une image](../resources/images/image-404.png)
 
+ ### Autres balises média
+
+ A noter qu'il existe d'autres balises média (hors cours):
+   - `video`
+   - `audio`
+
 
 ## Exercice 4: listes
 
@@ -157,9 +163,22 @@ Pour afficher les bordures du tableau, ainsi qu'une taille de tableau minimale, 
 
 ### Remarques théoriques
 
+### Ancre
+
+On appelle "ancre" la partie visible du lien sur laquelle l'utilisateur est amené à cliquer.
+
 ### URL
 
 Voir la remarque sur les URL précédente.
 
 A noter également que, dans le cadre d'une requête HTTP d'un document HTML, si aucun fichier n'est spécifié dans le chemin, le serveur web (tel qu'habituellement configuré) retournera dans la réponse HTTP le contenu d'un fichier `index.*` présent dans le répertoire du chemin (et donc dans le répertoire racine si le chemin n'est pas mentionné du tout dans l'URL).
+
+### Types de lien
+
+A noter qu'il existe plusieurs possibilités de liens (hors cours):
+ - Lien à l'interieur d'une page.
+ - Lien vers une adresse email.
+ - Lien de téléchargement de fichier.
+ - Lien ouvrant un nouvel onglet.
+
  
