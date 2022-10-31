@@ -12,16 +12,22 @@ Ces exercices complètent les exercices [HTML](../html) en rajoutant au code une
 
 ### Remarques théoriques
 
+#### Incorporations CSS
+
 **Attention:** ne sont pas abordés ici les autres types possibles d'inclusion de style:
  - "inline"
  - "embedded"
 
 (Sur ce sujet, voir [MDN docs - Appliquer CSS à votre document HTML](https://developer.mozilla.org/fr/docs/Learn/CSS/First_steps/How_CSS_is_structured#appliquer_css_%C3%A0_votre_document_html)) 
 
+#### Charset UTF-8
+
+A noter qu'il n'est pas nécessaire, _a priori_, de déclarer le charset UTF-8 (`@charset`) dans un fichier CSS (notamment car aucun caractère non-ASCII n'est idéalement utilisé). (Pour plus d'information sur l'utilisation du charset en CSS, voir [W3-org - gestion de l'encodage](https://www.w3.org/International/tutorials/tutorial-char-enc/).)
+
+
 ## Exercice 2: sélecteurs
 
  1. Jouer sur https://flukeout.github.io/ (indiquer le bon sélecteur CSS, sur au moins les 10 premiers exercices).
-
 
 ### Remarques théoriques
 
@@ -271,7 +277,7 @@ Définir systématiquement les dimensions des images est une bonne pratique.
 
 #### Plusieurs propriétés par déclaration
 
-La propriété raccourcie `border` peut accueillir les valeurs de plusieurs autres propriétés. Dans l'ordre et aucune n'étant obligatoire:
+A noter que la propriété raccourcie `border` peut accueillir les valeurs de plusieurs autres propriétés. Dans l'ordre et aucune n'étant obligatoire:
  1. Largeur
  2. Style
  3. Couleur
@@ -308,7 +314,7 @@ A noter qu'en plus des bordures, il existe des [contours](https://developer.mozi
 
 #### Plusieurs positions par déclaration
 
-Les propriétés raccourcies `margin` et `padding` peuvent accueillir plusieurs valeurs en fonction des positions.
+A noter que les propriétés raccourcies `margin` et `padding` peuvent accueillir plusieurs valeurs en fonction des positions.
    1. Si 1 seule valeur est présente, elle s'applique communément aux positions `top`, `right`, `bottom`, `left`.
    2. Si 2 valeurs sont présentes:
       1. La première s'applique aux positions `top` et `bottom`.

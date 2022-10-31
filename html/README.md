@@ -14,13 +14,39 @@ Les différents exercices présentés dans cette partie se complètent les uns l
 
 [Corrections](./v1)
 
+### Remarques théoriques
 
-## Exercice 2: textes
+#### Charset UTF-8
 
- 1. Dans ce fichier, utiliser des balises de structure et de texte, de sorte à:
+Le charset est l'encodage du jeux de caractères typographiques utilisés par les alphabets. (Pour plus d'information, voir [W3.org - characters](https://www.w3.org/International/getting-started/characters).)
+
+L'[UTF-8](https://fr.wikipedia.org/wiki/UTF-8) est un encodage Unicode permettant de supporter les caractères typographiques des principaux alphabets. C'est aujourd'hui le format le plus adapté au web, et devrait être systématiquement utilisé.
+
+A noter que l'UTF-8 est rétrocompatible avec l'ASCII, mais pas avec l'ISO-8859-1, deux anciennes normes.
+
+L'UTF-8 est le jeux de caratères par défaut de HTML5. _A priori_, sa déclaration dans un document HTML n'est donc pas nécessaire. Toutefois, MDN recommande de déclarer systématiquement le jeux de caractères utilisé, notamment pour des raisons de sécurité. (Pour plus d'information, voir [MDN docs - meta](https://developer.mozilla.org/fr/docs/Web/HTML/Element/meta).)
+
+A noter que l'utilisation d'UTF-8 est soumise aux contraintes techniques suivantes:
+ - Le fichier contenant le code HTML doit être encodé en UTF-8. Selon moi, le format du fichier doit être déclaré sans BOM (le BOM n'étant pas nécessaire dans le cas d'HTML et pouvant entraîner des perturbations dans l'envoi des headers HTTP par PHP).
+ - La `content-type` de la response HTTP doit déclarer le charset UTF-8, sous peine d'écraser le charset HTML et d'entraîner une incohérence, et ce d'autant plus que la [valeur par défaut](https://www.w3.org/International/articles/http-charset/index) pour HTTP 1.1 est l'ISO-8859-1.
+ - La déclaration du charset doit se faire en début de document HTML.
+
+A noter que la définition du charset via l'attribut `http-equiv="Content-Type"` de la balise `meta`  (pragma directive) est autorisée mais dépréciée depuis HTML5 et ne doit donc plus être utilisée. Seul l'attribut `charset` est conforme.
+
+Pour plus d'information sur l'utilisation du charset, voir [W3-org - gestion de l'encodage](https://www.w3.org/International/tutorials/tutorial-char-enc/).
+
+#### Entités HTML
+
+A noter qu'il est possible d'encoder des caractères spéciaux en HTML, appelés entités, notamment pour afficher des caractères qui, sinon, seraient interprétés comme du HTML (ex: "<", ">", ...), ou encore pour des caractères invisibles (ex: espaces insécables, ...). ([MDN docs - entités](https://developer.mozilla.org/fr/docs/Glossary/Entity)) 
+
+
+## Exercice 2: structures et textes
+
+ 1. Dans ce fichier, utiliser des balises de structure, de sorte à:
     - Afficher un en-tête de page/section
     - Afficher un pied de page/section
     - Afficher des articles
+ 2. Dans ce fichier, utiliser des balises de texte, de sorte à:
     - Afficher des titres de section
     - Afficher des paragraphes
     - Afficher des saut de ligne
@@ -94,11 +120,12 @@ Si l'image ne s'affiche pas correctement, appliquer la procédure de débuggage 
  3. Par ce fichier, afficher un tableau simple, avec au moins:
     - Plusieurs lignes
     - Plusieurs colonnes
- 4. Complexifier le tableau, avec au moins:
+ 4. Complexifier le tableau par l'ajout de balises de structure de tableau, avec au moins:
     - Une légende de tableau
     - Un en-tête de tableau
     - Un corps de tableau
     - Un pied de tableau
+ 5. Complexifier le tableau par la fusion de cellules, avec au moins: 
     - Une fusion de cellules par colonne
     - Une fusion de cellules par ligne
 
