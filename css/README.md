@@ -12,11 +12,11 @@ Ces exercices complètent les exercices [HTML](../html) en rajoutant au code une
 
 ### Remarques théoriques
 
-#### Incorporations CSS
+#### Incorporations CSS dans HTML
 
 **Attention:** ne sont pas abordés ici les autres types possibles d'inclusion de style:
- - "inline"
- - "embedded"
+ - "inline" ou intégré à un élément HTML (via l'attribut `style`).
+ - "embedded" ou interne à un document HTML (via la balise `style`).
 
 (Sur ce sujet, voir [MDN docs - Appliquer CSS à votre document HTML](https://developer.mozilla.org/fr/docs/Learn/CSS/First_steps/How_CSS_is_structured#appliquer_css_%C3%A0_votre_document_html)) 
 
@@ -35,15 +35,15 @@ Ne sont abordés ici que les principes théoriques suivants:
  - Les principaux types de sélecteurs: id, class, tag, ...
  - La combinaison de sélecteurs (ou combinateurs).
 
-(Sur ce sujet, voir [MDN docs - sélecteurs](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Selectors).)
+Sur ce sujet, voir [MDN docs - sélecteurs](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Selectors).
 
 **Attention:** ne sont pas abordés ici notamment les principes théoriques suivants:
  - L'association des règles: un élément HTML bénéficie des règles de style de l'ensemble des sélecteurs qui le désignent.
- - La cascade (ou surcharge) des déclarations: une déclaration de style écrase les mêmes déclarations qui la précédent, à poids de sélecteur égal ou supérieur.
- - La [spécificité](https://developer.mozilla.org/fr/docs/Web/CSS/Specificity) (ou priorité, ou poids) des sélecteurs: un sélecteur peut être prioritaire sur un autre, ce qui annule *de facto* le principe de cascade.
- - L'[héritage](https://developer.mozilla.org/fr/docs/Web/CSS/inheritance) des déclarations: un élément enfant peut hériter des déclarations d'un élément parent.
+ - La cascade (ou surcharge) des déclarations: une déclaration de style écrase les mêmes déclarations qui la précédent (à poids de sélecteur égal ou supérieur).
+ - La [spécificité](https://developer.mozilla.org/fr/docs/Web/CSS/Specificity) (ou priorité, ou poids) des sélecteurs: un sélecteur peut être prioritaire sur un autre, ce qui annule *de facto* le principe normal de cascade.
+ - L'[héritage](https://developer.mozilla.org/fr/docs/Web/CSS/inheritance) des déclarations: un élément enfant hérite de certaines déclarations d'un élément parent.
 
- (Sur ce sujet, voir [MDN docs - Cascade, spécificité et héritage](https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance))
+ Sur ce sujet, voir [MDN docs - Cascade, spécificité et héritage](https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance).
 
 
 ## Exercice 3: polices et textes
@@ -92,8 +92,8 @@ Ne sont abordés ici que les principes théoriques suivants:
 Les [couleurs](https://developer.mozilla.org/fr/docs/Web/CSS/color_value) (d'une manière générale) peuvent potentiellement être définies de plusieurs façons:
    - Par mot-clé (noms anglais).
    - Par valeur hexadécimale (pécédée du symbole `#`).
-   - Par valeur RGB ou RGBa (red, green, blue, alpha).
-   - A noter que d'autres types de valeur sont encore possibles.
+   - Par valeur absolue RGB (ou RGBa) (red, green, blue, alpha).
+   - A noter que d'autres types de valeur sont encore possibles (hors cours).
 
 #### Valeurs de taille
 
@@ -107,14 +107,20 @@ Les tailles (d'une manière générale) peuvent être exprimées de plusieurs fa
 
 ### Valeurs de réinitialisation
 
-A noter qu'il existe plusieurs valeurs de réinitialisation (d'une manière générale):
-   - `none`: permet de ne pas appliquer de style.
+A noter qu'il existe plusieurs valeurs de réinitialisation (d'une manière générale).
+
+#### Absence de style
+
+   - `none`: permet de ne pas appliquer de style. (Ne s'applique qu'aux propriétés acceptant cette valeur.)
+
+#### Gestion de l'héritage
+
    - `initial`: permet d'appliquer la valeur initiale ([MDN docs - initial](https://developer.mozilla.org/fr/docs/Web/CSS/initial)).
    - `inherit`: permet d'appliquer la valeur héritée du parent ([MDN docs - inherit](https://developer.mozilla.org/fr/docs/Web/CSS/inherit)).
    - `unset`: permet d'appliquer la valeur héritée du parent ou, si aucune valeur n'ets hérité, d'appliquer la valeur initiale ([MDN docs - unset](https://developer.mozilla.org/fr/docs/Web/CSS/unset)).
    - (`revert`: variante de `unset` ([MDN docs - revert](https://developer.mozilla.org/fr/docs/Web/CSS/revert)).)
 
-A noter que ces valeurs, à l'exception de `none` (qui est spécifique à quelques propriétés), peuvent être utilisées avec n'importe quelle propriété, y compris la propriété raccourcie `all` ([MDN docs- all](https://developer.mozilla.org/fr/docs/Web/CSS/all)). 
+A noter que les valeurs de gestion d'héritage peuvent être utilisées avec n'importe quelle propriété, y compris la propriété raccourcie `all` ([MDN docs- all](https://developer.mozilla.org/fr/docs/Web/CSS/all)). 
 
 
 ## Exercice 4: polices importées
