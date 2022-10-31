@@ -18,9 +18,9 @@ Les différents exercices présentés dans cette partie se complètent les uns l
 
 #### Charset UTF-8
 
-Le charset est l'encodage du jeux de caractères typographiques utilisés par les alphabets. (Pour plus d'information, voir [W3.org - characters](https://www.w3.org/International/getting-started/characters).)
+Le charset est l'encodage du jeux de caractères typographiques utilisés pour dans l'écriture des langues (caractères visibles et invisibles). (Pour plus d'information, voir [W3.org - characters](https://www.w3.org/International/getting-started/characters).)
 
-L'[UTF-8](https://fr.wikipedia.org/wiki/UTF-8) est un encodage Unicode permettant de supporter les caractères typographiques des principaux alphabets. C'est aujourd'hui le format le plus adapté au web, et devrait être systématiquement utilisé.
+L'[UTF-8](https://fr.wikipedia.org/wiki/UTF-8) est un encodage Unicode permettant de supporter les caractères typographiques des principales langues. C'est aujourd'hui le format le plus adapté au web, et devrait être systématiquement utilisé.
 
 A noter que l'UTF-8 est rétrocompatible avec l'ASCII, mais pas avec l'ISO-8859-1, deux anciennes normes.
 
