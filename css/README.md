@@ -140,7 +140,7 @@ A noter que, au final, une police doit toujours être inclue par CSS via `@font-
 A noter qu'il existe de nombreuses et diverses [@ rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) CSS.
 
 
-## Exercice 5: arrière-plans
+## Exercice 5: fonds
 
  1. Utiliser les propriétés d'arrière-plan:
     - Couleur de fond
@@ -159,9 +159,21 @@ A noter qu'il existe de nombreuses et diverses [@ rules](https://developer.mozil
 
 ### Remarques théoriques
 
+#### Zone de fond
+
+La zone de fond comprend normalement la boîte de contenu ("content box") de l'élément, ainsi que ses marges internes. La zone de fond s'arrête donc avant les bordures.
+
+A noter que, toutefois, l'élément `body` est une [exception à cette règle](https://stackoverflow.com/questions/33282363/background-image-appearing-in-the-body-margin), dans la mesure où sa zone de fond s'étend sur toute la zone d'affichage du navigateur (viewport), laquelle comprend donc également les marges externes de l'élément, et quelque soit aussi les dimensions réelles de l'élément. Autrement dit, affecter un fond à l'élément `body` revient en somme à l'appliquer à l'élément `html`.  
+
+#### Couleur vs. images
+
+Une image apparaît au-dessus de la couleur d'un élément.
+
+A noter qu'un dégradé de couleur généré en CSS est considéré comme une image.
+
 #### Plusieurs propriétés par déclaration
 
-A noter que la propriété raccourcie `background` permet de définir la valeur de plusieurs propriétés d'arrière-plan ([MDN docs - background](https://developer.mozilla.org/fr/docs/Web/CSS/background)).
+A noter que la propriété raccourcie `background` permet de définir la valeur de plusieurs propriétés de fond ([MDN docs - background](https://developer.mozilla.org/fr/docs/Web/CSS/background)).
 
 #### Les fonctions CSS
 
