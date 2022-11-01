@@ -161,7 +161,7 @@ A noter qu'il existe de nombreuses et diverses [@ rules](https://developer.mozil
 
 #### Zone de fond
 
-La zone de fond comprend normalement la boîte de contenu ("content box") de l'élément, ainsi que ses marges internes et ses bordures (les bordures couvrant toutefois généralement le fond). La zone de fond s'arrête donc avant les marges externes.
+PAr défaut (voir [MDN docs - background-clip](https://developer.mozilla.org/fr/docs/Web/CSS/background-clip)), la zone de fond comprend la boîte de contenu ("content box") de l'élément, ainsi que ses marges internes ("padding box") et ses bordures ("border box") (les bordures pouvant toutefois couvrir visuellement le fond). La zone de fond s'arrête donc avant les marges externes.
 
 A noter que, toutefois, l'élément `body` est une [exception à cette règle](https://stackoverflow.com/questions/33282363/background-image-appearing-in-the-body-margin), dans la mesure où sa zone de fond s'étend sur toute la zone d'affichage du navigateur (viewport), laquelle comprend donc également les marges externes de l'élément, et quelque soit aussi les dimensions réelles de l'élément. Autrement dit, affecter un fond à l'élément `body` revient en somme à l'appliquer à l'élément `html`.  
 
@@ -233,7 +233,6 @@ A noter que l'URL de l'image ou encore le dégradé de couleur sont gérés via 
 
 [Corrections](./v7)
  
-
 ### Remarques théoriques
 
 #### Box model et dimensions d'affichage
@@ -307,6 +306,10 @@ A noter que la propriété raccourcie `border` peut accueillir les valeurs de pl
 #### Box model et dimensions d'affichage
 
 Pour rappel, les bordures influent sur les dimensions d'affichage, selon le modèle de boîte CSS.
+
+#### Bordures vs. fond
+
+Les bordures apparaîssent au-dessus du fond.
 
 #### Contours
 
