@@ -137,14 +137,16 @@ A noter que, au final, une police doit toujours être inclue par CSS via `@font-
 
 #### @ rules
 
-A noter qu'il existe plusieurs [@ rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) CSS.
+A noter qu'il existe de nombreuses et diverses [@ rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) CSS.
 
 
 ## Exercice 5: arrière-plans
 
  1. Utiliser les propriétés d'arrière-plan:
     - Couleur de fond
+ 2. Utiliser les propriétés d'arrière-plan:
     - Image de fond
+ 3. Utiliser les propriétés d'arrière-plan:
     - Dégradé de couleur
 
 ### Exemples
