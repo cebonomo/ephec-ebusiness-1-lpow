@@ -161,7 +161,7 @@ A noter qu'il existe de nombreuses et diverses [@ rules](https://developer.mozil
 
 #### Zone de fond
 
-La zone de fond comprend normalement la boîte de contenu ("content box") de l'élément, ainsi que ses marges internes. La zone de fond s'arrête donc avant les bordures.
+La zone de fond comprend normalement la boîte de contenu ("content box") de l'élément, ainsi que ses marges internes et ses bordures (les bordures couvrant toutefois généralement le fond). La zone de fond s'arrête donc avant les marges externes.
 
 A noter que, toutefois, l'élément `body` est une [exception à cette règle](https://stackoverflow.com/questions/33282363/background-image-appearing-in-the-body-margin), dans la mesure où sa zone de fond s'étend sur toute la zone d'affichage du navigateur (viewport), laquelle comprend donc également les marges externes de l'élément, et quelque soit aussi les dimensions réelles de l'élément. Autrement dit, affecter un fond à l'élément `body` revient en somme à l'appliquer à l'élément `html`.  
 
@@ -169,7 +169,7 @@ A noter que, toutefois, l'élément `body` est une [exception à cette règle](h
 
 Une image apparaît au-dessus de la couleur d'un élément.
 
-A noter qu'un dégradé de couleur généré en CSS est considéré comme une image.
+A noter qu'un dégradé de couleur généré en CSS est considéré comme une [image](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Images).
 
 #### Plusieurs propriétés par déclaration
 
@@ -357,7 +357,7 @@ Pour rappel, les marges influent sur les dimensions d'affichage, selon le modèl
 
 #### Fusion des marges
 
-A noter que, dans le cadre du flux normal d'affichage, si deux éléments adjacents possèdent tous deux une marge externe (`margin`) se touchant l'une et l'autre, seule la marge la plus importante des deux sera prise en considération. Deux marges ne s'aditionnent donc pas.
+A noter que, dans le cadre du flux normal d'affichage, si deux éléments adjacents possèdent tous deux une marge externe (`margin`) se touchant l'une et l'autre, seule la marge la plus importante des deux sera prise en considération. Deux marges ne s'aditionnent donc pas. Attention toutefois que, techniquement, les deux marges sont toujours présentes: elles ne font que se chevaucher dans l'affichage final.
 
 
 ## Exercice 11: positionnement
