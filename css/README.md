@@ -348,20 +348,31 @@ Pour rappel, les marges influent sur les dimensions d'affichage, selon le modèl
 A noter que, dans le cadre du flux normal d'affichage, si deux éléments adjacents possèdent tous deux une marge externe (`margin`) se touchant l'une et l'autre, seule la marge la plus importante des deux sera prise en considération. Deux marges ne s'aditionnent donc pas.
 
 
-## Exercice 11: position
+## Exercice 11: positionnement
 
-TODO
+1. Utiliser les propriétés de positionnement avec au moins les valeurs suivantes:
+   - statique (valeur par défaut, comportement normal, aucun impact visuel)
+   - relatif (nécessite un décalage de position pour connaître un impact visuel, voir point suivant)
+   - absolu
+   - fixe
+2. Utiliser les propriétés de positionnement permettant le décalage de position d'un élément.
 
 ### Remarques théorique
 
-#### Flux normal
+#### Positionnement et flux (flow)
 
-TODO https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Normal_Flow
+A noter que les positionnements font potentiellement sortir l'élément du [flux normal](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Normal_Flow) de composition de la page, de sorte que l'élément affecté semble "flotter" sans plus exister pour les autres éléments qui le suivent. Ce comportement apparaît avec les valeurs suivantes:
+ - absolu (`absolute`)
+ - fixe (`fixed`)
+ - sticky (`sitky`) (partiellement)
 
-#### Positionnement
+ A noter que la position (et donc potentiellement tout décalage de position) d'un élément hors du flux prend comme référence la boîte de ses marges externes (et non de sa boîte de contenu).
 
-TODO https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Positioning
+ A noter que la position (et donc potentiellement tout décalage de position) d'un élément hors du flux est calculée par rapport à un "contexte de positionnement", c'est-à-dire à la position du plus haut élément parent définissant le positionnement. Par défaut, ce contexte sera l'élément `html`, ce qui, dans les faits, correspond exactement à la zone d'affichage du navigateur (viewport). Toutefois, tout élément redéfinissant le positionnement (par exemple, en définissant un positionnement `relative`) devient un nouveau contexte de positionnement pour tous ses enfants. 
 
+A noter que la propriété `z-index` permet de jouer sur la profondeur des éléments positionnés hors du flux ([MDN docs - z-index](https://developer.mozilla.org/fr/docs/Web/CSS/z-index)). Cette propriété permet, en quelque sorte, de définir la valeur de l'axe z des éléments: un élément possédant une valeur plus élévée se retrouvera au-dessus des autres éléments. 
+
+Pour plus d'information, voir [MDN docs - positionnement](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Positioning).
 
 #### Autres dispositions
 
