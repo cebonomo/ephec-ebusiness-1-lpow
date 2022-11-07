@@ -390,6 +390,12 @@ A noter que, dans le cadre du flux normal d'affichage, si deux éléments adjace
    - fixe
 2. Utiliser les propriétés de positionnement permettant le décalage de position d'un élément.
 
+### Exemples
+
+ 1. Rendre le menu "sticky".
+
+[Corrections (v10)](./v10)
+
 ### Remarques théorique
 
 #### Positionnement et flux (flow)
@@ -397,7 +403,7 @@ A noter que, dans le cadre du flux normal d'affichage, si deux éléments adjace
 Les positionnements font potentiellement sortir l'élément du [flux normal](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Normal_Flow) de composition de la page, de sorte que l'élément affecté semble "flotter" sans plus exister pour les autres éléments qui le suivent. Ce comportement apparaît avec les valeurs suivantes:
  - absolu (`absolute`)
  - fixe (`fixed`)
- - sticky (`sitky`) (partiellement)
+ - sticky (`sitky`) (uniquement lorsque l'élément est "collé")
 
 A noter que la position (et donc potentiellement tout décalage de position) d'un élément mis hors du flux dans le cadre d'un positionnement prend comme référence la boîte de ses marges externes (et non de sa boîte de contenu).
 

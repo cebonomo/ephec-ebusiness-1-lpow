@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro");
+
+* {
+    font-family: "Crimson Pro", Georgia, serif;
+    color: #2f4f4f;
+}
+
+.bigger {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.restricted-size {
+    width: 250px;
+    height: 75px;
+    overflow-y: scroll;
+}
+
+body {
+    background-color: aliceblue;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+body.fantasy {
+    min-height: 650px;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: center ;
+}
+
+header {
+    background: linear-gradient(#e64465, #9198e5);
+    padding: 10px;
+}
+
+header img {
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+}
+
+a {
+    text-decoration: none;
+    transition: background-color 4s;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: blanchedalmond;
+}
+
+a:visited {
+    color: #a6a9a9;
+}
+
+nav {
+    border: 1px solid grey;
+    border-radius: 30px;
+    position: sticky;
+    top: 5px;
+}
+
+nav a {
+    text-align: center;
+    display: inline-block;
+    width: 10%;
+    border-left: 1px solid grey;
+    padding: 3px 20px;
+}
+nav a:first-of-type {
+    border-left: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(71, 61, 138);
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+article {
+    font-size: 15px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 30px;
+}
+
+article h2 {
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+article p {
+    text-align: justify;
+}
+
+article img {
+    width: 25%;
+}
+
+ul.list-type-empty {
+    list-style-type: none;
+}
+
+ul.list-type-circle {
+    list-style-type: circle;
+}
+
+ol.list-type-upper-roman {
+    list-style-type: upper-roman;
+}
+
+
