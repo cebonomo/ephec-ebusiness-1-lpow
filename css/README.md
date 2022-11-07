@@ -22,7 +22,7 @@ Ces exercices complètent les exercices [HTML](../html) en rajoutant au code une
 
 #### Charset UTF-8
 
-A noter qu'il n'est pas nécessaire, _a priori_, de déclarer le charset UTF-8 (`@charset`) dans un fichier CSS (notamment car aucun caractère non-ASCII n'est idéalement utilisé). (Pour plus d'information sur l'utilisation du charset en CSS, voir [W3-org - gestion de l'encodage](https://www.w3.org/International/tutorials/tutorial-char-enc/).)
+A noter (notions avancées) qu'il n'est pas nécessaire, _a priori_, de déclarer le charset UTF-8 (`@charset`) dans un fichier CSS (notamment car aucun caractère non-ASCII n'est idéalement utilisé). (Pour plus d'information sur l'utilisation du charset en CSS, voir [W3-org - gestion de l'encodage](https://www.w3.org/International/tutorials/tutorial-char-enc/).)
 
 
 ## Exercice 2: sélecteurs
