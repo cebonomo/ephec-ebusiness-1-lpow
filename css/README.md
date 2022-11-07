@@ -294,18 +294,30 @@ Définir systématiquement les dimensions des images est une bonne pratique.
  1. Afficher une bordure verticale séparant chaque élément `a` dans un élément `nav`.
  2. Afficher une image dans un cadre circulaire.
 
+ [Corrections](./v8)
+
 ### Remarques théoriques
+
+#### Plusieurs positions par déclaration
+
+A noter que la propriété raccourcie `border` vaut pour les quatres positions de bordures:
+ - `border-top`
+ - `border-right`
+ - `border-bottom`
+ - `border-left`
 
 #### Plusieurs propriétés par déclaration
 
-A noter que la propriété raccourcie `border` peut accueillir les valeurs de plusieurs autres propriétés. Dans l'ordre et aucune n'étant obligatoire:
- 1. Largeur
- 2. Style
- 3. Couleur
+A noter que la propriété raccourcie `border` (de même que les propriétés `border-top`, `border-right`, ...) peut accueillir les valeurs de plusieurs autres propriétés. Dans l'ordre et aucune n'étant obligatoire:
+ 1. Largeur ([MDN docs - border-width](https://developer.mozilla.org/fr/docs/Web/CSS/border-width))
+ 2. Style ([MDN docs - border-style](https://developer.mozilla.org/fr/docs/Web/CSS/border-style))
+ 3. Couleur ([MDN docs - border-color](https://developer.mozilla.org/fr/docs/Web/CSS/border-color))
 
 #### Box model et dimensions d'affichage
 
 Pour rappel, les bordures influent sur les dimensions d'affichage, selon le modèle de boîte CSS.
+
+A la différence des propriétés de dimensions et des marges internes et externes, la taille des bordures s'appliquent également aux éléments en ligne (`display: inline`).
 
 #### Bordures vs. fond
 
@@ -381,9 +393,9 @@ A noter que les positionnements font potentiellement sortir l'élément du [flux
  - fixe (`fixed`)
  - sticky (`sitky`) (partiellement)
 
- A noter que la position (et donc potentiellement tout décalage de position) d'un élément hors du flux prend comme référence la boîte de ses marges externes (et non de sa boîte de contenu).
+A noter que la position (et donc potentiellement tout décalage de position) d'un élément hors du flux prend comme référence la boîte de ses marges externes (et non de sa boîte de contenu).
 
- A noter que la position (et donc potentiellement tout décalage de position) d'un élément hors du flux est calculée par rapport à un "contexte de positionnement", c'est-à-dire à la position du plus haut élément parent définissant le positionnement. Par défaut, ce contexte sera l'élément `html`, ce qui, dans les faits, correspond exactement à la zone d'affichage du navigateur (viewport). Toutefois, tout élément redéfinissant le positionnement (par exemple, en définissant un positionnement `relative`) devient un nouveau contexte de positionnement pour tous ses enfants. 
+A noter que la position (et donc potentiellement tout décalage de position) d'un élément hors du flux est calculée par rapport à un "contexte de positionnement", c'est-à-dire à la position du plus haut élément parent définissant le positionnement. Par défaut, ce contexte sera l'élément `html`, ce qui, dans les faits, correspond exactement à la zone d'affichage du navigateur (viewport). (Toutefois, tout élément redéfinissant le positionnement (par exemple, en définissant un positionnement `relative`) devient un nouveau contexte de positionnement pour tous ses enfants.) 
 
 A noter que la propriété `z-index` permet de jouer sur la profondeur des éléments positionnés hors du flux ([MDN docs - z-index](https://developer.mozilla.org/fr/docs/Web/CSS/z-index)). Cette propriété permet, en quelque sorte, de définir la valeur de l'axe z des éléments: un élément possédant une valeur plus élévée se retrouvera au-dessus des autres éléments. 
 

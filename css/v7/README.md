@@ -40,8 +40,8 @@ body {
    
 ```css
 table {
-      width: 50%;
-   }
+    width: 50%;
+}
 ```
 
 ## Inline
