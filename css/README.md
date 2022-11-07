@@ -214,7 +214,7 @@ A noter que l'URL de l'image ou encore le dégradé de couleur sont gérés via 
     - Largeur
     - Hauteur
  2. Utiliser les mêmes propriétés de dimension sur un élément de table ("block box").
- 3. Utiliser les mêmes propriétés de dimension sur un élément de type en ligne par défaut ("inline box").
+ 3. Tester les mêmes propriétés de dimension sur un élément de type en ligne par défaut ("inline box").
 
 ### Exemples
 
@@ -278,7 +278,7 @@ A noter, pour aller plus loin (notions avancées), la propriété `object-fit` (
     - Position
     - Arrondi
     - Fusion/séparation
- 2. Utiliser les mêmes propriétés de bordure sur un élément de type en ligne par défaut ("inline box").
+ 2. Tester les mêmes propriétés de bordure sur un élément de type en ligne par défaut ("inline box").
 
 ### Exemples
 
@@ -337,7 +337,7 @@ A noter, pour aller plus loin (notions avancées), qu'en plus des bordures, il e
  1. Utiliser les propriétés de marge sur un élément de type bloc ("block box") possédant une bordure:
     - Marges internes
     - Marges externes
- 2. Utiliser les mêmes propriétés de marge sur un élément de type en ligne par défaut ("inline box") possédant une bordure.
+ 2. Tester les mêmes propriétés de marge sur un élément de type en ligne par défaut ("inline box") possédant une bordure.
 
 ### Exemples
 
