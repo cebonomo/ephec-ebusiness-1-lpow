@@ -12,7 +12,7 @@ Les différents exercices présentés dans cette partie se complètent les uns l
  2. Veiller à comprendre pour quelle raison ce fichier est ainsi nommé et par quelles URL y accéder en HTTP.
  3. Dans ce fichier, créer la structure de base d'un document HTML.
 
-[Corrections](./v1)
+[Corrections (v1)](./v1)
 
 ### Remarques théoriques
 
@@ -51,14 +51,14 @@ A noter qu'il est possible d'encoder des caractères spéciaux en HTML, appelés
     - Afficher des paragraphes
     - Afficher des saut de ligne
 
-[Corrections](./v2)
+[Corrections (v2)](./v2)
 
 
 ## Exercice 3: images
 
  1. Par ce fichier, afficher des images propres au site (c'est-à-dire se trouvant dans le même [domaine](https://developer.mozilla.org/fr/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines)), via des **chemins relatifs**.
 
-[Corrections](./v3)
+[Corrections (v3)](./v3)
 
 ### Remarques théoriques
 
@@ -116,7 +116,7 @@ Si l'image ne s'affiche pas correctement, appliquer la procédure de débuggage 
     - Liste ordonnée
     - Liste de descriptions
 
-[Corrections](./v4)
+[Corrections (v4)](./v4)
 
 
 ## Exercice 5: tableaux
@@ -150,7 +150,7 @@ Pour afficher les bordures du tableau, ainsi qu'une taille de tableau minimale, 
 	</style>
 ```   
 
-[Corrections](./v5)
+[Corrections (v5)](./v5)
 
 
 ## Exercice 6: liens
@@ -160,7 +160,7 @@ Pour afficher les bordures du tableau, ainsi qu'une taille de tableau minimale, 
  1. Dans toutes les pages HTML, ajouter un menu de navigation interne (vers toutes les pages), avec **chemins relatifs**.
  2. Dans une des pages, ajouter un lien vers un website externe (avec **URL absolue**).
  
-[Corrections](./v6)
+[Corrections (v6)](./v6)
 
 ### Remarques théoriques
 

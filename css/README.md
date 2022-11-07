@@ -8,7 +8,7 @@ Ces exercices complètent les exercices [HTML](../html) en rajoutant au code une
  1. Créer une feuille de style `styles/main.css` vide.
  2. Inclure cette feuille de style dans toutes les pages du site (méthode "linked").
 
- [Corrections](./v1)
+ [Corrections (v1)](./v1)
 
 ### Remarques théoriques
 
@@ -83,7 +83,7 @@ Sur ce sujet, voir [MDN docs - sélecteurs](https://developer.mozilla.org/fr/doc
  1. Appliquer un soulignage des liens uniquement au survol de la souris.
  2. Appliquer une couleur plus claire aux liens déjà visités.
 
-[Corrections](./v2)
+[Corrections (v2)](./v2)
 
 ### Remarques théoriques
 
@@ -127,7 +127,7 @@ A noter que les valeurs de gestion d'héritage peuvent être utilisées avec n'i
 
  1. Utiliser une police qu'un navigateur ne supporte pas par défaut.
 
-[Corrections](./v3)
+[Corrections (v3)](./v3)
 
 ### Remarques théoriques
 
@@ -155,7 +155,7 @@ A noter qu'il existe de nombreuses et diverses [@ rules](https://developer.mozil
  2. Appliquer une image de fond à une page entière.
  3. Appliquer un dégradé de couleur en arrière-plan d'un élément `header`.
 
-[Corrections](./v4)
+[Corrections (v4)](./v4)
 
 ### Remarques théoriques
 
@@ -187,7 +187,7 @@ A noter que l'URL de l'image ou encore le dégradé de couleur sont gérés via 
     - Opacité (cette propriété n'ayant pas été expliquée en théorie, cette partie de l'exercice est optionelle.)
     - Transition
 
-[Corrections](./v5)
+[Corrections (v5)](./v5)
 
 
 ## Exercice 7: listes
@@ -203,7 +203,7 @@ A noter que l'URL de l'image ou encore le dégradé de couleur sont gérés via 
  2. Changer la forme des puces d'une liste (ou utiliser une image pour définir les puces).
  3. Afficher une numérotation romaine à une liste ordonnée.
 
-[Corrections](./v6)
+[Corrections (v6)](./v6)
 
 
 ## Exercice 8: dimensions d'affichage
@@ -231,7 +231,7 @@ A noter que l'URL de l'image ou encore le dégradé de couleur sont gérés via 
  1. Harmoniser la dimension des images des articles.
  2. Afficher une largeur fixe aux liens du menu de navigation.
 
-[Corrections](./v7)
+[Corrections (v7)](./v7)
  
 ### Remarques théoriques
 
@@ -294,7 +294,7 @@ Définir systématiquement les dimensions des images est une bonne pratique.
  1. Afficher une bordure verticale séparant chaque élément `a` dans un élément `nav`.
  2. Afficher une image dans un cadre circulaire.
 
- [Corrections](./v8)
+ [Corrections (v8)](./v8)
 
 ### Remarques théoriques
 
