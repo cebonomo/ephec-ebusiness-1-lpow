@@ -3,8 +3,8 @@
 ## Block
 
  1. Ajout, dans `styles/main.css`, des proptiétés de dimension:
-    - `height` ([MDN docs - hauteur](https://developer.mozilla.org/fr/docs/Web/CSS/height))))
-    - `width` ([MDN docs - largeur](https://developer.mozilla.org/fr/docs/Web/CSS/width))))
+    - `height` ([MDN docs - hauteur](https://developer.mozilla.org/fr/docs/Web/CSS/height))
+    - `width` ([MDN docs - largeur](https://developer.mozilla.org/fr/docs/Web/CSS/width))
 
  ```css
  .restricted-size {
@@ -13,8 +13,9 @@
 }
 ``` 
 
- 2. Ajout, dans `styles/main.css`, des proptiétés de dimension maximale:
-    - `max-width` ([MDN docs - largeur](https://developer.mozilla.org/fr/docs/Web/CSS/max-width))))
+ 2. Ajout, dans `styles/main.css`, des proptiétés de dimension minimale/maximale: 
+    - `min-height` ([MDN docs - hauteur minimale](https://developer.mozilla.org/fr/docs/Web/CSS/min-height))
+    - `max-height` ([MDN docs - hauteur maximale](https://developer.mozilla.org/fr/docs/Web/CSS/max-height))
     - ...
 
 ```css

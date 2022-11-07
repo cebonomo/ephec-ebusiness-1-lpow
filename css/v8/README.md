@@ -3,7 +3,7 @@
 ## Block
 
  1. Ajout, dans `styles/main.css`, des proptiétés d'affichage de bordures:
-    - `border` ([MDN docs - border](https://developer.mozilla.org/fr/docs/Web/CSS/border))))
+    - `border` ([MDN docs - border](https://developer.mozilla.org/fr/docs/Web/CSS/border))
     - ...
 
  ```css
@@ -13,7 +13,7 @@ article {
 ``` 
 
  2. Ajout, dans `styles/main.css`, des proptiétés d'arrondi de bordures:
-    - `border-radius` ([MDN docs - largeur](https://developer.mozilla.org/fr/docs/Web/CSS/border-radius))))
+    - `border-radius` ([MDN docs - border-radius](https://developer.mozilla.org/fr/docs/Web/CSS/border-radius))
 
 ```css
 nav {
@@ -35,7 +35,8 @@ th, td {
 }
 ```
 
- 2.  Ajout, dans `tableaux/index.html`, des propriétés de "fusion" de bordures.
+ 2.  Ajout, dans `tableaux/index.html`, des propriétés de "fusion" de bordures::
+    - `border-collapse` ([MDN docs - border-collapse](https://developer.mozilla.org/fr/docs/Web/CSS/border-collapse))
    
 ```css
 table {

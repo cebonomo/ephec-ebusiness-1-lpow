@@ -3,7 +3,7 @@
 ## Block
 
  1. Ajout, dans `styles/main.css`, des proptiétés de marges externes:
-    - `margin` ([MDN docs - margin](https://developer.mozilla.org/fr/docs/Web/CSS/margin))))
+    - `margin` ([MDN docs - margin](https://developer.mozilla.org/fr/docs/Web/CSS/margin))
     - ...
 
  ```css
@@ -17,7 +17,8 @@ article {
 ``` 
 
  2. Ajout, dans `styles/main.css`, des proptiétés de marges internes:
-    - `padding` ([MDN docs - largeur](https://developer.mozilla.org/fr/docs/Web/CSS/padding))))
+    - `padding` ([MDN docs - padding](https://developer.mozilla.org/fr/docs/Web/CSS/padding))
+    - ...
 
 ```css
 header {
