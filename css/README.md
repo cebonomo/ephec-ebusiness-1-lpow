@@ -115,6 +115,8 @@ A noter qu'il existe plusieurs valeurs de réinitialisation (d'une manière gén
 
 #### Gestion de l'héritage
 
+(Notions avancées)
+
    - `initial`: permet d'appliquer la valeur initiale ([MDN docs - initial](https://developer.mozilla.org/fr/docs/Web/CSS/initial)).
    - `inherit`: permet d'appliquer la valeur héritée du parent ([MDN docs - inherit](https://developer.mozilla.org/fr/docs/Web/CSS/inherit)).
    - `unset`: permet d'appliquer la valeur héritée du parent ou, si aucune valeur n'ets hérité, d'appliquer la valeur initiale ([MDN docs - unset](https://developer.mozilla.org/fr/docs/Web/CSS/unset)).
@@ -133,11 +135,11 @@ A noter que les valeurs de gestion d'héritage peuvent être utilisées avec n'i
 
 #### Inclusion de la police
 
-A noter que, au final, une police doit toujours être inclue par CSS via `@font-face` ([MDN docs - @font-face](https://developer.mozilla.org/fr/docs/Web/CSS/@font-face)). Il est toutefois possible, plutôt que d'inclure directement la police en CSS via cette méthode, soit d'inclure un fichier CSS dans le HTML (via `link`), soit d'inclure des règles CSS dans le fichier CSS via `@import` ([MDN docs - @import](https://developer.mozilla.org/fr/docs/Web/CSS/@import)), lesquels utiliseront `@font-face`.
+A noter, pour aller plus loin (notions avancées), que, au final, une police doit toujours être inclue par CSS via `@font-face` ([MDN docs - @font-face](https://developer.mozilla.org/fr/docs/Web/CSS/@font-face)). Il est toutefois possible, plutôt que d'inclure directement la police en CSS via cette méthode, soit d'inclure un fichier CSS dans le HTML (via `link`), soit d'inclure des règles CSS dans le fichier CSS via `@import` ([MDN docs - @import](https://developer.mozilla.org/fr/docs/Web/CSS/@import)), lesquels utiliseront `@font-face`.
 
 #### @ rules
 
-A noter qu'il existe de nombreuses et diverses [@ rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) CSS.
+A noter, pour aller plus loin (notions avancées), qu'il existe de nombreuses et diverses [@ rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) CSS.
 
 
 ## Exercice 5: fonds
@@ -161,7 +163,7 @@ A noter qu'il existe de nombreuses et diverses [@ rules](https://developer.mozil
 
 #### Zone de fond
 
-Par défaut (voir [MDN docs - background-clip](https://developer.mozilla.org/fr/docs/Web/CSS/background-clip)), la zone de fond comprend la boîte de contenu ("content box") de l'élément, ainsi que ses marges internes ("padding box") et ses bordures ("border box") (les bordures pouvant toutefois couvrir visuellement le fond). La zone de fond s'arrête donc avant les marges externes.
+Par défaut (notions avancées: [MDN docs - background-clip](https://developer.mozilla.org/fr/docs/Web/CSS/background-clip)), la zone de fond comprend la boîte de contenu ("content box") de l'élément, ainsi que ses marges internes ("padding box") et ses bordures ("border box") (les bordures pouvant toutefois couvrir visuellement le fond). La zone de fond s'arrête donc avant les marges externes.
 
 A noter que, toutefois, l'élément `body` est une [exception à cette règle](https://stackoverflow.com/questions/33282363/background-image-appearing-in-the-body-margin), dans la mesure où sa zone de fond s'étend sur toute la zone d'affichage du navigateur (viewport), laquelle comprend donc également les marges externes de l'élément, et quelque soit aussi les dimensions réelles de l'élément. Autrement dit, affecter un fond à l'élément `body` revient en somme à l'appliquer à l'élément `html`.  
 
@@ -244,25 +246,27 @@ Les propriétés suivantes fonctionnent selon le [modèle de boîte](https://dev
 
 Ce modèle conditionne chaque élément grâce à la propriété d'affichage `display`, laquelle spécifie le type de comportement de boîte. Seuls les éléments de type "bloc" (valeurs communes: `block`, `table`, `inline-block`) sont impactés par la modification de dimensions d'affichage, au contraire des éléments de type "en ligne" (valeur commune: `inline`).
 
-Par défaut ([MDN docs - box-sizing](https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing)), la hauteur et la largeur définissent la seule taille de la boîte de contenu ("content box") des éléments de type "bloc". 
+Par défaut (notions avancés: [MDN docs - box-sizing](https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing)), la hauteur et la largeur définissent la seule taille de la boîte de contenu ("content box") des éléments de type "bloc". 
 
-Toutefois, il ne faut pas perdre de vue qu'au-delà de la boîte de contenu se trouvent les marges internes, puis les bordures, et enfin les marges externes de l'élément. Autrement dit, la taille totale d'un élément est donc définie non seulement par la hauteur et la largeur, lesquelles propriétés constituent la [taille intrinsèque](https://developer.mozilla.org/fr/docs/Glossary/Intrinsic_Size) de l'élément, mais également, de manière additionnelle, par les marges internes, les bordures et les marges externes, lesquelles propriétés constituent la [taille extrinsèque](https://developer.mozilla.org/fr/docs/Glossary/Intrinsic_Size).
+Toutefois, il ne faut pas perdre de vue qu'au-delà de la boîte de contenu se trouvent les marges internes, puis les bordures, et enfin les marges externes de l'élément. Autrement dit, la taille totale d'un élément est donc définie non seulement par la hauteur et la largeur (lesquelles propriétés constituent la [taille intrinsèque](https://developer.mozilla.org/fr/docs/Glossary/Intrinsic_Size) de l'élément), mais également, de manière additionnelle, par les marges internes, les bordures et les marges externes (lesquelles propriétés constituent la [taille extrinsèque](https://developer.mozilla.org/fr/docs/Glossary/Intrinsic_Size)).
 
-A noter que le modèle de boîte influe également sur la place prise par l'élément dans le [flux normal d'affichage](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Normal_Flow).
+Le type d'affichage (`display`) influe également sur la place prise par l'élément dans le [flux normal d'affichage](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Normal_Flow).
 
 #### Valeurs de taille
 
 Voir le commentaire sur les valeurs de taille pécédent.
 
-A noter également, dans le cas des dimensions d'affichage, la possibilité de définir des tailles minimales et maximales, c'est-à-dire ne pouvant pas être dépassées, à la place de tailles fixes.
+Dans le cas des dimensions d'affichage, il est possible de définir des tailles minimales et maximales, c'est-à-dire ne pouvant pas être dépassées, à la place de tailles fixes.
 
 #### Dimensions des images
 
-A noter que la balise HTML `img`, bien qu'étant "inline" par défaut (`display: inline`), possède un comportement intermédiaire avec les "block" (`display: inline-block`). Ceci est dû aux particularités des [éléments remplacés](https://developer.mozilla.org/fr/docs/Web/CSS/Replaced_element), qui accordent aux images un comportement spécifique ([MDN docs - img et CSS](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Img#mettre_en_forme_avec_css)).
+Définir systématiquement les dimensions des images est une bonne pratique (cela permet notamment de prévoir l'espace nécessaire à l'image avant même son chargement).
 
 A noter que la balise HTML `img` dispose également d'attributs de hauteur (`height`) et de largeur (`width`). Ces attributs HTML représentent normalement les dimensions intrinsèques de l'image en pixels (l'unité ne devant normalement pas être mentionnée). Ces dimensions intrinsèques sont normalement écrasées par les dimensions d'affichage, telles que définies par le CSS.
 
-Définir systématiquement les dimensions des images est une bonne pratique.
+A noter que la balise HTML `img`, bien qu'étant "inline" par défaut (`display: inline`), possède un comportement intermédiaire avec les "blocks" (équivalent à `display: inline-block`). Ceci est dû aux particularités des [éléments remplacés](https://developer.mozilla.org/fr/docs/Web/CSS/Replaced_element) qui accordent aux images un comportement spécifique ([MDN docs - img et CSS](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Img#mettre_en_forme_avec_css)).
+
+A noter, pour aller plus loin (notions avancées), la propriété `object-fit` (non vu au cours) qui définit la façon dont une image (ou tout "élément remplacé") s'adapte au contenu parent ([MDN docs - object-fit](https://developer.mozilla.org/fr/docs/Web/CSS/object-fit))
 
 
 ## Exercice 9: bordures
@@ -300,7 +304,7 @@ Définir systématiquement les dimensions des images est une bonne pratique.
 
 #### Plusieurs positions par déclaration
 
-A noter que la propriété raccourcie `border` vaut pour les quatres positions de bordure:
+La propriété raccourcie `border` vaut pour les quatres positions de bordure:
  - `border-top`
  - `border-right`
  - `border-bottom`
@@ -308,7 +312,7 @@ A noter que la propriété raccourcie `border` vaut pour les quatres positions d
 
 #### Plusieurs propriétés par déclaration
 
-A noter que la propriété raccourcie `border` (de même que les propriétés `border-top`, `border-right`, ...) peut accueillir les valeurs de plusieurs autres propriétés. Dans l'ordre et aucune n'étant obligatoire:
+La propriété raccourcie `border` (de même que les propriétés `border-top`, `border-right`, ...) peut accueillir les valeurs de plusieurs autres propriétés. Dans l'ordre et aucune n'étant obligatoire:
  1. Largeur ([MDN docs - border-width](https://developer.mozilla.org/fr/docs/Web/CSS/border-width))
  2. Style ([MDN docs - border-style](https://developer.mozilla.org/fr/docs/Web/CSS/border-style))
  3. Couleur ([MDN docs - border-color](https://developer.mozilla.org/fr/docs/Web/CSS/border-color))
@@ -317,7 +321,7 @@ A noter que la propriété raccourcie `border` (de même que les propriétés `b
 
 Pour rappel, les bordures influent sur les dimensions d'affichage, selon le modèle de boîte CSS.
 
-A la différence des propriétés de dimensions et des marges internes et externes, la taille des bordures s'appliquent également aux éléments en ligne (`display: inline`).
+A noter que, à la différence des propriétés de dimensions et des marges internes et externes, la taille des bordures s'appliquent également aux éléments en ligne (`display: inline`).
 
 #### Bordures vs. fond
 
@@ -325,7 +329,7 @@ Les bordures apparaîssent au-dessus du fond.
 
 #### Contours
 
-A noter qu'en plus des bordures, il existe des [contours](https://developer.mozilla.org/fr/docs/Web/CSS/outline) (non vu au cours), lesquels, à la différence des bordures, n'influent pas sur les dimensions de l'élement.
+A noter, pour aller plus loin (notions avancées), qu'en plus des bordures, il existe des [contours](https://developer.mozilla.org/fr/docs/Web/CSS/outline) (non vu au cours), lesquels, à la différence des bordures, n'influent pas sur les dimensions de l'élement.
 
 
 ## Exercice 10: marges
@@ -353,7 +357,7 @@ A noter qu'en plus des bordures, il existe des [contours](https://developer.mozi
 
 #### Plusieurs positions par déclaration
 
-A noter que les propriétés raccourcies `margin` et `padding` peuvent accueillir plusieurs valeurs en fonction des positions.
+Les propriétés raccourcies `margin` et `padding` peuvent accueillir plusieurs valeurs en fonction des positions.
    1. Si 1 seule valeur est présente, elle s'applique communément aux positions `top`, `right`, `bottom`, `left`.
    2. Si 2 valeurs sont présentes:
       1. La première s'applique aux positions `top` et `bottom`.
@@ -390,16 +394,16 @@ A noter que, dans le cadre du flux normal d'affichage, si deux éléments adjace
 
 #### Positionnement et flux (flow)
 
-A noter que les positionnements font potentiellement sortir l'élément du [flux normal](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Normal_Flow) de composition de la page, de sorte que l'élément affecté semble "flotter" sans plus exister pour les autres éléments qui le suivent. Ce comportement apparaît avec les valeurs suivantes:
+Les positionnements font potentiellement sortir l'élément du [flux normal](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Normal_Flow) de composition de la page, de sorte que l'élément affecté semble "flotter" sans plus exister pour les autres éléments qui le suivent. Ce comportement apparaît avec les valeurs suivantes:
  - absolu (`absolute`)
  - fixe (`fixed`)
  - sticky (`sitky`) (partiellement)
 
-A noter que la position (et donc potentiellement tout décalage de position) d'un élément hors du flux prend comme référence la boîte de ses marges externes (et non de sa boîte de contenu).
+A noter que la position (et donc potentiellement tout décalage de position) d'un élément mis hors du flux dans le cadre d'un positionnement prend comme référence la boîte de ses marges externes (et non de sa boîte de contenu).
 
-A noter que la position (et donc potentiellement tout décalage de position) d'un élément hors du flux est calculée par rapport à un "contexte de positionnement", c'est-à-dire à la position du plus haut élément parent définissant le positionnement. Par défaut, ce contexte sera l'élément `html`, ce qui, dans les faits, correspond exactement à la zone d'affichage du navigateur (viewport). (Toutefois, tout élément redéfinissant le positionnement (par exemple, en définissant un positionnement `relative`) devient un nouveau contexte de positionnement pour tous ses enfants.) 
+A noter, pour aller plus loin (notions avancées), que la position (et donc potentiellement tout décalage de position) d'un élément mis hors du flux dans le cadre d'un positionnement est calculée par rapport à un "contexte de positionnement", c'est-à-dire à la position du plus haut élément parent définissant un positionnement. Par défaut, ce contexte sera l'élément `html`, ce qui, dans les faits, correspond exactement à la zone d'affichage du navigateur (viewport). (Toutefois, tout élément redéfinissant le positionnement (par exemple, en définissant un positionnement `relative`) devient un nouveau contexte de positionnement pour tous ses enfants.) 
 
-A noter que la propriété `z-index` permet de jouer sur la profondeur des éléments positionnés hors du flux ([MDN docs - z-index](https://developer.mozilla.org/fr/docs/Web/CSS/z-index)). Cette propriété permet, en quelque sorte, de définir la valeur de l'axe z des éléments: un élément possédant une valeur plus élévée se retrouvera au-dessus des autres éléments. 
+A noter, pour aller plus loin (notions avancées), que la propriété `z-index` permet de jouer sur la profondeur des éléments positionnés hors du flux ([MDN docs - z-index](https://developer.mozilla.org/fr/docs/Web/CSS/z-index)). Cette propriété permet, en quelque sorte, de définir la valeur de l'axe z des éléments: un élément possédant une valeur plus élévée se retrouvera au-dessus des autres éléments. 
 
 Pour plus d'information, voir [MDN docs - positionnement](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Positioning).
 
@@ -407,7 +411,7 @@ Pour plus d'information, voir [MDN docs - positionnement](https://developer.mozi
 
 Ceci n'est pas vu au cours.
 
-Pour information, pour ceux qui veulent aller plus loin, il existe d'autres techniques de disposition (ou layout) ([MDN docs - layout](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Introduction)):
+Pour information, pour aller plus loin, il existe d'autres techniques de disposition (ou layout) ([MDN docs - layout](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Introduction)):
 
  - [MDN docs - flexbox](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
  - [MDN docs - grilles (ou trame)](https://developer.mozilla.org/fr/docs/Web/CSS/grid)
