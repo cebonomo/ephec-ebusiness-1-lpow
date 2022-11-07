@@ -38,6 +38,7 @@ header {
 }
 
 header img {
+    width: 50px;
     border-radius: 50%;
  }
 
@@ -56,10 +57,12 @@ a:visited {
 }
 
 nav {
+    border: 1px solid grey;
     border-radius: 30px;
 }
 
 nav a {
+    text-align: center;
     display: inline-block;
     width: 10%;
     border-left: 1px solid grey;

@@ -23,6 +23,7 @@
 body {
     background-color: aliceblue;
     max-width: 1024px;
+    margin: 0 auto;
 }
 
 body.fantasy {
@@ -35,7 +36,13 @@ body.fantasy {
 
 header {
     background: linear-gradient(#e64465, #9198e5);
+    padding: 10px;
 }
+
+header img {
+    width: 50px;
+    border-radius: 50%;
+ }
 
 a {
     text-decoration: none;
@@ -51,10 +58,20 @@ a:visited {
     color: #a6a9a9;
 }
 
+nav {
+    border: 1px solid grey;
+    border-radius: 30px;
+}
+
 nav a {
     text-align: center;
     display: inline-block;
     width: 10%;
+    border-left: 1px solid grey;
+    padding: 3px 20px;
+}
+nav a:first-of-type {
+    border-left: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -68,6 +85,8 @@ h1 {
 
 article {
     font-size: 15px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 30px;
 }
 
 article h2 {

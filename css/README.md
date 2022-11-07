@@ -294,13 +294,13 @@ Définir systématiquement les dimensions des images est une bonne pratique.
  1. Afficher une bordure verticale séparant chaque élément `a` dans un élément `nav`.
  2. Afficher une image dans un cadre circulaire.
 
- [Corrections (v8)](./v8)
+[Corrections (v8)](./v8)
 
 ### Remarques théoriques
 
 #### Plusieurs positions par déclaration
 
-A noter que la propriété raccourcie `border` vaut pour les quatres positions de bordures:
+A noter que la propriété raccourcie `border` vaut pour les quatres positions de bordure:
  - `border-top`
  - `border-right`
  - `border-bottom`
@@ -346,6 +346,8 @@ A noter qu'en plus des bordures, il existe des [contours](https://developer.mozi
 #### Inline box
 
  1. Ajouter une marge interne sur les liens du menu de navigation.
+
+[Corrections (v9)](./v9)
 
 ### Remarques théoriques
 

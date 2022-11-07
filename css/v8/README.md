@@ -17,6 +17,7 @@ article {
 
 ```css
 nav {
+    border: 1px solid grey;
     border-radius: 30px;
 }
 ```
@@ -27,7 +28,7 @@ nav {
    
 ```css
 table {
-    border: 1px solid black;
+    border: 2px solid black;
 }
 th, td {
     border: 1px dashed black;
