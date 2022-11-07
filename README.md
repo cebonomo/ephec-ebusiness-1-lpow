@@ -2,9 +2,9 @@
 
 Est présenté ici le code développé durant mes TP du cours de LPOW de l'EPHEC.
 
- 1. [FTP](./ftp) 
- 2. [HTML](./html)
- 3. [CSS](./css)
+ 1. [FTP](./ftp#exercices-ftp) 
+ 2. [HTML](./html#exercices-html)
+ 3. [CSS](./css#exercices-css)
  4. Javascript (à venir)
 
 **Attention:** les exercices présentés ici visent à mettre en pratique un maximum de matière théorique. Ils représentent des exemples d'utilisation, mais ne couvrent pas forcément l'entièreté de la matière abordée, ni évidemment l'entièreté des cas possibles.
