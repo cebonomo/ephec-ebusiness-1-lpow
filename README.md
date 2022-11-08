@@ -71,7 +71,11 @@ On ne travaille qu'en local, jamais directement sur le serveur. Les fichiers du 
 Le cache est un système qui autorise le navigateur à garder en mémoire des ressources, plutôt qu'à les demander par HTTP une nouvelle fois. Cela peut être le cas des styles CSS, des images, etc. Etant donné ce cache, il se peut qu'un fichier soit modifié du côté du serveur (par exemple, une déclaration CSS), mais que le navigateur ne rafraîchisse pas cette ressource (et que le nouveau style ne soit pas affiché).
 
 Il est toutefois possible de forcer le navigateur à rafraîchir son cache, et donc d'affectuer une nouvelle requête vers le serveur:
- - `CTRL` + `F5`: la page est rafraîchie, y compris ses ressources mises en cache.
+ - Raccourci clavier pour vider le cache et rafraîchir la page:
+    - Windows/Linux: `CTRL`+`F5`
+    - Mac:
+      - Chrome: `Cmd`+`Shift`+`R` 
+      - Safari: `Cmd`+`Opt`+`E` pour vider le cache, puis `Cmd`+`R`pour rafraîchir la page 
  - Dans le "DevTools" (`F12`) du navigateur, une option permet de désactiver le cache, lorsque cet outil est ouvert.
 
 ### Validité du code HTML
