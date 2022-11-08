@@ -238,13 +238,21 @@ A noter qu'il existe plusieurs possibilités de liens (hors cours):
 
 Le focus détermine l'élement HTML écoutant la saisie de l'utilisateur. Par exemple, dans le cadre d'un formulaire, si un utilisateur saisit du texte à partir de son clavier, seul le champ bénéficiant du focus (et dans lequel, en l'occurrence, se trouve le curseur de texte) sera mis à jour. 
 
-A noter, pour aller plus loin (notions avancées), l'existence, en CSS, de la pseudo-class `:focus` ([MDN docs - :focus](https://developer.mozilla.org/fr/docs/Web/CSS/:focus)).
-
 #### Label
 
 Idéalament, chaque champ de formulaire est associé à une légende (`label`) qui lui est propre. En cliquant sur la légende, le focus est mis sur le champ associé.
 
-#### Données côté serveur: debuggage
+#### CSS
+
+A noter, pour aller plus loin (notions avancées), l'existence, en CSS, de plusieurs pseudo-class dédiées aux formulaires (`:focus`, `:checked`, `:disabled`, `:invalid`, ...).
+
+#### HTTP
+
+L'objectif d'un formulaire est de soumettre des données au serveur web. Par conséquent, la bonne compréhension des formulaires implique l'utilisation du protocole HTTP afin de simuler un comportement réel. (Si, dans un navigateur, il est possible d'afficher un document HTML local via une URL de schéma `file`, le protocole HTTP nécessite de passer par une URL de schema `http` ou `https`.)
+
+Avertissement: les formulaires peuvent contenir des données sensibles, lesquelles vont transiter de manière publique sur Internet. Dans un cadre de production (site réel), pour des raisons de sécurité, il est impératif de n'utiliser que le protocole HTTPS, seul garant de (notamment) la confidentiallité et l'intégrité des données. De toute façon, d'une manière générale, il est recommandé d'utiliser systématiquement HTTPS.
+
+#### Débuggage des données
 
 Pour afficher de manière brute les données réceptionnées par le serveur web, on peut se servir, par exemple, de PHP:
 
@@ -254,7 +262,7 @@ Pour afficher de manière brute les données réceptionnées par le serveur web,
 </pre>
 ```
 
-Il est important de veiller à ce que l'association `name` => `value` de chaque champ HTML soumis se retrouve correctement dans les données reçues par le serveur, en particulier dans le cadre de choix multiples.
+Il est important de veiller à ce que l'association `name` => `value` de chaque champ HTML soumis se retrouve correctement dans les données reçues par le serveur (`$_POST`), en particulier dans le cadre de choix multiples.
 
 
  
