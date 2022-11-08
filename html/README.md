@@ -254,7 +254,7 @@ Par conséquent, la bonne compréhension des formulaires implique l'utilisation 
 
 Avertissement: les formulaires peuvent contenir des données sensibles, lesquelles vont transiter de manière publique sur Internet. Dès lors, pour des raisons de sécurité, il est impératif de n'utiliser que le protocole HTTPS, seul garant de (notamment) la confidentiallité et l'intégrité des données. De toute façon, d'une manière générale, il est recommandé d'utiliser systématiquement HTTPS.
 
-#### Débuggage des données
+#### Débuggage des données en PHP
 
 Pour afficher de manière brute les données réceptionnées par le serveur web, on peut se servir, par exemple, de PHP:
 
@@ -263,6 +263,8 @@ Pour afficher de manière brute les données réceptionnées par le serveur web,
    <?php print_r($_POST); ?>
 </pre>
 ```
+
+L'utilisation de PHP implique que l'extension du fichier réceptionant le formulaire soit `.php`. Si le fichier se termine par `.html`, le serveur web de solicitera pas l'interprétation du code par PHP et considérera ce code comme un simple texte. 
 
 Il est important de veiller à ce que l'association `name` => `value` de chaque champ HTML soumis se retrouve correctement dans les données reçues par le serveur (`$_POST`), en particulier dans le cadre de choix multiples.
 
