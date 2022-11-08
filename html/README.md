@@ -259,9 +259,7 @@ Avertissement: les formulaires peuvent contenir des données sensibles, lesquell
 Pour afficher de manière brute les données réceptionnées par le serveur web, on peut se servir, par exemple, de PHP:
 
 ```php
-<pre>
-   <?php print_r($_POST); ?>
-</pre>
+<pre><?php print_r($_POST); ?></pre>
 ```
 
 L'utilisation de PHP implique que l'extension du fichier réceptionant le formulaire soit `.php`. Si le fichier se termine par `.html`, le serveur web de solicitera pas l'interprétation du code par PHP et considérera ce code comme un simple texte. 
