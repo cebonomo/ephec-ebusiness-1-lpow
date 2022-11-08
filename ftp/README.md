@@ -16,6 +16,10 @@ Les différents exercices présentés dans cette partie vise à utiliser de mani
  1. Enregistrer la connexion actuelle dans son gestionnaire de site.
  2. Synchroniser le dossier racine distant avec un dossier local vierge et spécifique au projet.
 
+### Erreurs courantes
+
+Ceci implique que le client FTP aient bien accès aux dossiers, ce qui n'est pas forcément le cas lors de l'utilisation d'un disque distant ("iCloud drive", "OneDrive", ...). Attention que FileZilla n'avertit pas de l'erreur.
+
 ## Exercice 3: téléverser
 
  1. Créer puis téléverser un fichier `index.*` à la racine du projet. 

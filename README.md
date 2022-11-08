@@ -39,9 +39,7 @@ Au préalable de tout code, il est nécessaire de créer un [dossier (ou répert
 
 ### Extensions de fichier cachées
 
-Attention que, généralement, les [gestionnaires de fichiers](https://fr.wikipedia.org/wiki/Gestionnaire_de_fichiers) ("Eplorateur de fichier" sous Windows, "Finder" sous MacOS, ...) cachent par défaut les [extensions de nom de fichier](https://fr.wikipedia.org/wiki/Extension_de_nom_de_fichier) (`.html`, `.php`, `.jpg`, ...),
-ce qui peut poser problème lors du nommage des fichiers ou de la lecture de leurs noms.
-Dès lors qu'est utilisé un gestionnaire de fichier dans le cadre des TP, il est conseillé d'activer l'affichage des extensions de nom de fichiers ([support pour Windows](https://support.microsoft.com/fr-fr/windows/extensions-de-nom-de-fichier-courantes-dans-windows-da4a4430-8e76-89c5-59f7-1cdbbc75cb01)).
+Attention que, généralement, les [gestionnaires de fichiers](https://fr.wikipedia.org/wiki/Gestionnaire_de_fichiers) ("Eplorateur de fichier" sous Windows, "Finder" sous MacOS, ...) cachent par défaut les [extensions de nom de fichier](https://fr.wikipedia.org/wiki/Extension_de_nom_de_fichier) (`.html`, `.php`, `.jpg`, ...), ce qui peut poser problème lors du nommage des fichiers ou de la lecture de leurs noms. Dès lors qu'est utilisé un gestionnaire de fichier dans le cadre des TP, il est conseillé d'activer l'affichage des extensions de nom de fichiers ([support pour Windows](https://support.microsoft.com/fr-fr/windows/extensions-de-nom-de-fichier-courantes-dans-windows-da4a4430-8e76-89c5-59f7-1cdbbc75cb01)).
 
 ### Nommage des fichiers
 
@@ -76,7 +74,7 @@ Il est toutefois possible de forcer le navigateur à rafraîchir son cache, et d
     - Mac:
       - Chrome: `Cmd`+`Shift`+`R` 
       - Safari: `Cmd`+`Opt`+`E` pour vider le cache, puis `Cmd`+`R`pour rafraîchir la page 
- - Dans le "DevTools" (`F12`) du navigateur, une option permet de désactiver le cache, lorsque cet outil est ouvert.
+ - Dans le "devtools" (`F12`) du navigateur, une option permet de désactiver le cache, lorsque cet outil est ouvert.
 
 ### Validité du code HTML
 
@@ -153,4 +151,13 @@ Quelques exemples des nombreuses ressources didactiques présentes sur le web:
   5. ...
  
 
+## Outils
+
+### Devtools
+
+Le [devtools](https://en.wikipedia.org/wiki/Web_development_tools) est une console de débuggage présente dans le navigateur.
+
+Raccourci clavier pour ouvrir le devtools:
+ - Windows/Linux: `F12` ou `Control`+`Shift`+`C`
+ - Mac: `Command`+`Option`+`C` (attention, doit peut-être être activé [tuto](https://balsamiq.com/support/faqs/browserconsole/))
 
