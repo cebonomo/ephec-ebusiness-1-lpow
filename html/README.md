@@ -232,6 +232,8 @@ A noter qu'il existe plusieurs possibilités de liens (hors cours):
    - Submit et reset
 2. Afficher de manière brute les données reçues par le serveur lors de la soumission du formulaire, et tâcher de les comprendre.
 
+[Corrections (v7)](./v7)
+
 ### Remarques théoriques
 
 #### Focus
