@@ -234,7 +234,7 @@ A noter qu'il existe plusieurs possibilités de liens (hors cours):
 
 ### Remarques théoriques
 
-### Focus
+#### Focus
 
 Le focus détermine l'élement HTML écoutant la saisie de l'utilisateur. Par exemple, dans le cadre d'un formulaire, si un utilisateur saisit du texte à partir de son clavier, seul le champ bénéficiant du focus (et dans lequel, en l'occurrence, se trouve le curseur de texte) sera mis à jour. 
 
