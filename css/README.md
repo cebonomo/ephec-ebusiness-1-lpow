@@ -163,7 +163,7 @@ A noter, pour aller plus loin (notions avancées), qu'il existe de nombreuses et
 
 #### Zone de fond
 
-Par défaut (notions avancées: [MDN docs - background-clip](https://developer.mozilla.org/fr/docs/Web/CSS/background-clip)), la zone de fond comprend la boîte de contenu ("content box") de l'élément, ainsi que ses marges internes ("padding box") et ses bordures ("border box") (les bordures pouvant toutefois couvrir visuellement le fond). La zone de fond s'arrête donc avant les marges externes.
+Par défaut (pour des notions avancées sur ce sujet, voir [MDN docs - background-clip](https://developer.mozilla.org/fr/docs/Web/CSS/background-clip)), la zone de fond comprend la boîte de contenu ("content box") de l'élément, ainsi que ses marges internes ("padding box") et ses bordures ("border box") (les bordures pouvant toutefois couvrir visuellement le fond). La zone de fond s'arrête donc avant les marges externes.
 
 A noter que, toutefois, l'élément `body` est une [exception à cette règle](https://stackoverflow.com/questions/33282363/background-image-appearing-in-the-body-margin), dans la mesure où sa zone de fond s'étend sur toute la zone d'affichage du navigateur (viewport), laquelle comprend donc également les marges externes de l'élément, et quelque soit aussi les dimensions réelles de l'élément. Autrement dit, affecter un fond à l'élément `body` revient en somme à l'appliquer à l'élément `html`.  
 
@@ -239,18 +239,45 @@ A noter que l'URL de l'image ou encore le dégradé de couleur sont gérés via 
 
 #### Box model et dimensions d'affichage
 
-Les propriétés suivantes fonctionnent selon le [modèle de boîte](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Box_Model) CSS:
+Les propriétés suivantes fonctionnent selon le modèle de boîte CSS (voir [MDN docs - modèle de boîte](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Box_Model)):
  - Hauteur (`height`) + largeur (`width`)
  - Marges internes (`padding`) + externes (`margin`)
  - Bordures (`border`)
 
-Ce modèle conditionne chaque élément grâce à la propriété d'affichage `display`, laquelle spécifie le type de comportement de boîte. Seuls les éléments de type "bloc" (valeurs communes: `block`, `table`, `inline-block`) sont impactés par la modification de dimensions d'affichage, au contraire des éléments de type "en ligne" (valeur commune: `inline`).
-
-Par défaut (notions avancés: [MDN docs - box-sizing](https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing)), la hauteur et la largeur définissent la seule taille de la boîte de contenu ("content box") des éléments de type "bloc". 
+Par défaut (pour des notions avancés sur ce sujet, voir [MDN docs - box-sizing](https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing)), la hauteur et la largeur définissent la seule taille de la boîte de contenu ("content box"). 
 
 Toutefois, il ne faut pas perdre de vue qu'au-delà de la boîte de contenu se trouvent les marges internes, puis les bordures, et enfin les marges externes de l'élément. Autrement dit, la taille totale d'un élément est donc définie non seulement par la hauteur et la largeur (lesquelles propriétés constituent la [taille intrinsèque](https://developer.mozilla.org/fr/docs/Glossary/Intrinsic_Size) de l'élément), mais également, de manière additionnelle, par les marges internes, les bordures et les marges externes (lesquelles propriétés constituent la [taille extrinsèque](https://developer.mozilla.org/fr/docs/Glossary/Intrinsic_Size)).
 
-Le type d'affichage (`display`) influe également sur la place prise par l'élément dans le [flux normal d'affichage](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Normal_Flow).
+A noter que le modèle de boîte est conditionné par le type d'affichage et seuls certains éléments sont redimensionnables (voir point suivant pour plus d'information).
+
+#### Display
+
+(Notions avancées)
+
+La propriété d'affichage `display` conditionne le comportement de boîte CSS, notamment pour les valeurs suvantes:
+ - `block` (exemples de balise: `div`, `p`, `h1`, ...)
+ - `table` (exemple de balise: `table`)
+ - `inline-block` (on peut considérer la balise `img` comme répondant à ces caractéristiques)
+ - `inline` (`span`, `a`, ...)
+
+Par défaut, la largeur des éléments de type "bloc" (valeur commune: `block`) équivaut à la largeur de la boîte de contenu du parent, tandis que la largeur des éléments "en ligne " ou équivalent (valeurs communes: `inline`, `inline-block`, `table`) s'adaptera à leur propre contenu.
+
+Seuls les éléments de type "bloc" ou équivalent (valeurs communes: `block`, `table`, `inline-block`) sont impactés par la modification de dimensions d'affichage (et de marges), au contraire des éléments de type "en ligne" (valeur commune: `inline`) qui conserveront toujours leur dimension d'origine.
+
+A noter que forcer les dimensions de la boîte de contenu peut entraîner un dépassement de contenu (voir [MDN docs - dépassement de contenu](https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Overflowing_content)).
+
+Le type d'affichage influe également sur la place prise par l'élément dans le [flux normal d'affichage](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Normal_Flow). Les éléments de type "bloc"  (valeurs communes: `block`, `table`) s'imposent sur toute leur ligne, tandis que les éléments de type "en ligne"  (valeurs communes: `inline`, `inline-block`) se suivent sur une même ligne.
+
+Pour plus d'information, voir [MDN docs - display](https://developer.mozilla.org/fr/docs/Web/CSS/display).
+
+##### Résumé
+
+| `display`     | Largeur par défaut | Redimensionnable | Propre ligne |
+|---------------|--------------------|------------------|--------------|
+| `bloc`        | Parent             | Oui              | Oui          |
+| `table`       | Contenu            | Oui              | Oui          |
+| `inline-bloc` | Contenu            | Oui              | Non          |
+| `inline`      | Contenu            | Non              | Non          |
 
 #### Valeurs de taille
 
@@ -378,7 +405,7 @@ Pour rappel, les marges influent sur les dimensions d'affichage, selon le modèl
 
 #### Fusion des marges
 
-A noter que, dans le cadre du flux normal d'affichage, si deux éléments adjacents possèdent tous deux une marge externe (`margin`) se touchant l'une et l'autre, seule la marge la plus importante des deux sera prise en considération. Deux marges ne s'aditionnent donc pas. Attention toutefois que, techniquement, les deux marges sont toujours présentes: elles ne font que se chevaucher dans l'affichage final.
+A noter que, dans le cadre du flux normal d'affichage, si deux éléments adjacents possèdent tous deux une marge externe (`margin`) se touchant l'une et l'autre, seule la marge la plus importante des deux sera prise en considération. Deux marges ne s'aditionnent donc pas. Attention toutefois que, techniquement, les deux marges sont toujours présentes: elles ne font que se chevaucher dans l'affichage final. (Voir [MDN docs - Fusion des marges](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing))
 
 
 ## Exercice 11: positionnement
