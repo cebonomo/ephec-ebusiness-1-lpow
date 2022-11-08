@@ -250,7 +250,7 @@ Toutefois, il ne faut pas perdre de vue qu'au-delà de la boîte de contenu se t
 
 A noter que le modèle de boîte est conditionné par le type d'affichage et seuls certains éléments sont redimensionnables (voir point suivant pour plus d'information).
 
-#### Display
+#### Display: block vs. inline
 
 (Notions avancées)
 
@@ -262,22 +262,22 @@ La propriété d'affichage `display` conditionne le comportement de boîte CSS, 
 
 Par défaut, la largeur des éléments de type "bloc" (valeur commune: `block`) équivaut à la largeur de la boîte de contenu du parent, tandis que la largeur des éléments "en ligne " ou équivalent (valeurs communes: `inline`, `inline-block`, `table`) s'adaptera à leur propre contenu.
 
-Seuls les éléments de type "bloc" ou équivalent (valeurs communes: `block`, `table`, `inline-block`) sont impactés par la modification de dimensions d'affichage (et de marges), au contraire des éléments de type "en ligne" (valeur commune: `inline`) qui conserveront toujours leur dimension d'origine.
+Seuls les éléments de type "block container" (valeurs communes: `block`, `table`, `inline-block`) sont impactés par la modification de dimensions d'affichage (et de marges), au contraire des autres éléments (valeur commune: `inline`) qui conserveront toujours leur dimension d'origine.
 
 A noter que forcer les dimensions de la boîte de contenu peut entraîner un dépassement de contenu (voir [MDN docs - dépassement de contenu](https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Overflowing_content)).
 
-Le type d'affichage influe également sur la place prise par l'élément dans le [flux normal d'affichage](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Normal_Flow). Les éléments de type "bloc"  (valeurs communes: `block`, `table`) s'imposent sur toute leur ligne, tandis que les éléments de type "en ligne"  (valeurs communes: `inline`, `inline-block`) se suivent sur une même ligne.
+Le type d'affichage influe également sur la place prise par l'élément dans le [flux normal d'affichage](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Normal_Flow). Les éléments de type "block-level"  (valeurs communes: `block`, `table`) s'imposent sur toute leur ligne, tandis que les éléments de type "inline-level"  (valeurs communes: `inline`, `inline-block`) se suivent sur une même ligne.
 
 Pour plus d'information, voir [MDN docs - display](https://developer.mozilla.org/fr/docs/Web/CSS/display).
 
 ##### Résumé
 
-| `display`     | Largeur par défaut | Redimensionnable | Propre ligne |
-|---------------|--------------------|------------------|--------------|
-| `bloc`        | Parent             | Oui              | Oui          |
-| `table`       | Contenu            | Oui              | Oui          |
-| `inline-bloc` | Contenu            | Oui              | Non          |
-| `inline`      | Contenu            | Non              | Non          |
+| `display`     | Propre ligne | Largeur par défaut | Redimensionnable |
+|---------------|--------------|--------------------|------------------|
+| `bloc`        | Oui          | Parent             | Oui              |
+| `table`       | Oui          | Contenu            | Oui              |
+| `inline-bloc` | Non          | Contenu            | Oui              |
+| `inline`      | Non          | Contenu            | Non              |
 
 #### Valeurs de taille
 
