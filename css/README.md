@@ -272,12 +272,12 @@ Pour plus d'information, voir [MDN docs - display](https://developer.mozilla.org
 
 ##### Résumé
 
-| `display`     | Propre ligne | Largeur par défaut | Redimensionnable |
-|---------------|--------------|--------------------|------------------|
-| `bloc`        | Oui          | Parent             | Oui              |
-| `table`       | Oui          | Contenu            | Oui              |
-| `inline-bloc` | Non          | Contenu            | Oui              |
-| `inline`      | Non          | Contenu            | Non              |
+| `display`      | Propre ligne | Largeur par défaut | Redimensionnable |
+|----------------|--------------|--------------------|------------------|
+| `bloc`         | Oui          | Parent             | Oui              |
+| `table`        | Oui          | Contenu            | Oui              |
+| `inline-block` | Non          | Contenu            | Oui              |
+| `inline`       | Non          | Contenu            | Non              |
 
 #### Valeurs de taille
 
