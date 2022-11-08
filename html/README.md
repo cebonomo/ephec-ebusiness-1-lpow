@@ -254,6 +254,7 @@ Pour afficher de manière brute les données réceptionnées par le serveur web,
 </pre>
 ```
 
+Il est important de veiller à ce que l'association `name` => `value` de chaque champ HTML soumis se retrouve correctement dans les données reçues par le serveur, en particulier dans le cadre de choix multiples.
 
 
  
