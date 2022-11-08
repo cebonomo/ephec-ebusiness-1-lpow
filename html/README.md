@@ -27,7 +27,7 @@ A noter que l'UTF-8 est rétrocompatible avec l'ASCII, mais pas avec l'ISO-8859-
 L'UTF-8 est le jeux de caratères par défaut de HTML5. _A priori_, sa déclaration dans un document HTML n'est donc pas nécessaire. Toutefois, MDN recommande de déclarer systématiquement le jeux de caractères utilisé, notamment pour des raisons de sécurité. (Pour plus d'information, voir [MDN docs - meta](https://developer.mozilla.org/fr/docs/Web/HTML/Element/meta).)
 
 A noter que l'utilisation d'UTF-8 est soumise aux contraintes techniques suivantes:
- - Le fichier contenant le code HTML doit être encodé en UTF-8. Selon moi, le format du fichier doit être déclaré sans BOM (le BOM n'étant pas nécessaire dans le cas d'HTML et pouvant entraîner des perturbations dans l'envoi des headers HTTP par PHP).
+ - Le fichier contenant le code HTML doit être encodé en UTF-8. Selon moi, le format du fichier doit être déclaré sans BOM (le BOM n'étant pas nécessaire dans le cas d'HTML et pouvant entraîner des perturbations dans l'envoi des headers HTTP par le serveur).
  - La `content-type` de la response HTTP doit déclarer le charset UTF-8, sous peine d'écraser le charset HTML et d'entraîner une incohérence, et ce d'autant plus que la [valeur par défaut](https://www.w3.org/International/articles/http-charset/index) pour HTTP 1.1 est l'ISO-8859-1.
  - La déclaration du charset doit se faire en début de document HTML.
 
@@ -122,7 +122,7 @@ Si l'image ne s'affiche pas correctement, appliquer la procédure de débuggage 
 ## Exercice 5: tableaux
 
  1. Créer un fichier `tableaux/index.*`.
- 2. Veiller à comprendre par quelles URL y accéder en HTTP.
+ 2. Veiller à comprendre par quelle URL y accéder en HTTP.
  3. Par ce fichier, afficher un tableau simple, avec au moins:
     - Plusieurs lignes
     - Plusieurs colonnes
@@ -181,5 +181,79 @@ A noter qu'il existe plusieurs possibilités de liens (hors cours):
  - Lien vers une adresse email.
  - Lien de téléchargement de fichier.
  - Lien ouvrant un nouvel onglet.
+
+## Exercice 7: formulaires
+
+1. Créer un fichier `forms.php`.
+2. Veiller à comprendre par quelle URL y accéder en HTTP.
+
+### Champs
+
+#### Texte
+
+1. Par ce fichier, afficher un formulaire contenant les champs suivants, accompagnés de leurs légendes respectives:
+   - Texte simple (+ placeholder)
+   - Mot de passe
+   - Email (+ placeholder)
+   - Téléphone (+ placeholder)
+   - Submit et reset
+2. Afficher de manière brute les données reçues par le serveur lors de la soumission du formulaire, et tâcher de les comprendre.
+
+#### Choix à réponse unique
+
+1. Par ce fichier, afficher un formulaire contenant les champs suivants, accompagnés de leurs légendes respectives:
+   - Radio multiples
+   - Select à sélection unique (+ optgroup)
+   - Select à sélection unique avec un choix sélectionné par défaut
+   - Submit et reset
+2. Afficher de manière brute les données reçues par le serveur lors de la soumission du formulaire, et tâcher de les comprendre.
+
+#### Choix à réponses multiples
+
+1. Par ce fichier, afficher un formulaire contenant les champs suivants, accompagnés de leurs légendes respectives:
+   - Checkbox multiples
+   - Checkbox unique checkée par défaut
+   - Submit et reset
+2. Afficher de manière brute les données reçues par le serveur lors de la soumission du formulaire, et tâcher de les comprendre.
+
+#### Caché
+
+1. Par ce fichier, afficher un formulaire contenant les champs suivants:
+   - Caché
+   - Submit et reset
+2. Afficher de manière brute les données reçues par le serveur lors de la soumission du formulaire, et tâcher de les comprendre.
+
+#### Divers
+
+1. Par ce fichier, afficher un formulaire contenant les champs suivants:
+   - Textarea
+   - Nombre
+   - Range
+   - Submit et reset
+2. Afficher de manière brute les données reçues par le serveur lors de la soumission du formulaire, et tâcher de les comprendre.
+
+### Remarques théoriques
+
+### Focus
+
+Le focus détermine l'élement HTML écoutant la saisie de l'utilisateur. Par exemple, dans le cadre d'un formulaire, si un utilisateur saisit du texte à partir de son clavier, seul le champ bénéficiant du focus (et dans lequel, en l'occurrence, se trouve le curseur de texte) sera mis à jour. 
+
+A noter, pour aller plus loin (notions avancées), l'existence, en CSS, de la pseudo-class `:focus` ([MDN docs - :focus](https://developer.mozilla.org/fr/docs/Web/CSS/:focus)).
+
+#### Label
+
+Idéalament, chaque champ de formulaire est associé à une légende (`label`) qui lui est propre. En cliquant sur la légende, le focus est mis sur le champ associé.
+
+#### Données côté serveur: debuggage
+
+Pour afficher de manière brute les données réceptionnées par le serveur web, on peut se servir, par exemple, de PHP:
+
+```php
+<pre>
+   <?php print_r($_POST); ?>
+</pre>
+```
+
+
 
  
