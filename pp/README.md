@@ -321,11 +321,13 @@ var_dump($value);
 
 1. Ecrire un programmme permettant d'échanger deux variables. Si `a` vaut `5` et si `b` vaut `3`, le programme fera en sorte que `a` vaille `3` et `b` vaille `5`.
 
-### Opération arithmétique
+### Opérations arithmétiques simples
 
 1. Ecrire un programme qui calcule le carré d'un nombre contenu dans une variable et affecte le résultat dans une nouvelle variable.
 
-2. Ecrire un programme qui calcule la somme TTC d'une commande, à partir de deux variables: le prix HTVA d'un seul article et le nombre de cet article dans la commande. Le taux de TVA applicable est de 20,5%. Le résultat est affecté dans une nouvelle variable.
+### Définition de constantes
+
+1. Ecrire un programme qui calcule la somme TTC d'une commande, à partir de deux variables: le prix HTVA d'un seul article et le nombre de cet article dans la commande. Le taux de TVA applicable est de 20,5% et est défini dans une constante. Le résultat est affecté dans une nouvelle variable.
 
 
 ## Exercice 3: conditions
