@@ -1,5 +1,11 @@
 # Changements
 
+ 1. Création du fichier `forms.php`.
+ 2. Ajout des balises de formulaire, dans `forms.php`:
+    - `form` ([MDN docs - form](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Form))
+    - `input` ([MDN docs - input](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input))
+    - `label` ([MDN docs - label](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Label))
+
 ## Champs texte
 
 Code HTML:
@@ -12,7 +18,7 @@ Code HTML:
     <br>
 
     <label for="my-input-password-id">Mot de passe</label>
-    <input type="password" name="my-input-password"  id="my-input-password-id">
+    <input type="password" name="my-input-password" id="my-input-password-id">
     <br>
 
     <label for="my-input-email-id">Email</label>

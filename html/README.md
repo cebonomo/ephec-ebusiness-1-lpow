@@ -242,7 +242,7 @@ Le focus détermine l'élement HTML écoutant la saisie de l'utilisateur. Par ex
 
 #### Label
 
-Idéalament, chaque champ de formulaire est associé à une légende (`label`) qui lui est propre. En cliquant sur la légende, le focus est mis sur le champ associé.
+Idéalement, chaque champ de formulaire est associé à une légende (`label`) qui lui est propre. En cliquant sur la légende, le focus est mis sur le champ associé.
 
 #### CSS
 
@@ -264,7 +264,7 @@ Pour afficher de manière brute les données réceptionnées par le serveur web,
 <pre><?php print_r($_POST); ?></pre>
 ```
 
-L'utilisation de PHP implique que l'extension du fichier réceptionant le formulaire soit `.php`. Si le fichier se termine par `.html`, le serveur web de solicitera pas l'interprétation du code par PHP et considérera ce code comme un simple texte. 
+L'utilisation de PHP implique que l'extension du fichier réceptionant le formulaire soit `.php`. Si le fichier se termine par `.html`, le serveur web ne solicitera pas l'interprétation du code par PHP et considérera ce code comme un simple texte. 
 
 Il est important de veiller à ce que l'association `name` => `value` de chaque champ HTML soumis se retrouve correctement dans les données reçues par le serveur (`$_POST`), en particulier dans le cadre de choix multiples.
 

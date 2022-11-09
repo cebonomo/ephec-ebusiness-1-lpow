@@ -33,7 +33,7 @@
     <br>
 
     <label for="my-input-password-id">Mot de passe</label>
-    <input type="password" name="my-input-password"  id="my-input-password-id">
+    <input type="password" name="my-input-password" id="my-input-password-id">
     <br>
 
     <label for="my-input-email-id">Email</label>
