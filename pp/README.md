@@ -233,18 +233,24 @@ a += b
 #### PHP
 
 ```php
+<?php
+
 // opérateur de concaténation spécifique à php
 $a = 'a' . 'b';
 // que vaut $a ?
 ```
 
 ```php
+<?php
+
 // opérateur de concaténation spécifique à php
 $a = '1' . '2';
 // que vaut $a ?
 ```
 
 ```php
+<?php
+
 // opérateur de concaténation spécifique à php
 $a = 1;
 $b = '5';
@@ -255,7 +261,7 @@ $a .= $b;
 
 ## Exercice 2: variables
 
-### Remarques techniques péalables
+### Remarques techniques préalables
 
 #### Langages
 
@@ -297,7 +303,7 @@ En Javascript, le code sera, par exemple:
 let value = parseFloat(prompt('Valeur à affecter', '')) || 0
 
 console.log(value)
-// La valeur de la variable "result" sera affiché dans la console du navigateur.
+// La valeur de la variable "value" sera affiché dans la console du navigateur.
 ```
 
 En PHP, le code sera, par exemple:
@@ -308,12 +314,12 @@ En PHP, le code sera, par exemple:
 $value = (float)($_GET['value'] ?? 0);
 
 var_dump($value);
-// La valeur de la variable "$result" sera affiché dans le navigateur ayant appelé le script.
+// La valeur de la variable "$value" sera affiché dans le navigateur ayant appelé le script.
 ```
 
 ### Permutation de valeurs
 
-1 .Ecrire un programmme permettant d'échanger deux variables. Si `a` vaut `5` et si `b` vaut `3`, le programme fera en sorte que `a` vaille `3` et `b` vaille `5`.
+1. Ecrire un programmme permettant d'échanger deux variables. Si `a` vaut `5` et si `b` vaut `3`, le programme fera en sorte que `a` vaille `3` et `b` vaille `5`.
 
 ### Opération arithmétique
 
