@@ -33,6 +33,25 @@ Néanmoins, en cas de difficulté, il ne faut pas rester bloqué. Au cours de TP
 
 ## Bonnes pratiques
 
+### Conventions de codage
+
+Il existe plusieurs façon d'écrire le même code. L'indentation, la présence d'espace, les retours à la lignes, l'utilisation de simples ou de doubles guillemets, l'utilisation de minuscules ou de majuscules, nommage des fichiers: tout cela peut varier au sein d'un même langage.
+
+C'est pourquoi, on décide de suivre des conventions de langage, c'est-à-dire des règles de style de codage. Par exemple, en HTML, on utilise des doubles guillemets pour définir la valeur d'un attribut de balise, même si des simples guillemets fonctionnent également.
+
+Dans l'absolu, un codeur est libre de choisir n'importe quelles conventions de codage. Toutefois, il est important de prendre en considération les remarques suivantes:
+ - Consistance: toujours appliquer les mêmes règles dans un même programme (on se tient à une et une seule convention).
+ - Lisibilité: le premier critère d'un bon code est sa lisibilité. Or, les conventions de codage visent justement à améliorer la lisibilité. Les choix des conventions doivent être arrêtés dans cet objectif.
+ - Communauté: Un code est lu et maintenu par des codeurs différents, travaillant souvant en équipe. Il est important que les règles soient communes à ces codeurs. Pour facilter la compréhension des règles à autrui, il est préférable de suivre des conventions propres à une large communauté de codeur.
+
+### Sensibilité à la casse
+
+En informatique, être [sensible à la casse](https://fr.wikipedia.org/wiki/Sensibilit%C3%A9_%C3%A0_la_casse) ("case sensitivity") signifie qu'une différence est faitre entre une lettre en minuscule et cette même lettre en majuscule.
+
+Certains OS et langages sont sensibles à la casse (Linux, MacOS, JavaScript, PHP, ...), d'autres non (Windows, HTML, CSS, ...).
+
+D'une manière générale, la convention exige que tout code écrivable en minuscules doit être écrit uniquement en minuscules.
+
 ### Création du dossier de projet
 
 Au préalable de tout code, il est nécessaire de créer un [dossier (ou répertoire)](https://fr.wikipedia.org/wiki/R%C3%A9pertoire_(informatique)) spécifique visant à contenir (uniquement) le projet.
@@ -65,18 +84,6 @@ Le code pouvant contenir un grand nombre de fichiers, il est recommandé de rang
 
 On ne travaille qu'en local, jamais directement sur le serveur. Les fichiers du serveur ne sont que le reflet parfait des fichiers locaaux.
 
-### Gestion du cache du navigateur
-
-Le cache est un système qui autorise le navigateur à garder en mémoire des ressources, plutôt qu'à les demander par HTTP une nouvelle fois. Cela peut être le cas des styles CSS, des images, etc. Etant donné ce cache, il se peut qu'un fichier soit modifié du côté du serveur (par exemple, une déclaration CSS), mais que le navigateur ne rafraîchisse pas cette ressource (et que le nouveau style ne soit pas affiché).
-
-Il est toutefois possible de forcer le navigateur à rafraîchir son cache, et donc d'affectuer une nouvelle requête vers le serveur:
- - Raccourci clavier pour vider le cache et rafraîchir la page:
-    - Windows/Linux: `CTRL`+`F5`
-    - Mac:
-      - Chrome: `Cmd`+`Shift`+`R` 
-      - Safari: `Cmd`+`Opt`+`E` pour vider le cache, puis `Cmd`+`R`pour rafraîchir la page 
- - Dans le "devtools" (`F12`) du navigateur, une option permet de désactiver le cache, lorsque cet outil est ouvert.
-
 ### Validité du code HTML
 
 Lors de l'écriture du code, il est important de conserver un code valide à tout moment. 
@@ -96,11 +103,45 @@ Procédure pour écrire du HTML valide (principe général du "quand on l'ouvre,
 Pour facilité la gestion des [cascades](https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance), les règles CSS s'écrivent des plus générales aux plus spécifiques.
 
 
+## Outils
+
+### Navigateur (browser)
+
+Principaux navigateurs:
+ - Firefox (Mozilla)
+ - Chrome (Alphabet)
+ - Safari (Apple)
+ - Edge (Microsoft)
+
+#### Devtools
+
+Le [devtools](https://en.wikipedia.org/wiki/Web_development_tools) est une console de débuggage présente dans le navigateur.
+
+Raccourci clavier pour ouvrir le devtools:
+ - Windows/Linux: `F12` ou `Control`+`Shift`+`C`
+ - Mac: `Command`+`Option`+`C` (attention, doit peut-être être activé [tuto](https://balsamiq.com/support/faqs/browserconsole/))
+
+#### Gestion du cache
+
+Le [cache](https://fr.wikipedia.org/wiki/Cache_web) est un système qui (notamment) autorise le navigateur à garder en mémoire des ressources, plutôt qu'à les demander par HTTP une nouvelle fois. Cela peut être le cas des styles CSS, des images, etc. Etant donné ce cache, il se peut qu'un fichier soit modifié du côté du serveur (par exemple, une déclaration CSS), mais que le navigateur ne rafraîchisse pas cette ressource (et que le nouveau style ne soit pas affiché).
+
+Il est toutefois possible de forcer le navigateur à rafraîchir son cache, et donc d'affectuer une nouvelle requête vers le serveur:
+ - Raccourci clavier pour vider le cache et rafraîchir la page:
+    - Windows/Linux: `CTRL`+`F5`
+    - Mac:
+      - Chrome: `Cmd`+`Shift`+`R` 
+      - Safari: `Cmd`+`Opt`+`E` pour vider le cache, puis `Cmd`+`R`pour rafraîchir la page 
+ - Dans le "devtools" (`F12`) du navigateur, une option permet de désactiver le cache, lorsque cet outil est ouvert.
+
+ Pour plus d'information, voir [Wikipédia - purge du cache](https://fr.wikipedia.org/wiki/Aide:Purge_du_cache_du_navigateur). 
+
+
 ## Documentation
 
  1. [MDN - Documentation HTML](https://developer.mozilla.org/fr/docs/Web/HTML)
  2. [MDN - Documentation CSS](https://developer.mozilla.org/fr/docs/Web/CSS)
  3. [MDN - Documentation JavaScript](https://developer.mozilla.org/fr/docs/Web/JavaScript)
+ 3. [PHP - Documentation PHP](https://www.php.net/docs.php)
 
 
 ## Prérequis
@@ -150,15 +191,3 @@ Quelques exemples des nombreuses ressources didactiques présentes sur le web:
   3. [FormationVidéo - Tutos vidéo HTML5 et CSS3](https://www.youtube.com/watch?v=bLPONCBPDeQ&list=PLrSOXFDHBtfG1_4HrfPttdwF8aLpgdsRL)
   4. [FormationVidéo - Tutos vidéo JavaScript](https://www.youtube.com/watch?v=02Xs2ySaXcs&list=PLrSOXFDHBtfGxf_PtXLu_OrjFKt4_dqB_)
   5. ...
- 
-
-## Outils
-
-### Devtools
-
-Le [devtools](https://en.wikipedia.org/wiki/Web_development_tools) est une console de débuggage présente dans le navigateur.
-
-Raccourci clavier pour ouvrir le devtools:
- - Windows/Linux: `F12` ou `Control`+`Shift`+`C`
- - Mac: `Command`+`Option`+`C` (attention, doit peut-être être activé [tuto](https://balsamiq.com/support/faqs/browserconsole/))
-

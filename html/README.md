@@ -268,5 +268,7 @@ L'utilisation de PHP implique que l'extension du fichier réceptionant le formul
 
 Il est important de veiller à ce que l'association `name` => `value` de chaque champ HTML soumis se retrouve correctement dans les données reçues par le serveur (`$_POST`), en particulier dans le cadre de choix multiples.
 
+Attention: PHP est sensible à la case!
+
 
  
