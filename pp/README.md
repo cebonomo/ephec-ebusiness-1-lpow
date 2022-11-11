@@ -2,6 +2,41 @@
 
 ## Exercice 1: opérateurs
 
+### Remarques techniques préalables
+
+L'utilisation d'opérateur nécessite la compréhension préalable de la notion de type de donnée.
+
+#### Principaux types scalaires
+
+| Types                | JS        | PHP           | Exemples                |
+|----------------------|-----------|---------------|-------------------------|
+| Nombre               | `Number`  | `int`, `float`|  `-1`, `0`, `1.50`, ... |
+| Chaîne de caractères | `String`  | `string`      | `"foo"`, `'bar'`, ...   |
+| Booléen              | `Boolean` | `bool`        | `true`, `false`         |
+
+A noter (notions avancées) qu'en JavaScript, les valeurs primitives ne sont minipulées au travers d'objets immuables. Pour plus d'information sur les types en JavaScript, voir [MDN docs - types](https://developer.mozilla.org/fr/docs/Web/JavaScript/Data_structures).
+
+##### Javascript: valeurs primitives particulières
+
+(Notions avancées)
+
+  - `undefined` ([MDN docs - undefined](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/undefined))
+  - `NaN` ([MDN docs - NaN](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/NaN))
+
+#### Connaître le type
+
+(Notions avancées)
+
+##### JavaScript
+
+Voir l'opérateur `typeof` ([MDN docs - typeof](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/typeof)). 
+
+##### PHP
+
+Voir la fonction `gettype` ([PHP doc - gettype](https://www.php.net/manual/fr/function.gettype.php)).
+
+### Enoncés
+
 1. Déterminer le résultat de chaque code, en précisant la valeur et le type.
 
 ### Opérateurs arithmétiques
@@ -273,6 +308,18 @@ $a .= $b;
 
 Les deux langages vus au cours sont JavaScript et PHP. Les exercices qui suivent impliquent une logique similaire pour résoudre les problèmes dans chaque langage. Autrement dit, à part bien sûr les règles syntaxiques propres à chaque langage, les codes en JavaScript et en PHP seront identiques quant à leur logique.
 
+#### Déclaration
+
+JavaScript nécessite, pour un code plus propre, de déclarer ses variables. 
+
+En Javascript, une variable déclarée mais non affectée prend la valeur `undefined`.
+
+Si PHP ne demande pas de déclarer ses variables, il est toutefois nécessaire de définir les constantes. 
+
+#### Portée
+
+La [portée](https://fr.wikipedia.org/wiki/Port%C3%A9e_(informatique)) d'une variable est l'étendue de code dans laquelle sera accessible cette variable.
+
 #### Input
 
 Dans les exercices suivants, pour faciliter le débuggage, il est possible d'affecter de manière dynamique la valeur des variables initiales, de sorte que l'utilisateur puisse entrer des valeurs différentes pour simuler un comportement différent du programme.
@@ -323,17 +370,13 @@ var_dump($value);
 // La valeur de la variable "$value" sera affiché dans le navigateur ayant appelé le script.
 ```
 
-### Permutation de valeurs
+### Enoncés
 
 1. Ecrire un programmme permettant d'échanger deux variables. Si `a` vaut `5` et si `b` vaut `3`, le programme fera en sorte que `a` vaille `3` et `b` vaille `5`.
 
-### Opérations arithmétiques simples
+2. Ecrire un programme qui calcule le carré d'un nombre contenu dans une variable et affecte le résultat dans une nouvelle variable.
 
-1. Ecrire un programme qui calcule le carré d'un nombre contenu dans une variable et affecte le résultat dans une nouvelle variable.
-
-### Définition de constantes
-
-1. Ecrire un programme qui calcule la somme TTC d'une commande, à partir de deux variables: le prix HTVA d'un seul article et le nombre de cet article dans la commande. Le taux de TVA applicable est de 20,5% et est défini dans une constante. Le résultat est affecté dans une nouvelle variable.
+3. Ecrire un programme qui calcule la somme TTC d'une commande, à partir de deux variables: le prix HTVA d'un seul article et le nombre de cet article dans la commande. Le taux de TVA applicable est de 20,5% et est défini dans une constante. Le résultat est affecté dans une nouvelle variable.
 
 
 ## Exercice 3: conditions
