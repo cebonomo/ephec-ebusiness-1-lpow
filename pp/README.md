@@ -178,12 +178,12 @@ true || false
 // que vaut l'expression?
 ```
 
-### Opérateurs d'assignation
+### Opérateurs d'affectation (ou assignation)
 
 ```javascript
-a = 1
-b = 2
-a = b
+a = 1 //initialisation de a
+b = 2 //initiatlisation de b
+a = b //affectation de la valeur de b à a
 // que vaut a ?
 // que vaut b ?
 ```
