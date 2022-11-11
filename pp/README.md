@@ -1,8 +1,8 @@
 # Exercices de programmation
 
-## Exercice 1: expressions
+## Exercice 1: opérateurs
 
-1. Déterminer le résultat de chaque expression, en précisant la valeur et le type.
+1. Déterminer le résultat de chaque code, en précisant la valeur et le type.
 
 ### Opérateurs arithmétiques
 
@@ -12,67 +12,8 @@
 ```
 
 ```javascript
-a = 1 + 2
-// que vaut a ?
-```
-
-```javascript
-a = 0
-a += 1
-// que vaut a ?
-```
-
-```javascript
-a = 2
-a *= 3
-// que vaut a ?
-```
-
-```javascript
-a = 0
-a++ //incrémentation
-// que vaut a ?
-```
-
-```javascript
-a = 1
-b = 2
-a = b
-// que vaut a ?
-// que vaut b ?
-```
-
-```javascript
-a = 1
-b = 2
-a = b
-b = 3
-// que vaut a ?
-// que vaut b ?
-```
-
-```javascript
-a = 1
-b = 5
-a = b--
-// que vaut a ?
-// que vaut b ?
-```
-
-```javascript
-a = 1
-b = 5
-a = --b
-// que vaut a ?
-// que vaut b ?
-```
-
-```javascript
-a = 1
-b = 5
-a += --b
-// que vaut a ?
-// que vaut b ?
+25 % 2
+// que vaut l'expression?
 ```
 
 ### Opérateurs de comparaison
@@ -120,8 +61,6 @@ true == true
 'foo' == 'foo'
 // que vaut l'expression?
 ```
-
-#### Egalité avec transtypage
 
 ```javascript
 6 == '6' //égalité non stricte
@@ -211,14 +150,98 @@ true || false
 
 ```javascript
 // opérateur de concaténation spécifique à javascript
-let a = 'a' + 'b'
-// que vaut a ?
+'a' + 'b'
+// que vaut l'expression?
 ```
 
 ```javascript
 // opérateur de concaténation spécifique à javascript
-let a = '1' + '2'
+'1' + '2'
+// que vaut l'expression?
+```
+
+#### PHP
+
+```php
+<?php
+
+// opérateur de concaténation spécifique à php
+'a' . 'b';
+// que vaut l'expression?
+```
+
+```php
+<?php
+
+// opérateur de concaténation spécifique à php
+'1' . '2';
+// que vaut l'expression?
+```
+
+### Opérateurs d'assignation
+
+```javascript
+a = 1
+b = 2
+a = b
 // que vaut a ?
+// que vaut b ?
+```
+
+```javascript
+a = 1
+b = 2
+a = b
+b = 3
+// que vaut a ?
+// que vaut b ?
+```
+
+```javascript
+a = 1 + 2
+// que vaut a ?
+```
+
+```javascript
+a = 0
+a += 1
+// que vaut a ?
+```
+
+```javascript
+a = 2
+a *= 3
+// que vaut a ?
+```
+
+```javascript
+a = 0
+a++ //incrémentation
+// que vaut a ?
+```
+
+```javascript
+a = 1
+b = 5
+a = b-- //décrémentation
+// que vaut a ?
+// que vaut b ?
+```
+
+```javascript
+a = 1
+b = 5
+a = --b
+// que vaut a ?
+// que vaut b ?
+```
+
+```javascript
+a = 1
+b = 5
+a += --b
+// que vaut a ?
+// que vaut b ?
 ```
 
 ```javascript
@@ -228,24 +251,6 @@ let b = '5'
 a += b
 // que vaut a ?
 // que vaut b ?
-```
-
-#### PHP
-
-```php
-<?php
-
-// opérateur de concaténation spécifique à php
-$a = 'a' . 'b';
-// que vaut $a ?
-```
-
-```php
-<?php
-
-// opérateur de concaténation spécifique à php
-$a = '1' . '2';
-// que vaut $a ?
 ```
 
 ```php
@@ -258,6 +263,7 @@ $a .= $b;
 // que vaut $a ?
 // que vaut $b ?
 ```
+
 
 ## Exercice 2: variables
 
@@ -289,7 +295,7 @@ $value = (float)($_GET['value'] ?? 0);
 
     Exemple d'URL:
     http://localhost:8080/script.php?value=123
-    Dans cet exemple, "$value" vaudra le nombre 123.00
+    Dans cet exemple, "$value" vaudra le nombre 123
 */
 ```
 
@@ -347,14 +353,14 @@ var_dump($value);
 
 5. Ecrire un programme qui affiche et résoud une équation du second degré: `ax² + bx + c = 0`. Les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `Δ` le discriminant du trinôme `ax² + bx + c`: (`Δ = b² - 4ac`). Le programme veille à gérer les cas suivants: 
     - `a = 0`: pas de solution réelle
-    - `Δ < 0`: solution valant `x = -(b/2a)`
+    - `Δ < 0`: solution valant `x = -(b/(2a))`
     - `Δ = 0`: pas de solution réelle  
-    - `Δ < 0`: solution valant `x = (-b - √Δ) / (2a)` et `x = (-b + √Δ) / (2a)`
+    - `Δ > 0`: solution valant `x = (-b-√Δ)/(2a)` et `x = (-b+√Δ)/(2a)`
     - `b < 0`: affichage avec signe négatif
     - `c < 0`: affichage avec signe négatif
 
 
-## Bonus: game
+## Exercice bonus: game
 
  1. Dans le fichier [exbonus/v1.html](./exbonus/v1.html), modifier le code pour que bouge la balle(`circle`).
  2. Dans le fichier [exbonus/v2.html](./exbonus/v2.html), modifier le code pour que la balle rebondisse sur les bords du cadre (les dimensions du cadre sont définies dans `stage`).
