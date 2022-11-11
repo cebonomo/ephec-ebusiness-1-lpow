@@ -354,3 +354,8 @@ var_dump($value);
     - `c < 0`: affichage avec signe négatif
 
 
+## Bonus: game
+
+ 1. Dans le fichier [exbonus/v1.html](./exbonus/v1.html), modifier le code pour que bouge la balle(`circle`).
+ 2. Dans le fichier [exbonus/v2.html](./exbonus/v2.html), modifier le code pour que la balle rebondisse sur les bords du cadre (les dimensions du cadre sont définies dans `stage`).
+ 3. Dans le fichier [exbonus/v3.html](./exbonus/v3.html), modifier le code pour que la balle change de couleur avec le temps (les couleurs courantes se trouve dans `rgb`).

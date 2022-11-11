@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>exbonus - v2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            padding: 50px;
+            background: #eee;
+        }
+
+        canvas {
+            background: #fff;
+            display: block;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<canvas id="main" width="480" height="320"></canvas>
+
+<script type="module" src="https://raw.githubusercontent.com/Raphhh/arcadium/master/dist/dev.js"></script>
+<script type="module">
+
+    function createCircle(arcadium, color, size) {
+        const circle = arcadium.stage.addShape({}, arcadium.services.spriteCircleShapeRendering);
+        circle.fillStyle = color;
+        circle.width = circle.height = size;
+
+        // move the circle in the center of the stage
+        circle.x = arcadium.stage.width / 2 - circle.width / 2;
+        circle.y = arcadium.stage.height / 2 - circle.height / 2;
+
+        return circle;
+    }
+
+    const arcadium = new Arcadium(document.getElementById('main'));
+    //arcadium.isDebugMode = true;
+
+    const circle = createCircle(arcadium, 'blue', 40);
+
+    let xSpeed = 1;
+    let ySpeed = 2;
+    
+    arcadium.loop((arcadium) => {
+       
+        circle.x += xSpeed;
+        circle.y += ySpeed;
+
+        // setp 2: bounce
+
+    });
+
+</script>
+
+
+</body>
+
+</html>
