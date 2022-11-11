@@ -1,5 +1,7 @@
 # Exercices de programmation
 
+Les deux langages vus au cours sont JavaScript et PHP. Les exercices qui suivent impliquent une logique similaire pour résoudre les problèmes dans chaque langage. Autrement dit, à part bien sûr les règles syntaxiques propres à chaque langage, les codes en JavaScript et en PHP seront identiques quant à leur logique.
+
 ## Exercice 1: opérateurs
 
 ### Remarques techniques préalables
@@ -39,7 +41,7 @@ Voir la fonction `gettype` ([PHP doc - gettype](https://www.php.net/manual/fr/fu
 
 1. Déterminer le résultat de chaque code, en précisant la valeur et le type.
 
-### Opérateurs arithmétiques
+#### Opérateurs arithmétiques
 
 ```javascript
 (2 + 2 * 3) / 4 
@@ -51,9 +53,9 @@ Voir la fonction `gettype` ([PHP doc - gettype](https://www.php.net/manual/fr/fu
 // que vaut l'expression?
 ```
 
-### Opérateurs de comparaison
+#### Opérateurs de comparaison
 
-#### Grandeur
+##### Grandeur
 
 ```javascript
 6 > 5
@@ -75,7 +77,7 @@ Voir la fonction `gettype` ([PHP doc - gettype](https://www.php.net/manual/fr/fu
 // que vaut l'expression?
 ```
 
-#### Egalité
+##### Egalité
 
 ```javascript
 6 == 6
@@ -152,7 +154,7 @@ false == ''
 // que vaut l'expression?
 ```
 
-### Opérateurs logiques
+#### Opérateurs logiques
 
 ```javascript
 true && true
@@ -179,9 +181,9 @@ true || false
 // que vaut l'expression?
 ```
 
-### Opérateurs de concaténation
+#### Opérateurs de concaténation
 
-#### JavaScript
+##### JavaScript
 
 ```javascript
 // opérateur de concaténation spécifique à javascript
@@ -195,7 +197,7 @@ true || false
 // que vaut l'expression?
 ```
 
-#### PHP
+##### PHP
 
 ```php
 <?php
@@ -213,7 +215,7 @@ true || false
 // que vaut l'expression?
 ```
 
-### Opérateurs d'affectation (ou assignation)
+#### Opérateurs d'affectation (ou assignation)
 
 ```javascript
 a = 1 //initialisation de a
@@ -304,10 +306,6 @@ $a .= $b;
 
 ### Remarques techniques préalables
 
-#### Langages
-
-Les deux langages vus au cours sont JavaScript et PHP. Les exercices qui suivent impliquent une logique similaire pour résoudre les problèmes dans chaque langage. Autrement dit, à part bien sûr les règles syntaxiques propres à chaque langage, les codes en JavaScript et en PHP seront identiques quant à leur logique.
-
 #### Déclaration
 
 JavaScript nécessite, pour un code plus propre, de déclarer ses variables. 
@@ -320,7 +318,9 @@ Si PHP ne demande pas de déclarer ses variables, il est toutefois nécessaire d
 
 La [portée](https://fr.wikipedia.org/wiki/Port%C3%A9e_(informatique)) d'une variable est l'étendue de code dans laquelle sera accessible cette variable.
 
-#### Input
+#### Debguggage
+
+##### Input
 
 Dans les exercices suivants, pour faciliter le débuggage, il est possible d'affecter de manière dynamique la valeur des variables initiales, de sorte que l'utilisateur puisse entrer des valeurs différentes pour simuler un comportement différent du programme.
 
@@ -346,7 +346,7 @@ $value = (float)($_GET['value'] ?? 0);
 */
 ```
 
-#### Output
+##### Output
 
 Dans les exercices suivants, pour faciliter le débuggage, il est possible d'afficher le résultat des variables.
 
