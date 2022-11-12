@@ -196,25 +196,30 @@ A noter qu'il existe plusieurs possibilités de liens (hors cours):
    - Mot de passe
    - Email (+ placeholder)
    - Téléphone (+ placeholder)
+   - Textarea
+   - ...
    - Submit et reset
 2. Afficher de manière brute les données reçues par le serveur lors de la soumission du formulaire, et tâcher de les comprendre.
+3. Veillez à comprendre la réinitialisation des donnnées.
 
 #### Choix à réponse unique
 
 1. Par ce fichier, afficher un formulaire contenant les champs suivants, accompagnés de leurs légendes respectives:
-   - Radio multiples
-   - Select à sélection unique (+ optgroup)
+   - Radio multiples (un seul radio bouton peut être sélectionné à la fois!)
+   - Select à sélection unique (+ optgroup) avec un choix sélectionné par défaut
    - Select à sélection unique avec un choix sélectionné par défaut
    - Submit et reset
 2. Afficher de manière brute les données reçues par le serveur lors de la soumission du formulaire, et tâcher de les comprendre.
+3. Veillez à comprendre la réinitialisation des donnnées.
 
 #### Choix à réponses multiples
 
 1. Par ce fichier, afficher un formulaire contenant les champs suivants, accompagnés de leurs légendes respectives:
-   - Checkbox multiples
+   - Checkbox multiples (plusieurs checkbox peuvent être checkées en même temps!)
    - Checkbox unique checkée par défaut
    - Submit et reset
 2. Afficher de manière brute les données reçues par le serveur lors de la soumission du formulaire, et tâcher de les comprendre.
+3. Veillez à comprendre la réinitialisation des donnnées.
 
 #### Caché
 
@@ -222,19 +227,23 @@ A noter qu'il existe plusieurs possibilités de liens (hors cours):
    - Caché
    - Submit et reset
 2. Afficher de manière brute les données reçues par le serveur lors de la soumission du formulaire, et tâcher de les comprendre.
+3. Veillez à comprendre la réinitialisation des donnnées.
 
 #### Divers
 
 1. Par ce fichier, afficher un formulaire contenant les champs suivants:
-   - Textarea
    - Nombre
    - Range
+   - ...
    - Submit et reset
 2. Afficher de manière brute les données reçues par le serveur lors de la soumission du formulaire, et tâcher de les comprendre.
+3. Veillez à comprendre la réinitialisation des donnnées.
 
 [Corrections (v7)](./v7)
 
 ### Remarques théoriques
+
+SUr les formulaires, d'une manière globale, voir [MDN docs - forms](https://developer.mozilla.org/en-US/docs/Learn/Forms).
 
 #### Focus
 
@@ -247,6 +256,8 @@ Idéalement, chaque champ de formulaire est associé à une légende (`label`) q
 #### CSS
 
 A noter, pour aller plus loin (notions avancées), l'existence, en CSS, de plusieurs pseudo-class dédiées aux formulaires (`:focus`, `:checked`, `:disabled`, `:invalid`, ...).
+
+### Remarques techniques
 
 #### HTTP
 
@@ -268,7 +279,32 @@ L'utilisation de PHP implique que l'extension du fichier réceptionant le formul
 
 Il est important de veiller à ce que l'association `name` => `value` de chaque champ HTML soumis se retrouve correctement dans les données reçues par le serveur (`$_POST`), en particulier dans le cadre de choix multiples.
 
-Attention: PHP est sensible à la case!
+Attention: PHP est sensible à la casse!
 
+#### Validation des valeurs
+
+Le navigateur effectue une validation de formulaire par défaut. Pour plus d'information (notions avancées), voir [MDN docs - validation des formulaires](https://developer.mozilla.org/fr/docs/Learn/Forms/Form_validation).
+
+En pratique, les formulaires doivent impérativement faire l'objet d'une validation côté serveur, car toute entrée potentielle d'un utilisateur nécessite des précautions en matière de sécurité.
+
+#### Valeurs vides
+
+A noter que l'absence de valeur lors de la soumission du formulaire connaît des implications différentes selon le type de champ:
+
+ - Si aucune valeur n'est indiquée dans un champ de type texte (au sens large), la valeur passée sera une chaîne de caractère vide `""`.
+ - Par contre, si aucune valeur n'est sélectionnée dans une listes de champ de type `radio` ou `checkbox` relatif à un même `name`, la référence n'est pas envoyée du tout.
+ - Enfin, un élément `select` contient _a priori_ toujours une option et donc une valeur est normalement toujours passée. Néanmoins, une des options peut avoir une valeur vide et passer une chaîne de cracaètre vide `""`. 
+
+Il est possible de rendre la valeur obligatoire grâce à l'attribut `required` ([MDN docs - required](https://developer.mozilla.org/fr/docs/Web/HTML/Element/input#required)).
+
+#### Valeurs "bloquées"
+
+(Notions avancées)
+
+A noter la possibliter de "bloquer" les valeurs des champs, à l'aide des attributs suivants:
+ - `readonly` ([MDN docs - readonly](https://developer.mozilla.org/fr/docs/Web/HTML/Element/input#readonly))
+ - `disabled` ([MDN docs - disabled](https://developer.mozilla.org/fr/docs/Web/HTML/Element/input#disabled))
+
+Voir [démo](https://codepen.io/Raphhh-the-solid/pen/rNKmKXB). 
 
  
