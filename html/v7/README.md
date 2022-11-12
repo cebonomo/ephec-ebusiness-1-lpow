@@ -141,10 +141,10 @@ Code HTML:
     <fieldset>
         <legend>Choisissez n préférence(s) (checkbox)</legend>
         <label for="my-input-checkbox-a-id">Choix a</label>
-        <input type="checkbox" name="my-input-checkbox" id="my-input-checkbox-a-id" value="checkbox-value-a">
+        <input type="checkbox" name="my-input-checkbox[]" id="my-input-checkbox-a-id" value="checkbox-value-a">
         <br>
         <label for="my-input-checkbox-b-id">Choix b</label>
-        <input type="checkbox" name="my-input-checkbox" id="my-input-checkbox-b-id" value="checkbox-value-b">
+        <input type="checkbox" name="my-input-checkbox[]" id="my-input-checkbox-b-id" value="checkbox-value-b">
     </fieldset>
    
     

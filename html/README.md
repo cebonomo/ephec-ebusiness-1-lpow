@@ -243,7 +243,7 @@ A noter qu'il existe plusieurs possibilités de liens (hors cours):
 
 ### Remarques théoriques
 
-SUr les formulaires, d'une manière globale, voir [MDN docs - forms](https://developer.mozilla.org/en-US/docs/Learn/Forms).
+Sur les formulaires, d'une manière globale, voir [MDN docs - forms](https://developer.mozilla.org/en-US/docs/Learn/Forms).
 
 #### Focus
 
@@ -286,6 +286,10 @@ Attention: PHP est sensible à la casse!
 Le navigateur effectue une validation de formulaire par défaut. Pour plus d'information (notions avancées), voir [MDN docs - validation des formulaires](https://developer.mozilla.org/fr/docs/Learn/Forms/Form_validation).
 
 En pratique, les formulaires doivent impérativement faire l'objet d'une validation côté serveur, car toute entrée potentielle d'un utilisateur nécessite des précautions en matière de sécurité.
+
+#### Valeurs multiples
+
+Dans le cas de checkbox multiples, ou d'une manière générale si l'on désire offrir la possibilité d'envoyer plusieurs valeurs pour un même groupe de champs, il est nécessaire de gérer techniquement plusieurs `value` pour un même `name`. Cela ne pose aucun problème à HTTP. Toutefois, PHP nécessite que l'on suffixe le `name` avec une notation de type liste: `[]`.
 
 #### Valeurs vides
 
