@@ -302,23 +302,31 @@ $a .= $b;
 ```
 
 
-## Exercice 2: variables
+## Exercice 2: variables et constantes
 
 ### Remarques techniques préalables
 
-#### Déclaration
+#### Déclarations et définitions
 
-JavaScript nécessite, pour un code plus propre, de déclarer ses variables. 
+##### JavaScript
 
-En Javascript, une variable déclarée mais non affectée prend la valeur `undefined`.
+JavaScript nécessite, pour un code plus propre, de déclarer ses variables. Dans tous les cas, une constante nécessite d'être déclarée. Pour faire simple, il est recommandé d'utiliser le mot-clé `var` ou `let` pour déclarer une variable, et le mot-clé `const` pour définir une constante.
 
-Si PHP ne demande pas de déclarer ses variables, il est toutefois nécessaire de définir les constantes. 
+A noter que, en Javascript, une variable déclarée mais non affectée prend la valeur `undefined`.
+
+Pour plus d'information, voir [MDN docs - variables](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Grammar_and_types#d%C3%A9clarations).
+
+##### PHP
+
+Si PHP ne demande pas de déclarer ses variables, il est toutefois nécessaire de définir les constantes.
+
+Pour plus d'information, voir [PHP doc - variables](https://www.php.net/manual/fr/language.variables.php) et [PHP doc - constantes](https://www.php.net/manual/fr/language.constants.php).
 
 #### Portée
 
-La [portée](https://fr.wikipedia.org/wiki/Port%C3%A9e_(informatique)) d'une variable est l'étendue de code dans laquelle sera accessible cette variable.
+La [portée](https://fr.wikipedia.org/wiki/Port%C3%A9e_(informatique)) d'une variable ou d'une constante est l'étendue de code dans lequelle sera accessible cette variable ou cette constante. La portée diffère selon la syntaxte de déclaration et le langage. On parle de portée "globale" lorsque la variable ou la constante est accessible partout dans le code.
 
-#### Debguggage
+#### Debuggage
 
 ##### Input
 
