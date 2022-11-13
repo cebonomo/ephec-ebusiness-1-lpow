@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>exbonus - v4</title>
+    <title>exbonus - v5</title>
     <style>
         * {
             padding: 0;
@@ -43,6 +43,18 @@
         return circle;
     }
 
+    function createRectangle(arcadium, color, height, width) {
+        const rectangle = arcadium.stage.addShape({}, arcadium.services.spriteRectangleShapeRendering);
+        rectangle.fillStyle = color;
+        rectangle.height = height;
+        rectangle.width = width;
+
+        rectangle.x  = arcadium.stage.width / 2 - rectangle.width / 2;
+        rectangle.y = arcadium.stage.height - rectangle.height;
+
+        return rectangle;
+    }
+
     function extractRgb(rgbAsString) {
         let rgb = rgbAsString.match(/(\d+)/g).map(value => parseInt(value));
         return {
@@ -68,6 +80,7 @@
     //arcadium.isDebugMode = true;
 
     const circle = createCircle(arcadium, 'rgb(0, 0, 255)', 40);
+    const rectangle = createRectangle(arcadium, 'black', 10, 50);
 
     let xSpeed = 1;
     let ySpeed = 2;
@@ -75,6 +88,23 @@
     let redSpeed = 1;
     let greenSpeed = 2;
     let blueSpeed = 3;
+
+    let rectangleSpeed = 20;
+
+
+    // move rectangle
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowLeft' && rectangle.x > arcadium.stage.x) {
+            rectangle.x -= rectangleSpeed;
+        }
+    }, false);
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowRight' && rectangle.x + rectangle.width < arcadium.stage.width) {
+            rectangle.x += rectangleSpeed;
+        }
+    }, false);
+
     
     arcadium.loop((arcadium) => {
 
