@@ -241,23 +241,9 @@ A noter qu'il existe plusieurs possibilités de liens (hors cours):
 
 [Corrections (v7)](./v7)
 
-### Remarques théoriques
+### Remarques théoriques et techniques
 
 Sur les formulaires, d'une manière globale, voir [MDN docs - forms](https://developer.mozilla.org/en-US/docs/Learn/Forms).
-
-#### Focus
-
-Le focus détermine l'élement HTML écoutant la saisie de l'utilisateur. Par exemple, dans le cadre d'un formulaire, si un utilisateur saisit du texte à partir de son clavier, seul le champ bénéficiant du focus (et dans lequel, en l'occurrence, se trouve le curseur de texte) sera mis à jour. 
-
-#### Label
-
-Idéalement, chaque champ de formulaire est associé à une légende (`label`) qui lui est propre. En cliquant sur la légende, le focus est mis sur le champ associé.
-
-#### CSS
-
-A noter, pour aller plus loin (notions avancées), l'existence, en CSS, de plusieurs pseudo-class dédiées aux formulaires (`:focus`, `:checked`, `:disabled`, `:invalid`, ...).
-
-### Remarques techniques
 
 #### HTTP
 
@@ -265,9 +251,28 @@ L'un des objectifs premiers d'un formulaire HTML est de soumettre des données a
 
 Par conséquent, la bonne compréhension des formulaires implique l'utilisation du protocole HTTP afin de simuler un comportement réel. Si, dans un navigateur, il est possible d'afficher un document HTML local via une URL de schéma `file`, le protocole HTTP nécessite de passer par une URL de schéma `http` ou `https`.
 
-Avertissement: les formulaires peuvent contenir des données sensibles, lesquelles vont transiter de manière publique sur Internet. Dès lors, pour des raisons de sécurité, il est impératif de n'utiliser que le protocole HTTPS, seul garant de (notamment) la confidentiallité et l'intégrité des données. De toute façon, d'une manière générale, il est recommandé d'utiliser systématiquement HTTPS.
+La balise `form` permet de paramétrer certains éléments de la request HTTP envoyée lors de la soumission du formulaire:
+ - `method`: méthode de la request HTTP (principales valeurs acceptées: `get` ou `post`)
+ - `action`: URL de la request HTTP
+ - `enctype`: encodage des données dans le cas d'une méthode POST (notions avancées)
+
+Pour plus d'information, voir [MDN docs - form](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form).
+
+Les données telles qu'acheminées par HTTP sont visibles, pour débuggage, dans la DevTools du navigateur.
+
+#### Sécurité
+
+Avertissement: les formulaires peuvent contenir des données sensibles, lesquelles vont transiter de manière publique sur Internet.
+
+D'une manière générale, il n'est pas recommandé de faire transiter des données sensibles dans l'URL. Un formulaire utilisant la méthode HTTP `GET` est donc à manipuler avec précaution puisque ses données seront envoyées dans la [querystring](https://en.wikipedia.org/wiki/Query_string) de l'URL. Ce cas est cependant assez rare puisque, en général, les formulaires font appel à la méthode `POST` et ne passent ainsi leurs données que dans le corps du message HTTP.
+
+Dans tous les cas, pour des raisons de sécurité, il est impératif de n'utiliser que le protocole HTTPS (et non HTTP), seul garant de (notamment) la confidentiallité et l'intégrité des données. De toute façon, d'une manière générale, il est recommandé d'utiliser systématiquement HTTPS, même sans formulaire.
+
+Enfin, voir la partie "validation de formulaire".
 
 #### Débuggage des données en PHP
+
+Avertissement: le code expliqué ci-après n'est utilisable qu'à des fins d'apprentissage. Il ne représente en rien des techniques professionnelles de développement et son utilisation comporte plusieurs risques dans le cadre d'un développement visant la production. 
 
 Pour afficher de manière brute les données réceptionnées par le serveur web, on peut se servir, par exemple, de PHP:
 
@@ -311,4 +316,14 @@ A noter la possibliter de "bloquer" les valeurs des champs, à l'aide des attrib
 
 Voir [démo](https://codepen.io/Raphhh-the-solid/pen/rNKmKXB). 
 
- 
+#### Focus
+
+Le focus détermine l'élement HTML écoutant la saisie de l'utilisateur. Par exemple, dans le cadre d'un formulaire, si un utilisateur saisit du texte à partir de son clavier, seul le champ bénéficiant du focus (et dans lequel, en l'occurrence, se trouve le curseur de texte) sera mis à jour. 
+
+#### Label
+
+Idéalement, chaque champ de formulaire est associé à une légende (`label`) qui lui est propre. En cliquant sur la légende, le focus est mis sur le champ associé.
+
+#### CSS
+
+A noter, pour aller plus loin (notions avancées), l'existence, en CSS, de plusieurs pseudo-class dédiées aux formulaires (`:focus`, `:checked`, `:disabled`, `:invalid`, ...).
