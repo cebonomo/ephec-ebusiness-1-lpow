@@ -509,7 +509,7 @@ A noter que la balise PHP fermante `?>` n'est indispensable que lorsque l'on éc
 
 4. Idem, mais inversé. (ex, pour 5: "5.4.3.2.1")
 
-5. Afficher les sorties suivantes:
+5. Ecrire un programme affichant les sorties ci-après, le nombre de lignes étant défini dans une variable. Exemple, pour 5 lignes:
 
 Cas 1:
 ```
@@ -547,33 +547,41 @@ Cas 3:
 
 ## Exercice 5: fonctions
 
- 1. Ecrire un programme contenant une fonction permettant de diviser 2 nombres et qui gère l'impossibilité de diviser par 0.
+### Remarques théoriques
 
- 2. Ecrire un programme contenant une fonction retournant la valeur absolue d'un nombre (ex: si le nombre est -5, la fonction retournera 5).
+#### Notion de fonction
 
- 3. Ecrire une programme contenant une fonction retourtant les résultats suivants:
+Selon les paradigmes et les languages, la notion de fonction peut varier. En JavaScript et en PHP, par fonction, on entend un bloc de code pouvant (ou pas) modifier l'état du programme et pouvant (ou pas) retourner une valeur. En ce sens, on peut appréhender une fonction comme une instruction permettant au codeur de structurer son programme.
+
+### Enoncés
+
+ 1. Ecrire un programme contenant une fonction retournant la valeur absolue d'un nombre (ex: si le nombre est -5, la fonction retournera 5).
+
+ 2. Ecrire une programme contenant une fonction retourtant les résultats suivants:
     - -1: si nombre strictement négatif
     - 0: si 0 ou -0
     - 1: si nombre strictement positif
+
+ 3. Ecrire un programme contenant une fonction permettant de diviser 2 nombres et qui gère l'impossibilité de diviser par 0. 
 
  4. Ecrire une programme contenant une fonction calculant la puissance d'un nombre exposé en n, selon le principe suivant:
     - Si n vaut 1: le résulat vaut le nombre
     - Si n est pair: le résulat vaut (a² exposé en (n/2))
     - Si n est impair: le résultat vaut (a * (a² exposé en (n-1)/2))
-    (Voir la [formule math](../resources/images/pow-fomula.png).)
+    (Voir la [formule mathématique](../resources/images/pow-fomula.png).)
 
 
 ## Exercice 6: array
 
  1. Ecrire un programme choississant de manière aléatoire un élève d'une classe.
 
- 2. Ecrire un programme calculant la somme et la moyenne d'une liste de nombre
+ 2. Ecrire un programme calculant la somme et la moyenne d'une liste de nombres.
 
- 3. Ecrire un programme séparant d'une liste de nombres, les nombres strictements positifs, les 0 et les nombres strictement négatifs.
+ 3. Ecrire un programme séparant, depuis une liste de nombres, les nombres strictements positifs, les 0 et les nombres strictement négatifs.
 
- 4. Ecrire un programme enlevant la dernière entrée d'une liste.
+ 4. Ecrire un programme enlevant la dernière entrée d'une liste et affectant cette valeur dans une variable. Attention au cas du tableau vide.
 
- 5. Ecrire un programme inversant l'ordre d'une liste.
+ 5. Ecrire un programme classant une liste de nombres par ordre croissant.
 
 
 ## Exercice bonus: casse-briques
