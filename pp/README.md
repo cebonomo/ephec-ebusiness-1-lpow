@@ -545,7 +545,7 @@ Cas 3:
  2. Ecrire un programme calculant le PPCM de deux nombres.
 
 
-## Exercice 6: fonctions
+## Exercice 5: fonctions
 
  1. Ecrire un programme contenant une fonction permettant de diviser 2 nombres et qui gère l'impossibilité de diviser par 0.
 
@@ -563,7 +563,7 @@ Cas 3:
     (Voir la [formule math](../resources/images/pow-fomula.png).)
 
 
-## Exercice 7: array
+## Exercice 6: array
 
  1. Ecrire un programme choississant de manière aléatoire un élève d'une classe.
 
