@@ -332,14 +332,66 @@ La [portée](https://fr.wikipedia.org/wiki/Port%C3%A9e_(informatique)) d'une var
 
 Dans les exercices suivants, pour faciliter le débuggage, il est possible d'affecter de manière dynamique la valeur des variables initiales, de sorte que l'utilisateur puisse entrer des valeurs différentes pour simuler un comportement différent du programme.
 
+###### JavaScript
+
 En Javascript, le code sera, par exemple:
 
+- String
+
 ```javascript
-let value = parseFloat(prompt('Valeur à affecter', '')) || 0
+let value = prompt('Valeur à affecter (string)', '')
+// La variable "value" condiendra la valeur (chaîne de caractères) entrée par l'utilisateur dans le prompt du navigateur.
+```
+
+- Int
+
+```javascript
+let value = parseInt(prompt('Valeur à affecter (int)', '')) || 0
+// La variable "value" condiendra la valeur (nombre entier) entrée par l'utilisateur dans le prompt du navigateur.
+```
+
+- Float
+
+```javascript
+let value = parseFloat(prompt('Valeur à affecter (float)', '')) || 0
 // La variable "value" condiendra la valeur (nombre flottant) entrée par l'utilisateur dans le prompt du navigateur.
 ```
 
+###### PHP
+
 En PHP, le code sera, par exemple:
+
+- string
+
+```php
+<?php
+
+$value = $_GET['value'] ?? ''
+/*
+    La variable "$value" condiendra la valeur (chaîne de caractère) entrée par l'utilisateur dans la querystring de l'URL du script. 
+
+    Exemple d'URL:
+    http://localhost:8080/script.php?value=abc
+    Dans cet exemple, "$value" vaudra la string "abc"
+*/
+```
+
+- int
+
+```php
+<?php
+
+$value = (int)($_GET['value'] ?? 0);
+/*
+    La variable "$value" condiendra la valeur (nombre entier) entrée par l'utilisateur dans la querystring de l'URL du script. 
+
+    Exemple d'URL:
+    http://localhost:8080/script.php?value=123
+    Dans cet exemple, "$value" vaudra le nombre 123
+*/
+```
+
+- float
 
 ```php
 <?php
@@ -386,6 +438,7 @@ var_dump($value);
 
 3. Ecrire un programme qui calcule la somme TTC d'une commande, à partir de deux variables: le prix HTVA d'un seul article et le nombre de cet article dans la commande. Le taux de TVA applicable est de 20,5% et est défini dans une constante. Le résultat est affecté dans une nouvelle variable.
 
+4. Ecrire un programme qui affecte à une variable la chaîne de caratères `J'ai écrit "var".` où `var` est une variable.
 
 ## Exercice 3: conditions
 
@@ -409,6 +462,49 @@ var_dump($value);
     - `Δ > 0`: solution valant `x = (-b-√Δ)/(2a)` et `x = (-b+√Δ)/(2a)`
     - `b < 0`: affichage avec signe négatif
     - `c < 0`: affichage avec signe négatif
+
+6. Ecrire un programme qui corrige la réponse à une question:
+    - Question: Quelle est la capitale de la Belgique.
+    - Réponses acceptées: Bruxelles, Brussel ou Brussels
+    - Si mauvaise réponse: Message d'erreur indiquant que la réponse n'est pas correcte.
+    - Si aucune valeur (string vide): Message d'erreur spécifique indiquant qu'il faut réponde quelque chose.
+
+## Exercice 4: boucles
+
+1. Ecrire un programme qui calcule les tables de multiplication (0 -> 10) d'une variable contenant un nombre entier compris entre 1 et 10.
+
+2. Ecrire un programme qui liste tous les calculs possibles entre deux entiers positifs et dont le résulat est une variable contenant un nombre entier compris entre 1 et 10. (ex, pour 3: {0+3, 1+2, 2+1, 3+0}.)
+
+3. Ecrire un programme qui affecte à une variable une chaîne de cracatère concaténant tous les entiers compris entre 1 et une variable contenant un entier positif. Chaque nombre doit être séparé par un point. (ex, pour 5: "1.2.3.4.5".)
+
+4. Idem, mais inversé. (ex, pour 5: "5.4.3.2.1".)
+
+5. Afficher les sorties suivantes:
+
+    - Cas 1:
+```
+>
+>>
+>>>
+>>>>
+>>>>>
+```
+    - Cas 2:
+```
+>>>>>
+>>>>
+>>>
+>>
+>
+```
+    - Cas 3:
+```
+>
+>>
+>>>
+>>
+>
+```
 
 
 ## Exercice bonus: casse-briques
