@@ -408,6 +408,8 @@ $value = (float)($_GET['value'] ?? 0);
 
 ##### Output
 
+###### JavaScript
+
 Dans les exercices suivants, pour faciliter le débuggage, il est possible d'afficher le résultat des variables.
 
 En Javascript, le code sera, par exemple:
@@ -419,16 +421,34 @@ console.log(value)
 // La valeur de la variable "value" sera affiché dans la console du navigateur.
 ```
 
-En PHP, le code sera, par exemple:
+###### PHP
+
+En PHP, le code permettant d'afficher le contenu d'une variable sera, par exemple:
 
 ```php
 <?php
 
 $value = (float)($_GET['value'] ?? 0);
 
-var_dump($value);
+var_dump($value); //debug $value
 // La valeur de la variable "$value" sera affiché dans le navigateur ayant appelé le script.
 ```
+
+Pour simplement envoyer du texte dans le flux de sortie (et donc l'afficher dans le navigateur), le code sera, par exemple:
+
+```php
+<?php
+
+echo $value; //affiche le contenu textuel de $value
+```
+
+Pour afficher un texte dans du HTML, le code sera, par exemple:
+
+```php
+<p><?php echo "Mon paragraphe."; ?></p>
+```
+
+A noter que la balise PHP fermante `?>` n'est indispensable que lorsque l'on écrit dans du HTML.
 
 ### Enoncés
 
@@ -440,7 +460,12 @@ var_dump($value);
 
 4. Ecrire un programme qui affecte à une variable la chaîne de caratères `J'ai écrit "var".` où `var` est une variable.
 
+5. Ecrire un programme qui indique si une variable contenant un nombre est positif (0 étant positif).
+
+
 ## Exercice 3: conditions
+
+### if
 
 1. Ecrire un programme qui vérifie **si** un nombre contenu dans une variable est compris entre 10 et 20.
 
@@ -463,21 +488,26 @@ var_dump($value);
     - `b < 0`: affichage avec signe négatif
     - `c < 0`: affichage avec signe négatif
 
-6. Ecrire un programme qui corrige la réponse à une question:
-    - Question: Quelle est la capitale de la Belgique.
+### switch
+
+1. Ecrire un programme qui corrige la réponse à une question:
+    - Question: Quelle est la capitale de la Belgique?
     - Réponses acceptées: Bruxelles, Brussel ou Brussels
     - Si mauvaise réponse: Message d'erreur indiquant que la réponse n'est pas correcte.
-    - Si aucune valeur (string vide): Message d'erreur spécifique indiquant qu'il faut réponde quelque chose.
+    - Si aucune valeur (string vide): Message d'erreur spécifique indiquant qu'une réponse est requise.
+
 
 ## Exercice 4: boucles
 
+### for
+
 1. Ecrire un programme qui calcule les tables de multiplication (0 -> 10) d'une variable contenant un nombre entier compris entre 1 et 10.
 
-2. Ecrire un programme qui liste tous les calculs possibles entre deux entiers positifs et dont le résulat est une variable contenant un nombre entier compris entre 1 et 10. (ex, pour 3: {0+3, 1+2, 2+1, 3+0}.)
+2. Ecrire un programme qui liste tous les calculs possibles entre deux entiers positifs et dont le résulat est une variable contenant un nombre entier compris entre 1 et 10. (ex, pour 3: 0+3, 1+2, 2+1, 3+0)
 
-3. Ecrire un programme qui affecte à une variable une chaîne de cracatère concaténant tous les entiers compris entre 1 et une variable contenant un entier positif. Chaque nombre doit être séparé par un point. (ex, pour 5: "1.2.3.4.5".)
+3. Ecrire un programme qui affecte à une variable une chaîne de cracatère concaténant tous les entiers compris entre 1 et une variable contenant un entier positif. Chaque nombre doit être séparé par un point. (ex, pour 5: "1.2.3.4.5")
 
-4. Idem, mais inversé. (ex, pour 5: "5.4.3.2.1".)
+4. Idem, mais inversé. (ex, pour 5: "5.4.3.2.1")
 
 5. Afficher les sorties suivantes:
 
@@ -505,6 +535,43 @@ var_dump($value);
 >>
 >
 ```
+
+### while
+
+ 1. Ecrire un programme calculant la puissance d'un nombre exposé en n. Pour cela, il faut multiplier le nombre par lui-même n-1 fois.
+    
+ 2. Ecrire un programme calculant le PPCM de deux nombres.
+
+
+## Exercice 6: fonctions
+
+ 1. Ecrire un programme contenant une fonction permettant de diviser 2 nombres et qui gère l'impossibilité de diviser par 0.
+
+ 2. Ecrire un programme contenant une fonction retournant la valeur absolue d'un nombre (ex: si le nombre est -5, la fonction retournera 5).
+
+ 3. Ecrire une programme contenant une fonction retourtant les résultats suivants:
+    - -1: si nombre strictement négatif
+    - 0: si 0 ou -0
+    - 1: si nombre strictement positif
+
+ 4. Ecrire une programme contenant une fonction calculant la puissance d'un nombre exposé en n, selon le principe suivant:
+    - Si n vaut 1: le résulat vaut le nombre
+    - Si n est pair: le résulat vaut (a² exposé en (n/2))
+    - Si n est impair: le résultat vaut (a * (a² exposé en (n-1)/2))
+    (Voir la [formule math](../resources/images/pow-fomula.png).)
+
+
+## Exercice 7: array
+
+ 1. Ecrire un programme choississant de manière aléatoire un élève d'une classe.
+
+ 2. Ecrire un programme calculant la somme et la moyenne d'une liste de nombre
+
+ 3. Ecrire un programme séparant d'une liste de nombres, les nombres strictements positifs, les 0 et les nombres strictement négatifs.
+
+ 4. Ecrire un programme enlevant la dernière entrée d'une liste.
+
+ 5. Ecrire un programme inversant l'ordre d'une liste.
 
 
 ## Exercice bonus: casse-briques
