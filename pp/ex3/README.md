@@ -19,6 +19,18 @@ if (a >= 10 && a <= 20) {
 console.log(a, message)
 ```
 
+ou
+
+```javascript
+let a = parseFloat(prompt('Valeur à affecter (float)', '')) || 0
+
+let message = 'ko'
+if (a >= 10 && a <= 20) {
+    message = 'ok'
+}
+
+console.log(a, message)
+```
 ### PHP
 
 ```php
