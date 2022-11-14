@@ -312,7 +312,7 @@ $a .= $b;
 
 JavaScript nécessite, pour un code plus propre, de déclarer ses variables. Dans tous les cas, une constante nécessite d'être déclarée. Pour faire simple, il est recommandé d'utiliser le mot-clé `var` ou `let` pour déclarer une variable, et le mot-clé `const` pour définir une constante.
 
-A noter que, en Javascript, une variable déclarée mais non affectée prend la valeur `undefined`.
+A noter que, en Javascript, une variable déclarée mais non initialisée prend la valeur `undefined`.
 
 Pour plus d'information, voir [MDN docs - variables](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Grammar_and_types#d%C3%A9clarations).
 
