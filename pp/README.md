@@ -511,7 +511,7 @@ A noter que la balise PHP fermante `?>` n'est indispensable que lorsque l'on éc
 
 5. Afficher les sorties suivantes:
 
-    - Cas 1:
+Cas 1:
 ```
 >
 >>
@@ -519,7 +519,8 @@ A noter que la balise PHP fermante `?>` n'est indispensable que lorsque l'on éc
 >>>>
 >>>>>
 ```
-    - Cas 2:
+
+Cas 2:
 ```
 >>>>>
 >>>>
@@ -527,7 +528,8 @@ A noter que la balise PHP fermante `?>` n'est indispensable que lorsque l'on éc
 >>
 >
 ```
-    - Cas 3:
+
+Cas 3:
 ```
 >
 >>
