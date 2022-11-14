@@ -467,7 +467,7 @@ A noter que la balise PHP fermante `?>` n'est indispensable que lorsque l'on éc
 
 ### if
 
-1. Ecrire un programme qui vérifie **si** un nombre contenu dans une variable est compris entre 10 et 20.
+1. Ecrire un programme qui vérifie **si** un nombre contenu dans une variable est compris entre 10 et 20 inclus et affiche un message personnalisé en fonction du résulat.
 
 2. Ecrire un programme qui calcule le montant de la prime d'un vendeur en fonction de son chiffre de vente. La prime vaut 10% de son chiffre de vente **si** le montant de la vente dépasse 1000€.
 

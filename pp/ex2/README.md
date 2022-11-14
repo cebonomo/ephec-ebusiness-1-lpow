@@ -42,7 +42,7 @@ console.log(a, result)
 
 ### PHP
 
-```javascript
+```php
 $a = (float)($_GET['value'] ?? 0);
 
 $result = $a * $a;
@@ -76,7 +76,7 @@ define('VAT',  0.205);
 $costVATE = (float)($_GET['cost'] ?? 0);
 $numberOfItems = (float)($_GET['number'] ?? 0);
 
-$totalVATE =  $numberOfItems * $costVATE;
+$totalVATE = $numberOfItems * $costVATE;
 $totalVATI = $totalVATE + ($totalVATE * VAT);
 
 var_dump($costVATE, $numberOfItems, $totalVATE, $totalVATI);
