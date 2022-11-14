@@ -243,18 +243,22 @@ A noter qu'il existe plusieurs possibilités de liens (hors cours):
 
 ### Remarques théoriques et techniques
 
+#### Formulaire en HTML
+
+Un formulaire se compose d'un élément `form` dans lequel se trouvent plusieurs élements de champ (`input`, `select`, ...). Parmi ces éléments de champ se trouve un bouton de soumission du formulaire. Lorsque l'utilisateur clique sur le bouton de soumission, il soumet le formulaire. Dès lors, est soumis l'ensemble des données des champs se trouvant dans le même formulaire que le bouton.
+
 Sur les formulaires, d'une manière globale, voir [MDN docs - forms](https://developer.mozilla.org/en-US/docs/Learn/Forms).
 
 #### HTTP
 
-L'un des objectifs premiers d'un formulaire HTML est de soumettre des données au serveur web via HTTP (nonobstant toute utilisation par JavaScript).
+L'un des objectifs premiers d'un formulaire HTML est de soumettre des données au serveur web via HTTP (nonobstant toute utilisation par JavaScript). Les données du formulaire soumis sont envoyées vers le serveur via HTTP.
 
 Par conséquent, la bonne compréhension des formulaires implique l'utilisation du protocole HTTP afin de simuler un comportement réel. Si, dans un navigateur, il est possible d'afficher un document HTML local via une URL de schéma `file`, le protocole HTTP nécessite de passer par une URL de schéma `http` ou `https`.
 
 La balise `form` permet de paramétrer certains éléments de la request HTTP envoyée lors de la soumission du formulaire:
  - `method`: méthode de la request HTTP (principales valeurs acceptées: `get` ou `post`)
  - `action`: URL de la request HTTP
- - `enctype`: encodage des données dans le cas d'une méthode POST (notions avancées)
+ - (`enctype`: encodage des données dans le cas d'une méthode POST (notions avancées))
 
 Pour plus d'information, voir [MDN docs - form](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form).
 
