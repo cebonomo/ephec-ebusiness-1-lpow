@@ -456,7 +456,7 @@ A noter que la balise PHP fermante `?>` n'est indispensable que lorsque l'on éc
 
 2. Ecrire un programme qui calcule le carré d'un nombre contenu dans une variable et affecte le résultat dans une nouvelle variable.
 
-3. Ecrire un programme qui calcule la somme TTC d'une commande, à partir de deux variables: le prix HTVA d'un seul article et le nombre de cet article dans la commande. Le taux de TVA applicable est de 20,5% et est défini dans une constante. Le résultat est affecté dans une nouvelle variable.
+3. Ecrire un programme qui calcule la somme TVAC d'une commande, à partir de deux variables: le prix HTVA d'un seul article et le nombre de cet article dans la commande. Le taux de TVA applicable est de 20,5% et est défini dans une constante. Le résultat est affecté dans une nouvelle variable.
 
 4. Ecrire un programme qui affecte à une variable la chaîne de caratères `J'ai écrit "var".` où `var` est une variable.
 
