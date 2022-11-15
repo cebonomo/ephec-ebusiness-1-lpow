@@ -42,7 +42,7 @@ C'est pourquoi, on décide de suivre des conventions de langage, c'est-à-dire d
 Dans l'absolu, un codeur est libre de choisir n'importe quelles conventions de codage. Toutefois, il est important de prendre en considération les remarques suivantes:
  - Consistance: toujours appliquer les mêmes règles dans un même programme (on se tient à une et une seule convention).
  - Lisibilité: le premier critère d'un bon code est sa lisibilité. Or, les conventions de codage visent justement à améliorer la lisibilité. Les choix des conventions doivent être arrêtés dans cet objectif.
- - Communauté: Un code est lu et maintenu par des codeurs différents, travaillant souvant en équipe. Il est important que les règles soient communes à ces codeurs. Pour facilter la compréhension des règles à autrui, il est préférable de suivre des conventions propres à une large communauté de codeur.
+ - Communauté: un code est lu et maintenu par des codeurs différents, travaillant souvant en équipe. Il est important que les règles soient communes à ces codeurs. Pour facilter la compréhension des règles à autrui, il est préférable de suivre des conventions propres à une large communauté de codeur.
 
 ### Sensibilité à la casse
 
