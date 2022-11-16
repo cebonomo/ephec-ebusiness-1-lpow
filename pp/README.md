@@ -460,7 +460,7 @@ A noter que la balise PHP fermante `?>` n'est indispensable que lorsque l'on éc
 
 4. Ecrire un programme qui affecte à une variable la chaîne de caratères `J'ai écrit "var".` où `var` est une variable.
 
-5. Ecrire un programme qui indique si une variable contenant un nombre est positif (0 étant positif).
+5. Ecrire un programme qui indique si un nombre contenu dans une variable est positif (0 étant positif).
 
 
 ## Exercice 3: conditions
@@ -540,9 +540,9 @@ Cas 3:
 
 ### while
 
- 1. Ecrire un programme calculant la puissance d'un nombre exposé en n. Pour cela, il faut multiplier le nombre par lui-même n-1 fois.
+ 1. Ecrire un programme calculant la [suite de Fibonacci](https://fr.wikipedia.org/wiki/Suite_de_Fibonacci) jusqu'à un nombre entier non nul limite.
     
- 2. Ecrire un programme calculant le PPCM de deux nombres.
+ 2. Ecrire un programme calculant le [PPCM](https://fr.wikipedia.org/wiki/Plus_petit_commun_multiple) de deux entiers non nuls.
 
 
 ## Exercice 5: fonctions
@@ -579,9 +579,9 @@ Selon les paradigmes et les languages, la notion de fonction peut varier. En Jav
 
  3. Ecrire un programme séparant, depuis une liste de nombres, les nombres strictements positifs, les 0 et les nombres strictement négatifs.
 
- 4. Ecrire un programme enlevant la dernière entrée d'une liste et affectant cette valeur dans une variable. Attention au cas du tableau vide.
+ 4. Ecrire un programme classant une liste de nombres par ordre croissant.
 
- 5. Ecrire un programme classant une liste de nombres par ordre croissant.
+ 5. Ecrire un programme intervertissant deux valeurs données d'une liste.
 
 
 ## Exercice bonus: casse-briques
