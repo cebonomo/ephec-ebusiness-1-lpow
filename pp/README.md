@@ -2,7 +2,7 @@
 
 Les deux langages vus au cours sont JavaScript et PHP. Les exercices qui suivent impliquent une logique similaire pour résoudre les problèmes dans chaque langage. Autrement dit, à part bien sûr les règles syntaxiques propres à chaque langage, les codes en JavaScript et en PHP seront identiques quant à leur logique.
 
-## Exercice 1: opérateurs
+## Exercices 1: opérateurs
 
 ### Remarques techniques préalables
 
@@ -302,7 +302,7 @@ $a .= $b;
 ```
 
 
-## Exercice 2: variables et constantes
+## Exercices 2: variables et constantes
 
 ### Remarques techniques préalables
 
@@ -463,7 +463,7 @@ A noter que la balise PHP fermante `?>` n'est indispensable que lorsque l'on éc
 5. Ecrire un programme qui indique si un nombre contenu dans une variable est positif (0 étant positif).
 
 
-## Exercice 3: conditions
+## Exercices 3: conditions
 
 ### if
 
@@ -497,7 +497,7 @@ A noter que la balise PHP fermante `?>` n'est indispensable que lorsque l'on éc
     - Si aucune valeur (string vide): Message d'erreur spécifique indiquant qu'une réponse est requise.
 
 
-## Exercice 4: boucles
+## Exercices 4: boucles
 
 ### for
 
@@ -545,7 +545,7 @@ Cas 3:
  2. Ecrire un programme calculant le [PPCM](https://fr.wikipedia.org/wiki/Plus_petit_commun_multiple) de deux entiers non nuls.
 
 
-## Exercice 5: fonctions
+## Exercices 5: fonctions
 
 ### Remarques théoriques
 
@@ -571,7 +571,7 @@ Selon les paradigmes et les languages, la notion de fonction peut varier. En Jav
     (Voir la [formule mathématique](../resources/images/pow-fomula.png).)
 
 
-## Exercice 6: array
+## Exercices 6: array
 
  1. Ecrire un programme choississant de manière aléatoire un élève d'une classe.
 
@@ -584,7 +584,7 @@ Selon les paradigmes et les languages, la notion de fonction peut varier. En Jav
  5. Ecrire un programme intervertissant deux valeurs données d'une liste.
 
 
-## Exercice bonus: casse-briques
+## Exercices bonus: casse-briques
 
 Objectif: réaliser un code élémentaire de [casse-brique](https://fr.wikipedia.org/wiki/Casse-briques).
 
