@@ -505,7 +505,7 @@ Les conditions font partie des structures de contrôle.
     - 500€: 5%
     - 1000€: 10%
 
-4. Ecrire un programme qui résoud et affiche une équation du premier degré: `ax + b = c`. Les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `x = (c-b)/a`. Le programme veille à gérer le cas suivant:
+4. Ecrire un programme qui résoud et affiche une équation du premier degré: `ax + b = c`. Les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `x = (c-b)/a`. Exemple d'affichage: `2*3.5-3=4`. Le programme veille à gérer le cas suivant:
     - `a = 0`: pas de solution réelle
     - `b < 0`: affichage avec signe négatif
 
