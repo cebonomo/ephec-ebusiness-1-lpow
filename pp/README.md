@@ -191,6 +191,8 @@ true || false
 // que vaut l'expression?
 ```
 
+A noter que (notions avancées), en JavaScript, le comportement des opérateurs `&&` et `||` diffèrent de ce qu'on attendrait normalement d'eux, puisque, en réalité, ils ne retournent pas un `boolean`, mais l'une des deux valeurs faisant l'objet de la comparaison. Cela sert surtout dans le cas de `||` qui retourne la première valeur truely (apparentée à `true` pour un autre type). En PHP, d'autres opérateurs assureront cette même fonction, notamment `?:` ou encore `??` ([démo avancée](https://onlinephp.io/c/86c53))).
+
 #### Opérateurs de concaténation
 
 ##### JavaScript
