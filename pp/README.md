@@ -465,6 +465,8 @@ A noter que la balise PHP fermante `?>` n'est indispensable que lorsque l'on éc
 
 5. Ecrire un programme qui indique si un nombre contenu dans une variable est positif (0 étant positif).
 
+[Corrections](./ex2)
+
 
 ## Exercices 3: conditions
 
@@ -499,6 +501,7 @@ A noter que la balise PHP fermante `?>` n'est indispensable que lorsque l'on éc
     - Si mauvaise réponse: Message d'erreur indiquant que la réponse n'est pas correcte.
     - Si aucune valeur (string vide): Message d'erreur spécifique indiquant qu'une réponse est requise.
 
+[Corrections](./ex3)
 
 ## Exercices 4: boucles
 

@@ -149,7 +149,6 @@ if (a != 0) {
 console.log(a, b, c, x, message)
 ```
 
-
 ### PHP
 
 ```php
@@ -185,9 +184,9 @@ var_dump($a, $b, $c, $message);
 $a = (float)($_GET['a'] ?? 0);
 $b = (float)($_GET['b'] ?? 0);
 $c = (float)($_GET['c'] ?? 0);
-$x = 0; //pas de undefined en PHP
-$x1 = 0; //pas de undefined en PHP
-$x2 = 0; //pas de undefined en PHP
+$x = 0; 
+$x1 = 0;
+$x2 = 0;
 $message = '';
 
 if ($a == 0) { // équation du premier degré
@@ -276,3 +275,54 @@ var_dump($a, $b, $c, $delta, $x, $x1, $x2, $message);
 ```
 
 On remarque tout de suite que le programme tel qu'écrit ci-dessus comporte plusieurs morceaux de code fort similaires. De telles duplications de code sont à proscrire. Il sera intéressant de refactorer (c'est-à-dire réécrire d'une meilleure façon) le programme en utilisant notamment des fonctions (voir exercices 5).
+
+
+## switch
+
+1. Quiz
+
+### JavaScript
+
+```javascript
+let answer = prompt('Quelle est la capitale de la Belgique?', '')
+let message
+
+switch (answer) {
+    case '':
+        message = 'Une réponse est requise.'
+        break
+    case 'Bruxelles':
+    case 'Brussel':
+    case 'Brussels':
+        message = 'Réponse correcte.'
+        break
+    default:
+        message = 'Mauvaise réponse.'
+}
+
+console.log(answer, message)
+```
+
+### PHP
+
+```php
+<?php 
+
+$answer = $_GET['answer'] ?? '';
+$message = '';
+
+switch ($answer) {
+    case '':
+        $message = 'Une réponse est requise.';
+        break;
+    case 'Bruxelles':
+    case 'Brussel':
+    case 'Brussels':
+        $message = 'Réponse correcte.';
+        break;
+    default:
+        $message = 'Mauvaise réponse.';
+}
+
+var_dump($answer, $message);
+```
