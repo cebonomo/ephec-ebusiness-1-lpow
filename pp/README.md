@@ -16,7 +16,7 @@ L'utilisation d'opérateur nécessite la compréhension préalable de la notion 
 | Chaîne de caractères | `String`  | `string`      | `"foo"`, `'bar'`, ...   |
 | Booléen              | `Boolean` | `bool`        | `true`, `false`         |
 
-A noter (notions avancées) qu'en JavaScript, les valeurs primitives ne sont minipulées au travers d'objets immuables. Pour plus d'information sur les types en JavaScript, voir [MDN docs - types](https://developer.mozilla.org/fr/docs/Web/JavaScript/Data_structures).
+A noter (notions avancées) qu'en JavaScript, les valeurs primitives ne sont accessibles qu'au travers d'objets immuables. Pour plus d'information sur les types en JavaScript, voir [MDN docs - types](https://developer.mozilla.org/fr/docs/Web/JavaScript/Data_structures).
 
 ##### Javascript: valeurs primitives particulières
 
