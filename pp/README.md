@@ -573,6 +573,8 @@ Selon les paradigmes et les languages, la notion de fonction peut varier. En Jav
     - Si n est impair: le résultat vaut (a * (a² exposé en (n-1)/2))
     (Voir la [formule mathématique](../resources/images/pow-fomula.png).)
 
+ 5. Refactorer le programme de l'équation du second degré.
+
 
 ## Exercices 6: array
 
