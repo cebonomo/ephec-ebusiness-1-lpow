@@ -359,7 +359,11 @@ let value = parseFloat(prompt('Valeur à affecter (float)', '')) || 0
 
 ###### PHP
 
-En PHP, le code sera, par exemple:
+PHP peut récupérer les données passées dans la querystring de l'URL, notamment via la superglobale `$_GET` ([PHP doc- $_GET](https://www.php.net/manual/fr/reserved.variables.get.php)).
+
+La querystring est la partie de l'URL qui se place après le chemin et qui débute par le caractère `?`. Chaque donnée est une association `name=value`. Dans le cas de plusieurs valeurs à faire passer, la querystring prendra le format suivant: `?name1=value1&name2=value2...`.
+
+La querystring est donc une des possibilités pour débugger le code:
 
 - string
 
@@ -405,7 +409,6 @@ $value = (float)($_GET['value'] ?? 0);
     Dans cet exemple, "$value" vaudra le nombre 123
 */
 ```
-
 ##### Output
 
 ###### JavaScript
@@ -471,17 +474,17 @@ A noter que la balise PHP fermante `?>` n'est indispensable que lorsque l'on éc
 
 2. Ecrire un programme qui calcule le montant de la prime d'un vendeur en fonction de son chiffre de vente. La prime vaut 10% de son chiffre de vente **si** le montant de la vente dépasse 1000€.
 
-3. Idem, mais primes progressives: 
+3. Idem, mais primes progressives, à partir des montants suivants: 
     - 0€: 2%
     - 500€: 5%
     - 1000€: 10%
 
-4. Ecrire un programme qui affiche et résoud une équation du premier degré: `ax + b = c`. Les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `x = (c-b)/a`. Le programme veille à gérer le cas suivant:
+4. Ecrire un programme qui résoud et affiche une équation du premier degré: `ax + b = c`. Les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `x = (c-b)/a`. Le programme veille à gérer le cas suivant:
     - `a = 0`: pas de solution réelle
     - `b < 0`: affichage avec signe négatif
 
-5. Ecrire un programme qui affiche et résoud une équation du second degré: `ax² + bx + c = 0`. Les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `Δ` le discriminant du trinôme `ax² + bx + c`: (`Δ = b² - 4ac`). Le programme veille à gérer les cas suivants: 
-    - `a = 0`: pas de solution réelle
+5. Ecrire un programme qui résoud et affiche une équation du second degré: `ax² + bx + c = 0`. Les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `Δ` le discriminant du trinôme `ax² + bx + c`: (`Δ = b² - 4ac`). Le programme veille à gérer les cas suivants: 
+    - `a = 0`: équation du premier degré
     - `Δ < 0`: solution valant `x = -(b/(2a))`
     - `Δ = 0`: pas de solution réelle  
     - `Δ > 0`: solution valant `x = (-b-√Δ)/(2a)` et `x = (-b+√Δ)/(2a)`
