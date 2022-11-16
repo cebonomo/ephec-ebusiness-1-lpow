@@ -483,7 +483,7 @@ A noter que la balise PHP fermante `?>` n'est indispensable que lorsque l'on éc
     - `a = 0`: pas de solution réelle
     - `b < 0`: affichage avec signe négatif
 
-5. Ecrire un programme qui résoud et affiche une équation du second degré: `ax² + bx + c = 0`. Les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `Δ` le discriminant du trinôme `ax² + bx + c`: (`Δ = b² - 4ac`). Le programme veille à gérer les cas suivants: 
+5. (Optionnel) Ecrire un programme qui résoud et affiche une équation du second degré: `ax² + bx + c = 0`. Les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `Δ` le discriminant du trinôme `ax² + bx + c`: (`Δ = b² - 4ac`). Le programme veille à gérer les cas suivants: 
     - `a = 0`: équation du premier degré
     - `Δ < 0`: solution valant `x = -(b/(2a))`
     - `Δ = 0`: pas de solution réelle  
