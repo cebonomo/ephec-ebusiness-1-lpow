@@ -37,6 +37,16 @@ Voir l'opérateur `typeof` ([MDN docs - typeof](https://developer.mozilla.org/fr
 
 Voir la fonction `gettype` ([PHP doc - gettype](https://www.php.net/manual/fr/function.gettype.php)).
 
+### Documentations
+
+### JS
+
+[MDN docs - opérateurs](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+
+### PHP
+
+[PHP doc - opérateurs](https://www.php.net/manual/fr/language.operators.php)
+
 ### Enoncés
 
 1. Déterminer le résultat de chaque code, en précisant la valeur et le type.
@@ -470,7 +480,21 @@ A noter que la balise PHP fermante `?>` n'est indispensable que lorsque l'on éc
 
 ## Exercices 3: conditions
 
-### if
+### Documentations
+
+Les conditions font partie des structures de contrôle.
+
+#### JS
+
+[MDN docs - structures de contrôle](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference#contr%C3%B4le_du_flux_dex%C3%A9cution)
+
+#### PHP
+
+[PHP doc - structures de controle](https://www.php.net/manual/fr/language.control-structures.php)
+
+### Enoncés
+
+#### if
 
 1. Ecrire un programme qui vérifie **si** un nombre contenu dans une variable est compris entre 10 et 20 inclus et affiche un message personnalisé en fonction du résulat.
 
@@ -493,7 +517,7 @@ A noter que la balise PHP fermante `?>` n'est indispensable que lorsque l'on éc
     - `b < 0`: affichage avec signe négatif
     - `c < 0`: affichage avec signe négatif
 
-### switch
+#### switch
 
 1. Ecrire un programme qui corrige la réponse à une question:
     - Question: Quelle est la capitale de la Belgique?
@@ -505,7 +529,21 @@ A noter que la balise PHP fermante `?>` n'est indispensable que lorsque l'on éc
 
 ## Exercices 4: boucles
 
-### for
+### Documentations
+
+Les boucles font partie des structures de contrôle.
+
+#### JS
+
+[MDN docs - structures de contrôle](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference#contr%C3%B4le_du_flux_dex%C3%A9cution)
+
+#### PHP
+
+[PHP doc - structures de controle](https://www.php.net/manual/fr/language.control-structures.php)
+
+### Enoncés
+
+#### for
 
 1. Ecrire un programme qui calcule les tables de multiplication (0 -> 10) d'une variable contenant un nombre entier compris entre 1 et 10.
 
@@ -544,7 +582,7 @@ Cas 3:
 >
 ```
 
-### while
+#### while
 
  1. Ecrire un programme calculant la [suite de Fibonacci](https://fr.wikipedia.org/wiki/Suite_de_Fibonacci) jusqu'à un nombre entier non nul limite.
     
@@ -558,6 +596,16 @@ Cas 3:
 #### Notion de fonction
 
 Selon les paradigmes et les languages, la notion de fonction peut varier. En JavaScript et en PHP, par fonction, on entend un bloc de code pouvant (ou pas) modifier l'état du programme et pouvant (ou pas) retourner une valeur. En ce sens, on peut appréhender une fonction comme une instruction permettant au codeur de structurer son programme.
+
+### Documentations
+
+#### JS
+
+[MDN docs - fonctions](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/function)
+
+#### PHP
+
+[PHP doc - fonctions](https://www.php.net/manual/fr/language.functions.php)
 
 ### Enoncés
 
@@ -579,7 +627,19 @@ Selon les paradigmes et les languages, la notion de fonction peut varier. En Jav
  5. Refactorer le programme de l'équation du second degré.
 
 
-## Exercices 6: array
+## Exercices 6: tableaux
+
+### Documentations
+
+#### JS
+
+[MDN docs - Array](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+#### PHP
+
+[PHP doc - tableaux](https://www.php.net/manual/fr/language.types.array.php)
+
+### Enoncés
 
  1. Ecrire un programme choississant de manière aléatoire un élève d'une classe.
 
