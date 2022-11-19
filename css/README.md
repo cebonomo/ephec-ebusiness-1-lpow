@@ -46,14 +46,14 @@ Sur ce sujet, voir [MDN docs - sélecteurs](https://developer.mozilla.org/fr/doc
  Sur ce sujet, voir [MDN docs - Cascade, spécificité et héritage](https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance).
 
 
-## Exercice 3: polices et textes
+## Exercice 3: typographie
 
- 1. Utiliser les propriétés de police:
-    - Famille
+ 1. Utiliser les propriétés de fonte (font):
+    - Police
     - Taille
     - Style
     - Graisse
- 2. Utiliser les propriétés de texte:
+ 2. Utiliser les propriétés de texte (text):
     - Couleur
     - Alignement
     - Décoration
@@ -144,11 +144,9 @@ A noter, pour aller plus loin (notions avancées), qu'il existe de nombreuses et
 
 ## Exercice 5: fonds
 
- 1. Utiliser les propriétés d'arrière-plan:
+ 1. Utiliser les propriétés d'arrière-plan (background):
     - Couleur de fond
- 2. Utiliser les propriétés d'arrière-plan:
     - Image de fond
- 3. Utiliser les propriétés d'arrière-plan:
     - Dégradé de couleur
 
 ### Exemples
@@ -211,8 +209,8 @@ A noter que l'URL de l'image ou encore le dégradé de couleur sont gérés via 
 ## Exercice 8: dimensions d'affichage
 
  1. Utiliser les propriétés de dimension sur un élément de type bloc ("block box"):
-    - Largeur
-    - Hauteur
+    - Largeur (width)
+    - Hauteur (height)
  2. Utiliser les mêmes propriétés de dimension sur un élément de table ("block box").
  3. Tester les mêmes propriétés de dimension sur un élément de type en ligne par défaut ("inline box").
 
@@ -296,7 +294,7 @@ A noter que la balise HTML `img`, bien qu'étant "inline" par défaut (`display:
 A noter, pour aller plus loin (notions avancées), la propriété `object-fit` (non vu au cours) qui définit la façon dont une image (ou tout "élément remplacé") s'adapte au contenu parent ([MDN docs - object-fit](https://developer.mozilla.org/fr/docs/Web/CSS/object-fit))
 
 
-## Exercice 9: bordures
+## Exercice 9: bordures (border)
 
  1. Utiliser les propriétés de bordure sur un élément de type bloc ("block box"):
     - Largeur
@@ -362,8 +360,8 @@ A noter, pour aller plus loin (notions avancées), qu'en plus des bordures, il e
 ## Exercice 10: marges
 
  1. Utiliser les propriétés de marge sur un élément de type bloc ("block box") possédant une bordure:
-    - Marges internes
-    - Marges externes
+    - Marges internes (padding)
+    - Marges externes (margin)
  2. Tester les mêmes propriétés de marge sur un élément de type en ligne par défaut ("inline box") possédant une bordure.
 
 ### Exemples
@@ -408,7 +406,7 @@ Pour rappel, les marges influent sur les dimensions d'affichage, selon le modèl
 A noter que, dans le cadre du flux normal d'affichage, si deux éléments adjacents possèdent tous deux une marge externe (`margin`) se touchant l'une et l'autre, seule la marge la plus importante des deux sera prise en considération. Deux marges ne s'aditionnent donc pas. Attention toutefois que, techniquement, les deux marges sont toujours présentes: elles ne font que se chevaucher dans l'affichage final. (Voir [MDN docs - Fusion des marges](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing))
 
 
-## Exercice 11: positionnement
+## Exercice 11: positionnement (position)
 
 1. Utiliser les propriétés de positionnement avec au moins les valeurs suivantes:
    - statique (valeur par défaut, comportement normal, aucun impact visuel)

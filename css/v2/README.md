@@ -1,6 +1,6 @@
 # Changements
 
- 1. Ajout de déclarations CSS contenant des propriétés de police ("font" en anglais), dans `styles/main.css`:
+ 1. Ajout de déclarations CSS contenant des propriétés de fonte, dans `styles/main.css`:
     - `font-family` ([MDN docs - famille de polices](https://developer.mozilla.org/fr/docs/Web/CSS/font-family))
     - `font-size` ([MDN docs - taille de police](https://developer.mozilla.org/fr/docs/Web/CSS/font-size))
     - `font-style` ([MDN docs - style de police](https://developer.mozilla.org/fr/docs/Web/CSS/font-style))
