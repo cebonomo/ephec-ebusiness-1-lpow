@@ -274,7 +274,7 @@ if ($a == 0) { // équation du premier degré
 var_dump($a, $b, $c, $delta, $x, $x1, $x2, $message);
 ```
 
-On remarque tout de suite que le programme tel qu'écrit ci-dessus comporte plusieurs morceaux de code fort similaires. De telles duplications de code sont à proscrire. Il sera intéressant de refactorer (c'est-à-dire réécrire d'une meilleure façon) le programme en utilisant notamment des fonctions (voir exercices 5).
+On remarque tout de suite que le programme tel qu'écrit ci-dessus comporte plusieurs morceaux de code fort similaires. De telles duplications de code sont à proscrire. Il sera intéressant de refactorer (c'est-à-dire réécrire d'une meilleure façon) le programme en utilisant notamment des fonctions (voir exercices suivants).
 
 
 ## switch
