@@ -63,6 +63,11 @@ Voir la fonction `gettype` ([PHP doc - gettype](https://www.php.net/manual/fr/fu
 // que vaut l'expression?
 ```
 
+```javascript
+2 ** 3
+// que vaut l'expression?
+```
+
 #### Opérateurs de comparaison
 
 ##### Grandeur
@@ -191,7 +196,7 @@ true || false
 // que vaut l'expression?
 ```
 
-A noter que (notions avancées), en JavaScript, le comportement des opérateurs `&&` et `||` diffèrent de ce qu'on attendrait normalement d'eux, puisque, en réalité, ils ne retournent pas un `boolean`, mais l'une des deux valeurs faisant l'objet de la comparaison. Cela sert surtout dans le cas de `||` qui retourne la première valeur truely (apparentée à `true` pour un autre type). En PHP, d'autres opérateurs assureront cette même fonction, notamment `?:` ou encore `??` ([démo avancée](https://onlinephp.io/c/86c53))).
+A noter que (notions avancées), en JavaScript, le comportement des opérateurs `&&` et `||` diffèrent de ce qu'on attendrait normalement d'eux, puisque, en réalité, ils ne retournent pas un `boolean`, mais l'une des deux valeurs faisant l'objet de la comparaison. Cela sert surtout dans le cas de `||` qui retourne la première valeur truely (apparentée à `true` pour un autre type). En PHP, d'autres opérateurs assureront cette même fonction, notamment `?:` ou encore `??` ([démo avancée](https://onlinephp.io/c/86c53)).
 
 #### Opérateurs de concaténation
 
@@ -264,8 +269,50 @@ a *= 3
 ```
 
 ```javascript
+// opérateur de concaténation spécifique à javascript
+let a = 1
+let b = '5'
+a += b
+// que vaut a ?
+// que vaut b ?
+```
+
+```php
+<?php
+
+// opérateur de concaténation spécifique à php
+$a = 1;
+$b = '5';
+$a .= $b;
+// que vaut $a ?
+// que vaut $b ?
+```
+
+#### Opérateurs unaires
+
+```javascript
+a = 1
+b = -a
+// que vaut a ?
+// que vaut b ?
+```
+
+```javascript
+a = -1
+b = -a
+// que vaut a ?
+// que vaut b ?
+```
+
+```javascript
 a = 0
 a++ //incrémentation
+// que vaut a ?
+```
+
+```javascript
+a = 0
+a-- //décrémentation
 // que vaut a ?
 ```
 
@@ -291,26 +338,6 @@ b = 5
 a += --b
 // que vaut a ?
 // que vaut b ?
-```
-
-```javascript
-// opérateur de concaténation spécifique à javascript
-let a = 1
-let b = '5'
-a += b
-// que vaut a ?
-// que vaut b ?
-```
-
-```php
-<?php
-
-// opérateur de concaténation spécifique à php
-$a = 1;
-$b = '5';
-$a .= $b;
-// que vaut $a ?
-// que vaut $b ?
 ```
 
 
