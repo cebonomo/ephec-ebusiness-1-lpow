@@ -94,7 +94,7 @@ if (salesFigure >= 1000) {
 } else if (salesFigure >= 0)  {
      bonus = salesFigure * 0.02
 } else {
-    //cas qui, a priori, ne devrait jamais arrivé
+    //cas qui, a priori, ne devrait jamais arriver
     console.error('salesFigure is negative')
 }
 
@@ -116,7 +116,7 @@ if ($salesFigure >= 1000) {
 }elseif ($salesFigure >= 0) {
     $bonus = $salesFigure * 0.02;
 } else {
-    //cas qui, a priori, ne devrait jamais arrivé
+    //cas qui, a priori, ne devrait jamais arriver
     // dans un vrai programme, on devrait, par exemple, lancer un avertissement à l'adresse des dev
 }
 
