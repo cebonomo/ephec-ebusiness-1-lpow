@@ -581,7 +581,7 @@ Selon les paradigmes et les languages, la notion de fonction peut varier. En Jav
 
  2. Ecrire une programme contenant une fonction retourtant les résultats suivants:
     - -1: si nombre strictement négatif
-    - 0: si 0 ou -0
+    - 0: si 0 (ou -0)
     - 1: si nombre strictement positif
 
  3. Ecrire un programme contenant une fonction permettant de diviser 2 nombres (attention à la division par 0). 
