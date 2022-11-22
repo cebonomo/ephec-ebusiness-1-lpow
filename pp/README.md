@@ -2,6 +2,14 @@
 
 Les deux langages vus au cours sont JavaScript et PHP. Les exercices qui suivent impliquent une logique similaire pour résoudre les problèmes dans chaque langage. Autrement dit, à part bien sûr les règles syntaxiques propres à chaque langage, les codes en JavaScript et en PHP seront identiques quant à leur logique.
 
+1. [Exercices 1: opérateurs](#exercices-1-opérateurs)
+2. [Exercices 2: variables et constantes](#exercices-2-variables-et-constantes)
+3. [Exercices 3: conditions](#exercices-3-conditions)
+4. [Exercices 4: fonctions](#exercices-4-fonctions)
+5. [Exercices 5: boucles](#exercices-5-boucles)
+6. [Exercices 6: tableaux](#exercices-6-tableaux)
+7. [Exercices bonus: casse-briques](#exercices-bonus-casse-briques)
+
 ## Exercices 1: opérateurs
 
 ### Remarques techniques préalables

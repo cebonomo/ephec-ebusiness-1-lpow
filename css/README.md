@@ -2,6 +2,17 @@
 
 Ces exercices complètent les exercices [HTML](../html) en rajoutant au code une couche de style CSS. Il est donc nécessaire d'avoir terminé la partie HTML pour débuter celle-ci, de même qu'il est, d'une manière générale, impératif de comprendre le HTML avant de débuter l'étude du CSS.
 
+1. [Exercice 1: linked css](#exercice-1-linked-css)
+2. [Exercice 2: sélecteurs](#exercice-2-sélecteurs)
+3. [Exercice 3: typographie](#exercice-3-typographie)
+4. [Exercice 4: polices importées](#exercice-4-polices-importées)
+5. [Exercice 5: fonds](#exercice-5-fonds)
+6. [Exercice 6: visibilité, opacité et transitions](#exercice-6-visibilité-opacité-et-transitions)
+7. [Exercice 7: listes](#exercice-7-listes)
+8. [Exercice 8: dimensions d'affichage](#exercice-8-dimensions-daffichage)
+9. [Exercice 9: bordures (border)](#exercice-9-bordures-border)
+10. [Exercice 10: marges](#exercice-10-marges)
+11. [Exercice 11: positionnement (position)](#exercice-11-positionnement-position)
 
 ## Exercice 1: linked CSS
 
