@@ -37,7 +37,7 @@ Ces exercices complètent les exercices [HTML](../html), [CSS](../css) et [princ
  3. Lorsque l'utilisateur clique sur un bouton, changer la couleur de fond de la page.
 
 
-## Exercice bonus: this
+## Exercice bonus: current target / this
 
  1. Afficher des éléments HTML de forme carrée et de différentes couleurs. Lorsque l'utilisteur clique sur l'un des éléments, celui-ci change de couleur.
 
