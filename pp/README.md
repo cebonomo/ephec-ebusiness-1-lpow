@@ -628,6 +628,8 @@ Selon les paradigmes et les languages, la notion de fonction peut varier. En Jav
 
  5. Refactorer le programme de l'équation du second degré.
 
+[Corrections](./ex4)
+
 
 ## Exercices 5: boucles
 
