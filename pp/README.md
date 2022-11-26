@@ -456,6 +456,32 @@ $value = (float)($_GET['value'] ?? 0);
     Dans cet exemple, "$value" vaudra le nombre 123
 */
 ```
+
+Il est possible de générer la querystring en utilisant simplement un formulaire en GET. Chaque champ du formulaire se retrouvera dans la querystring lors de la soumission.
+
+Exemple:
+
+```php
+<?php
+
+$value = (float)($_GET['value'] ?? 0);
+
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Forms</title>
+</head>
+<body>
+    <form method="get" action="#">
+        <input type="number" name="value" value="<?= $value ?>">
+        <input type="submit" name="my-submit">
+    </form>
+</body>
+</html>
+```
+
 ##### Output
 
 ###### JavaScript
