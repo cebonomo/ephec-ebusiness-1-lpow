@@ -252,7 +252,7 @@ A noter qu'il existe plusieurs possibilités de liens (hors cours):
 
 #### Formulaire en HTML
 
-Un formulaire se compose d'un élément `form` dans lequel se trouvent plusieurs élements de champ (`input`, `select`, ...). Parmi ces éléments de champ se trouve un bouton de soumission du formulaire. Lorsque l'utilisateur clique sur le bouton de soumission, il soumet le formulaire. Dès lors, est soumis l'ensemble des données des champs se trouvant dans le même formulaire que le bouton.
+Un formulaire se compose d'un élément `form` dans lequel se trouvent plusieurs élements de champ (`input`, `select`, ...). Parmi ces éléments de champ se trouve un bouton de soumission du formulaire. Lorsque l'utilisateur clique sur le bouton de soumission, il soumet le formulaire. Dès lors, est soumis l'ensemble des champs se trouvant dans le même formulaire que le bouton.
 
 Sur les formulaires, d'une manière globale, voir [MDN docs - forms](https://developer.mozilla.org/en-US/docs/Learn/Forms).
 
@@ -262,6 +262,8 @@ L'un des objectifs premiers d'un formulaire HTML est de soumettre des données a
 
 Par conséquent, la bonne compréhension des formulaires implique l'utilisation du protocole HTTP afin de simuler un comportement réel. Si, dans un navigateur, il est possible d'afficher un document HTML local via une URL de schéma `file`, le protocole HTTP nécessite de passer par une URL de schéma `http` ou `https`.
 
+##### Paramétrage de la request
+
 La balise `form` permet de paramétrer certains éléments de la request HTTP envoyée lors de la soumission du formulaire:
  - `method`: méthode de la request HTTP (principales valeurs acceptées: `get` ou `post`)
  - `action`: URL de la request HTTP
@@ -269,13 +271,22 @@ La balise `form` permet de paramétrer certains éléments de la request HTTP en
 
 Pour plus d'information, voir [MDN docs - form](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form).
 
+
+##### Données transmises par la request
+
+Lorsqu'un formulaire est soumis, HTTP transporte les données des champs présents dans le formulaire. Ces données sont présentées selon l'association des valeurs des attributs "`name`: `value`" de chaque champ.
+
+Selon la méthode HTTP utilisée, les données seront transmises dans la [querystring](https://en.wikipedia.org/wiki/Query_string) en `get`, ou dans le corps de la request (et selon le format de `enctype`) en `post`.
+
+Il est important de veiller à ce que l'association "`name`: `value`" de chaque champ HTML soumis se retrouve correctement dans les données reçues par le serveur (`$_POST` en PHP, par exemple), en particulier dans le cadre de choix multiples qui, en PHP, sont gérés de manière spécifique.
+
 Les données telles qu'acheminées par HTTP sont visibles, pour débuggage, dans la DevTools du navigateur.
 
 #### Sécurité
 
 Avertissement: les formulaires peuvent contenir des données sensibles, lesquelles vont transiter de manière publique sur Internet.
 
-D'une manière générale, il n'est pas recommandé de faire transiter des données sensibles dans l'URL. Un formulaire utilisant la méthode HTTP `GET` est donc à manipuler avec précaution puisque ses données seront envoyées dans la [querystring](https://en.wikipedia.org/wiki/Query_string) de l'URL. Ce cas est cependant assez rare puisque, en général, les formulaires font appel à la méthode `POST` et ne passent ainsi leurs données que dans le corps du message HTTP.
+D'une manière générale, il n'est pas recommandé de faire transiter des données sensibles dans l'URL. Un formulaire utilisant la méthode HTTP `GET` est donc à manipuler avec précaution puisque ses données seront envoyées dans l'URL. Ce cas est cependant assez rare puisque, en général, les formulaires font appel à la méthode `POST` et ne passent ainsi leurs données que dans le corps du message HTTP.
 
 Dans tous les cas, pour des raisons de sécurité, il est impératif de n'utiliser que le protocole HTTPS (et non HTTP), seul garant de (notamment) la confidentiallité et l'intégrité des données. De toute façon, d'une manière générale, il est recommandé d'utiliser systématiquement HTTPS, même sans formulaire.
 
@@ -293,15 +304,13 @@ Pour afficher de manière brute les données réceptionnées par le serveur web,
 
 L'utilisation de PHP implique que l'extension du fichier réceptionant le formulaire soit `.php`. Si le fichier se termine par `.html`, le serveur web ne solicitera pas l'interprétation du code par PHP et considérera ce code comme un simple texte. 
 
-Il est important de veiller à ce que l'association `name` => `value` de chaque champ HTML soumis se retrouve correctement dans les données reçues par le serveur (`$_POST`), en particulier dans le cadre de choix multiples.
-
 Attention: PHP est sensible à la casse!
 
 #### Validation des valeurs
 
 Le navigateur effectue une validation de formulaire par défaut. Pour plus d'information (notions avancées), voir [MDN docs - validation des formulaires](https://developer.mozilla.org/fr/docs/Learn/Forms/Form_validation).
 
-En pratique, les formulaires doivent impérativement faire l'objet d'une validation côté serveur, car toute entrée potentielle d'un utilisateur nécessite des précautions en matière de sécurité.
+A noter que, en pratique, les formulaires doivent impérativement faire l'objet d'une validation côté serveur, car toute entrée potentielle d'un utilisateur nécessite des précautions en matière de sécurité.
 
 #### Valeurs multiples
 
@@ -311,17 +320,17 @@ Dans le cas de checkbox multiples, ou d'une manière générale si l'on désire 
 
 A noter que l'absence de valeur lors de la soumission du formulaire connaît des implications différentes selon le type de champ:
 
- - Si aucune valeur n'est indiquée dans un champ de type texte (au sens large), la valeur passée sera une chaîne de caractère vide `""`.
- - Par contre, si aucune valeur n'est sélectionnée dans une listes de champ de type `radio` ou `checkbox` relatif à un même `name`, la référence n'est pas envoyée du tout.
- - Enfin, un élément `select` contient _a priori_ toujours une option et donc une valeur est normalement toujours passée. Néanmoins, une des options peut avoir une valeur vide et passer une chaîne de cracaètre vide `""`. 
+ - Si aucune valeur n'est indiquée dans un champ de type texte (au sens large), la valeur passée sera une chaîne de caractère vide `""` associée au `name` du champ.
+ - Par contre, si aucune valeur n'est sélectionnée dans une listes de champ de type `radio` ou `checkbox` relatif à un même `name`, la référence du `name` n'est pas envoyée du tout.
+ - Enfin, un élément `select` contient _a priori_ toujours une option et donc une valeur est normalement toujours passée. Néanmoins, une des options peut avoir une valeur vide et passer une chaîne de cracatère vide `""`. 
 
-Il est possible de rendre la valeur obligatoire grâce à l'attribut `required` ([MDN docs - required](https://developer.mozilla.org/fr/docs/Web/HTML/Element/input#required)).
+A noter que, du côté client, en HTML, il est possible de rendre la valeur obligatoire grâce à l'attribut `required` ([MDN docs - required](https://developer.mozilla.org/fr/docs/Web/HTML/Element/input#required)).
 
 #### Valeurs "bloquées"
 
 (Notions avancées)
 
-A noter la possibliter de "bloquer" les valeurs des champs, à l'aide des attributs suivants:
+A noter la possiblité de "bloquer" les valeurs des champs, à l'aide des attributs suivants:
  - `readonly` ([MDN docs - readonly](https://developer.mozilla.org/fr/docs/Web/HTML/Element/input#readonly))
  - `disabled` ([MDN docs - disabled](https://developer.mozilla.org/fr/docs/Web/HTML/Element/input#disabled))
 
@@ -333,7 +342,7 @@ Le focus détermine l'élement HTML écoutant la saisie de l'utilisateur. Par ex
 
 #### Label
 
-Idéalement, chaque champ de formulaire est associé à une légende (`label`) qui lui est propre. En cliquant sur la légende, le focus est mis sur le champ associé.
+Idéalement, chaque champ de formulaire est associé à une légende (`label`) qui lui est propre. En cliquant sur la légende, le focus est mis sur le champ associé, grâce à l'attribut `for`. [MDN docs - label](https://developer.mozilla.org/fr/docs/Web/HTML/Element/Label)
 
 #### CSS
 
