@@ -21,7 +21,7 @@ Ces exercices complètent les exercices [HTML](../html), [CSS](../css) et [princ
 
 ## Exercices 3: contenu d'éléments
 
- 1. Afficher le contenu rentré par l'utilisteur. Le contenu est rentré via un prompt et affiché dans un élément HTML.
+ 1. Afficher un contenu rentré par l'utilisteur. Le contenu est rentré via un prompt et affiché dans un élément HTML.
 
  2. Lorsque l'utilisateur clique sur un bouton, intervertir le contenu de deux paragraphes spécifiques.
 
