@@ -61,6 +61,9 @@ Au préalable de tout code, il est nécessaire de créer un [dossier (ou répert
 
 Attention que, généralement, les [gestionnaires de fichiers](https://fr.wikipedia.org/wiki/Gestionnaire_de_fichiers) ("Eplorateur de fichier" sous Windows, "Finder" sous MacOS, ...) cachent par défaut les [extensions de nom de fichier](https://fr.wikipedia.org/wiki/Extension_de_nom_de_fichier) (`.html`, `.php`, `.jpg`, ...), ce qui peut poser problème lors du nommage des fichiers ou de la lecture de leurs noms. Dès lors qu'est utilisé un gestionnaire de fichier dans le cadre des TP, il est conseillé d'activer l'affichage des extensions de nom de fichiers ([support pour Windows](https://support.microsoft.com/fr-fr/windows/extensions-de-nom-de-fichier-courantes-dans-windows-da4a4430-8e76-89c5-59f7-1cdbbc75cb01)).
 
+[Tuto Windows](https://www.youtube.com/watch?v=ac1WdzSqatw) pour gérer les extensions de fichiers.
+
+
 ### Nommage des fichiers
 
 Le nommage des fichiers posant souvent problème, il est recommandé de suivre les règles de bonne pratique suivantes:
@@ -146,37 +149,52 @@ Il est toutefois possible de forcer le navigateur à rafraîchir son cache, et d
 
 ## Prérequis
 
+### OS
+
+Prérequis minium indispensables:
+
+ - Utilisation générale d'un OS.
+ - Compréhension du système de fichiers.
+ - Installation de programmes.
+ - Navigation web.
+
+Les cours à l'EPHEC sont donnés sous Windows qu'il est nécessaire de pouvoir utiliser de façon aisée. Toutefois, il est à noter que les serveurs web utilisent Linux. 
+
+[Tuto windows](https://www.youtube.com/watch?v=llfX-7RNwDM&list=PLrSOXFDHBtfFl6k7dLGdm3vrqYufjpwBw&index=1)
+
+### Web
+
 La bonne réalisation des exercices proposés ici nécessite impérativement une connaissance générale du web et de ses langages, telle que présentée préalablement au cours théorique.
 
 Les lectures qui suivent ne sont pas obligatoires dans le cadre du cours, mais représentent un support d'étude complémentaire.
 
-### Web
+#### Généralités
 
  1. [MDN - Page web, site web, serveur web](https://developer.mozilla.org/fr/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines)
  2. [MDN - Le fonctionnement du Web](https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
  3. [MDN - Comprendre les URL et leur structure](https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_URL)
  4. [MDN - Le fonctionnement des liens sur le Web](https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_are_hyperlinks)
 
-### Réseaux
+#### Réseaux
 
  1. [MDN - Le fonctionnement de l'Internet](https://developer.mozilla.org/fr/docs/Learn/Common_questions/How_does_the_Internet_work)
 
-### Système de fichiers
+#### Système de fichiers
 
  1. [alsacréations - Chemins relatifs et absolus](https://www.alsacreations.com/astuce/lire/78-Quelle-est-la-difference-entre-les-chemins-relatifs-et-absolus-.html)
 
-### HTML
+#### HTML
 
  1. [MDN - Introduction au HTML](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML)
  2. [MDN - Apprendre le HTML : guides et didacticiels](https://developer.mozilla.org/fr/docs/Learn/HTML)
  4. [alsacréations - Structure de document HTML 5](https://www.alsacreations.com/article/lire/1374-html5-structure-globale-document.html)
 
-### CSS
+#### CSS
 
  1. [MDN - Premiers pas avec CSS](https://developer.mozilla.org/fr/docs/Learn/CSS/First_steps)
  2. [MDN - Composer le HTML avec les CSS](https://developer.mozilla.org/fr/docs/Learn/CSS)
 
-### JS
+#### JS
 
  1. [MDN - Premiers pas en JavaScript](https://developer.mozilla.org/fr/docs/Learn/JavaScript/First_steps)
  2. [MDN - JavaScript](https://developer.mozilla.org/fr/docs/Learn/JavaScript)
@@ -186,8 +204,26 @@ Les lectures qui suivent ne sont pas obligatoires dans le cadre du cours, mais r
 
 Quelques exemples des nombreuses ressources didactiques présentes sur le web:
 
-  1. [openclassrooms - Cours HTML5 et CSS3](https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3)
-  2. [grafikart - Tutos vidéo HTML](https://grafikart.fr/tutoriels/introduction-1019)
-  3. [FormationVidéo - Tutos vidéo HTML5 et CSS3](https://www.youtube.com/watch?v=bLPONCBPDeQ&list=PLrSOXFDHBtfG1_4HrfPttdwF8aLpgdsRL)
-  4. [FormationVidéo - Tutos vidéo JavaScript](https://www.youtube.com/watch?v=02Xs2ySaXcs&list=PLrSOXFDHBtfGxf_PtXLu_OrjFKt4_dqB_)
-  5. ...
+### Système de fichiers
+
+  1. [FormationVidéo - fichiers sous Windows](https://www.youtube.com/watch?v=crdv_xEBnAI&list=PLrSOXFDHBtfFl6k7dLGdm3vrqYufjpwBw&index=9)
+  2. [FormationVidéo - fichiers sous Linux](https://www.youtube.com/watch?v=9xpItgaWVso&list=PLrSOXFDHBtfHKxuz6NySItyf4iSEcTw97&index=12)
+
+### HTML5 + CSS3
+
+  1. [openclassrooms - cours HTML5 et CSS3](https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3)
+  2. [FormationVidéo - cours HTML5 et CSS3](https://www.youtube.com/watch?v=u5W2NWItytc&list=PLrSOXFDHBtfE5tpw0bjMevWxMWXotiSdO)
+  3. [Grafikart - cours HTML](https://grafikart.fr/formations/html)
+  4. [Grafikart - cours CSS](https://grafikart.fr/formations/css)
+
+### JS
+
+  1. [openclassrooms - cours JavaScript](https://openclassrooms.com/fr/courses/6175841-apprenez-a-programmer-avec-javascript)
+  2. [FormationVidéo - cours JavaScript](https://www.youtube.com/watch?v=02Xs2ySaXcs&list=PLrSOXFDHBtfGxf_PtXLu_OrjFKt4_dqB_)
+  3. [Grafikart - cours JavaScript](https://grafikart.fr/tutoriels/javascript)
+
+### PHP
+
+  1. [openclassrooms - cours PHP et MySQL](https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql)
+  2. [FormationVidéo - cours PHP](https://www.youtube.com/watch?v=7lMXMLeawug&list=PLrSOXFDHBtfFuZttC17M-jNpKnzUL5Adc)
+  3. [Grafikart - cours PHP](https://grafikart.fr/tutoriels/php)
