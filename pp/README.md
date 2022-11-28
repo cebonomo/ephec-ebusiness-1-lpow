@@ -584,6 +584,12 @@ Pour afficher un texte dans du HTML, le code sera, par exemple:
 <p><?php echo "Mon paragraphe."; ?></p>
 ```
 
+Au avec les balises raccourcies:
+
+```php
+<p><?= "Mon paragraphe." ?></p>
+```
+
 A noter que la balise PHP fermante `?>` n'est indispensable que lorsque l'on écrit dans du HTML.
 
 ### Enoncés
@@ -771,7 +777,7 @@ Cas 3:
 
 ### Enoncés
 
- 1. Ecrire un programme choississant de manière aléatoire un élève d'une classe.
+ 1. Ecrire un programme choississant de manière aléatoire un élève d'une classe. Pour cela, il faut utiliser une fonction native donnant un nombre aléatoire.
 
  2. Ecrire un programme calculant la somme et la moyenne d'une liste de nombres.
 
