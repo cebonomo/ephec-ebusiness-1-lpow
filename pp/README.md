@@ -20,9 +20,9 @@ L'utilisation d'opérateur nécessite la compréhension préalable de la notion 
 
 | Types                | JS        | PHP           | Exemples                |
 |----------------------|-----------|---------------|-------------------------|
-| Nombre               | `Number`  | `int`, `float`|  `-1`, `0`, `1.50`, ... |
-| Chaîne de caractères | `String`  | `string`      | `"foo"`, `'bar'`, ...   |
-| Booléen              | `Boolean` | `bool`        | `true`, `false`         |
+| Nombre               | `number`  | `int`, `float`|  `-1`, `0`, `1.50`, ... |
+| Chaîne de caractères | `string`  | `string`      | `"foo"`, `'bar'`, ...   |
+| Booléen              | `boolean` | `bool`        | `true`, `false`         |
 
 A noter (notions avancées) qu'en JavaScript, les valeurs primitives ne sont accessibles qu'au travers d'objets immuables. Pour plus d'information sur les types en JavaScript, voir [MDN docs - types](https://developer.mozilla.org/fr/docs/Web/JavaScript/Data_structures).
 
@@ -357,21 +357,56 @@ a += --b
 
 ##### JavaScript
 
-JavaScript nécessite, pour un code plus propre, de déclarer ses variables. Dans tous les cas, une constante nécessite d'être déclarée. Pour faire simple, il est recommandé d'utiliser le mot-clé `var` ou `let` pour déclarer une variable, et le mot-clé `const` pour définir une constante.
+JavaScript nécessite, pour un code plus propre, de déclarer ses variables. Dans tous les cas, une constante nécessite d'être déclarée. Pour faire simple, il est recommandé d'utiliser le mot-clé `let` pour déclarer une variable, et le mot-clé `const` pour définir une constante.
 
-A noter que, en Javascript, une variable déclarée mais non initialisée prend la valeur `undefined`.
+En Javascript, une variable déclarée mais non initialisée prend la valeur `undefined`.
 
 Pour plus d'information, voir [MDN docs - variables](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Grammar_and_types#d%C3%A9clarations).
 
 ##### PHP
 
-Si PHP ne demande pas de déclarer ses variables, il est toutefois nécessaire de définir les constantes.
+Attention qu'en PHP, le nom d'une variable commence toujours par `$`. 
+
+Si PHP ne demande pas de déclarer ses variables (juste de les initialiser), il est toutefois nécessaire de définir les constantes.
 
 Pour plus d'information, voir [PHP doc - variables](https://www.php.net/manual/fr/language.variables.php) et [PHP doc - constantes](https://www.php.net/manual/fr/language.constants.php).
 
 #### Portée
 
 La [portée](https://fr.wikipedia.org/wiki/Port%C3%A9e_(informatique)) d'une variable ou d'une constante est l'étendue de code dans lequelle sera accessible cette variable ou cette constante. La portée diffère selon la syntaxte de déclaration et le langage. On parle de portée "globale" lorsque la variable ou la constante est accessible partout dans le code.
+
+La portée d'une variable n'est pas gérée de la même manière en JS et en PHP. Une des principales différences résident dans le fait qu'une variable JS porte également dans les fonctions.
+
+##### JavaScript
+
+```javascript
+let foo = 'foo'
+function bar() {
+  console.log(foo) //log 'foo'
+}
+bar()
+```
+
+Pour plus d'information, voir :
+ - [MDN docs - var](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/var)
+ - [MDN docs - let](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/let)
+ - [Stackoverflow](https://stackoverflow.com/questions/762011/what-is-the-difference-between-let-and-var) 
+
+
+##### PHP
+
+```php
+<?php
+
+$foo = 'foo';
+function bar()
+{
+	var_dump($foo); //Warning: Undefined variable $foo
+}
+bar();
+```
+
+Pour plus d'information, voir [PHP doc - portée des variables](https://www.php.net/manual/fr/language.variables.scope.php).
 
 #### Debuggage
 
@@ -464,18 +499,20 @@ Exemple:
 ```php
 <?php
 
-$value = (float)($_GET['value'] ?? 0);
+$value = (float)($_GET['my-value'] ?? 0);
 
-?>
-<!DOCTYPE html>
+// mon code ici
+
+?><!DOCTYPE html>
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
 	<title>Forms</title>
 </head>
 <body>
+	<pre><?php var_dump($value); ?></pre>
     <form method="get" action="#">
-        <input type="number" name="value" value="<?= $value ?>">
+        <input type="number" name="my-value" value="<?= $value ?>">
         <input type="submit" name="my-submit">
     </form>
 </body>
@@ -554,6 +591,10 @@ Les conditions font partie des structures de contrôle.
 #### PHP
 
 [PHP doc - structures de controle](https://www.php.net/manual/fr/language.control-structures.php)
+
+### Syntaxe
+
+A noter une différence syntaxique entre JS et PHP: PHP autorise la syntaxe `elseif`, tandis que JS n'autorise que la syntaxe `else if`. 
 
 ### Enoncés
 

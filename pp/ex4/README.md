@@ -24,7 +24,8 @@ console.log(a, result)
 ```php
 <?php
 
-function absolute($value) {
+function absolute($value)
+{
     if ($value < 0) {
         return -$value;
     }
@@ -64,7 +65,8 @@ console.log(a, result)
 ```php
 <?php
 
-function signature($value) {
+function signature($value)
+{
     if ($value < 0) {
         return -1;
     }
@@ -106,7 +108,8 @@ console.log(a, b, result)
 ```php
 <?php
 
-function divide($a, $b) {
+function divide($a, $b)
+{
     if ($b == 0) {
         return null;
     }
@@ -149,7 +152,8 @@ console.log(a, n, result)
 ```php
 <?php
 
-function _pow($base, $exponent) {
+function _pow($base, $exponent)
+{
    if ($exponent == 1) {
         return $base;
     }
@@ -174,14 +178,16 @@ var_dump($a, $n, $result);
 ```php
 <?php
 
-function composeMessageFirst($a, $b, $c, $x) {
+function composeMessageFirst($a, $b, $c, $x)
+{
     if ($b < 0) {
         return $a . '*' . $x . $b . '=' . $c;
     }
     return $a . '*' . $x . '+' . $b . '=' . $c;
 }
 
-function composeMessageSecond($a, $b, $c, $x) {
+function composeMessageSecond($a, $b, $c, $x)
+{
     $bAsString = $b;
     if ($b >= 0) {
         $bAsString = '+' . $b;

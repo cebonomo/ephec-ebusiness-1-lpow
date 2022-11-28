@@ -44,6 +44,8 @@ Dans l'absolu, un codeur est libre de choisir n'importe quelles conventions de c
  - Lisibilité: le premier critère d'un bon code est sa lisibilité. Or, les conventions de codage visent justement à améliorer la lisibilité. Les choix des conventions doivent être arrêtés dans cet objectif.
  - Communauté: un code est lu et maintenu par des codeurs différents, travaillant souvant en équipe. Il est important que les règles soient communes à ces codeurs. Pour facilter la compréhension des règles à autrui, il est préférable de suivre des conventions propres à une large communauté de codeur.
 
+ Pour PHP, il est recommandé de suivre le standard [PSR-12](https://www.php-fig.org/psr/psr-12/).
+
 ### Sensibilité à la casse
 
 En informatique, être [sensible à la casse](https://fr.wikipedia.org/wiki/Sensibilit%C3%A9_%C3%A0_la_casse) ("case sensitivity") signifie qu'une différence est faitre entre une lettre en minuscule et cette même lettre en majuscule.
