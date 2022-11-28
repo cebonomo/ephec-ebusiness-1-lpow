@@ -7,6 +7,20 @@ Ces exercices complètent les exercices [HTML](../html), [CSS](../css) et [princ
  1. Créer un fichier de script JS `scripts/main.js` vide.
  2. Inclure ce script dans une page HTML (méthode "linked").
 
+### Remarques théoriques
+
+#### Incorporations JS dans HTML
+
+**Attention:** ne sont pas abordés ici les autres types possibles d'inclusion de script:
+ - "inline" ou intégré à un élément HTML (via divers attributs).
+ - "embedded" ou interne à un document HTML (via la balise `script`).
+
+(Sur ce sujet, voir [MDN docs - Utiliser JavaScript au sein d'une page web](https://developer.mozilla.org/fr/docs/Learn/HTML/Howto/Use_JavaScript_within_a_webpage)) 
+
+#### Contenu ou ressource
+
+Si l'élement `script` définit une ressource dans son attribut `src`, il ne peut pas comprendre de code à l'intérieur de ses balises. C'est donc soit l'un ("embedded"), soit l'autre ("linked"), mais jamais les deux en même temps.
+
 
 ## Exercices 2: evènements
 
