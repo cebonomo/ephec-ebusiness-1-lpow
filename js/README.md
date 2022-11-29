@@ -7,6 +7,8 @@ Ces exercices complètent les exercices [HTML](../html), [CSS](../css) et [princ
  1. Créer un fichier de script JS `scripts/main.js` vide.
  2. Inclure ce script dans une page HTML (méthode "linked").
 
+[Corrections](./ex1)
+
 ### Remarques théoriques
 
 #### Incorporations JS dans HTML
@@ -20,6 +22,10 @@ Ces exercices complètent les exercices [HTML](../html), [CSS](../css) et [princ
 #### Contenu ou ressource
 
 Si l'élement `script` définit une ressource dans son attribut `src`, il ne peut pas comprendre de code à l'intérieur de ses balises. C'est donc soit l'un ("embedded"), soit l'autre ("linked"), mais jamais les deux en même temps.
+
+#### head ou body?
+
+A noter que la balise `script` peut être inclue dans `head` ou dans `body`. Il arrive souvent qu'on la place à la fin du `body` pour déléguer le chargement et l'interprétation du script après celui des autres ressources de la page. 
 
 
 ## Exercices 2: evènements
