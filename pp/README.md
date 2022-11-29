@@ -129,7 +129,7 @@ true == true
 // que vaut l'expression?
 ```
 
-###### Stricte (avancé)
+###### Stricte (optionel pour lpow)
 
 ```javascript
 6 === '6' //égalité stricte
@@ -210,7 +210,7 @@ true || false
 
 A noter que (notions avancées), en JavaScript, le comportement des opérateurs `&&` et `||` diffèrent de ce qu'on attendrait normalement d'eux, puisque, en réalité, ils ne retournent pas un `boolean`, mais l'une des deux valeurs faisant l'objet de la comparaison. Cela sert surtout dans le cas de `||` qui retourne la première valeur si truely (apparentée à `true` pour un autre type), sinon la seconde valeur. En PHP, d'autres opérateurs assureront cette même fonction, notamment `?:` ou encore `??` ([démo avancée](https://onlinephp.io/c/86c53)).
 
-#### Opérateurs de concaténation
+#### Opérateurs de concaténation  (optionel pour lpow)
 
 ##### JavaScript
 
@@ -270,7 +270,7 @@ a = 1 + 2
 // que vaut a ?
 ```
 
-##### Opérateurs combinés
+##### Opérateurs combinés  (optionel pour lpow)
 
 ```javascript
 a = 0
@@ -304,7 +304,7 @@ $a .= $b;
 // que vaut $b ?
 ```
 
-#### Opérateurs unaires
+#### Opérateurs unaires  (optionel pour lpow)
 
 ```javascript
 a = 1
