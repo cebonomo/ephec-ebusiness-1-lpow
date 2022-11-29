@@ -130,7 +130,7 @@
     <fieldset>
         <legend>Choisissez n préférence(s) (checkbox)</legend>
         <label for="my-input-checkbox-alone-id">Choix seul</label>
-        <input type="checkbox" name="my-input-checkbox-alone" id="my-input-checkbox-alone-id" value="checkbox-value-c" checked>
+        <input type="checkbox" name="my-input-checkbox-alone" id="my-input-checkbox-alone-id" checked>
     </fieldset>
 
     <input type="submit" name="my-submit">

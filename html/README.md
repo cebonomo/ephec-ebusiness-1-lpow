@@ -318,11 +318,13 @@ Dans le cas de checkbox multiples, ou d'une manière générale si l'on désire 
 
 #### Valeurs vides
 
-A noter que l'absence de valeur lors de la soumission du formulaire connaît des implications différentes selon le type de champ:
+L'absence de valeur envoyée lors de la soumission du formulaire connaît des implications différentes selon le type de champ:
 
  - Si aucune valeur n'est indiquée dans un champ de type texte (au sens large), la valeur passée sera une chaîne de caractère vide `""` associée au `name` du champ.
- - Par contre, si aucune valeur n'est sélectionnée dans une listes de champ de type `radio` ou `checkbox` relatif à un même `name`, la référence du `name` n'est pas envoyée du tout.
- - Enfin, un élément `select` contient _a priori_ toujours une option et donc une valeur est normalement toujours passée. Néanmoins, une des options peut avoir une valeur vide et passer une chaîne de cracatère vide `""`. 
+ - Si aucune valeur n'est sélectionnée dans une liste de champ de type `radio` ou `checkbox` relatif à un même `name`, la référence du `name` n'est pas envoyée du tout.
+ - Si un champ de type `radio` ou `checkbox` est sélectionné, mais qu'aucune valeur n'est définie dans le HTML, sa valeur par défaut sera `on`.
+ - Un élément `select` contient _a priori_ toujours une option et donc une valeur est normalement toujours passée. Néanmoins, une des options peut avoir une valeur vide et passer une chaîne de cracatère vide `""`.
+ - Enfin, à noter que si un champ est dépourvu de `name` ou si sa valeur est `disabled`, aucune valeur ne sera envoyée.
 
 A noter que, du côté client, en HTML, il est possible de rendre la valeur obligatoire grâce à l'attribut `required` ([MDN docs - required](https://developer.mozilla.org/fr/docs/Web/HTML/Element/input#required)).
 

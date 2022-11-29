@@ -538,13 +538,13 @@ $value = (float)($_GET['my-value'] ?? 0);
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<title>Forms</title>
+	<title>script php</title>
 </head>
 <body>
 	<pre><?php var_dump($value); ?></pre>
     <form method="get" action="#">
-        <input type="number" name="my-value" value="<?= $value ?>">
-        <input type="submit" name="my-submit">
+        <input type="number" name="my-value" value="<?php echo $value; ?>">
+        <input type="submit">
     </form>
 </body>
 </html>
