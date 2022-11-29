@@ -21,7 +21,7 @@ Ces exercices complètent les exercices [HTML](../html), [CSS](../css) et [princ
 
 #### Contenu ou ressource
 
-Si l'élement `script` définit une ressource dans son attribut `src`, il ne peut pas comprendre de code à l'intérieur de ses balises. C'est donc soit l'un ("embedded"), soit l'autre ("linked"), mais jamais les deux en même temps.
+La balise `script` sert à la fois à contenir du code JS et à inclure un fichier JS externe. Toutefois, une même balise ne peut pas faire les deux en même temps. Si un élement `script` définit une ressource dans son attribut `src`, il ne peut pas contenir de code à l'intérieur de ses balises, et inversément. C'est donc soit l'un ("embedded"), soit l'autre ("linked").
 
 #### head ou body?
 
