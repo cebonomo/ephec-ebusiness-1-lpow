@@ -102,6 +102,8 @@ Voir la fonction `gettype` ([PHP doc - gettype](https://www.php.net/manual/fr/fu
 
 ##### Egalité
 
+###### Non stricte
+
 ```javascript
 6 == 6
 // que vaut l'expression?
@@ -126,6 +128,8 @@ true == true
 6 == '6' //égalité non stricte
 // que vaut l'expression?
 ```
+
+###### Stricte (avancé)
 
 ```javascript
 6 === '6' //égalité stricte
@@ -204,7 +208,7 @@ true || false
 // que vaut l'expression?
 ```
 
-A noter que (notions avancées), en JavaScript, le comportement des opérateurs `&&` et `||` diffèrent de ce qu'on attendrait normalement d'eux, puisque, en réalité, ils ne retournent pas un `boolean`, mais l'une des deux valeurs faisant l'objet de la comparaison. Cela sert surtout dans le cas de `||` qui retourne la première valeur truely (apparentée à `true` pour un autre type). En PHP, d'autres opérateurs assureront cette même fonction, notamment `?:` ou encore `??` ([démo avancée](https://onlinephp.io/c/86c53)).
+A noter que (notions avancées), en JavaScript, le comportement des opérateurs `&&` et `||` diffèrent de ce qu'on attendrait normalement d'eux, puisque, en réalité, ils ne retournent pas un `boolean`, mais l'une des deux valeurs faisant l'objet de la comparaison. Cela sert surtout dans le cas de `||` qui retourne la première valeur si truely (apparentée à `true` pour un autre type), sinon la seconde valeur. En PHP, d'autres opérateurs assureront cette même fonction, notamment `?:` ou encore `??` ([démo avancée](https://onlinephp.io/c/86c53)).
 
 #### Opérateurs de concaténation
 
@@ -242,6 +246,8 @@ A noter que (notions avancées), en JavaScript, le comportement des opérateurs 
 
 #### Opérateurs d'affectation (ou assignation)
 
+##### Opérateur simple
+
 ```javascript
 a = 1 //initialisation de a
 b = 2 //initiatlisation de b
@@ -263,6 +269,8 @@ b = 3
 a = 1 + 2
 // que vaut a ?
 ```
+
+##### Opérateurs combinés
 
 ```javascript
 a = 0
