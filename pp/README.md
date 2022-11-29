@@ -395,7 +395,7 @@ function bar() {
 bar()
 ```
 
-Il est néanmoins possible d'écrire le code en passant la variable comme argument lors de l'appel de la fonction.
+Il est néanmoins possible d'écrire le code en passant la variable en argument lors de l'appel de la fonction.
 
 ```javascript
 let foo = 'foo'
@@ -592,7 +592,7 @@ Pour afficher un texte dans du HTML, le code sera, par exemple:
 <p><?php echo "Mon paragraphe."; ?></p>
 ```
 
-Au avec les balises raccourcies:
+Ou avec les balises raccourcies:
 
 ```php
 <p><?= "Mon paragraphe." ?></p>
