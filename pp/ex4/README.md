@@ -227,7 +227,7 @@ if ($a == 0) { // équation du premier degré
 
     $delta = ($b*$b) - (4*$a*$c);
 
-    if ($delta < 0) {
+    if ($delta == 0) {
         //x vaut 1 seule valeur
         $x = -($b/(2*$a));
         $message = composeMessageSecond($a, $b, $c, $x);

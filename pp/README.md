@@ -537,8 +537,8 @@ $value = (float)($_GET['my-value'] ?? 0);
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="utf-8">
-	<title>script php</title>
+    <meta charset="utf-8">
+    <title>script php</title>
 </head>
 <body>
 	<pre><?php var_dump($value); ?></pre>
@@ -652,8 +652,8 @@ A noter une différence syntaxique entre JS et PHP: PHP autorise la syntaxe `els
 
 5. (Optionnel) Ecrire un programme qui résoud et affiche une équation du second degré: `ax² + bx + c = 0`. Les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `Δ` le discriminant du trinôme `ax² + bx + c`: (`Δ = b² - 4ac`). Le programme veille à gérer les cas suivants: 
     - `a = 0`: équation du premier degré
-    - `Δ < 0`: solution valant `x = -(b/(2a))`
-    - `Δ = 0`: pas de solution réelle  
+    - `Δ < 0`: pas de solution réelle  
+    - `Δ = 0`: solution valant `x = -(b/(2a))`
     - `Δ > 0`: solution valant `x = (-b-√Δ)/(2a)` et `x = (-b+√Δ)/(2a)`
     - `b < 0`: affichage avec signe négatif
     - `c < 0`: affichage avec signe négatif
