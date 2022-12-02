@@ -48,7 +48,7 @@ A noter que la balise `script` peut être inclue dans `head` ou dans `body`. Il 
  3. Lorsque l'utilisateur clique sur un bouton "+", incrémenter un compteur affiché dans un élément HTML. Lorsque l'utilisateur clique sur un bouton "-", décrémenter ce même compteur.
  
 
-## Exercices 5: contenu d'attributs
+## Exercices 4: contenu d'attributs
 
  1. Reprendre le script de commande de pizza. Le nombre de pizzas doit se trouver dans un champ.
 
