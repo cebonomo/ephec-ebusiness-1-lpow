@@ -102,7 +102,7 @@ Voir la fonction `gettype` ([PHP doc - gettype](https://www.php.net/manual/fr/fu
 
 ##### Egalité
 
-###### Non stricte
+###### Sans transtypage
 
 ```javascript
 6 == 6
@@ -124,12 +124,12 @@ true == true
 // que vaut l'expression?
 ```
 
+###### Avec transtypage (optionel pour lpow)
+
 ```javascript
 6 == '6' //égalité non stricte
 // que vaut l'expression?
 ```
-
-###### Stricte (optionel pour lpow)
 
 ```javascript
 6 === '6' //égalité stricte
