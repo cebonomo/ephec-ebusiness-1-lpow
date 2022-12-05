@@ -5,9 +5,10 @@ Ces exercices complètent les exercices [HTML](../html), [CSS](../css) et [princ
 Les exercices JS se font en relation avec un document HTML.
 
 1. [Exercice 1: linked JS](#exercice-1-linked-js)
-2. [Exercices 2: éveènements](#exercices-2-evènements)
+2. [Exercices 2: évènements](#exercices-2-evènements)
 3. [Exercices 3: contenu d'éléments](#exercices-3-contenu-déléments)
 4. [Exercices 4: contenu d'attributs](#exercices-4-contenu-dattributs)
+5. [Exercice bonus: current target / this](#exercice-bonus-current-target--this)
 
 ## Exercice 1: linked JS
 
