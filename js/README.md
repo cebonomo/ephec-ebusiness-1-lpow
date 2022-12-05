@@ -2,6 +2,13 @@
 
 Ces exercices complètent les exercices [HTML](../html), [CSS](../css) et [principes de programmation](../pp). Il est donc nécessaire d'avoir terminé ces chapitres précédents pour débuter celui-ci.
 
+Les exercices JS se font en relation avec un document HTML.
+
+1. [Exercice 1: linked JS](#exercice-1-linked-js)
+2. [Exercices 2: éveènements](#exercices-2-evènements)
+3. [Exercices 3: contenu d'éléments](#exercices-3-contenu-déléments)
+4. [Exercices 4: contenu d'attributs](#exercices-4-contenu-dattributs)
+
 ## Exercice 1: linked JS
 
  1. Créer un fichier de script JS `scripts/main.js` vide.
@@ -59,5 +66,5 @@ A noter que la balise `script` peut être inclue dans `head` ou dans `body`. Il 
 
 ## Exercice bonus: current target / this
 
- 1. Afficher des éléments HTML de forme carrée et de différentes couleurs. Lorsque l'utilisteur clique sur l'un des éléments, celui-ci change de couleur.
+ 1. Afficher des éléments HTML de forme carrée et de différentes couleurs. Lorsque l'utilisateur clique sur l'un des éléments, celui-ci change de couleur.
 
