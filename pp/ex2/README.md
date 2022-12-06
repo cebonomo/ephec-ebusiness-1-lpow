@@ -26,9 +26,11 @@ Pour plus d'information, voir [PHP doc - variables](https://www.php.net/manual/f
 
 La [portée](https://fr.wikipedia.org/wiki/Port%C3%A9e_(informatique)) d'une variable ou d'une constante est l'étendue de code dans lequelle sera accessible cette variable ou cette constante. La portée diffère selon la syntaxte de déclaration et le langage. On parle de portée "globale" lorsque la variable ou la constante est accessible partout dans le code.
 
-La portée d'une variable n'est pas gérée de la même manière en JS et en PHP. Une des principales différences réside dans le fait qu'une variable JS porte également dans les fonctions, tandis qu'il n'est, par défaut, pas possible d'accéder aux variables externes à une fonction en PHP.
+La portée d'une variable n'est pas gérée de la même manière en JS et en PHP. Une des principales différences réside dans le fait qu'une variable JS porte également dans les fonctions, tandis qu'il n'est, par défaut, pas possible d'accéder aux variables externes à une fonction en PHP. Par contre, les deux langages partage le point commun qu'une variable locale à une fonction n'est pas accessible en dehors de celle-ci (en tout cas, pour JS, si la variable est déclarée avec `let`).
 
 ##### JavaScript
+
+###### Accès à une variable globale
 
 ```javascript
 let foo = 'foo'
@@ -48,6 +50,18 @@ function bar(foo) {
 bar(foo)
 ```
 
+###### Accès à une variable locale
+
+```javascript
+function bar() {
+    let foo = 'foo'
+}
+bar()
+console.log(foo) // Uncaught ReferenceError: foo is not defined
+```
+
+###### Doc
+
 Pour plus d'information (notions avancées), voir :
  - [MDN docs - var](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/var)
  - [MDN docs - let](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/let)
@@ -55,6 +69,8 @@ Pour plus d'information (notions avancées), voir :
 
 
 ##### PHP
+
+###### Accès à une variable globale
 
 ```php
 <?php
@@ -79,6 +95,20 @@ function bar($foo)
 }
 bar($foo);
 ```
+
+###### Accès à une variable locale
+
+```php
+<?php
+
+function bar() {
+    $foo = 'foo';
+}
+bar();
+var_dump($foo); // Warning: Undefined variable $foo
+```
+
+###### Doc
 
 Pour plus d'information (notions avancées), voir [PHP doc - portée des variables](https://www.php.net/manual/fr/language.variables.scope.php).
 
