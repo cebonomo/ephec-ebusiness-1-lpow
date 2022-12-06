@@ -1,0 +1,347 @@
+# Principes de programmation
+
+## Exercices 1: opérateurs
+
+### Remarques techniques préalables
+
+L'utilisation d'opérateur nécessite la compréhension préalable de la notion de type de donnée.
+
+#### Principaux types scalaires
+
+| Types                | JS        | PHP           | Exemples                |
+|----------------------|-----------|---------------|-------------------------|
+| Nombre               | `number`  | `int`, `float`|  `-1`, `0`, `1.50`, ... |
+| Chaîne de caractères | `string`  | `string`      | `"foo"`, `'bar'`, ...   |
+| Booléen              | `boolean` | `bool`        | `true`, `false`         |
+
+A noter (notions avancées) qu'en JavaScript, les valeurs primitives ne sont accessibles qu'au travers d'objets immuables. Pour plus d'information sur les types en JavaScript, voir [MDN docs - types](https://developer.mozilla.org/fr/docs/Web/JavaScript/Data_structures).
+
+##### Javascript: valeurs primitives particulières
+
+(Notions avancées)
+
+  - `undefined` ([MDN docs - undefined](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/undefined))
+  - `NaN` ([MDN docs - NaN](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/NaN))
+
+#### Connaître le type
+
+(Notions avancées)
+
+##### JavaScript
+
+Voir l'opérateur `typeof` ([MDN docs - typeof](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/typeof)). 
+
+##### PHP
+
+Voir la fonction `gettype` ([PHP doc - gettype](https://www.php.net/manual/fr/function.gettype.php)).
+
+### Documentations
+
+### JS
+
+[MDN docs - opérateurs](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+
+### PHP
+
+[PHP doc - opérateurs](https://www.php.net/manual/fr/language.operators.php)
+
+### Enoncés
+
+1. Déterminer le résultat de chaque code, en précisant la valeur et le type.
+
+#### Opérateurs arithmétiques
+
+```javascript
+(2 + 2 * 3) / 4 
+// que vaut l'expression?
+```
+
+```javascript
+25 % 2
+// que vaut l'expression?
+```
+
+```javascript
+2 ** 3
+// que vaut l'expression?
+```
+
+#### Opérateurs de comparaison
+
+##### Grandeur
+
+```javascript
+6 > 5
+// que vaut l'expression?
+```
+
+```javascript
+6 < 6
+// que vaut l'expression?
+```
+
+```javascript
+6 >= 5
+// que vaut l'expression?
+```
+
+```javascript
+6 >= 6
+// que vaut l'expression?
+```
+
+##### Egalité
+
+###### Sans transtypage
+
+```javascript
+6 == 6
+// que vaut l'expression?
+```
+
+```javascript
+6 != 6
+// que vaut l'expression?
+```
+
+```javascript
+true == true
+// que vaut l'expression?
+```
+
+```javascript
+'foo' == 'foo'
+// que vaut l'expression?
+```
+
+###### Avec transtypage (optionel pour lpow)
+
+```javascript
+6 == '6' //égalité non stricte
+// que vaut l'expression?
+```
+
+```javascript
+6 === '6' //égalité stricte
+// que vaut l'expression?
+```
+
+```javascript
+6 === 6 //égalité stricte
+// que vaut l'expression?
+```
+
+```javascript
+6 !== 5
+// que vaut l'expression?
+```
+
+```javascript
+6 !== '5'
+// que vaut l'expression?
+```
+
+```javascript
+true == 1
+// que vaut l'expression?
+```
+
+```javascript
+true === 1
+// que vaut l'expression?
+```
+
+```javascript
+false == 0
+// que vaut l'expression?
+```
+
+```javascript
+false === 0
+// que vaut l'expression?
+```
+
+```javascript
+true == 'foo'
+// que vaut l'expression?
+```
+
+```javascript
+false == ''
+// que vaut l'expression?
+```
+
+#### Opérateurs logiques
+
+```javascript
+true && true
+// que vaut l'expression?
+```
+
+```javascript
+true && false
+// que vaut l'expression?
+```
+
+```javascript
+true || false
+// que vaut l'expression?
+```
+
+```javascript
+!true && true
+// que vaut l'expression?
+```
+
+```javascript
+!(true && false)
+// que vaut l'expression?
+```
+
+A noter que (notions avancées), en JavaScript, le comportement des opérateurs `&&` et `||` diffèrent de ce qu'on attendrait normalement d'eux, puisque, en réalité, ils ne retournent pas un `boolean`, mais l'une des deux valeurs faisant l'objet de la comparaison. Cela sert surtout dans le cas de `||` qui retourne la première valeur si truely (apparentée à `true` pour un autre type), sinon la seconde valeur. En PHP, d'autres opérateurs assureront cette même fonction, notamment `?:` ou encore `??` ([démo avancée](https://onlinephp.io/c/86c53)).
+
+#### Opérateurs de concaténation  (optionel pour lpow)
+
+##### JavaScript
+
+```javascript
+// opérateur de concaténation spécifique à javascript
+'a' + 'b'
+// que vaut l'expression?
+```
+
+```javascript
+// opérateur de concaténation spécifique à javascript
+'1' + '2'
+// que vaut l'expression?
+```
+
+##### PHP
+
+```php
+<?php
+
+// opérateur de concaténation spécifique à php
+'a' . 'b';
+// que vaut l'expression?
+```
+
+```php
+<?php
+
+// opérateur de concaténation spécifique à php
+'1' . '2';
+// que vaut l'expression?
+```
+
+#### Opérateurs d'affectation (ou assignation)
+
+##### Opérateur simple
+
+```javascript
+a = 1 //initialisation de a
+b = 2 //initiatlisation de b
+a = b //affectation de la valeur de b à a
+// que vaut a ?
+// que vaut b ?
+```
+
+```javascript
+a = 1
+b = 2
+a = b
+b = 3
+// que vaut a ?
+// que vaut b ?
+```
+
+```javascript
+a = 1 + 2
+// que vaut a ?
+```
+
+##### Opérateurs combinés  (optionel pour lpow)
+
+```javascript
+a = 0
+a += 1
+// que vaut a ?
+```
+
+```javascript
+a = 2
+a *= 3
+// que vaut a ?
+```
+
+```javascript
+// opérateur de concaténation spécifique à javascript
+let a = 1
+let b = '5'
+a += b
+// que vaut a ?
+// que vaut b ?
+```
+
+```php
+<?php
+
+// opérateur de concaténation spécifique à php
+$a = 1;
+$b = '5';
+$a .= $b;
+// que vaut $a ?
+// que vaut $b ?
+```
+
+#### Opérateurs unaires  (optionel pour lpow)
+
+```javascript
+a = 1
+b = -a
+// que vaut a ?
+// que vaut b ?
+```
+
+```javascript
+a = -1
+b = -a
+// que vaut a ?
+// que vaut b ?
+```
+
+```javascript
+a = 0
+a++ //incrémentation
+// que vaut a ?
+```
+
+```javascript
+a = 0
+a-- //décrémentation
+// que vaut a ?
+```
+
+```javascript
+a = 1
+b = 5
+a = b-- //décrémentation
+// que vaut a ?
+// que vaut b ?
+```
+
+```javascript
+a = 1
+b = 5
+a = --b
+// que vaut a ?
+// que vaut b ?
+```
+
+```javascript
+a = 1
+b = 5
+a += --b
+// que vaut a ?
+// que vaut b ?
+```

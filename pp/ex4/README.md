@@ -1,253 +1,40 @@
-# Exercice 4: solutions
+# Principes de programmation
 
-1. Valeur absolue
+## Exercices 4: fonctions
 
-### JavaScript
+### Remarques théoriques
 
-```javascript
-function absolute(value) {
-    if (value < 0) {
-        return -value
-    }
-    return value
-}
+#### Notion de fonction
 
+Selon les paradigmes et les languages, la notion de fonction peut varier. En JavaScript et en PHP, par fonction, on entend un bloc de code pouvant (ou pas) modifier l'état du programme et pouvant (ou pas) retourner une valeur. En ce sens, on peut appréhender une fonction comme une instruction permettant au codeur de structurer son programme.
 
-let a = parseFloat(prompt('Valeur à affecter (float)', '')) || 0
-let result = absolute(a)
+### Documentations
 
-console.log(a, result)
-```
+#### JS
 
-### PHP
+[MDN docs - fonctions](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/function)
 
-```php
-<?php
+#### PHP
 
-function absolute($value)
-{
-    if ($value < 0) {
-        return -$value;
-    }
-    return $value;
-}
+[PHP doc - fonctions](https://www.php.net/manual/fr/language.functions.php)
 
-$a = (float)($_GET['number'] ?? 0);
-$result = absolute($a);
+### Enoncés
 
-var_dump($a, $result);
-```
+ 1. Ecrire un programme contenant une fonction retournant la valeur absolue d'un nombre (ex: si le nombre est -5, la fonction retournera 5, et si le nombre est 5, la fonctionnera retournera également 5).
 
-2. Signature de nombre
+ 2. Ecrire une programme contenant une fonction retourtant les résultats suivants:
+    - -1: si nombre strictement négatif
+    - 0: si 0 (ou -0)
+    - 1: si nombre strictement positif
 
-### JavaScript
+ 3. Ecrire un programme contenant une fonction permettant de diviser 2 nombres (attention à la division par 0). 
 
-```javascript
-function signature(value) {
-    if (value < 0) {
-        return -1
-    }
-    if (value > 0) {
-        return 1
-    }
-    return 0
-}
+ 4. (Optionel) Ecrire une programme contenant une fonction calculant la puissance d'un nombre a exposé en n, selon le principe suivant:
+    - Si n vaut 1: le résulat vaut a
+    - Si n est pair: le résulat vaut (a² exposé en (n/2))
+    - Si n est impair: le résultat vaut (a * (a² exposé en ((n-1)/2)))
+    (Voir la [formule mathématique](../resources/images/pow-fomula.png).)
 
+ 5. Refactorer le programme de l'équation du second degré.
 
-let a = parseFloat(prompt('Valeur à affecter (float)', '')) || 0
-let result = signature(a)
-
-console.log(a, result)
-```
-
-### PHP
-
-```php
-<?php
-
-function signature($value)
-{
-    if ($value < 0) {
-        return -1;
-    }
-     if ($value > 0) {
-        return 1;
-    }
-    return 0;
-}
-
-$a = (float)($_GET['number'] ?? 0);
-$result = signature($a);
-
-var_dump($a, $result);
-```
-
-
-3. Division de deux nombres
-
-### JavaScript
-
-```javascript
-function divide(a, b) {
-    if (b == 0) {
-        return null
-    }
-    return a/b
-}
-
-
-let a = parseFloat(prompt('Valeur de a', '')) || 0
-let b = parseFloat(prompt('Valeur de b', '')) || 0
-let result = divide(a, b)
-
-console.log(a, b, result)
-```
-
-### PHP
-
-```php
-<?php
-
-function divide($a, $b)
-{
-    if ($b == 0) {
-        return null;
-    }
-    return $a/$b;
-}
-
-$a = (float)($_GET['a'] ?? 0);
-$b = (float)($_GET['b'] ?? 0);
-$result = divide($a, $b);
-
-var_dump($a, $b, $result);
-```
-
-
-4. Puissances
-
-### JavaScript
-
-```javascript
-function pow(base, exponent) {
-    if (exponent == 1) {
-        return base
-    }
-    if (exponent % 2) {
-        return base * pow(base*base, (exponent-1)/2)
-    }
-    return pow(base*base, exponent/2)
-}
-
-
-let a = parseFloat(prompt('a', '')) || 0
-let n = parseFloat(prompt('n', '')) || 0
-let result = pow(a, n)
-
-console.log(a, n, result)
-```
-
-### PHP
-
-```php
-<?php
-
-function _pow($base, $exponent)
-{
-   if ($exponent == 1) {
-        return $base;
-    }
-    if ($exponent % 2) {
-        return $base * pow($base*$base, ($exponent-1)/2);
-    }
-    return pow($base*$base, $exponent/2);
-}
-
-$a = (float)($_GET['a'] ?? 0);
-$n = (float)($_GET['n'] ?? 0);
-$result = _pow($a, $n);
-
-var_dump($a, $n, $result);
-```
-
-
-5. Equation du second degré
-
-### PHP
-
-```php
-<?php
-
-function composeMessageFirst($a, $b, $c, $x)
-{
-    if ($b < 0) {
-        return $a . '*' . $x . $b . '=' . $c;
-    }
-    return $a . '*' . $x . '+' . $b . '=' . $c;
-}
-
-function composeMessageSecond($a, $b, $c, $x)
-{
-    $bAsString = $b;
-    if ($b >= 0) {
-        $bAsString = '+' . $b;
-    }
-
-    $cAsString = $c;
-    if ($c >= 0) {
-        $cAsString = '+' . $c;
-    }
-
-    return $a . '*' . $x . '²' . $bAsString . '*' . $x . $cAsString . '=0';
-    
-}
-
-$a = (float)($_GET['a'] ?? 0);
-$b = (float)($_GET['b'] ?? 0);
-$c = (float)($_GET['c'] ?? 0);
-$x = 0; 
-$x1 = 0;
-$x2 = 0;
-$message = '';
-
-if ($a == 0) { // équation du premier degré
-
-    $a = $b;
-    $b = $c;
-    $c = 0;
-
-    if ($a != 0) {
-        $x = ($c-$b)/$a;
-        $message = composeMessageFirst($a, $b, $c, $x);
-    } else {
-        $message = 'pas de solution réelle';
-    }
-
-} else { //équation du second degré
-
-    $delta = ($b*$b) - (4*$a*$c);
-
-    if ($delta == 0) {
-        //x vaut 1 seule valeur
-        $x = -($b/(2*$a));
-        $message = composeMessageSecond($a, $b, $c, $x);
-
-    } elseif ($delta > 0) {
-        //x vaut 2 valeurs
-
-        $x1 = (-$b-sqrt($delta)) / (2*$a);
-        $message1 = composeMessageSecond($a, $b, $c, $x1);
-
-        $x2 = (-$b+sqrt($delta)) / (2*$a);
-        $message2 = composeMessageSecond($a, $b, $c, $x2);
-
-        $message = $message1 . ' et ' . $message2;
-
-    } else {
-        $message = 'pas de solution réelle';
-    }
-
-}
-
-var_dump($a, $b, $c, $delta, $x, $x1, $x2, $message);
-```
+[Corrections](./corrections)
