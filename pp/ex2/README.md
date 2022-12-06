@@ -24,13 +24,15 @@ Pour plus d'information, voir [PHP doc - variables](https://www.php.net/manual/f
 
 #### Portée
 
-La [portée](https://fr.wikipedia.org/wiki/Port%C3%A9e_(informatique)) d'une variable ou d'une constante est l'étendue de code dans lequelle sera accessible cette variable ou cette constante. La portée diffère selon la syntaxte de déclaration et le langage. On parle de portée "globale" lorsque la variable ou la constante est accessible partout dans le code.
+La [portée](https://fr.wikipedia.org/wiki/Port%C3%A9e_(informatique)) d'une variable est l'étendue de code dans lequelle sera accessible cette variable ou cette constante. La portée diffère selon la syntaxte de déclaration et le langage.
 
 La portée d'une variable n'est pas gérée de la même manière en JS et en PHP. Une des principales différences réside dans le fait qu'une variable JS porte également dans les fonctions, tandis qu'il n'est, par défaut, pas possible d'accéder aux variables externes à une fonction en PHP. Par contre, les deux langages partage le point commun qu'une variable locale à une fonction n'est pas accessible en dehors de celle-ci (en tout cas, pour JS, si la variable est déclarée avec `let`).
 
 ##### JavaScript
 
 ###### Accès à une variable globale
+
+JavaScript permet d'accéder à une variable externe à la fonction.
 
 ```javascript
 let foo = 'foo'
@@ -40,7 +42,7 @@ function bar() {
 bar()
 ```
 
-Il est néanmoins possible d'écrire le code en passant la variable en argument lors de l'appel de la fonction.
+Il est néanmoins possible d'écrire également le code en passant la variable en argument lors de l'appel de la fonction.
 
 ```javascript
 let foo = 'foo'
@@ -51,6 +53,8 @@ bar(foo)
 ```
 
 ###### Accès à une variable locale
+
+Par contre, JavaScript ne permet pas d'accéder, depuis l'extérieur d'une fonction, à une variable déclarée à l'intérieur d'une fonction.
 
 ```javascript
 function bar() {
@@ -72,6 +76,8 @@ Pour plus d'information (notions avancées), voir :
 
 ###### Accès à une variable globale
 
+Contrairement à JS, PHP ne permet pas d'accéder à une variable externe à la fonction.
+
 ```php
 <?php
 
@@ -83,7 +89,7 @@ function bar()
 bar();
 ```
 
-Pour accéder à la variable depuis la fonction, plusieurs techniques existent. Personnellement, je recommande de passer la variable en argument.
+Pour accéder à la variable depuis la fonction, plusieurs techniques existent. Personnellement, je recommande de passer simplement la variable en argument.
 
 ```php
 <?php
@@ -97,6 +103,8 @@ bar($foo);
 ```
 
 ###### Accès à une variable locale
+
+PHP ne permet pas non plus d'accéder, depuis l'extérieur d'une fonction, à une variable déclarée à l'intérieur d'une fonction.
 
 ```php
 <?php
