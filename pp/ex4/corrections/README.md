@@ -1,4 +1,4 @@
-# Exercice 4: solutions
+# Exercices 4: solutions
 
 1. Valeur absolue
 

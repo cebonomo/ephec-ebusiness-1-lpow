@@ -1,6 +1,6 @@
 # Exercices de programmation
 
-SOnt regroupés ici les exercices de comphérention des bases de la programmation, telles que nécessaires pour aborder la suite du cours.
+Sont regroupés ici les exercices de comphérention des bases de la programmation, telles que nécessaires pour aborder la suite du cours.
 
 1. [Exercices 1: opérateurs](./ex1)
 2. [Exercices 2: variables et constantes](./ex2)

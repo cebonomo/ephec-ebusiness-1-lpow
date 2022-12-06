@@ -1,4 +1,4 @@
-# Exercice 3: solutions
+# Exercices 3: solutions
 
 ## if
 

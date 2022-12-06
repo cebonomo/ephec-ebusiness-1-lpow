@@ -1,4 +1,4 @@
-# Exercice 2: solutions
+# Exercices 2: solutions
 
 1. Intervertir la valeur de deux variables.
 

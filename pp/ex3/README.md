@@ -1,8 +1,5 @@
 # Principes de programmation
 
-
-
-
 ## Exercices 3: conditions
 
 ### Documentations
