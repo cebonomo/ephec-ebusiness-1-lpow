@@ -20,7 +20,7 @@ Les deux langages vus au cours sont JavaScript et PHP. Les exercices qui suivent
 
 #### Input
 
-Dans les exercices suivants, pour faciliter le débuggage, il est possible d'affecter de manière dynamique la valeur des variables initiales, de sorte que l'utilisateur puisse entrer des valeurs différentes pour simuler un comportement différent du programme.
+Dans les exercices de ce chapitre, pour faciliter le débuggage, il est possible d'affecter de manière dynamique la valeur des variables initiales, de sorte que l'utilisateur puisse entrer des valeurs différentes pour simuler un comportement différent du programme.
 
 ##### JavaScript
 
