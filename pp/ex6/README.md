@@ -22,5 +22,5 @@
 
  4. Ecrire un programme classant une liste de nombres par ordre croissant.
 
- 5. Ecrire un programme intervertissant deux valeurs données d'une liste.
+ 5. Ecrire un programme intervertissant deux valeurs données d'une liste (par exemple, pour un tableau de longeur 5, on voudrait intervertir les données de l'index 1 et 3).
  
