@@ -2,7 +2,7 @@
 
 ## Exercice 6: liens
 
-**Attention:** cet exercice vise à relier entre elles plusieurs pages d'un même site, par l'intermédiaire d'une navigation interne. Il est donc impératif d'avoir créé au préalable plusieurs fichiers HTML. Pour une compréhension totale des **chemins relatifs**, il est important qu'un de ces fichiers soit situés dans un dossier. Se reporter à la [v5](./v5) pour la structure des fichiers.
+**Attention:** cet exercice vise à relier entre elles plusieurs pages d'un même site, par l'intermédiaire d'une navigation interne. Il est donc impératif d'avoir créé au préalable plusieurs fichiers HTML. Pour une compréhension totale des **chemins relatifs**, il est important qu'un de ces fichiers soit situés dans un dossier. Se reporter à la [v5](../ex5/corrections) pour la structure des fichiers.
 
 ### Enoncé
 
