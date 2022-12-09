@@ -32,7 +32,7 @@
 <pre><?php print_r($_POST); ?></pre>
 
 <h2>Textes</h2>
-<form method="post" action="forms.php" name="my-form-text">
+<form method="post" action="forms.php">
 
     <label for="my-input-text-id">Texte</label>
     <input type="text" name="my-input-text" id="my-input-text-id">
@@ -60,7 +60,7 @@
 </form>
 
 <h2>Choix à réponse unique</h2>
-<form method="post" action="forms.php" name="my-form-choice-simple">
+<form method="post" action="forms.php">
 
     <fieldset>
         <legend>Choisissez une préférence (radio)</legend>
@@ -115,7 +115,7 @@
 </form>
 
 <h2>Choix à réponses multiples</h2>
-<form method="post" action="forms.php" name="my-form-choice-multiple">
+<form method="post" action="forms.php">
 
     <fieldset>
         <legend>Choisissez n préférence(s) (checkbox)</legend>
@@ -140,7 +140,7 @@
 
 
 <h2>Caché</h2>
-<form method="post" action="forms.php" name="my-form-hidden">
+<form method="post" action="forms.php">
 
     <input type="hidden" name="my-input-hidden" value="my-input-hidden-value">
 
