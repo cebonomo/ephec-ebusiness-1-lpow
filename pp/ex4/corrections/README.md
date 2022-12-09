@@ -90,7 +90,7 @@ var_dump($a, $result);
 ```javascript
 function divide(a, b) {
     if (b == 0) {
-        return null
+        return NaN
     }
     return a/b
 }
