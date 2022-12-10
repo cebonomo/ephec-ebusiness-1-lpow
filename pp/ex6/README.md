@@ -14,7 +14,9 @@
 
 ### Enoncés
 
-#### Tableaux indexés simples
+#### Tableaux à 1 dimension
+
+##### Tableaux indexés
 
  1. Ecrire un programme choississant de manière aléatoire un élève d'une classe. Pour cela, il faut utiliser une fonction native donnant un nombre aléatoire.
 
@@ -25,15 +27,19 @@
  4. Ecrire un programme classant une liste de nombres par ordre croissant.
 
  5. Ecrire un programme intervertissant deux valeurs données d'une liste (par exemple, pour un tableau de longeur 5, on voudrait intervertir les données de l'index 1 et 3).
+
+##### Tableaux associatifs (seulement PHP)
+
+TODO
  
-#### Tableaux indexés à n dimensions
+#### Tableaux à n dimensions
+
+##### Tableaux indexés
 
  1. TODO
 
- 2. TODO
+ 2. Ecrire un programme calculant le nombre de 0 présents dans un tableau. Ce tableau contient des entiers ou des tableaux, eux-mêmes contenant des entiers ou des tableaux, etc.
 
- 3. Ecrire un programme calculant le nombre de 0 présents dans un tableau. Ce tableau contient des entiers ou des tableaux, eux-mêmes contenant des entiers ou des tableaux, etc.
+##### Tableaux associatifs (seulement PHP)
 
-#### Tableaux associatifs
-
-TODO
+ 1. Ecrire un programme générant une phrase absurde générée aléatoirement depuis des listes de parties de phrases (groupe sujet, groupe verbal, ...). Les listes sont contenues dans un tableaux à 2 dimensions. La première dimensions est un tableau associatif contenant les différents groupes. La deuxième dimension est une liste indexée de morceaux de phrase associées à chaque groupe. 
