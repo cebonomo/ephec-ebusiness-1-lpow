@@ -29,7 +29,7 @@ Selon les paradigmes et les languages, la notion de fonction peut varier. En Jav
 
  3. Ecrire un programme contenant une fonction permettant de diviser 2 nombres (attention à la division par 0). 
 
- 4. (Optionel) Ecrire une programme contenant une fonction calculant la puissance d'un nombre a exposé en n, selon le principe suivant (Voir la [formule mathématique](../../resources/images/pow-fomula.png).):
+ 4. (Optionel) Ecrire une programme contenant une fonction calculant la puissance d'un nombre a exposé en n, selon le principe suivant (voir la [formule mathématique](../../resources/images/pow-fomula.png)):
     - Si n vaut 1: le résulat vaut a
     - Si n est pair: le résulat vaut (a² exposé en (n/2))
     - Si n est impair: le résultat vaut (a * (a² exposé en ((n-1)/2)))
