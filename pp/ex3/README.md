@@ -31,11 +31,11 @@ A noter une différence syntaxique entre JS et PHP: PHP autorise la syntaxe `els
     - 500€: 5%
     - 1000€: 10%
 
-4. Ecrire un programme qui résoud et affiche une équation du premier degré: `ax + b = c`. Les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `x = (c-b)/a`. Exemple d'affichage: `2*3.5-3=4`. Le programme veille à gérer le cas suivant:
+4. (Optionnel pour lpow) Ecrire un programme qui résoud et affiche une équation du premier degré: `ax + b = c`. Les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `x = (c-b)/a`. Exemple d'affichage: `2*3.5-3=4`. Le programme veille à gérer le cas suivant:
     - `a = 0`: pas de solution réelle
     - `b < 0`: affichage avec signe négatif
 
-5. (Optionnel) Ecrire un programme qui résoud et affiche une équation du second degré: `ax² + bx + c = 0`. Les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `Δ` le discriminant du trinôme `ax² + bx + c`: (`Δ = b² - 4ac`). Le programme veille à gérer les cas suivants: 
+5. (Optionnel pour lpow) Ecrire un programme qui résoud et affiche une équation du second degré: `ax² + bx + c = 0`. Les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `Δ` le discriminant du trinôme `ax² + bx + c`: (`Δ = b² - 4ac`). Le programme veille à gérer les cas suivants: 
     - `a = 0`: équation du premier degré
     - `Δ < 0`: pas de solution réelle  
     - `Δ = 0`: solution valant `x = -(b/(2a))`

@@ -34,8 +34,8 @@ La [portée](https://fr.wikipedia.org/wiki/Port%C3%A9e_(informatique)) d'une var
 
 3. Ecrire un programme qui calcule la somme TVAC d'une commande, à partir de deux variables: le prix HTVA d'un seul article et le nombre de cet article dans la commande. Le taux de TVA applicable est de 20,5% et est défini dans une constante. Le résultat est affecté dans une nouvelle variable.
 
-4. Ecrire un programme qui affecte à une variable la chaîne de caratères `J'ai écrit "var".` où `var` est une variable.
+4. (Optionnel pour lpow) Ecrire un programme qui affecte à une variable la chaîne de caratères `J'ai écrit "var".` où `var` est une variable.
 
-5. Ecrire un programme qui indique si un nombre contenu dans une variable est positif (0 étant positif).
+5. (Optionnel pour lpow) Ecrire un programme qui indique si un nombre contenu dans une variable est un nombre pair.
 
 [Corrections](./corrections)

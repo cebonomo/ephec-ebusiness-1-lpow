@@ -111,9 +111,9 @@ var_dump($text, $sentence);
 
 ```javascript
 let a = parseFloat(prompt('Nombre (float)', '')) || 0
-let isPositive = a >= 0
+let isEven = !(a % 2)
 
-console.log(a, isPositive)
+console.log(a, isEven)
 ```
 
 ### PHP
@@ -122,7 +122,7 @@ console.log(a, isPositive)
 <?php
 
 $a = (float)($_GET['number'] ?? 0);
-$isPositive = $a >= 0;
+$isEven = !($a % 2);
 
-var_dump($a, $isPositive);
+var_dump($a, $isEven);
 ```
