@@ -14,6 +14,6 @@ Pour plus d'information sur les évèments, voir [MDN docs - introduction aux é
 
 Il existe 3 boîtes de dialogue proposées par les navigateurs:
 
- - `alert` [MDN docs - alert](https://developer.mozilla.org/fr/docs/Web/API/Window/alert)
- - `confirm` [MDN docs - confirm](https://developer.mozilla.org/fr/docs/Web/API/Window/confirm)
- - `prompt` [MDN docs - prompt](https://developer.mozilla.org/fr/docs/Web/API/Window/prompt)
+ - `alert` ([MDN docs - alert](https://developer.mozilla.org/fr/docs/Web/API/Window/alert))
+ - `confirm` ([MDN docs - confirm](https://developer.mozilla.org/fr/docs/Web/API/Window/confirm))
+ - `prompt` ([MDN docs - prompt](https://developer.mozilla.org/fr/docs/Web/API/Window/prompt))
