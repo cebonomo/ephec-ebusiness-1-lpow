@@ -6,6 +6,8 @@
 </head>
 <body>
 
+    <h1>Compteur</h1>
+
     <input 
         type="button" 
         value="-"
@@ -19,23 +21,23 @@
 
     <script>
     
-    let counter = 0
-    let element = document.getElementById('counter')
-    display()
-    
-    function increment() {
-        counter = counter + 1
+        let counter = 0
+        let element = document.getElementById('counter')
         display()
-    }
-    
-    function decrement() {
-        counter = counter - 1
-        display()
-    }
-    
-    function display() {
-        element.innerHTML = counter
-    }
+        
+        function increment() {
+            counter = counter + 1
+            display()
+        }
+        
+        function decrement() {
+            counter = counter - 1
+            display()
+        }
+        
+        function display() {
+            element.innerHTML = counter
+        }
     
     </script>
     
