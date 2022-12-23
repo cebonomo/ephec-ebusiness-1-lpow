@@ -13,11 +13,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="utf-8">
-	<title>Mon blog de petits chatons</title>
+    <meta charset="utf-8">
+    <title>Mon blog de petits chatons</title>
 </head>
 <body>
-	
+    
 </body>
 </html>
 ```

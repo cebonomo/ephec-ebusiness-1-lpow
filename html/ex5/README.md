@@ -23,14 +23,14 @@ Exemple de tableau complexe:
 
 Pour afficher les bordures du tableau, ainsi qu'une taille de tableau minimale, appliquer le style suivant à la balise `head` de la page:
 ```html
-	<style>
-		table {
-			min-width: 50%;
-		}
-		table, th, td {
-			border: 1px solid black;
-		}
-	</style>
+    <style>
+        table {
+            min-width: 50%;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 ```   
 
 [Corrections (v5)](./corrections)

@@ -118,7 +118,7 @@ $value = (float)($_GET['my-value'] ?? 0);
     <title>script php</title>
 </head>
 <body>
-	<pre><?php var_dump($value); ?></pre>
+    <pre><?php var_dump($value); ?></pre>
     <form method="get" action="#">
         <input type="number" name="my-value" value="<?php echo $value; ?>">
         <input type="submit">

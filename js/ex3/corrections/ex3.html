@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="utf-8">
-	<title>JS - exercices 3 - énoncé 3</title>
+    <meta charset="utf-8">
+    <title>JS - exercices 3 - énoncé 3</title>
 </head>
 <body>
 
     <input 
         type="button" 
         value="-"
-		onclick="decrement()">
+        onclick="decrement()">
     <input 
         type="button" 
         value="+"
-		onclick="increment()">
-		
+        onclick="increment()">
+        
     <p id="counter"></p>
 
     <script>
-	
-	let counter = 0
-	let element = document.getElementById('counter')
-	display()
-	
-	function increment() {
-		counter = counter + 1
-		display()
-	}
-	
-	function decrement() {
-		counter = counter - 1
-		display()
-	}
-	
-	function display() {
-		element.innerHTML = counter
-	}
-	
+    
+    let counter = 0
+    let element = document.getElementById('counter')
+    display()
+    
+    function increment() {
+        counter = counter + 1
+        display()
+    }
+    
+    function decrement() {
+        counter = counter - 1
+        display()
+    }
+    
+    function display() {
+        element.innerHTML = counter
+    }
+    
     </script>
-	
+    
 </body>
 </html>
