@@ -1,6 +1,6 @@
-# Principes de programmation
+# JavaScript
 
-## Exercices bonus: casse-briques
+## Exercice bonus: casse-briques
 
 ### Enoncés
 

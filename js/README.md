@@ -8,7 +8,8 @@ Les exercices JS se font en relation avec un document HTML.
 2. [Exercices 2: évènements](./ex2)
 3. [Exercices 3: DOM - contenu d'éléments](./ex3)
 4. [Exercices 4: DOM - contenu d'attributs](./ex4)
-5. [Exercice bonus: current target / this](./exbonus)
+5. [Exercice bonus: current target / this](./exbonus1)
+7. [Exercice bonus: casse-briques](./exbonus2)
 
 
 

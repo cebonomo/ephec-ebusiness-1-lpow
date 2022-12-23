@@ -8,7 +8,6 @@ Sont regroupés ici les exercices de comphérention des bases de la programmatio
 4. [Exercices 4: fonctions](./ex4)
 5. [Exercices 5: boucles](./ex5)
 6. [Exercices 6: tableaux](./ex6)
-7. [Exercices bonus: casse-briques](./exbonus)
 
 ## Remarques pratiques
 
