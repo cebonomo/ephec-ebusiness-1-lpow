@@ -22,13 +22,13 @@
     let input = document.getElementById('pizza-number')
     
     function orderPizza(){
-        if (input.value == 0) {
-            alert('rien commandé')
-        } else if (confirm('confirmez-vous?')) {
-            alert('vous avez confirmé')
-        } else {
-            alert('pas confirmé')
-        }
+        if (input.value == 0) { // A noter que, en JS, 0 == 0, '0' == 0 et '' == 0
+			alert('Aucune pizza commandée')
+		} else if (confirm('Confirmez-vous votre commande de pizza?')) {
+			alert('Bon appétit!')
+		} else {
+			alert('Dommage!')
+		}
     }
 
     </script>
