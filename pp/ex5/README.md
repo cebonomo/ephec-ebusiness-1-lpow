@@ -12,16 +12,33 @@ Dans les faits, les boucles "for" sont largement plus utilisées que "while", su
 
 Il est à noter qu'une boucle "for", n'est, en réalité, qu'un cas particulier de boucle "while". Il s'agit simplement d'une forme d'écriture plus stricte et moins sujette à variations. C'est donc une écriture à privilégier, les boucles "while" étant laissées aux seuls cas qui ne seront pas traitables par un "for".
 
+##### JS
+
 ```javascript
 for (let i = 0; i < n; i++) {
-      // instructions
+    // instructions
 }
 ``` 
 ```javascript
 let i = 0;
 while (i < n) {
-      i++;
-      // instructions
+    // instructions
+    i++;
+}
+```
+
+##### PHP
+
+```php
+for ($i = 0; $i < $n; $i++) {
+    // instructions
+}
+``` 
+```php
+$i = 0;
+while ($i < $n) {
+    // instructions
+    $i++;
 }
 ```
 

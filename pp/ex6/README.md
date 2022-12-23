@@ -18,6 +18,8 @@
 
 ##### Tableaux indexés
 
+###### Bases
+
  1. Ecrire un programme choississant de manière aléatoire un élève d'une classe. Pour cela, il faut utiliser une fonction native donnant un nombre aléatoire, lequel déterminera un des indices du tableau.
 
  2. Ecrire un programme calculant la somme et la moyenne d'une liste de nombres.
@@ -27,6 +29,10 @@
  4. Ecrire un programme séparant, depuis une liste de nombres, les nombres strictements positifs, les 0 et les nombres strictement négatifs.
  
  5. Ecrire une fonction classant par ordre croissant une liste de nombres.
+
+###### Manipulations
+
+TODO voir listes des fonctions
 
 ##### Tableaux associatifs (seulement PHP)
 
