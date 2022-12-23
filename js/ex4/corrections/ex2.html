@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>JS - exercices 4 - énoncé 2</title>
+</head>
+<body>
+
+    <label for="5-number">Nombre de billets de 5€</label>
+    <input type="number" id="5-number" value="0">
+    <input 
+        type="button" 
+        value="Montant total des billets de 5€" 
+        onclick="displayBankNoteFromInputId(5, '5-number')">
+    <br>
+    
+    <label for="10-number">Nombre de billets de 10€</label>
+    <input type="number" id="10-number" value="0">
+    <input 
+        type="button" 
+        value="Montant total des billets de 10€" 
+        onclick="displayBankNoteFromInputId(10, '10-number')">
+    
+        <script>
+
+            function displayBankNoteFromInputId(amount, inputId) {
+                let element = document.getElementById(inputId)
+                if (element) {
+                    displayBankNote(amount, element.value)
+                } else {
+                    console.error('element not found', inputId)
+                }
+            }
+    
+            function displayBankNote(amount, number) {
+                alert(amount * number)
+            }
+    
+        </script>
+	
+</body>
+</html>

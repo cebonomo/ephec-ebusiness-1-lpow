@@ -1,6 +1,6 @@
 # JavaScript
 
-## Exercices 3: contenu d'éléments
+## Exercices 3: DOM - contenu d'éléments
 
 ### Enoncés
 
@@ -9,5 +9,7 @@
  2. Lorsque l'utilisateur clique sur un bouton, intervertir le contenu de deux paragraphes spécifiques.
 
  3. Lorsque l'utilisateur clique sur un bouton "+", incrémenter un compteur affiché dans un élément HTML. Lorsque l'utilisateur clique sur un bouton "-", décrémenter ce même compteur.
+
+[Corrections](./corrections/)
 
  

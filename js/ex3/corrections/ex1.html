@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>JS - exercices 3 - énoncé 1</title>
+</head>
+<body>
+
+    <input 
+        type="button" 
+        value="Insérer du texte" 
+        onclick="insertText()">
+    <p id="inserted-text"></p>
+   
+    <script>
+		
+		let element = document.getElementById('inserted-text')
+		
+        function insertText() {
+            element.innerHTML = prompt('Entrez votre texte')
+        }
+
+    </script>
+	
+</body>
+</html>

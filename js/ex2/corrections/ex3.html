@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>JS - exercices 2 - énoncé 3</title>
+</head>
+<body>
+
+    <input 
+        type="button" 
+        value="Passer ma commande (0 pizza)" 
+        onclick="orderPizza(0)">
+    <input 
+        type="button" 
+        value="Passer ma commande (1 pizza)" 
+        onclick="orderPizza(1)">
+
+    <script>
+
+        function orderPizza(numberOfPizza) {
+			/**
+			 * Note: pour simplifier le code et son apprentissage, 
+			 * les nombres négatifs ne sont pas gérés ici,
+			 * mais bien sûr, il est possible d'aller plus loin!
+			 */
+			
+            if (numberOfPizza == 0) { // A noter que, en JS, 0 == 0, '0' == 0 et '' == 0
+                alert('Aucune pizza commandée')
+            } else if (confirm('Confirmez-vous votre commande de pizza?')) {
+                alert('Bon appétit!')
+            } else {
+                alert('Dommage!')
+            }
+        }
+        
+    </script>
+	
+</body>
+</html>

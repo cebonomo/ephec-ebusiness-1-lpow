@@ -13,3 +13,5 @@
  3. Lorsque l'utilisateur clique sur un bouton "Passer ma commande", en supposant un nombre de pizza arbitaire contenu dans une variable:
     - si aucune pizza n'est commandée: afficher le message "Aucune pizza commandée" dans une boîte d'alerte.
     - si au moins une pizza est commandée: afficher une boîte de confirmation demandant si l'utilisateur confirme son action, avec le message "Confirmez-vous votre commande de pizza?". Si l'utilisateur confirme sa commande, une boîte d'alerte indiquera "Bon appétit!". Si l'utilisateur infirme sa commande, une boîte d'alerte indiquera "Dommage!".
+
+[Corrections](./corrections/)

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>JS - exercices 4 - énoncé 3</title>
+</head>
+<body>
+
+    <input 
+        type="button" 
+        value="Changer le fond" 
+        onclick="changeBackgroundColorOfBody()">
+    
+    <script>
+
+        function changeBackgroundColorOfBody() {
+            /**
+             * A noter que "body" est également accessible via "document.body".
+             * Ce type d'accès est d'ailleurs traditionnelement privilégié.
+             * Toutefois, j'utilise ici "querySelector" afin d'illustrer 
+			 * cette fonction vue au cours.
+             */
+            let element = document.querySelector('body')
+            if (element) {
+                changeBackgroundColor(element)
+            } else {
+                console.error('element not found')
+            }
+        }
+
+        function changeBackgroundColor(element) {
+            switch (element.style.backgroundColor) {
+                case 'blue':
+                    element.style.backgroundColor = 'red'
+                    break
+                case 'red':
+                    element.style.backgroundColor = 'green'
+                    break
+                case 'green':
+                    element.style.backgroundColor = ''
+                    break
+                default:
+                    element.style.backgroundColor = 'blue'
+            }
+        }
+
+    </script>
+	
+</body>
+</html>
