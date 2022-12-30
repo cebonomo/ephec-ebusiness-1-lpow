@@ -16,18 +16,7 @@
     <script>
 
         function changeBackgroundColorOfBody() {
-            /**
-             * A noter que "body" est également accessible via "document.body".
-             * Ce type d'accès est d'ailleurs traditionnelement privilégié.
-             * Toutefois, j'utilise ici "querySelector" afin d'illustrer 
-             * cette fonction vue au cours.
-             */
-            let element = document.querySelector('body')
-            if (element) {
-                changeBackgroundColor(element)
-            } else {
-                console.error('element not found')
-            }
+            changeBackgroundColor(document.body)
         }
 
         function changeBackgroundColor(element) {
