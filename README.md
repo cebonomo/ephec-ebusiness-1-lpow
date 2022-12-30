@@ -153,7 +153,7 @@ Il est toutefois possible de forcer le navigateur à rafraîchir son cache, et d
 
 ### OS
 
-Prérequis minium indispensables:
+Prérequis minimum indispensables:
 
  - Utilisation générale d'un OS.
  - Compréhension du système de fichiers.
@@ -161,8 +161,6 @@ Prérequis minium indispensables:
  - Navigation web.
 
 Les cours à l'EPHEC sont donnés sous Windows qu'il est nécessaire de pouvoir utiliser de façon aisée. Toutefois, il est à noter que les serveurs web utilisent Linux. 
-
-[Tuto windows](https://www.youtube.com/watch?v=llfX-7RNwDM&list=PLrSOXFDHBtfFl6k7dLGdm3vrqYufjpwBw&index=1)
 
 ### Web
 
@@ -206,6 +204,15 @@ Les lectures qui suivent ne sont pas obligatoires dans le cadre du cours, mais r
 
 Quelques exemples des nombreuses ressources didactiques présentes sur le web:
 
+### OS
+
+ 1. [openclassrooms - premiers pas sur un ordinateur](https://openclassrooms.com/fr/courses/5737801-faites-vos-premiers-pas-sur-ordinateur)
+ 2. [FormationVidéo - Windows](https://www.youtube.com/watch?v=llfX-7RNwDM&list=PLrSOXFDHBtfFl6k7dLGdm3vrqYufjpwBw&index=1)
+
+### Web
+
+ 1. [openclassrooms - comprendre le web](https://openclassrooms.com/fr/courses/1946386-comprendre-le-web)
+
 ### Système de fichiers
 
   1. [FormationVidéo - fichiers sous Windows](https://www.youtube.com/watch?v=crdv_xEBnAI&list=PLrSOXFDHBtfFl6k7dLGdm3vrqYufjpwBw&index=9)
@@ -217,6 +224,10 @@ Quelques exemples des nombreuses ressources didactiques présentes sur le web:
   2. [FormationVidéo - cours HTML5 et CSS3](https://www.youtube.com/watch?v=u5W2NWItytc&list=PLrSOXFDHBtfE5tpw0bjMevWxMWXotiSdO)
   3. [Grafikart - cours HTML](https://grafikart.fr/formations/html)
   4. [Grafikart - cours CSS](https://grafikart.fr/formations/css)
+
+### Algorithmique
+
+ 1. [openclassrooms - cours de bases d'algorithmique](https://openclassrooms.com/fr/courses/7527306-decouvrez-le-fonctionnement-des-algorithmes)
 
 ### JS
 
