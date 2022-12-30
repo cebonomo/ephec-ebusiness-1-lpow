@@ -2,6 +2,10 @@
 
 ## Exercice 1: linked JS
 
+### Objectifs
+
+ 1. Comprendre comment inclure un fichier de script JS dans un document HTML.
+
 ### Enoncé
 
  1. Créer un fichier de script JS `scripts/main.js` vide.

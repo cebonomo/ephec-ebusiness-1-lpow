@@ -2,6 +2,10 @@
 
 ## Exercices 4: DOM - contenu d'attributs
 
+### Objectifs
+
+ 1. Savoir lire et modifier le contenu d'un attritut d'un élément HTML.
+
 ### Enoncés
 
  1. Reprendre le script de commande de pizza. Le nombre de pizzas doit se trouver dans un champ.
