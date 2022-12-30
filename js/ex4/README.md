@@ -4,7 +4,7 @@
 
 ### Objectifs
 
- 1. Savoir lire et modifier le contenu d'un attritut d'un élément HTML.
+ 1. Savoir lire et modifier le contenu d'un attribut d'un élément HTML.
 
 ### Enoncés
 
