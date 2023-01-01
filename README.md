@@ -228,6 +228,7 @@ Quelques exemples des nombreuses ressources didactiques présentes sur le web:
 ### Algorithmique
 
  1. [openclassrooms - cours de bases d'algorithmique](https://openclassrooms.com/fr/courses/7527306-decouvrez-le-fonctionnement-des-algorithmes)
+ 2. [Hassan El Bahi - cours de bases d'algorithmique](https://m.youtube.com/playlist?list=PLZpzLuUp9qXx-phfDlwd2dKFgooeg6nHM)
 
 ### JS
 
