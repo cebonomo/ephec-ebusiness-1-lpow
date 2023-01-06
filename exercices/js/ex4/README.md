@@ -8,6 +8,8 @@
 
  2. Savoir récupérer de façon simple l'élément `body`.
 
+ 3. Comprendre l'attribut `Element.style`.
+
 ### Enoncés
 
  1. Reprendre le script de commande de pizza. Le nombre de pizzas doit se trouver dans un champ.
