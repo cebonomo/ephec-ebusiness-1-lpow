@@ -1,6 +1,6 @@
 # Exercices JS
 
-Ces exercices complètent les exercices [HTML](../html), [CSS](../css) et [principes de programmation](../pp). Il est donc nécessaire d'avoir terminé ces chapitres précédents pour débuter celui-ci.
+Sont regroupés ici les exercices propres à JS exclusivement. Ces exercices complètent les exercices [HTML](../html) et [principes de programmation](../pp).
 
 Les exercices JS se font en relation avec un document HTML.
 
