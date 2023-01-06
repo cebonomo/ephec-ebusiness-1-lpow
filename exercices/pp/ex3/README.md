@@ -2,6 +2,12 @@
 
 ## Exercices 3: conditions
 
+### Syntaxe
+
+A noter une différence syntaxique entre JS et PHP: PHP autorise la syntaxe `elseif`, tandis que JS n'autorise que la syntaxe `else if`. 
+
+A noter qu'il est possible, tant en PHP qu'en JS, de ne pas spécifier les parenthèse (`{...}`) si le block de code ne dépasse pas 1 instruction. Personnellement, je déconseille fortement cette syntaxe et de spécifier systématiquement les parenthèses pour une lecture plus aisée.
+
 ### Documentations
 
 Les conditions font partie des structures de contrôle.
@@ -13,10 +19,6 @@ Les conditions font partie des structures de contrôle.
 #### PHP
 
 [PHP doc - structures de controle](https://www.php.net/manual/fr/language.control-structures.php)
-
-### Syntaxe
-
-A noter une différence syntaxique entre JS et PHP: PHP autorise la syntaxe `elseif`, tandis que JS n'autorise que la syntaxe `else if`. 
 
 ### Enoncés
 
