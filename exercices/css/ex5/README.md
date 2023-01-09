@@ -38,3 +38,9 @@ A noter que la propriété raccourcie `background` permet de définir la valeur 
 #### Les fonctions CSS
 
 A noter que l'URL de l'image ou encore le dégradé de couleur sont gérés via des fonctions CSS ([MDN docs - fonctions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions)).
+
+### Remarques pratiques
+
+#### URL d'images
+
+Pour préciser l'URL d'une image, les mêmes remarques que les URL en HTML s'appliquent. Attention toutefois que le chemin est relatif au répertoire du fichier contenant le CSS.
