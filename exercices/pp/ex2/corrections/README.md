@@ -105,7 +105,7 @@ $sentence = 'J\'ai écrit "' . $text . '".';
 var_dump($text, $sentence);
 ```
 
-5. Nombre positif
+5. Nombre pair
 
 ### JavaScript
 
