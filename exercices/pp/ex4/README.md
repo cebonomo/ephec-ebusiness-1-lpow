@@ -132,15 +132,15 @@ function bar($foo) {
 bar(); //Fatal error: Uncaught ArgumentCountError: Too few arguments to function bar()
 ```
 
-### Documentations
+### Objectifs
 
-#### JS
+ 1. Savoir déclarer et appeler une fonction avec ou sans paramètre.
 
-[MDN docs - fonctions](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/function)
+ 2. Savoir déclarer et appeler une fonction retournant une valeur.
 
-#### PHP
+ 3. Comprendre l'utilité d'une fonction en cas de code/logique dupliqué.
 
-[PHP doc - fonctions](https://www.php.net/manual/fr/language.functions.php)
+ 4. (Optionel au Q1) Comprendre le principe d'appel récurrent.
 
 ### Enoncés
 
@@ -153,7 +153,7 @@ bar(); //Fatal error: Uncaught ArgumentCountError: Too few arguments to function
 
  3. Ecrire un programme contenant une fonction permettant de diviser 2 nombres (attention à la division par 0). 
 
- 4. (optionel au Q1, obligatoire au Q2) Ecrire une programme contenant une fonction calculant la puissance d'un nombre a exposé en n, selon le principe suivant (voir la [formule mathématique](../../resources/images/pow-fomula.png)):
+ 4. (Optionel au Q1, obligatoire au Q2) Ecrire une programme contenant une fonction calculant la puissance d'un nombre a exposé en n, selon le principe suivant (voir la [formule mathématique](../../resources/images/pow-fomula.png)):
     - Si n vaut 1: le résulat vaut a
     - Si n est pair: le résulat vaut (a² exposé en (n/2))
     - Si n est impair: le résultat vaut (a * (a² exposé en ((n-1)/2)))
@@ -161,3 +161,14 @@ bar(); //Fatal error: Uncaught ArgumentCountError: Too few arguments to function
  5. (optionel au Q1, obligatoire au Q2) Refactorer le programme de l'équation du second degré. En effet, on remarque que ce programme tel qu'écrit dans sa [première version](../ex3/corrections/README.md#php-4) comporte plusieurs morceaux de code fort similaires. De telles duplications de code sont à proscrire. Il serait donc intéressant de refactorer (c'est-à-dire réécrire d'une meilleure façon) le programme en utilisant notamment des fonctions.
 
 [Corrections](./corrections)
+
+### Documentations
+
+#### JS
+
+[MDN docs - fonctions](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/function)
+
+#### PHP
+
+[PHP doc - fonctions](https://www.php.net/manual/fr/language.functions.php)
+

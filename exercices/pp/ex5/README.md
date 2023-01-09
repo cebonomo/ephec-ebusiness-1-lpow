@@ -42,17 +42,17 @@ while ($i < $n) {
 }
 ```
 
-### Documentations
+### Objectifs
 
-Les boucles font partie des structures de contrôle.
+ 1. Savoir utiliser les structures de boucles avec les syntaxes "for" et "while".
 
-#### JS
+ 2. Savoir boucler de manière incrémentale depuis un index de départ défini et sur une longueur définie.
 
-[MDN docs - structures de contrôle](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference#contr%C3%B4le_du_flux_dex%C3%A9cution)
+ 3. Savoir boucler de manière décrémentale depuis un index de départ défini et sur une longueur définie.
 
-#### PHP
+ 4. Savoir boucler sur base d'une condition.
 
-[PHP doc - structures de controle](https://www.php.net/manual/fr/language.control-structures.php)
+ 5. Savoir imbriquer une boucle dans une boucle.
 
 ### Enoncés
 
@@ -104,3 +104,15 @@ Cas 3:
 #### do while
 
  TODO
+
+### Documentations
+
+Les boucles font partie des structures de contrôle.
+
+#### JS
+
+[MDN docs - structures de contrôle](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference#contr%C3%B4le_du_flux_dex%C3%A9cution)
+
+#### PHP
+
+[PHP doc - structures de controle](https://www.php.net/manual/fr/language.control-structures.php)
