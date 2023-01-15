@@ -1,6 +1,5 @@
 # Exercices PHP - forms
 
-
 ## Exercice 1: form - présence des données
 
 ### Remarques théoriques préalables

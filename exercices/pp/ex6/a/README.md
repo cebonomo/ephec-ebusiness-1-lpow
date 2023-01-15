@@ -44,4 +44,7 @@
 
 ### Objectifs
 
+ - count
+ - explode
+
 ### Enoncés
