@@ -59,7 +59,7 @@ Il est possible d'accéder aux contenu d'un élément grâce à plusieurs propri
 
 Voir:
  - `Element.innerHTML` ([MDN docs - Element.innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML))
-  - `Element.textContent` ([MDN docs - Element.innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/textContent))
+  - `Element.textContent` ([MDN docs - Element.textContent](https://developer.mozilla.org/en-US/docs/Web/API/Element/textContent))
 
 ### Remarques pratiques
 
