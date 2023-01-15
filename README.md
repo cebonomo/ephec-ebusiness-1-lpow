@@ -206,17 +206,19 @@ Quelques exemples des nombreuses ressources didactiques présentes sur le web:
 
 ### OS
 
- 1. [openclassrooms - premiers pas sur un ordinateur](https://openclassrooms.com/fr/courses/5737801-faites-vos-premiers-pas-sur-ordinateur)
- 2. [FormationVidéo - Windows](https://www.youtube.com/watch?v=llfX-7RNwDM&list=PLrSOXFDHBtfFl6k7dLGdm3vrqYufjpwBw&index=1)
-
-### Web
-
- 1. [openclassrooms - comprendre le web](https://openclassrooms.com/fr/courses/1946386-comprendre-le-web)
+ 1. [Cookie connecté - l'OS expliqué en 3 minutes](https://www.youtube.com/watch?v=AcZ87MTiXr4)
+ 2. [openclassrooms - premiers pas sur un ordinateur](https://openclassrooms.com/fr/courses/5737801-faites-vos-premiers-pas-sur-ordinateur)
+ 3. [FormationVidéo - Windows](https://www.youtube.com/watch?v=llfX-7RNwDM&list=PLrSOXFDHBtfFl6k7dLGdm3vrqYufjpwBw&index=1)
 
 ### Système de fichiers
 
-  1. [FormationVidéo - fichiers sous Windows](https://www.youtube.com/watch?v=crdv_xEBnAI&list=PLrSOXFDHBtfFl6k7dLGdm3vrqYufjpwBw&index=9)
-  2. [FormationVidéo - fichiers sous Linux](https://www.youtube.com/watch?v=9xpItgaWVso&list=PLrSOXFDHBtfHKxuz6NySItyf4iSEcTw97&index=12)
+ 1. [FormationVidéo - fichiers sous Windows](https://www.youtube.com/watch?v=crdv_xEBnAI&list=PLrSOXFDHBtfFl6k7dLGdm3vrqYufjpwBw&index=9)
+ 2. [FormationVidéo - fichiers sous Linux](https://www.youtube.com/watch?v=9xpItgaWVso&list=PLrSOXFDHBtfHKxuz6NySItyf4iSEcTw97&index=12)
+
+### Web
+
+ 1. [Cookie connecté - frontend vs. backend](https://www.youtube.com/watch?v=UPDmfW9QIR0)
+ 2. [openclassrooms - comprendre le web](https://openclassrooms.com/fr/courses/1946386-comprendre-le-web)
 
 ### HTML5 + CSS3
 
