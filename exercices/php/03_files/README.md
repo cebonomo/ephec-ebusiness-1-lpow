@@ -4,13 +4,13 @@
 
 ### Objectifs
 
- 1. Savoir écrire dans un fichier texte un contenu multiligne.
+ 1. Savoir écrire un contenu multiligne dans un fichier texte.
 
 ### Enoncés
 
  1. Créer manuellement un fichier texte "users.csv" comprenant la ligne suivante: "email,password,lastname,firstname". Reprendre le formulaire d'inscription de l'exercice précédent pour la suite de l'exercice.
 
- 2. Si le formulaire est valide, enregistrer les données dans le fichier (dans l'ordre donné par la première ligne), à l'aide de la fonction `fwrite` ([php doc - fwrite](https://www.php.net/manual/fr/function.fwrite.php)). 
+ 2. Si le formulaire est valide, enregistrer les données dans le fichier (dans l'ordre donné par la première ligne), à l'aide de la fonction `fwrite` ([PHP doc - fwrite](https://www.php.net/manual/fr/function.fwrite.php)). 
     - Chaque user occupe une et une seule ligne. Pour délimiter la ligne, il faut utiliser la constante PHP `PHP_EOL` ([PHP doc - constantes pré-définies](https://www.php.net/manual/fr/reserved.constants.php)).
     - Chaque donnée du user est sérarée par une virgule (",") (comme pour la première ligne). Pour cela, il faut utiliser la méthode PHP `implode` ([PHP doc - implode](https://www.php.net/manual/fr/function.implode.php)). Le charactère de séparation (",") doit être défini dans une constante, car ne peut pas être modifié lors de l'exécution du script.
   
@@ -18,9 +18,8 @@
 
  4. Par ailleurs, il faut s'assurer que l'utilisateur n'a pas envoyé involontairement des espaces au début ou à la fin des données soumises. Pour nettoyer les données d'espaces indésirables, il faut utiliser la fonction PHP `trim` ([PHP doc - trim](https://www.php.net/manual/fr/function.trim.php)).
 
- 5. Pour des raisons de sécurité évidentes, le password ne peut pas être enregistré en clair dans le fichier. Il faut donc passer par la fonction PHP `password_hash` ([PHP doc - password_hash](https://www.php.net/manual/fr/function.password-hash.php)) pour hacher le password avant de l'enregistrer.
+ 5. Pour des raisons de sécurité évidentes, le password ne peut pas être enregistré en clair dans le fichier. Il faut donc passer par la fonction PHP `password_hash` ([PHP doc - password_hash](https://www.php.net/manual/fr/function.password-hash.php)) pour hasher le password avant de l'enregistrer.
 
- 6. Le script PHP doit gérer le cas où le fichier n'existe pas, ou n'est pas accessible en lecture et en écriture.
 
 ### Remarques théoriques
 
@@ -46,11 +45,11 @@ $absolutePath = realpath($relativePath);
 var_dump($relativePath, $cwd, $absolutePath);
 ```
 
-Pour plus d'information (notions avancées), voir l'article de blog de [phpdelusions sur les chemins](https://phpdelusions.net/articles/paths).
+Pour plus d'information (notions avancées), voir l'article de [phpdelusions](https://phpdelusions.net/articles/paths).
 
 #### Accessibilité d'un fichier
 
-La fonction `fopen` peut émettre une erreur si le fichier n'existe pas ou s'il n'est pas accessible en lecture et/ou en écriture. Une bonne pratique consiste donc à tester l'accessibilité du fichier au préalable de toute manipulation.
+A noter que la fonction `fopen` peut émettre une erreur si le fichier n'existe pas ou s'il n'est pas accessible en lecture et/ou en écriture. Une bonne pratique consiste donc à tester l'accessibilité du fichier au préalable de toute manipulation.
 
 ```php
 <?php
@@ -75,13 +74,11 @@ if (!is_readable($filePath)) {
 
 ### Objectifs
 
- 1. Savoir lire dans un fichier texte un contenu multiligne.
-
- 2. Savoir séparer une chaîne de charactères.
+ 1. Savoir lire un contenu multiligne depuis un fichier texte.
 
 ### Enoncés
 
- 1. Reprendre le script précédent (écriture de fichier). Rajouter une fonction qui retourne les données d'un user: la fonction doit lire le fichier à l'aide de la fonction `fgets` ([php doc - fgets](https://www.php.net/manual/fr/function.fgets.php)), et retourner les données d'un user dont on aura donné l'email en argument de la fonction. Pour cela, utiliser la méthode PHP `explode` ([PHP doc - explode](https://www.php.net/manual/fr/function.explode.php)).
+ 1. Reprendre le script précédent (écriture de fichier). Rajouter une fonction qui retourne les données d'un user: la fonction doit lire le fichier à l'aide de la fonction `fgets` ([PHP doc - fgets](https://www.php.net/manual/fr/function.fgets.php)), et retourner les données d'un user dont on aura donné l'email en argument de la fonction. Pour cela, utiliser la méthode PHP `explode` ([PHP doc - explode](https://www.php.net/manual/fr/function.explode.php)).
 
  2. Lorsque le formulaire est soumis, avant d'enregistrer le user dans le fichier, vérifier si le user n'est pas déjà enregistré, sur base de l'email, grâce à la fonction précédemment codée. Il ne peut donc pas exister plus d'un email différent dans ce fichier. Si l'email existe déjà, ne pas enregistrer et afficher un message d'erreur spécifique.
 
