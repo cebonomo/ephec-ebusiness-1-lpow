@@ -44,7 +44,13 @@
 
 ### Objectifs
 
+1. Comprendre les méthodes PHP suivantes:
+ - isset
+ - empy
  - count
  - explode
+ - implode
 
 ### Enoncés
+
+Voir exercices PHP.
