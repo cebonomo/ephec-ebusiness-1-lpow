@@ -23,7 +23,7 @@
 
  3. Ecrire un programme contenant une fonction permettant de diviser 2 nombres (attention à la division par 0). 
 
- 4. (Optionel au Q1, obligatoire au Q2) Ecrire une programme contenant une fonction calculant la puissance d'un nombre a exposé en n, selon le principe suivant (voir la [formule mathématique](../../resources/images/pow-fomula.png)):
+ 4. (Optionel au Q1, obligatoire au Q2) Ecrire une programme contenant une fonction calculant la puissance d'un nombre a exposé en n, selon le principe suivant (voir la [formule mathématique](./../../../resources/images/pow-fomula.png)):
     - Si n vaut 1: le résulat vaut a
     - Si n est pair: le résulat vaut (a² exposé en (n/2))
     - Si n est impair: le résultat vaut (a * (a² exposé en ((n-1)/2)))
@@ -37,6 +37,8 @@
 #### Notion de fonction
 
 Selon les paradigmes et les languages, la notion de fonction peut varier. En JavaScript et en PHP, par fonction, on entend un bloc de code pouvant (ou pas) modifier l'état du programme et pouvant (ou pas) retourner une valeur. En ce sens, on peut appréhender une fonction comme une instruction permettant au codeur de structurer son programme.
+
+### Remarques techniques
 
 #### Portée des variables et fonctions
 

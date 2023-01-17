@@ -19,7 +19,7 @@
     - Une fusion de cellules par ligne
 
 Exemple de tableau complexe:
-![Tableau complexe](../../resources/images/tableau.png)
+![Tableau complexe](../../../resources/images/tableau.png)
 
 Pour afficher les bordures du tableau, ainsi qu'une taille de tableau minimale, appliquer le style suivant à la balise `head` de la page:
 ```html
