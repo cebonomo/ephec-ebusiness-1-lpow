@@ -24,7 +24,7 @@
 
 [Corrections](./corrections)
 
-### Remarques techniques préalables
+### Remarques techniques
 
 #### Déclarations et définitions
 

@@ -1,8 +1,6 @@
 # Exercices 3: solutions
 
-## if
-
-1. Nombre entre 10 et 20
+### If - Nombre entre 10 et 20
 
 ### JavaScript
 
@@ -47,8 +45,7 @@ if ($a >= 10 && $a <= 20) {
 var_dump($a, $message);
 ```
 
-2. Prime du vendeur
-
+## If - Prime du vendeur
 
 ### JavaScript
 
@@ -79,7 +76,9 @@ var_dump($salesFigure, $bonus);
 ```
 
 
-3. Prime progressive
+## If - Prime progressive
+
+Attention à l'ordre des conditions!
 
 ### JavaScript
 
@@ -124,7 +123,7 @@ var_dump($salesFigure, $bonus);
 ```
 
 
-4. Equation du premier degré
+## If - Equation du premier degré
 
 ### JavaScript
 
@@ -174,7 +173,7 @@ if ($a != 0) {
 var_dump($a, $b, $c, $message);
 ```
 
-5. Equation du second degré
+## If - Equation du second degré
 
 ### PHP
 
@@ -277,9 +276,9 @@ var_dump($a, $b, $c, $delta, $x, $x1, $x2, $message);
 On remarque tout de suite que le programme tel qu'écrit ci-dessus comporte plusieurs morceaux de code fort similaires. De telles duplications de code sont à proscrire. Il sera intéressant de refactorer (c'est-à-dire réécrire d'une meilleure façon) le programme en utilisant notamment des fonctions (voir exercices suivants).
 
 
-## switch
+## Switch - Quiz
 
-1. Quiz
+Attention à l'ordre des conditions!
 
 ### JavaScript
 

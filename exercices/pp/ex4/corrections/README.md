@@ -1,6 +1,6 @@
 # Exercices 4: solutions
 
-1. Valeur absolue
+## Valeur absolue
 
 ### JavaScript
 
@@ -38,7 +38,7 @@ $result = absolute($a);
 var_dump($a, $result);
 ```
 
-2. Signature de nombre
+## Signature de nombre
 
 ### JavaScript
 
@@ -83,7 +83,7 @@ var_dump($a, $result);
 ```
 
 
-3. Division de deux nombres
+## Division de deux nombres
 
 ### JavaScript
 
@@ -124,7 +124,7 @@ var_dump($a, $b, $result);
 ```
 
 
-4. Puissances
+## Puissances
 
 ### JavaScript
 
@@ -171,7 +171,7 @@ var_dump($a, $n, $result);
 ```
 
 
-5. Equation du second degré
+## Equation du second degré
 
 ### PHP
 

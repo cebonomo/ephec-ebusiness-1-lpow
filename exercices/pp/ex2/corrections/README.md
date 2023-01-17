@@ -1,6 +1,6 @@
 # Exercices 2: solutions
 
-1. Intervertir la valeur de deux variables.
+## Intervertir la valeur de deux variables
 
 ### Javascript
 
@@ -28,13 +28,21 @@ $b = $c;
 var_dump($a, $b, $c);
 ```
 
-2. Le carré d'un nombre
+## Le carré d'un nombre
 
 ### JavaScript
 
 ```javascript
-let a = parseFloat(prompt('Valeur à affecter (float)', '')) || 0
+let a = 2
+let result = a * a
 
+console.log(a, result)
+```
+
+Pour débugger le code de manière un peu plus dynamique, on peut initier les variables depuis une entrée.
+
+```javascript
+let a = parseFloat(prompt('Valeur à affecter (float)', '')) || 0
 let result = a * a
 
 console.log(a, result)
@@ -43,8 +51,20 @@ console.log(a, result)
 ### PHP
 
 ```php
-$a = (float)($_GET['value'] ?? 0);
+<?php
 
+$a = 2;
+$result = $a * $a;
+
+var_dump($a, $result);
+```
+
+Pour débugger le code de manière un peu plus dynamique, on peut initier les variables depuis une entrée.
+
+```php
+<?php
+
+$a = (float)($_GET['value'] ?? 0);
 $result = $a * $a;
 
 var_dump($a, $result);
@@ -53,6 +73,20 @@ var_dump($a, $result);
 3. Commande TVAC
 
 ### JavaScript
+
+```javascript
+const VAT = 0.205
+
+let costVATE = 100
+let numberOfItems = 10
+
+let totalVATE =  numberOfItems * costVATE
+let totalVATI = totalVATE + (totalVATE * VAT)
+
+console.log(costVATE, numberOfItems, totalVATE, totalVATI)
+```
+
+Pour débugger le code de manière un peu plus dynamique, on peut initier les variables depuis une entrée.
 
 ```javascript
 const VAT = 0.205
@@ -73,6 +107,22 @@ console.log(costVATE, numberOfItems, totalVATE, totalVATI)
 
 define('VAT',  0.205);
 
+$costVATE = 100;
+$numberOfItems = 10;
+
+$totalVATE = $numberOfItems * $costVATE;
+$totalVATI = $totalVATE + ($totalVATE * VAT);
+
+var_dump($costVATE, $numberOfItems, $totalVATE, $totalVATI);
+```
+
+Pour débugger le code de manière un peu plus dynamique, on peut initier les variables depuis une entrée.
+
+```php
+<?php 
+
+define('VAT',  0.205);
+
 $costVATE = (float)($_GET['cost'] ?? 0);
 $numberOfItems = (float)($_GET['number'] ?? 0);
 
@@ -82,8 +132,7 @@ $totalVATI = $totalVATE + ($totalVATE * VAT);
 var_dump($costVATE, $numberOfItems, $totalVATE, $totalVATI);
 ```
 
-4. Concaténation
-
+## Concaténation
 
 ### JavaScript
 
@@ -105,7 +154,7 @@ $sentence = 'J\'ai écrit "' . $text . '".';
 var_dump($text, $sentence);
 ```
 
-5. Nombre pair
+## Nombre pair
 
 ### JavaScript
 
