@@ -17,7 +17,7 @@
 
 [Corrections (v10)](./corrections)
 
-### Remarques théorique
+### Remarques théoriques
 
 #### Positionnement et flux (flow)
 

@@ -10,6 +10,14 @@
 
 ### Remarques théoriques
 
+### Autres balises média
+
+ A noter qu'il existe d'autres balises média (hors cours):
+   - `video`
+   - `audio`
+   
+### Remarques techniques
+
 #### URL
 
 Une URL représente une et une seule ressource.
@@ -37,7 +45,7 @@ Dans le cadre de la définition d'un chemin, il faut noter les règles de naviga
  - `./` (point simple) indique le répertoire courant.
  - `../` (deux points se suivant) indique le répertoire parent. 
 
-### Procédure de débuggage
+#### Procédure de débuggage
 
 Si l'image ne s'affiche pas correctement, appliquer la procédure de débuggage suivante:
 
@@ -47,9 +55,3 @@ Si l'image ne s'affiche pas correctement, appliquer la procédure de débuggage 
  4. Vérifier le chemin de fichier indiqué dans le code HTML. Pour ce faire, dans l'onglet "Network" du DevTools du navigateur, après rafraîchissement de la page, vérifier le statut HTTP du chargement de l'image (Si code `200`, tout est OK. Si code `404`, la ressource n'a pas été trouvée.) 
 
  ![Erreur 404 sur une image](../../../resources/images/image-404.png)
-
- ### Autres balises média
-
- A noter qu'il existe d'autres balises média (hors cours):
-   - `video`
-   - `audio`

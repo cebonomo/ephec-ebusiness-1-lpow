@@ -29,7 +29,7 @@
 
 [Corrections (v7)](./corrections)
  
-### Remarques théoriques
+### Remarques théoriques et techniques
 
 #### Box model et dimensions d'affichage
 

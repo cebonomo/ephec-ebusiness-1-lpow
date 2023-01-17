@@ -21,6 +21,12 @@
 Exemple de tableau complexe:
 ![Tableau complexe](../../../resources/images/tableau.png)
 
+[Corrections (v5)](./corrections)
+
+### Remarques techniques
+
+#### Affichage
+
 Pour afficher les bordures du tableau, ainsi qu'une taille de tableau minimale, appliquer le style suivant à la balise `head` de la page:
 ```html
     <style>
@@ -33,4 +39,3 @@ Pour afficher les bordures du tableau, ainsi qu'une taille de tableau minimale, 
     </style>
 ```   
 
-[Corrections (v5)](./corrections)
