@@ -18,7 +18,7 @@
  
  5. Si tout est correct, ne plus afficher le formulaire et afficher le message "Bienvenue prénom/nom/email", suivant les valeurs disponibles dans le fichier pour ce user.
 
-### Remarques pratiques
+### Remarques techniques
 
 #### Fin de ligne
 

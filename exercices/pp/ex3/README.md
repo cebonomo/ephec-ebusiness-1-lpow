@@ -2,12 +2,6 @@
 
 ## Exercices 3: conditions
 
-### Syntaxe
-
-A noter une différence syntaxique entre JS et PHP: PHP autorise la syntaxe `elseif`, tandis que JS n'autorise que la syntaxe `else if`. 
-
-A noter qu'il est possible, tant en PHP qu'en JS, de ne pas spécifier les parenthèse (`{...}`) si le block de code ne dépasse pas 1 instruction. Personnellement, je déconseille fortement cette syntaxe et de spécifier systématiquement les parenthèses pour une lecture plus aisée.
-
 ### Objectifs
 
  1. Savoir utiliser les structures de condition avec les syntaxes "if" et "switch".
@@ -50,6 +44,14 @@ A noter qu'il est possible, tant en PHP qu'en JS, de ne pas spécifier les paren
     - Si aucune valeur (string vide): Message d'erreur spécifique indiquant qu'une réponse est requise.
 
 [Corrections](./corrections)
+
+### Remarques théoriques
+
+#### Syntaxe
+
+A noter une différence syntaxique entre JS et PHP: PHP autorise la syntaxe `elseif`, tandis que JS n'autorise que la syntaxe `else if`. 
+
+A noter qu'il est possible, tant en PHP qu'en JS, de ne pas spécifier les parenthèse (`{...}`) si le block de code ne dépasse pas 1 instruction. Personnellement, je déconseille fortement cette syntaxe et de spécifier systématiquement les parenthèses pour une lecture plus aisée.
 
 ### Documentations
 

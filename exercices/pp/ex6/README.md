@@ -15,7 +15,7 @@
 
 Il existe de nombreuses fonctions ou méthodes de manipulation de tableau. Toutefois, cette matière n'est pas abordée au cours.
 
-### Remarques pratiques
+### Remarques techniques
 
 #### Boucler sur un tableau
 

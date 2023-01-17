@@ -61,7 +61,7 @@ Voir:
  - `Element.innerHTML` ([MDN docs - Element.innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML))
   - `Element.textContent` ([MDN docs - Element.textContent](https://developer.mozilla.org/en-US/docs/Web/API/Element/textContent))
 
-### Remarques pratiques
+### Remarques techniques
 
 #### Incrémentation/décrémentation
 

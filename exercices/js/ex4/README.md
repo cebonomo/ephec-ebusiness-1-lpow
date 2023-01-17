@@ -20,7 +20,7 @@
 
 [Corrections](./corrections/)
 
-### Remarques pratiques
+### Remarques techniques
 
 #### body
 

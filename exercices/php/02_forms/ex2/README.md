@@ -22,7 +22,7 @@
  
  6. Si le formulaire est soumis de manière correcte, ne plus afficher le formulaire, et afficher un message "Bienvenue prénom/nom/email", suivant les valeurs disponibles.
 
-### Remarques pratiques
+### Remarques techniques
 
 #### Client vs. server
 

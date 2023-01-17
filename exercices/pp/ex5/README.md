@@ -2,46 +2,6 @@
 
 ## Exercices 5: boucles
 
-### Remarques théoriques
-
-#### Quelle boucle choisir?
-
-Une boucle "for" est à utiliser lorsque le nombre d'itérations est déterminé au préalable, tandis qu'une boucle "while" (ou "do while") n'est à utiliser que si le nombre total d'itérations est inconnu en débutant la boucle.
-
-Dans les faits, les boucles "for" sont largement plus utilisées que "while", surtout en raison de la facilité qu'elles offrent pour parcourir des tableaux.
-
-Il est à noter qu'une boucle "for", n'est, en réalité, qu'un cas particulier de boucle "while". Il s'agit simplement d'une forme d'écriture plus stricte et moins sujette à variations. C'est donc une écriture à privilégier, les boucles "while" étant laissées aux seuls cas qui ne seront pas traitables par un "for".
-
-##### JS
-
-```javascript
-for (let i = 0; i < n; i++) {
-    // instructions
-}
-``` 
-```javascript
-let i = 0;
-while (i < n) {
-    // instructions
-    i++;
-}
-```
-
-##### PHP
-
-```php
-for ($i = 0; $i < $n; $i++) {
-    // instructions
-}
-``` 
-```php
-$i = 0;
-while ($i < $n) {
-    // instructions
-    $i++;
-}
-```
-
 ### Objectifs
 
  1. Savoir utiliser les structures de boucles avec les syntaxes "for" et "while".
@@ -108,6 +68,46 @@ Cas 3:
 #### do while
 
  1. Créer une variable entière appelée "counter" et initialisez-la à 0. Utiliser une boucle "do while" pour afficher chaque nombre entier de 0 à 9, en incrémentant "counter" de 1 à chaque itération.
+
+### Remarques techniques
+
+#### Quelle boucle choisir?
+
+Une boucle "for" est à utiliser lorsque le nombre d'itérations est déterminé au préalable, tandis qu'une boucle "while" (ou "do while") n'est à utiliser que si le nombre total d'itérations est inconnu en débutant la boucle.
+
+Dans les faits, les boucles "for" sont largement plus utilisées que "while", surtout en raison de la facilité qu'elles offrent pour parcourir des tableaux.
+
+Il est à noter qu'une boucle "for", n'est, en réalité, qu'un cas particulier de boucle "while". Il s'agit simplement d'une forme d'écriture plus stricte et moins sujette à variations. C'est donc une écriture à privilégier, les boucles "while" étant laissées aux seuls cas qui ne seront pas traitables par un "for".
+
+##### JS
+
+```javascript
+for (let i = 0; i < n; i++) {
+    // instructions
+}
+``` 
+```javascript
+let i = 0;
+while (i < n) {
+    // instructions
+    i++;
+}
+```
+
+##### PHP
+
+```php
+for ($i = 0; $i < $n; $i++) {
+    // instructions
+}
+``` 
+```php
+$i = 0;
+while ($i < $n) {
+    // instructions
+    $i++;
+}
+```
 
 ### Documentations
 

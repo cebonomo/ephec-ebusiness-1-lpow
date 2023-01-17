@@ -9,7 +9,7 @@ Sont regroupés ici les exercices de compréhension des bases de la programmatio
 5. [Exercices 5: boucles](./ex5)
 6. [Exercices 6: tableaux](./ex6)
 
-## Remarques pratiques
+## Remarques techniques
 
 ### Languages et syntaxes
 

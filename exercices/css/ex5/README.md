@@ -39,7 +39,7 @@ A noter que la propriété raccourcie `background` permet de définir la valeur 
 
 A noter que l'URL de l'image ou encore le dégradé de couleur sont gérés via des fonctions CSS ([MDN docs - fonctions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions)).
 
-### Remarques pratiques
+### Remarques techniques
 
 #### URL d'images
 

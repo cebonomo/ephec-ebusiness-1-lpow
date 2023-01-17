@@ -1,6 +1,6 @@
 # Tableaux indexés simples
 
-## Lecture
+## Exercices 1: lecture
 
 ### Objectifs
 
@@ -22,7 +22,7 @@
 
  3. Ecrire une fonction retournant l'indice d'une valeur contenue dans un tableau. Si plusieurs valeurs identiques existent dans le tableau, la fonction retournera uniquement l'index de la première valeur. Par exemple, pour le tableau `['chiot', 'chaton', 'chaton, '...]`, la fonction retournera l'indice `1` pour la valeur `'chaton'`.
 
-## Ecriture
+## Exercices 2: écriture
 
 ### Objectifs
 

@@ -30,7 +30,7 @@ A noter que dans une vraie application, nous ne passerions pas par un fichier po
 
 A noter que PHP dispose de fonctions spécifiques au format CSV, mais que celles-ci ne sont pas étudiées ici, car l'objectif de l'exercice est bien de traiter un fichier texte de manière générale, quelque soit son format.
 
-### Remarques pratiques
+### Remarques techniques
 
 #### Chemin de fichier
 
