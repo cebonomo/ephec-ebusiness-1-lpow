@@ -1,4 +1,4 @@
-# PP - tableaux associatifs simples
+# PP - tableaux associatifs simples (PHP)
 
 ## Lecture
 
@@ -7,12 +7,6 @@
 ### Enoncés
 
 ## Ecriture
-
-### Objectifs
-
-### Enoncés
-
-## Manipulations
 
 ### Objectifs
 

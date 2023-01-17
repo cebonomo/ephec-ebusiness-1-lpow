@@ -2,27 +2,24 @@
 
 ## Exercices 6: tableaux
 
-### Sections
+### Types de tableau
 
-#### Tableaux à 1 dimension
+ - [Tableaux indexés](./a/).
+ - [Tableaux associatifs (PHP)](./b/).
+ - [Tableaux indexés à n dimensions](./c/).
+ - [Tableaux associatifs à n dimensions (PHP)](./d/).
 
-##### Tableaux indexés
+### Remarques théoriques
 
-Voir [exercices a](./a/).
+#### Manipulations
 
-##### Tableaux associatifs (seulement PHP)
+Il existe de nombreuses fonctions ou méthodes de manipulation de tableau. Toutefois, cette matière n'est pas abordée au cours.
 
-Voir [exercices b](./b/).
- 
-#### Tableaux à n dimensions
+### Remarques pratiques
 
-##### Tableaux indexés
+#### Boucler sur un tableau
 
-Voir [exercices c](./c/).
-
-##### Tableaux associatifs (seulement PHP)
-
-Voir [exercices d](./d/).
+TODO
 
 ### Documentations
 

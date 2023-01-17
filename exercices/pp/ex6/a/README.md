@@ -39,18 +39,3 @@
  2. Ecrire un programme séparant, depuis une liste de nombres, les nombres strictements positifs, les 0 et les nombres strictement négatifs.
  
  3. Ecrire une fonction classant par ordre croissant une liste de nombres.
-
-## Manipulations
-
-### Objectifs
-
-1. Comprendre les méthodes PHP suivantes:
- - isset
- - empy
- - count
- - explode
- - implode
-
-### Enoncés
-
-Voir exercices PHP.
