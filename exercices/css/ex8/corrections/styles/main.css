@@ -39,12 +39,10 @@ header {
 
 a {
     text-decoration: none;
-    transition: background-color 4s;
 }
 
 a:hover {
     text-decoration: underline;
-    background-color: blanchedalmond;
 }
 
 a:visited {

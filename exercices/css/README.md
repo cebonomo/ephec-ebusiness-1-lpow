@@ -7,7 +7,7 @@ Ces exercices complètent les exercices [HTML](../html) en rajoutant au code une
 3. [Exercice 3: typographie](./ex3/)
 4. [Exercice 4: polices importées](./ex4/)
 5. [Exercice 5: fonds](./ex5/)
-6. [Exercice 6: visibilité, opacité et transitions](./ex6/)
+6. [Exercice 6: display](./ex6/)
 7. [Exercice 7: listes](./ex7/)
 8. [Exercice 8: dimensions d'affichage](./ex8/)
 9. [Exercice 9: bordures (border)](./ex9/)
