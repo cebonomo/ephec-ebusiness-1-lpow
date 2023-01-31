@@ -22,7 +22,7 @@ Pour le code complet, voir le fichier [for-table.php](./for-table.php).
 
 ### Explications
 
-1. La première ligne définit le début du tableau HTML.
+1. La première ligne définit le début du tableau HTML avec `<table>`.
 
 2. Le premier bloc `for` crée 4 lignes dans le tableau HTML. La variable `$row` est utilisée pour compter le nombre de lignes. Elle est initialisée à 1 et est incrémentée de 1 à chaque tour de boucle jusqu'à ce qu'elle atteigne le nombre voulu de lignes, à savoir 4. On débute l'incrémentation à 1 plutôt qu'à 0 pour pouvoir utiliser cet index directement dans l'identifiant de la cellule (voir ci-après).
 
@@ -37,4 +37,4 @@ Pour le code complet, voir le fichier [for-table.php](./for-table.php).
 
 6. Après l'affichage de toutes les cellules de la ligne courante, on ferme la ligne du tableau HTML en utilisant `echo '</tr>';`.
 
-7. Le bloc `for` externe se répète jusqu'à ce que toutes les lignes soient ainsi générées, puis le code se termine en fermant le tableau HTML avec </table>.
+7. Le bloc `for` externe se répète jusqu'à ce que toutes les lignes soient ainsi générées, puis le code se termine en fermant le tableau HTML avec `</table>`.
