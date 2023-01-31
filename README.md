@@ -7,6 +7,7 @@ Est présenté ici le code développé durant mes TP du cours de LPOW de l'EPHEC
  3. [CSS](./exercices/css#exercices-css)
  4. [Principes de programmation](./exercices/pp#exercices-de-programmation)
  5. [JavaScript](./exercices/js#exercices-js)
+ 6. [PHP](./exercices/php#exercices-php)
 
 **Attention:** les exercices présentés ici visent à mettre en pratique un maximum de matière théorique. Ils représentent des exemples d'utilisation, mais ne couvrent pas forcément l'entièreté de la matière abordée, ni évidemment l'entièreté des cas possibles.
 
