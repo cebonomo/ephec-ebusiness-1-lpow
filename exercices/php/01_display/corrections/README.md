@@ -2,7 +2,7 @@
 
 ## for
 
-pour le code complet, voir le fichier [for-table.php](./for-table.php).
+Pour le code complet, voir le fichier [for-table.php](./for-table.php).
 
 ### Code principal
 
@@ -35,6 +35,6 @@ pour le code complet, voir le fichier [for-table.php](./for-table.php).
     - Pour rappel, `$row` débute à 1 et est incrémenté à chaque ligne.
     - Le contenu final de la cellule sera donc une lettre désignant la colonne suivie d'un nombre désignant la ligne (par exemple, "A1" pour la première cellule de la première ligne).
 
-6. La dernière ligne de chaque boucle `for` interne ferme la ligne de tableau HTML en utilisant `echo '</tr>';`.
+6. Après l'affichage de toutes les cellules de la ligne courrante, on ferme la ligne du tableau HTML en utilisant `echo '</tr>';`.
 
-7. Le bloc `for` externe se répète jusqu'à ce que toutes les 4 lignes soient générées, puis le code se termine en fermant le tableau HTML avec </table>.
+7. Le bloc `for` externe se répète jusqu'à ce que toutes les lignes soient ainsi générées, puis le code se termine en fermant le tableau HTML avec </table>.
