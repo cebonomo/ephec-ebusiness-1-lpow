@@ -1,6 +1,6 @@
 # EPHEC - LPOW - TP
 
-Est présenté ici le code développé durant mes TP du cours de LPOW de l'EPHEC.
+Est présenté ici le code développé durant mes TP du cours de LPOW et PP de l'EPHEC.
 
  1. [FTP](./exercices/ftp#exercices-ftp) 
  2. [HTML](./exercices/html#exercices-html)
@@ -9,7 +9,9 @@ Est présenté ici le code développé durant mes TP du cours de LPOW de l'EPHEC
  5. [JavaScript](./exercices/js#exercices-js)
  6. [PHP](./exercices/php#exercices-php)
 
-**Attention:** les exercices présentés ici visent à mettre en pratique un maximum de matière théorique. Ils représentent des exemples d'utilisation, mais ne couvrent pas forcément l'entièreté de la matière abordée, ni évidemment l'entièreté des cas possibles.
+La matière théorique de ces exercices est disponible dans le cours [Moodle](https://moodle.ephec.be/) dédié, et définit le périmètre de l'examen.
+
+**Attention:** les exercices présentés ici visent à mettre en pratique un maximum de matière théorique. Ils représentent des exemples d'utilisation, mais ne couvrent pas forcément l'entièreté de la matière abordée, ni évidemment l'entièreté des cas possibles. Les exercices visent à mettre en application la matière expliquée au cours de théorie.
 
 ## Objectifs généraux
 
@@ -161,7 +163,7 @@ Prérequis minimum indispensables:
  - Installation de programmes.
  - Navigation web.
 
-Les cours à l'EPHEC sont donnés sous Windows qu'il est nécessaire de pouvoir utiliser de façon aisée. Toutefois, il est à noter que les serveurs web utilisent Linux. 
+Les cours à l'EPHEC sont donnés sous Windows qu'il est nécessaire de pouvoir utiliser de façon aisée. Toutefois, il est à noter que les serveurs web utilisent Linux. Aucun support ne sera assuré pour MacOS.
 
 ### Web
 
@@ -244,3 +246,18 @@ Quelques exemples des nombreuses ressources didactiques présentes sur le web:
   1. [openclassrooms - cours PHP et MySQL](https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql)
   2. [FormationVidéo - cours PHP](https://www.youtube.com/watch?v=7lMXMLeawug&list=PLrSOXFDHBtfFuZttC17M-jNpKnzUL5Adc)
   3. [Grafikart - cours PHP](https://grafikart.fr/tutoriels/php)
+
+
+## Ressources EPHEC
+
+### SAR
+
+Le SAR propose aux étudiants différents axes d'aide à la réussite, notamment un système de tutorat (voir eperso). Pour davantage de renseignements, voir le [cours Moodle SAR](https://moodle.ephec.be/course/view.php?id=11760).
+
+### IT support
+
+TODO documentation PC EPHEC.
+
+### Vos condisciples
+
+Aidez-vous les uns les autres! Travaillez en équipe. Expliquez aux autres ce que vous avez compris et demendez-leur de vous aider sur ce pour quoi vous avez plus de mal. Vous progresserez d'autant plus vite.
