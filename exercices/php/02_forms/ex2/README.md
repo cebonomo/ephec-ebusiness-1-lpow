@@ -10,7 +10,14 @@
 
 ### Enoncés
 
- 1. Afficher un formulaire d'inscription avec un champ "Prénom", "Nom", "Adresse email", un champ "Mot de passe", un champ "Confirmer le mot de passe" et une checkbox "Accepter les conditions générales".
+ 1. Afficher un formulaire d'inscription avec les champs suivants:
+    - "Civilité"
+    - "Prénom"
+    - "Nom"
+    - "Adresse email"
+    - "Mot de passe"
+    - "Confirmer le mot de passe"
+    - "Accepter les conditions générales" (checkbox)
 
  2. Seuls les champs "Adresse email", "Mot de passe", "Confirmer le mot de passe" et la checkbox sont obligatoires. S'il manque une valeur obligatoire, afficher un message d'erreur du type "Le champ x est obligatoire.".
  
