@@ -12,5 +12,9 @@ Les exercices JS se font en relation avec un document HTML.
 7. [Exercice bonus: casse-briques](./exbonus2)
 
 
+## Ressources
+ 
+ 1. [MDN - Premiers pas en JavaScript](https://developer.mozilla.org/fr/docs/Learn/JavaScript/First_steps)
+ 2. [MDN - JavaScript](https://developer.mozilla.org/fr/docs/Learn/JavaScript)
 
 

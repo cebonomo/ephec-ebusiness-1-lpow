@@ -13,3 +13,9 @@ Ces exercices complètent les exercices [HTML](../html) en rajoutant au code une
 9. [Exercice 9: bordures (border)](./ex9/)
 10. [Exercice 10: marges](./ex10/)
 11. [Exercice 11: positionnement (position)](./ex11/)
+
+## Ressources
+
+ 1. [MDN - Premiers pas avec CSS](https://developer.mozilla.org/fr/docs/Learn/CSS/First_steps)
+ 2. [MDN - Composer le HTML avec les CSS](https://developer.mozilla.org/fr/docs/Learn/CSS)
+

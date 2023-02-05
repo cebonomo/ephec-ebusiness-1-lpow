@@ -34,6 +34,114 @@ Les exercices de codage sont accompagnés de corrections, de sorte que vous puis
 Néanmoins, en cas de difficulté, il ne faut pas rester bloqué. Au cours de TP, posez vos questions. Demandez des explications sur ce que vous ne parvenez pas à comprendre. Si personne ne peut coder à votre place, demander de l'aide est normal lorsque l'on débute.
 
 
+## Outils nécessaires
+
+### Navigateur (browser)
+
+Principaux navigateurs:
+ - [Firefox](https://www.mozilla.org/fr/firefox/new/) (Mozilla)
+ - [Chrome](https://www.google.com/intl/fr/chrome/) (Alphabet)
+ - [Safari](https://www.apple.com/fr/safari/) (Apple)
+ - [Edge](https://www.microsoft.com/fr-fr/edge) (Microsoft)
+
+#### Devtools
+
+Le [devtools](https://en.wikipedia.org/wiki/Web_development_tools) est une console de débuggage présente dans le navigateur.
+
+Raccourci clavier pour ouvrir le devtools:
+ - Windows/Linux: `F12` ou `Control`+`Shift`+`C`
+ - Mac: `Command`+`Option`+`C` (attention, doit peut-être être activé [tuto](https://balsamiq.com/support/faqs/browserconsole/))
+
+[Tuto Chrome DevTools](https://www.youtube.com/watch?v=BrsyIyYSP1c)
+
+#### Gestion du cache
+
+Le [cache](https://fr.wikipedia.org/wiki/Cache_web) est un système qui (notamment) autorise le navigateur à garder en mémoire des ressources, plutôt qu'à les demander par HTTP une nouvelle fois. Cela peut être le cas des styles CSS, des images, etc. Etant donné ce cache, il se peut qu'un fichier soit modifié du côté du serveur (par exemple, une déclaration CSS), mais que le navigateur ne rafraîchisse pas cette ressource (et que le nouveau style ne soit pas affiché).
+
+Il est toutefois possible de forcer le navigateur à rafraîchir son cache, et donc d'affectuer une nouvelle requête vers le serveur:
+ - Raccourci clavier pour vider le cache et rafraîchir la page:
+    - Windows/Linux: `CTRL`+`F5`
+    - Mac:
+      - Chrome: `Cmd`+`Shift`+`R` 
+      - Safari: `Cmd`+`Opt`+`E` pour vider le cache, puis `Cmd`+`R`pour rafraîchir la page 
+ - Dans le "devtools" (`F12`) du navigateur, une option permet de désactiver le cache, lorsque cet outil est ouvert.
+
+ Pour plus d'information, voir [Wikipédia - purge du cache](https://fr.wikipedia.org/wiki/Aide:Purge_du_cache_du_navigateur).
+
+### Editeur de code (IDE)
+
+Editeurs simples:
+ - [Notepad++](https://notepad-plus-plus.org/)
+ - [Sulime Text](https://www.sublimetext.com/)
+ - [Visual Sudio Code](https://code.visualstudio.com/)
+
+### Client FTP
+
+Pour construire un website, il est nécessaire d'installer les fichiers de code sur un server web. Dans le cadre de ces exercices, il sera important de pouvoir utiliser un client FTP afin de transférer les fichiers vers un serveur distant, comme par exemple [FileZilla client](https://filezilla-project.org/).
+
+[Tuto sur FileZilla](https://www.youtube.com/watch?v=Ky4SadE1s90)
+
+### Server web local
+
+Généralement, sur un serveur, on retrouve une stack [LAMP](https://fr.wikipedia.org/wiki/LAMP). Il est toutefois possible d'installer en local, su Windows ou sur MacOS, un logiciel permettant d'exécuter du PHP, comme par exemple [wAmp](https://www.uwamp.com/).
+
+[Tuto sur UwAmp](https://www.youtube.com/watch?v=TTkh7EQgjNY)
+
+
+## Prérequis
+
+### OS
+
+Prérequis minimum indispensables:
+
+ - Utilisation générale d'un OS.
+ - Compréhension du système de fichiers.
+ - Installation de programmes.
+ - Navigation web.
+
+Les cours à l'EPHEC sont donnés sous Windows qu'il est nécessaire de pouvoir utiliser de façon aisée. Toutefois, il est à noter que les serveurs web utilisent Linux. Aucun support ne sera assuré pour MacOS.
+
+### Web
+
+La bonne réalisation des exercices proposés ici nécessite impérativement une connaissance générale du web et de ses langages, telle que présentée préalablement au cours théorique.
+
+Les lectures qui suivent ne sont pas obligatoires dans le cadre du cours, mais représentent un support d'étude complémentaire.
+
+#### Ressources
+
+ 1. [MDN - Page web, site web, serveur web](https://developer.mozilla.org/fr/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines)
+ 2. [MDN - Le fonctionnement du Web](https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
+ 3. [MDN - Comprendre les URL et leur structure](https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_URL)
+ 4. [MDN - Le fonctionnement des liens sur le Web](https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_are_hyperlinks)
+ 5. [MDN - Le fonctionnement de l'Internet](https://developer.mozilla.org/fr/docs/Learn/Common_questions/How_does_the_Internet_work)
+ 6. [alsacréations - Chemins relatifs et absolus](https://www.alsacreations.com/astuce/lire/78-Quelle-est-la-difference-entre-les-chemins-relatifs-et-absolus-.html)
+
+
+## Ressources EPHEC
+
+### SAR
+
+Le SAR propose aux étudiants différents axes d'aide à la réussite, notamment un système de tutorat (voir eperso). Pour davantage de renseignements, voir le [cours Moodle SAR](https://moodle.ephec.be/course/view.php?id=11760).
+
+### IT support
+
+Pour toute question sur l'utilisation des ressources informatique de l'EPHEC, voir la [documentation IT EPHEC](https://confluence.external-share.com/content/ff8db64d-b21b-4413-84e5-6b790a0a5659)
+
+### Vos condisciples
+
+Aidez-vous les uns les autres! Travaillez en équipe. Expliquez aux autres ce que vous avez compris et demendez-leur de vous aider sur ce pour quoi vous avez plus de mal. Vous progresserez d'autant plus vite.
+
+
+## Documentation
+
+Coder nécessite de se référer de manière continue à la documentation.
+
+ 1. [MDN - Documentation HTML](https://developer.mozilla.org/fr/docs/Web/HTML)
+ 2. [MDN - Documentation CSS](https://developer.mozilla.org/fr/docs/Web/CSS)
+ 3. [MDN - Documentation JavaScript](https://developer.mozilla.org/fr/docs/Web/JavaScript)
+ 3. [PHP - Documentation PHP](https://www.php.net/docs.php)
+
+
 ## Bonnes pratiques
 
 ### Conventions de codage
@@ -68,7 +176,6 @@ Attention que, généralement, les [gestionnaires de fichiers](https://fr.wikipe
 
 [Tuto Windows](https://www.youtube.com/watch?v=ac1WdzSqatw) pour gérer les extensions de fichiers.
 
-
 ### Nommage des fichiers
 
 Le nommage des fichiers posant souvent problème, il est recommandé de suivre les règles de bonne pratique suivantes:
@@ -91,116 +198,6 @@ Etre organisé dans son dossier de projet est impératif. Il faut accorder beauc
 Le code pouvant contenir un grand nombre de fichiers, il est recommandé de ranger les ressources (images, styles, scripts, fonts, ...) dans des dossiers spécifiques.
 
 On ne travaille qu'en local, jamais directement sur le serveur. Les fichiers du serveur ne sont que le reflet parfait des fichiers locaaux.
-
-### Validité du code HTML
-
-Lors de l'écriture du code, il est important de conserver un code valide à tout moment. 
-
-Pour déterminer si un code HTML est valide, il faut le soumettre au [W3C validator](https://validator.w3.org/).
-
-Procédure pour écrire du HTML valide (principe général du "quand on l'ouvre, on la ferme"):
- 1. Ecrire la balise ouvrante dans son entièreté. (Une balise ouvrante valide se rapporte à la syntaxe suivante: `<` + mot-clé + `>`.) Ex: `<a>`
- 2. S'il s'agit d'un élément avec contenu: écrire tout de suite la balise fermante (avant même d'écrire le contenu). (Une balise fermante valide se rapporte à la syntaxe suivante: `</` + mot-clé + `>`.). Ex: `<a></a>`
- 3. S'il faut préciser un attribut: revenir dans la balise ouvrante et écrire le nom de l'attribut. (Un nom valide d'attribut est précédé d'un espace de séparation.) Ex: `<a href></a>`
- 4. Si l'attribut possède une valeur: faire suivre le nom de l'attribut par `=""`, en veillant à bien écrire 2 fois les doubles-guillemets. Ex: `<a href=""></a>`
- 5. S'il faut préciser une valeur non nulle à l'attribut: revenir entre les guillemets et préciser la valeur. Ex: `<a href="uri"></a>`
- 6. Si l'élément doit contenir un contenu: se positionner entre la balise ouvrante et fermante et indiquer le contenu. Ex: `<a href="uri">Cliquez ici</a>`
-
-### Ordre des règles CSS
-
-Pour facilité la gestion des [cascades](https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance), les règles CSS s'écrivent des plus générales aux plus spécifiques.
-
-
-## Outils
-
-### Navigateur (browser)
-
-Principaux navigateurs:
- - Firefox (Mozilla)
- - Chrome (Alphabet)
- - Safari (Apple)
- - Edge (Microsoft)
-
-#### Devtools
-
-Le [devtools](https://en.wikipedia.org/wiki/Web_development_tools) est une console de débuggage présente dans le navigateur.
-
-Raccourci clavier pour ouvrir le devtools:
- - Windows/Linux: `F12` ou `Control`+`Shift`+`C`
- - Mac: `Command`+`Option`+`C` (attention, doit peut-être être activé [tuto](https://balsamiq.com/support/faqs/browserconsole/))
-
-#### Gestion du cache
-
-Le [cache](https://fr.wikipedia.org/wiki/Cache_web) est un système qui (notamment) autorise le navigateur à garder en mémoire des ressources, plutôt qu'à les demander par HTTP une nouvelle fois. Cela peut être le cas des styles CSS, des images, etc. Etant donné ce cache, il se peut qu'un fichier soit modifié du côté du serveur (par exemple, une déclaration CSS), mais que le navigateur ne rafraîchisse pas cette ressource (et que le nouveau style ne soit pas affiché).
-
-Il est toutefois possible de forcer le navigateur à rafraîchir son cache, et donc d'affectuer une nouvelle requête vers le serveur:
- - Raccourci clavier pour vider le cache et rafraîchir la page:
-    - Windows/Linux: `CTRL`+`F5`
-    - Mac:
-      - Chrome: `Cmd`+`Shift`+`R` 
-      - Safari: `Cmd`+`Opt`+`E` pour vider le cache, puis `Cmd`+`R`pour rafraîchir la page 
- - Dans le "devtools" (`F12`) du navigateur, une option permet de désactiver le cache, lorsque cet outil est ouvert.
-
- Pour plus d'information, voir [Wikipédia - purge du cache](https://fr.wikipedia.org/wiki/Aide:Purge_du_cache_du_navigateur). 
-
-
-## Documentation
-
- 1. [MDN - Documentation HTML](https://developer.mozilla.org/fr/docs/Web/HTML)
- 2. [MDN - Documentation CSS](https://developer.mozilla.org/fr/docs/Web/CSS)
- 3. [MDN - Documentation JavaScript](https://developer.mozilla.org/fr/docs/Web/JavaScript)
- 3. [PHP - Documentation PHP](https://www.php.net/docs.php)
-
-
-## Prérequis
-
-### OS
-
-Prérequis minimum indispensables:
-
- - Utilisation générale d'un OS.
- - Compréhension du système de fichiers.
- - Installation de programmes.
- - Navigation web.
-
-Les cours à l'EPHEC sont donnés sous Windows qu'il est nécessaire de pouvoir utiliser de façon aisée. Toutefois, il est à noter que les serveurs web utilisent Linux. Aucun support ne sera assuré pour MacOS.
-
-### Web
-
-La bonne réalisation des exercices proposés ici nécessite impérativement une connaissance générale du web et de ses langages, telle que présentée préalablement au cours théorique.
-
-Les lectures qui suivent ne sont pas obligatoires dans le cadre du cours, mais représentent un support d'étude complémentaire.
-
-#### Généralités
-
- 1. [MDN - Page web, site web, serveur web](https://developer.mozilla.org/fr/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines)
- 2. [MDN - Le fonctionnement du Web](https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
- 3. [MDN - Comprendre les URL et leur structure](https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_URL)
- 4. [MDN - Le fonctionnement des liens sur le Web](https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_are_hyperlinks)
-
-#### Réseaux
-
- 1. [MDN - Le fonctionnement de l'Internet](https://developer.mozilla.org/fr/docs/Learn/Common_questions/How_does_the_Internet_work)
-
-#### Système de fichiers
-
- 1. [alsacréations - Chemins relatifs et absolus](https://www.alsacreations.com/astuce/lire/78-Quelle-est-la-difference-entre-les-chemins-relatifs-et-absolus-.html)
-
-#### HTML
-
- 1. [MDN - Introduction au HTML](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML)
- 2. [MDN - Apprendre le HTML : guides et didacticiels](https://developer.mozilla.org/fr/docs/Learn/HTML)
- 4. [alsacréations - Structure de document HTML 5](https://www.alsacreations.com/article/lire/1374-html5-structure-globale-document.html)
-
-#### CSS
-
- 1. [MDN - Premiers pas avec CSS](https://developer.mozilla.org/fr/docs/Learn/CSS/First_steps)
- 2. [MDN - Composer le HTML avec les CSS](https://developer.mozilla.org/fr/docs/Learn/CSS)
-
-#### JS
-
- 1. [MDN - Premiers pas en JavaScript](https://developer.mozilla.org/fr/docs/Learn/JavaScript/First_steps)
- 2. [MDN - JavaScript](https://developer.mozilla.org/fr/docs/Learn/JavaScript)
 
 
 ## Tutoriels
@@ -246,18 +243,3 @@ Quelques exemples des nombreuses ressources didactiques présentes sur le web:
   1. [openclassrooms - cours PHP et MySQL](https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql)
   2. [FormationVidéo - cours PHP](https://www.youtube.com/watch?v=7lMXMLeawug&list=PLrSOXFDHBtfFuZttC17M-jNpKnzUL5Adc)
   3. [Grafikart - cours PHP](https://grafikart.fr/tutoriels/php)
-
-
-## Ressources EPHEC
-
-### SAR
-
-Le SAR propose aux étudiants différents axes d'aide à la réussite, notamment un système de tutorat (voir eperso). Pour davantage de renseignements, voir le [cours Moodle SAR](https://moodle.ephec.be/course/view.php?id=11760).
-
-### IT support
-
-TODO documentation PC EPHEC.
-
-### Vos condisciples
-
-Aidez-vous les uns les autres! Travaillez en équipe. Expliquez aux autres ce que vous avez compris et demendez-leur de vous aider sur ce pour quoi vous avez plus de mal. Vous progresserez d'autant plus vite.
