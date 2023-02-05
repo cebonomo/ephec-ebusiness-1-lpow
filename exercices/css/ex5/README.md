@@ -2,6 +2,8 @@
 
 ## Exercice 5: fonds
 
+TODO: cet exercice devrait se trouver après les explications du box model.
+
 ### Enoncé
 
  1. Utiliser les propriétés d'arrière-plan (background):
