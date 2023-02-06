@@ -116,7 +116,7 @@ true == true
 // que vaut l'expression?
 ```
 
-###### Avec transtypage (optionel au Q1, obligatoire au Q2)
+###### Avec transtypage (optionel)
 
 ```javascript
 6 == '6' //égalité non stricte
