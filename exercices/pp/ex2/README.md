@@ -18,9 +18,9 @@
 
 3. Ecrire un programme qui calcule la somme TVAC d'une commande, à partir de deux variables: le prix HTVA d'un seul article et le nombre de cet article dans la commande. Le taux de TVA applicable est de 20,5% et est défini dans une constante (ou une variable si la notion de constante n'a pas encore été vue au cours). Le résultat est affecté dans une nouvelle variable.
 
-4. (Optionel au Q1, obligatoire au Q2) Ecrire un programme qui affecte à une variable la chaîne de caratères `J'ai écrit "var".` où `var` est une variable.
+4. (Optionel au Q1, obligatoire au Q2) Ecrire un programme qui affecte à une variable la chaîne de caratères `J'ai écrit "var".` où `var` est une variable. Afficher le résultat.
 
-5. (Optionel au Q1, obligatoire au Q2) Ecrire un programme qui indique si un nombre contenu dans une variable est un nombre pair.
+5. (Optionel au Q1, obligatoire au Q2) Ecrire un programme qui indique si un nombre contenu dans une variable est un nombre pair. Afficher le résultat.
 
 [Corrections](./corrections)
 
