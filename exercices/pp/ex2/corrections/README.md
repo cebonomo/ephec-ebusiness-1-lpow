@@ -175,3 +175,16 @@ $isEven = !($a % 2);
 
 var_dump($a, $isEven);
 ```
+
+De manière plus explicite:
+
+```php
+$nombre = 124;
+$resteDeLaDivision = $nombre % 2; //0 si $nombre est divisible par 2
+
+if ($nombre % 2 == 0) {
+    echo 'paire';
+} else {
+    echo 'impaire';
+}
+```
