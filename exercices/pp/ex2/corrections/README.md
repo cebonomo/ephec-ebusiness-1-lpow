@@ -182,7 +182,7 @@ De manière plus explicite:
 $nombre = 124;
 $resteDeLaDivision = $nombre % 2; //0 si $nombre est divisible par 2
 
-if ($nombre % 2 == 0) {
+if ($resteDeLaDivision == 0) {
     echo 'paire';
 } else {
     echo 'impaire';
