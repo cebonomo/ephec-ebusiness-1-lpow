@@ -129,20 +129,29 @@ var_dump($a, $b, $result);
 ### JavaScript
 
 ```javascript
-function pow(base, exponent) {
+function calculatePow(base, exponent) {
+    if (exponent == 0) {
+        return 1
+    }
     if (exponent == 1) {
         return base
     }
     if (exponent % 2) {
-        return base * pow(base*base, (exponent-1)/2)
+        return base * calculatePow(
+            base*base,
+            (exponent-1)/2
+        )
     }
-    return pow(base*base, exponent/2)
+    return calculatePow(
+        base*base,
+        exponent/2
+    )
 }
 
 
 let a = parseFloat(prompt('a', '')) || 0
 let n = parseFloat(prompt('n', '')) || 0
-let result = pow(a, n)
+let result = calculatePow(a, n)
 
 console.log(a, n, result)
 ```
@@ -152,22 +161,36 @@ console.log(a, n, result)
 ```php
 <?php
 
-function _pow($base, $exponent)
+function calculatePow($base, $exponent)
 {
-   if ($exponent == 1) {
+	if ($exponent == 0) {
+        return 1;
+    }
+    if ($exponent == 1) {
         return $base;
     }
     if ($exponent % 2) {
-        return $base * pow($base*$base, ($exponent-1)/2);
+        return $base * calculatePow(
+            $base*$base,
+            ($exponent-1)/2
+        );
     }
-    return pow($base*$base, $exponent/2);
+    return calculatePow(
+        $base*$base,
+        $exponent/2
+    );
 }
 
-$a = (float)($_GET['a'] ?? 0);
-$n = (float)($_GET['n'] ?? 0);
-$result = _pow($a, $n);
+// tests
+// note: la structure des boucles sera vue plus tard dans le cours
 
-var_dump($a, $n, $result);
+for ($i = 0; $i <= 3; $i++) {
+    for ($j = 0; $j <= 3; $j++) {
+        $result = calculatePow($i, $j);
+        echo "$i^$j = $result";
+        echo '<br>';
+    } 
+} 
 ```
 
 
