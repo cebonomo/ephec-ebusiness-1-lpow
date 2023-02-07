@@ -27,29 +27,33 @@ Ecrire un programme qui calcule le montant de la prime d'un vendeur en fonction 
 #### 3. Prime progressive
 
 Idem que l'exercice précédent, mais primes progressives, à partir des montants suivants: 
-    - 0€: 2%
-    - 500€: 5%
-    - 1000€: 10%
+ - 0€: 2%
+ - 500€: 5%
+ - 1000€: 10%
 
 [Correction](./corrections/c-bonus/)
 
 #### 4. Equation du premier degré (optionel au Q1, obligatoire au Q2)
 
-Ecrire un programme qui résoud et affiche une équation du premier degré: `ax + b = c`. Les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `x = (c-b)/a`. Exemple d'affichage: `2*3.5-3=4`. Le programme veille à gérer le cas suivant:
-    - `a = 0`: pas de solution réelle
-    - `b < 0`: affichage avec signe négatif
+Ecrire un programme qui résoud et affiche une équation du premier degré: `ax + b = c`. Les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `x = (c-b)/a`. Exemple d'affichage: `2*3.5-3=4`.
+
+Le programme veille à gérer le cas suivant:
+ - `a = 0`: pas de solution réelle
+ - `b < 0`: affichage avec signe négatif
 
 [Correction](./corrections/d-first/)
 
 #### 5. Equation du second degré (optionel)
 
-Ecrire un programme qui résoud et affiche une équation du second degré: `ax² + bx + c = 0`. Les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `Δ` le discriminant du trinôme `ax² + bx + c`: (`Δ = b² - 4ac`). Le programme veille à gérer les cas suivants: 
-    - `a = 0`: équation du premier degré
-    - `Δ < 0`: pas de solution réelle  
-    - `Δ = 0`: solution valant `x = -(b/(2a))`
-    - `Δ > 0`: solution valant `x = (-b-√Δ)/(2a)` et `x = (-b+√Δ)/(2a)`
-    - `b < 0`: affichage avec signe négatif
-    - `c < 0`: affichage avec signe négatif
+Ecrire un programme qui résoud et affiche une équation du second degré: `ax² + bx + c = 0`. Les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `Δ` le discriminant du trinôme `ax² + bx + c`: (`Δ = b² - 4ac`).
+
+Le programme veille à gérer les cas suivants: 
+ - `a = 0`: équation du premier degré
+ - `Δ < 0`: pas de solution réelle  
+ - `Δ = 0`: solution valant `x = -(b/(2a))`
+ - `Δ > 0`: solution valant `x = (-b-√Δ)/(2a)` et `x = (-b+√Δ)/(2a)`
+ - `b < 0`: affichage avec signe négatif
+ - `c < 0`: affichage avec signe négatif
 
 [Correction](./corrections/e-second/)
 
@@ -58,10 +62,10 @@ Ecrire un programme qui résoud et affiche une équation du second degré: `ax²
 #### 1. Quiz
 
 Ecrire un programme qui corrige la réponse à une question:
-    - Question: Quelle est la capitale de la Belgique?
-    - Réponses acceptées: Bruxelles, Brussel ou Brussels
-    - Si mauvaise réponse: Message d'erreur indiquant que la réponse n'est pas correcte.
-    - Si aucune valeur (string vide): Message d'erreur spécifique indiquant qu'une réponse est requise.
+ - Question: Quelle est la capitale de la Belgique?
+ - Réponses acceptées: Bruxelles, Brussel ou Brussels
+ - Si mauvaise réponse: Message d'erreur indiquant que la réponse n'est pas correcte.
+ - Si aucune valeur (string vide): Message d'erreur spécifique indiquant qu'une réponse est requise.
 
 [Correction](./corrections/f-quiz/)
 
