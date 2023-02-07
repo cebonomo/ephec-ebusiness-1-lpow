@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>PP - ex3 - bonus 2</title>
+</head>
+<body>
+
+    <script>
+        
+        let salesFigure = parseFloat(prompt('Chiffre de vente (float)', '')) || 0
+
+        let bonus = 0
+        if (salesFigure >= 1000) {
+            bonus = salesFigure * 0.1
+        } else if (salesFigure >= 500) {
+            bonus = salesFigure * 0.05
+        } else if (salesFigure >= 0)  {
+            bonus = salesFigure * 0.02
+        } else {
+            //cas qui, a priori, ne devrait jamais arriver
+            console.error('salesFigure is negative')
+        }
+
+        console.log(salesFigure, bonus)
+
+    </script>
+    
+</body>
+</html>

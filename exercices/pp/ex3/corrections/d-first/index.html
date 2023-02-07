@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>PP - ex3 - first</title>
+</head>
+<body>
+
+    <script>
+        
+        let a = parseFloat(prompt('a (float)', '')) || 0
+        let b = parseFloat(prompt('b (float)', '')) || 0
+        let c = parseFloat(prompt('c (float)', '')) || 0
+        let x
+        let message = ''
+
+        if (a != 0) {
+            x = (c-b)/a
+            if (b < 0) {
+                message = a + '*' + x + b + '=' + c
+            } else {
+                message = a + '*' + x + '+' + b + '=' + c
+            }
+        } else {
+            message = 'pas de solution réelle'
+        }
+
+        console.log(a, b, c, x, message)
+
+    </script>
+    
+</body>
+</html>

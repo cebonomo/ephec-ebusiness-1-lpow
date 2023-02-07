@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>PP - ex3 - quiz</title>
+</head>
+<body>
+
+    <script>
+
+        let answer = prompt('Quelle est la capitale de la Belgique?', '')
+        let message
+
+        switch (answer) {
+            case '':
+                message = 'Une réponse est requise.'
+                break
+            case 'Bruxelles':
+            case 'Brussel':
+            case 'Brussels':
+                message = 'Réponse correcte.'
+                break
+            default:
+                message = 'Mauvaise réponse.'
+        }
+
+        console.log(answer, message)
+       
+    </script>
+    
+</body>
+</html>
