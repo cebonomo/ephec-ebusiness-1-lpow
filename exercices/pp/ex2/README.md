@@ -12,25 +12,35 @@
 
 ### Enoncés
 
-1. Ecrire un programmme permettant d'échanger deux variables. Si `a` vaut `5` et si `b` vaut `3`, le programme fera en sorte que `a` vaille `3` et `b` vaille `5`.
+#### Intervertir la valeur de deux variables
 
-[Corrections 1](./corrections/a-inversion/)
+Ecrire un programmme permettant d'échanger deux variables. Si `a` vaut `5` et si `b` vaut `3`, le programme fera en sorte que `a` vaille `3` et `b` vaille `5`.
 
-2. Ecrire un programme qui calcule le carré d'un nombre contenu dans une variable et affecte le résultat dans une nouvelle variable.
+[Corrections](./corrections/a-inversion/)
 
-[Corrections 2](./corrections/b-square/)
+## Le carré d'un nombre
 
-3. Ecrire un programme qui calcule la somme TVAC d'une commande, à partir de deux variables: le prix HTVA d'un seul article et le nombre de cet article dans la commande. Le taux de TVA applicable est de 20,5% et est défini dans une constante (ou une variable si la notion de constante n'a pas encore été vue au cours). Le résultat est affecté dans une nouvelle variable.
+Ecrire un programme qui calcule le carré d'un nombre contenu dans une variable et affecte le résultat dans une nouvelle variable.
 
-[Corrections 3](./corrections/c-vat/)
+[Corrections](./corrections/b-square/)
 
-4. (Optionel au Q1, obligatoire au Q2) Ecrire un programme qui affecte à une variable la chaîne de caratères `J'ai écrit "var".` où `var` est une variable. Afficher le résultat.
+## Commande TVAC
 
-[Corrections 4](./corrections/d-concat/)
+Ecrire un programme qui calcule la somme TVAC d'une commande, à partir de deux variables: le prix HTVA d'un seul article et le nombre de cet article dans la commande. Le taux de TVA applicable est de 20,5% et est défini dans une constante (ou une variable si la notion de constante n'a pas encore été vue au cours). Le résultat est affecté dans une nouvelle variable.
 
-5. (Optionel au Q1, obligatoire au Q2) Ecrire un programme qui indique si un nombre contenu dans une variable est un nombre pair. Afficher le résultat.
+[Corrections](./corrections/c-vat/)
 
-[Corrections 5](./corrections/e-even/)
+## Concaténation (Optionel au Q1, obligatoire au Q2)
+
+Ecrire un programme qui affecte à une variable la chaîne de caratères `J'ai écrit "var".` où `var` est une variable. Afficher le résultat.
+
+[Corrections](./corrections/d-concat/)
+
+## Nombre pair (Optionel au Q1, obligatoire au Q2)
+
+Ecrire un programme qui indique si un nombre contenu dans une variable est un nombre pair. Afficher le résultat.
+
+[Corrections](./corrections/e-even/)
 
 ### Remarques techniques
 
