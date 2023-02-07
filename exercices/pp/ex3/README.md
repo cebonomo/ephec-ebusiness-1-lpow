@@ -16,13 +16,13 @@
 
 Ecrire un programme qui vérifie **si** un nombre contenu dans une variable est compris entre 10 et 20 inclus et affiche un message personnalisé en fonction du résulat.
 
-[Correction](./a-number/)
+[Correction](./corrections/a-number/)
 
 #### 2. Prime du vendeur
 
 Ecrire un programme qui calcule le montant de la prime d'un vendeur en fonction de son chiffre de vente. La prime vaut 10% de son chiffre de vente **si** le montant de la vente dépasse 1000€.
 
-[Correction](./b-bonus/)
+[Correction](./corrections/b-bonus/)
 
 #### 3. Prime progressive
 
@@ -31,7 +31,7 @@ Idem que l'exercice précédent, mais primes progressives, à partir des montant
     - 500€: 5%
     - 1000€: 10%
 
-[Correction](./c-bonus/)
+[Correction](./corrections/c-bonus/)
 
 #### 4. Equation du premier degré (optionel au Q1, obligatoire au Q2)
 
@@ -39,7 +39,7 @@ Ecrire un programme qui résoud et affiche une équation du premier degré: `ax 
     - `a = 0`: pas de solution réelle
     - `b < 0`: affichage avec signe négatif
 
-[Correction](./d-first/)
+[Correction](./corrections/d-first/)
 
 #### 5. Equation du second degré (optionel)
 
@@ -51,7 +51,7 @@ Ecrire un programme qui résoud et affiche une équation du second degré: `ax²
     - `b < 0`: affichage avec signe négatif
     - `c < 0`: affichage avec signe négatif
 
-[Correction](./e-second/)
+[Correction](./corrections/e-second/)
 
 ### Enoncés - switch
 
@@ -63,7 +63,7 @@ Ecrire un programme qui corrige la réponse à une question:
     - Si mauvaise réponse: Message d'erreur indiquant que la réponse n'est pas correcte.
     - Si aucune valeur (string vide): Message d'erreur spécifique indiquant qu'une réponse est requise.
 
-[Correction](./f-quiz/)
+[Correction](./corrections/f-quiz/)
 
 ### Remarques théoriques
 
