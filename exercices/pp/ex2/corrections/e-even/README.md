@@ -1,5 +1,6 @@
 # Exercices 2: solutions
 
+Le code ci-après est repris des fichiers de solution.
 
 ## Nombre pair
 
@@ -7,7 +8,7 @@
 
 ```javascript
 let a = parseFloat(prompt('Nombre (float)', '')) || 0
-let isEven = !(a % 2)
+let isEven = a % 2 == 0
 
 console.log(a, isEven)
 ```

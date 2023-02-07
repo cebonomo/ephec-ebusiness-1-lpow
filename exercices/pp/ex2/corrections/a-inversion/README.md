@@ -1,5 +1,7 @@
 # Exercices 2: solutions
 
+Le code ci-après est repris des fichiers de solution.
+
 ## Intervertir la valeur de deux variables
 
 ### Javascript
@@ -18,6 +20,8 @@ console.log(a, b, c)
 ### PHP
 
 ```php
+<?php
+
 $a = 5;
 $b = 3;
 

@@ -1,5 +1,7 @@
 # Exercices 2: solutions
 
+Le code ci-après est repris des fichiers de solution.
+
 ## Commande TVAC
 
 ### JavaScript
