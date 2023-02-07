@@ -29,7 +29,7 @@
     - Si n est pair: le résulat vaut (a² exposé en (n/2))
     - Si n est impair: le résultat vaut (a * (a² exposé en ((n-1)/2)))
 
- 5. (Optionel) Refactorer le programme de l'équation du second degré. En effet, on remarque que ce programme tel qu'écrit dans sa [première version](../ex3/corrections/README.md#php-4) comporte plusieurs morceaux de code fort similaires. De telles duplications de code sont à proscrire. Il serait donc intéressant de refactorer (c'est-à-dire réécrire d'une meilleure façon) le programme en utilisant notamment des fonctions.
+ 5. (Optionel) Refactorer le programme de l'équation du second degré. En effet, on remarque que ce programme tel qu'écrit dans sa [première version](../ex3/corrections/e-second/) comporte plusieurs morceaux de code fort similaires. De telles duplications de code sont à proscrire. Il serait donc intéressant de refactorer (c'est-à-dire réécrire d'une meilleure façon) le programme en utilisant notamment des fonctions.
 
 [Corrections](./corrections)
 
