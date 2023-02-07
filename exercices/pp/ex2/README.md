@@ -14,15 +14,23 @@
 
 1. Ecrire un programmme permettant d'échanger deux variables. Si `a` vaut `5` et si `b` vaut `3`, le programme fera en sorte que `a` vaille `3` et `b` vaille `5`.
 
+[Corrections 1](./corrections/a-inversion/)
+
 2. Ecrire un programme qui calcule le carré d'un nombre contenu dans une variable et affecte le résultat dans une nouvelle variable.
+
+[Corrections 2](./corrections/b-square/)
 
 3. Ecrire un programme qui calcule la somme TVAC d'une commande, à partir de deux variables: le prix HTVA d'un seul article et le nombre de cet article dans la commande. Le taux de TVA applicable est de 20,5% et est défini dans une constante (ou une variable si la notion de constante n'a pas encore été vue au cours). Le résultat est affecté dans une nouvelle variable.
 
+[Corrections 3](./corrections/c-vat/)
+
 4. (Optionel au Q1, obligatoire au Q2) Ecrire un programme qui affecte à une variable la chaîne de caratères `J'ai écrit "var".` où `var` est une variable. Afficher le résultat.
+
+[Corrections 4](./corrections/d-concat/)
 
 5. (Optionel au Q1, obligatoire au Q2) Ecrire un programme qui indique si un nombre contenu dans une variable est un nombre pair. Afficher le résultat.
 
-[Corrections](./corrections)
+[Corrections 5](./corrections/e-even/)
 
 ### Remarques techniques
 
