@@ -148,6 +148,17 @@ console.log(text, sentence)
 ```php
 <?php 
 
+$text = 'petit chaton';
+$sentence = 'J\'ai écrit "' . $text . '".';
+
+var_dump($text, $sentence);
+```
+
+Pour débugger le code de manière un peu plus dynamique, on peut initier les variables depuis une entrée.
+
+```php
+<?php 
+
 $text = $_GET['text'] ?? '';
 $sentence = 'J\'ai écrit "' . $text . '".';
 
@@ -170,8 +181,19 @@ console.log(a, isEven)
 ```php
 <?php
 
-$a = (float)($_GET['number'] ?? 0);
-$isEven = !($a % 2);
+$a = 123;
+$isEven = $a % 2 == 0;
+
+var_dump($a, $isEven);
+```
+
+Pour débugger le code de manière un peu plus dynamique, on peut initier les variables depuis une entrée.
+
+```php
+<?php
+
+$a = (int)($_GET['number'] ?? 0);
+$isEven = $a % 2 == 0;
 
 var_dump($a, $isEven);
 ```
@@ -181,7 +203,7 @@ Ou de manière plus explicite:
 ```php
 <?php
 
-$nombre = 124;
+$nombre = 123;
 $resteDeLaDivision = $nombre % 2; //0 si $nombre est divisible par 2
 
 if ($resteDeLaDivision == 0) {
