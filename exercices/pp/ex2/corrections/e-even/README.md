@@ -52,6 +52,8 @@ if ($resteDeLaDivision == 0) {
 
 ## Explications
 
+Le code PHP définit deux variables: `$a` et `$isEven`.
+
  1. La variable `$a` est initialisée avec une valeur numérique.
 
  2. La variable `$isEven` est initialisée en fonction de l'opération suivante:

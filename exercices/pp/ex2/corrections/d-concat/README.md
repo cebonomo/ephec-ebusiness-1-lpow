@@ -37,6 +37,8 @@ var_dump($text, $sentence);
 
 ## Explications
 
+Le code PHP définit deux variables: `$text` et `$sentence`.
+
  1. La variable `$text` est initialisée avec la chaîne de caractères "petit chaton".
 
  2. La variable `$sentence` est initialisée avec une chaîne de caractères qui comprend une concaténation.
