@@ -3,7 +3,7 @@
 Sont regroupés ici les exercices de compréhension des bases de la programmation, telles que nécessaires pour aborder la suite du cours.
 
 1. [Exercices 1: opérateurs](./ex1)
-2. [Exercices 2: variables et constantes](./ex2)
+2. [Exercices 2: variables (et constantes)](./ex2)
 3. [Exercices 3: conditions](./ex3)
 4. [Exercices 4: fonctions](./ex4)
 5. [Exercices 5: boucles](./ex5)

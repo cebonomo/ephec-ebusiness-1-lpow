@@ -1,6 +1,6 @@
 # Principes de programmation
 
-## Exercices 2: variables et constantes
+## Exercices 2: variables (et constantes)
 
 ### Objectifs
 
