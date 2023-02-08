@@ -44,9 +44,9 @@ $nombre = 123;
 $resteDeLaDivision = $nombre % 2; //0 si $nombre est divisible par 2
 
 if ($resteDeLaDivision == 0) {
-    echo 'paire';
+    echo 'pair';
 } else {
-    echo 'impaire';
+    echo 'impair';
 }
 ```
 
