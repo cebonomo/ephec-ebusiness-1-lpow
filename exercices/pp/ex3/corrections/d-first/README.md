@@ -52,3 +52,21 @@ if ($a != 0) {
 var_dump($a, $b, $c, $message);
 ```
 
+
+## Explications
+
+Le code résoud une équation linéaire de la forme ax + b = c.
+
+ 1. Les variables `$a`, `$b` et `$c` sont initialisées avec une valeur numérique. Elles représentent les différents termes de l'équation.
+ 
+ 2. La variable `$message` est initialisée avec une chaîne vide et contiendra l'affichage final.
+
+ 3. Une condition vérifie si `$a` n'est pas égal à 0. En effet, si c'était le cas, l'équation ne comprendrait pas de solution réelle. Il faut donc diférencier les deux cas.
+ 
+ 4. Si `$a` n'est pas égal à 0, la variable `$x` est définie comme le résultat de l'équation. A noter l'utilisation de parenthèses afin de forcer la précédence des opérateurs.
+
+ 5. Une fois la solution trouvée, on peut traiter l'affichage. Pour cela, il suffit de concaténer les valeurs contenues dans les différentes variables avec les opérateurs mathématiques nécessaires au calcul. L'affichage diffère toutefois en fonction du signe de la valeur de `$b`, qui est un nombre positif ou négatif. Si `$b` est inférieur à 0, le signe négatif sera converti directement en string durant la concaténation. Sinon, il faut spécifier le signe positif de manière explicite.
+
+ 6. Si `$a` est égal à 0, le message est défini comme "pas de solution réelle".
+
+ 7. Enfin, la fonction `var_dump` est utilisée pour débugger le résultat.
