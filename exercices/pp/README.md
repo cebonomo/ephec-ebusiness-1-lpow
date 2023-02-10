@@ -7,7 +7,8 @@ Sont regroupés ici les exercices de compréhension des bases de la programmatio
 3. [Exercices 3: conditions](./ex3)
 4. [Exercices 4: fonctions](./ex4)
 5. [Exercices 5: boucles](./ex5)
-6. [Exercices 6: tableaux](./ex6)
+6. [Exercices 6: tableaux indexés](./ex6)
+7. [Exercices 7: tableaux associatifs (PHP)](./ex7)
 
 ## Remarques techniques
 

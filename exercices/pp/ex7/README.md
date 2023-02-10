@@ -1,11 +1,11 @@
 # Principes de programmation
 
-## Exercices 6: tableaux indexés
+## Exercices 6: tableaux associatifs (PHP)
 
 ### Types de tableau
 
- - [Tableaux indexés](./d1/).
- - [Tableaux indexés à n dimensions](./dn/).
+ - [Tableaux associatifs](./d1/).
+ - [Tableaux associatifs à n dimensions](./dn/).
 
 ### Remarques théoriques
 
