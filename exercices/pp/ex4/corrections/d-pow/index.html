@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>PP - ex4 - pow</title>
+</head>
+<body>
+
+    <script>
+        
+        // déclaration de la fonction
+        function calculatePow(base, exponent) {
+            if (exponent == 0) {
+                return 1
+            }
+            if (exponent == 1) {
+                return base
+            }
+            if (exponent % 2) {
+                return base * calculatePow(
+                    base*base,
+                    (exponent-1)/2
+                )
+            }
+            return calculatePow(
+                base*base,
+                exponent/2
+            )
+        }
+
+        // on appelle la fonction pour tester son comportement
+        let a = parseFloat(prompt('a', '')) || 0
+        let n = parseFloat(prompt('n', '')) || 0
+        let result = calculatePow(a, n)
+
+        console.log(a, n, result)
+       
+    </script>
+    
+</body>
+</html>

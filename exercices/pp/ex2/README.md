@@ -32,7 +32,7 @@ Ecrire un programme qui calcule la somme TVAC d'une commande, à partir de deux 
 
 #### 4. Concaténation (Optionel au Q1, obligatoire au Q2)
 
-Ecrire un programme qui affecte à une variable la chaîne de caratères `J'ai écrit "var".` où `var` est une variable. Afficher le résultat.
+Ecrire un programme qui affecte à une variable la chaîne de caractères `J'ai écrit "var".` où `var` est une variable. Afficher le résultat.
 
 [Correction](./corrections/d-concat/)
 

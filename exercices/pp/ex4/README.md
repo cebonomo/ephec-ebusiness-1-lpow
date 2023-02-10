@@ -14,24 +14,44 @@
 
 ### Enoncés
 
- 1. Ecrire un programme contenant une fonction retournant la valeur absolue d'un nombre (ex: si le nombre est -5, la fonction retournera 5, et si le nombre est 5, la fonctionnera retournera également 5).
+#### 1. Valeur absolue
 
- 2. Ecrire une programme contenant une fonction retournant les résultats suivants:
+Ecrire un programme contenant une fonction retournant la valeur absolue d'un nombre (ex: si le nombre est -5, la fonction retournera 5, et si le nombre est 5, la fonctionnera retournera également 5).
+
+[Correction](./corrections/a-absolute/)
+
+#### 2. Signature de nombre
+
+Ecrire une programme contenant une fonction retournant les résultats suivants:
     - -1: si nombre strictement négatif
     - 0: si 0 (ou -0)
     - 1: si nombre strictement positif
 
- 3. Ecrire un programme contenant une fonction permettant de diviser 2 nombres (attention à la division par 0). 
+[Correction](./corrections/b-signature/)
 
- 4. (Optionel au Q1, obligatoire au Q2) Ecrire une programme contenant une fonction calculant la puissance d'un nombre a exposé en n, selon le principe suivant (voir la [formule mathématique](./../../../resources/images/pow-fomula.png)):
+#### 3. Division de deux nombres
+ 
+Ecrire un programme contenant une fonction permettant de diviser 2 nombres (attention à la division par 0). 
+
+[Correction](./corrections/c-division/)
+
+#### 4. Puissances (optionel au Q1, obligatoire au Q2)
+
+Ecrire une programme contenant une fonction calculant la puissance d'un nombre a exposé en n, selon le principe suivant (voir la [formule mathématique](./../../../resources/images/pow-fomula.png)):
     - Si n vaut 0: le résultat vaut 1
     - Si n vaut 1: le résulat vaut a
     - Si n est pair: le résulat vaut (a² exposé en (n/2))
     - Si n est impair: le résultat vaut (a * (a² exposé en ((n-1)/2)))
 
- 5. (Optionel) Refactorer le programme de l'équation du second degré. En effet, on remarque que ce programme tel qu'écrit dans sa [première version](../ex3/corrections/e-second/) comporte plusieurs morceaux de code fort similaires. De telles duplications de code sont à proscrire. Il serait donc intéressant de refactorer (c'est-à-dire réécrire d'une meilleure façon) le programme en utilisant notamment des fonctions.
+Attention: le but de l'exercice est de ne PAS utiliser l'opérateur de puissance `**`. Il faut trouver un "truc" pour éviter cet opérateur et ainsi mieux comprendre l'utilisation des fonctions.
 
-[Corrections](./corrections)
+[Correction](./corrections/d-pow/)
+
+#### 5. Equation du second degré (Optionel)
+ 
+ Refactorer le programme de l'équation du second degré. Refactorer signifie réécrire le code d'une meilleure façon. En effet, on remarque que ce programme tel qu'écrit dans sa [première version](../ex3/corrections/e-second/) comporte plusieurs morceaux de code fort similaires. De telles duplications de code sont à proscrire. Il serait donc intéressant de réécrire le programme en utilisant des fonctions.
+
+[Correction](./corrections/e-second/)
 
 ### Remarques théoriques
 

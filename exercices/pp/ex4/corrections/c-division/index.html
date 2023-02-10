@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>PP - ex4 - division</title>
+</head>
+<body>
+
+    <script>
+
+        // déclaration de la fonction
+        function divide(a, b) {
+            if (b == 0) {
+                return NaN
+            }
+            return a/b
+        }
+
+        // on appelle la fonction pour tester son comportement
+        let a = parseFloat(prompt('Valeur de a', '')) || 0
+        let b = parseFloat(prompt('Valeur de b', '')) || 0
+        let result = divide(a, b)
+
+        console.log(a, b, result)
+       
+    </script>
+    
+</body>
+</html>
