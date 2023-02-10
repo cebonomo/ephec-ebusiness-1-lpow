@@ -3,21 +3,21 @@
 // déclaration de la fonction
 function calculatePow($base, $exponent)
 {
-	if ($exponent == 0) {
+    if ($exponent == 0) {
         return 1;
     }
     if ($exponent == 1) {
         return $base;
     }
-    if ($exponent % 2) {
-        return $base * calculatePow(
+    if (($exponent % 2) == 0) {
+        return calculatePow(
             $base*$base,
-            ($exponent-1)/2
+            $exponent/2
         );
     }
-    return calculatePow(
-        $base*$base,
-        $exponent/2
+    return $base * calculatePow(
+        $base,
+        $exponent-1
     );
 }
 
