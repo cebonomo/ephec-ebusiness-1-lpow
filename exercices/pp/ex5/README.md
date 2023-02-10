@@ -16,19 +16,33 @@
 
  6. Savoir imbriquer une boucle dans une boucle.
 
-### Enoncés
+### Enoncés - for
 
-#### for
+#### 1. Compteur de boucle
 
-1. Ecrire un programme qui affiche tous les entiers depuis 0 (compris) jusqu'à une variable n contenant un entier positif (non compris) (ex, pour n==5: "01234"). Puis, faire la même chose mais dans le sens inverse (ex, pour n==5: "43210").
+Ecrire un programme qui affiche le compteur d'une boucle, selon les cas suivants:
+ - De 0 jusqu'à n-1 (ex, pour n==5: "01234").
+ - De 1 jusqu'à n (ex, pour n==5: "12345").
+ - De 0 jusqu'à n-1 avec un pas de 2 (ex, pour n==5: "024").
+ - De n jusqu'à 1 (ex, pour n==5: "54321").
 
-2. Ecrire un programme qui affecte à une variable une chaîne de cracatère concaténant tous les entiers compris entre 1 et une variable n contenant un entier positif. Chaque nombre doit être séparé par un point (ex, pour n==5: "1.2.3.4.5"). Puis faire la même chose mais inversé (ex, pour n==5: "5.4.3.2.1"). Attention qu'il ne faut pas de point à la fin.
+Attention: de 0 jusqu'à n (ex, pour n==5: "012345") donne n+1 boucles au lieu de n boucles! Ce cas est ambigü et il vaut mieux l'éviter.
 
-3. Ecrire un programme qui calcule les tables de multiplication (0 -> 10) d'une variable contenant un nombre entier compris entre 1 et 10.
+#### 2. Suite
 
-4. Ecrire un programme qui liste tous les calculs possibles entre deux entiers positifs et dont le résulat est une variable contenant un nombre entier compris entre 1 et 10. (ex, pour 3: 0+3, 1+2, 2+1, 3+0)
+Ecrire un programme qui affecte à une variable une chaîne de caractères concaténant tous les entiers compris entre 1 et une variable n contenant un entier positif. Chaque nombre doit être séparé par un point. Attention qu'il ne faut pas de point à la fin. (ex, pour n==5: "1.2.3.4.5")
 
-5. Ecrire un programme affichant les sorties ci-après, le nombre de lignes étant défini dans une variable n contenant un entier positif. Exemple, pour 5 lignes:
+#### 3. Tables de multiplication
+
+Ecrire un programme qui calcule les tables de multiplication (0 -> 10) d'une variable contenant un nombre entier compris entre 1 et 10.
+
+#### 4. Nombres composés
+
+Ecrire un programme qui liste tous les calculs possibles entre deux entiers positifs et dont le résulat est une variable contenant un nombre entier compris entre 1 et 10. (ex, pour 3: 0+3, 1+2, 2+1, 3+0)
+
+#### 5. Boucles imbriquées
+
+Ecrire un programme affichant les sorties ci-après, le nombre de lignes étant défini dans une variable n contenant un entier positif. Exemple, pour 5 lignes:
 
 Cas 1:
 ```
@@ -57,17 +71,25 @@ Cas 3:
 >
 ```
 
-#### while
+### Enoncés - while
 
- 1. Créer une variable entière appelée "counter" et initialisez-la à 0. Utiliser une boucle "while" pour afficher chaque nombre entier de 0 à 9, en incrémentant "counter" de 1 à chaque itération.
+#### 1. Compteur de boucle
 
- 2. Ecrire un programme calculant la [suite de Fibonacci](https://fr.wikipedia.org/wiki/Suite_de_Fibonacci) jusqu'à un nombre entier non nul limite.
+Créer une variable entière appelée "counter" et initialisez-la à 0. Utiliser une boucle "while" pour afficher chaque nombre entier de 0 à 9, en incrémentant "counter" de 1 à chaque itération.
+
+#### 2. Suite de Fibonacci
+
+Ecrire un programme calculant la [suite de Fibonacci](https://fr.wikipedia.org/wiki/Suite_de_Fibonacci) jusqu'à un nombre entier non nul limite.
     
- 2. Ecrire un programme calculant le [PPCM](https://fr.wikipedia.org/wiki/Plus_petit_commun_multiple) de deux entiers non nuls.
+#### 3. PPCM
 
-#### do while
+Ecrire un programme calculant le [PPCM](https://fr.wikipedia.org/wiki/Plus_petit_commun_multiple) de deux entiers non nuls.
 
- 1. Créer une variable entière appelée "counter" et initialisez-la à 0. Utiliser une boucle "do while" pour afficher chaque nombre entier de 0 à 9, en incrémentant "counter" de 1 à chaque itération.
+### Enoncés - do while (optionel)
+
+#### 1. Compteur de boucle
+
+Créer une variable entière appelée "counter" et initialisez-la à 0. Utiliser une boucle "do while" pour afficher chaque nombre entier de 0 à 9, en incrémentant "counter" de 1 à chaque itération.
 
 ### Remarques techniques
 
