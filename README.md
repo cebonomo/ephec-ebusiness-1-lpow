@@ -83,7 +83,7 @@ Pour construire un website, il est nécessaire d'installer les fichiers de code 
 
 ### Server web local
 
-Généralement, sur un serveur, on retrouve une stack [LAMP](https://fr.wikipedia.org/wiki/LAMP). Il est toutefois possible d'installer en local, su Windows ou sur MacOS, un logiciel permettant d'exécuter du PHP, comme par exemple [wAmp](https://www.uwamp.com/).
+Généralement, sur un serveur, on retrouve une stack [LAMP](https://fr.wikipedia.org/wiki/LAMP). Il est toutefois possible d'installer en local, su Windows ou sur MacOS, un logiciel permettant d'exécuter du PHP, comme par exemple [UwAmp](https://www.uwamp.com/).
 
 [Tuto sur UwAmp](https://www.youtube.com/watch?v=TTkh7EQgjNY)
 
