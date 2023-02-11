@@ -60,8 +60,6 @@ Seuls les éléments de type "block container" (valeurs communes: `block`, `tabl
 
 A noter que forcer les dimensions de la boîte de contenu peut entraîner un dépassement de contenu (voir [MDN docs - dépassement de contenu](https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Overflowing_content)).
 
-Le type d'affichage influe également sur la place prise par l'élément dans le [flux normal d'affichage](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Normal_Flow). Les éléments de type "block-level"  (valeurs communes: `block`, `table`) s'imposent sur toute leur ligne, tandis que les éléments de type "inline-level"  (valeurs communes: `inline`, `inline-block`) se suivent sur une même ligne.
-
 Pour plus d'information, voir [MDN docs - display](https://developer.mozilla.org/fr/docs/Web/CSS/display).
 
 ##### Résumé
