@@ -14,7 +14,7 @@
 
  5. Comprendre la notion de longeur d'une boucle.
 
- 6. Savoir imbriquer une boucle dans une boucle.
+ 6. (Optionel) Savoir imbriquer une boucle dans une boucle.
 
 ### Enoncés - for
 
@@ -36,11 +36,11 @@ Ecrire un programme qui affecte à une variable une chaîne de caractères conca
 
 Ecrire un programme qui calcule les tables de multiplication (0 -> 10) d'une variable contenant un nombre entier compris entre 1 et 10.
 
-#### 4. Nombres composés
+#### 4. (Optionel) Nombres composés
 
 Ecrire un programme qui liste tous les calculs possibles entre deux entiers positifs et dont le résulat est une variable contenant un nombre entier compris entre 1 et 10. (ex, pour 3: 0+3, 1+2, 2+1, 3+0)
 
-#### 5. Boucles imbriquées
+#### 5. (Optionel) Boucles imbriquées
 
 Ecrire un programme affichant les sorties ci-après, le nombre de lignes étant défini dans une variable n contenant un entier positif. Exemple, pour 5 lignes:
 
