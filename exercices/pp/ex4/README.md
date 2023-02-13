@@ -38,10 +38,10 @@ Ecrire un programme contenant une fonction permettant de diviser 2 nombres (atte
 #### 4. Puissances (optionel au Q1, obligatoire au Q2)
 
 Ecrire une programme contenant une fonction calculant la puissance d'un nombre a exposé en n, selon le principe suivant:
-    - Si n vaut 0: le résultat vaut 1
-    - Si n vaut 1: le résulat vaut a
-    - Si n est pair: le résulat vaut (a² exposé en n/2)
-    - Si n est impair: le résultat vaut (a * (a exposé en n-1))
+ - Si n vaut 0: le résultat vaut 1
+ - Si n vaut 1: le résulat vaut a
+ - Si n est pair: le résulat vaut (a² exposé en n/2)
+ - Si n est impair: le résultat vaut (a * (a exposé en n-1))
 
 Attention: le but de l'exercice est de ne PAS utiliser l'opérateur de puissance `**` (ou toute fonction native). Il faut trouver un "truc" pour éviter cet opérateur et ainsi mieux comprendre l'utilisation des fonctions.
 
