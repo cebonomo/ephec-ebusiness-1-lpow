@@ -14,7 +14,7 @@
 
  5. Comprendre la notion de longeur d'une boucle.
 
- 6. (Optionel) Savoir imbriquer une boucle dans une boucle.
+ 6. Savoir imbriquer une boucle dans une boucle.
 
 ### Enoncés - for
 
