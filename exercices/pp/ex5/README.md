@@ -24,7 +24,6 @@ Ecrire un programme qui affiche le compteur d'une boucle, selon les cas suivants
  - De 0 jusqu'à n-1 (ex, pour n==5: "01234").
  - De 1 jusqu'à n (ex, pour n==5: "12345").
  - De n jusqu'à 1 (ex, pour n==5: "54321").
- - (Optionel) de 0 jusqu'à n-1 avec un pas de 2 (ex, pour n==5: "024").
 
 Attention: de 0 jusqu'à n (ex, pour n==5: "012345") donne n+1 boucles au lieu de n boucles! Ce cas est ambigü et il vaut mieux l'éviter.
 
@@ -77,15 +76,15 @@ Cas 3:
 
 Créer une variable entière appelée "counter" et initialisez-la à 0. Utiliser une boucle "while" pour afficher chaque nombre entier de 0 à 9, en incrémentant "counter" de 1 à chaque itération.
 
-#### 2. Suite de Fibonacci
+#### 2. (Optionel) Suite de Fibonacci
 
 Ecrire un programme calculant la [suite de Fibonacci](https://fr.wikipedia.org/wiki/Suite_de_Fibonacci) jusqu'à un nombre entier non nul limite.
     
-#### 3. PPCM
+#### 3. (Optionel) PPCM
 
 Ecrire un programme calculant le [PPCM](https://fr.wikipedia.org/wiki/Plus_petit_commun_multiple) de deux entiers non nuls.
 
-### Enoncés - do while (optionel)
+### Enoncés - do while (hors cours!)
 
 #### 1. Compteur de boucle
 
