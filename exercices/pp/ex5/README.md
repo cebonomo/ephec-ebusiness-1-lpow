@@ -23,8 +23,8 @@
 Ecrire un programme qui affiche le compteur d'une boucle, selon les cas suivants:
  - De 0 jusqu'à n-1 (ex, pour n==5: "01234").
  - De 1 jusqu'à n (ex, pour n==5: "12345").
- - De 0 jusqu'à n-1 avec un pas de 2 (ex, pour n==5: "024").
  - De n jusqu'à 1 (ex, pour n==5: "54321").
+ - (Optionel) de 0 jusqu'à n-1 avec un pas de 2 (ex, pour n==5: "024").
 
 Attention: de 0 jusqu'à n (ex, pour n==5: "012345") donne n+1 boucles au lieu de n boucles! Ce cas est ambigü et il vaut mieux l'éviter.
 
