@@ -95,3 +95,5 @@ Le code utilise une fonction pour calculer la puissance d'un nombre grâce à un
 5. Si l'exposant est impair, on lui soustrait 1 pour qu'il devienne pair (et l'on compense le résultat final en le multipliant par la base). Le nouvel exposant sera donc pair, et l'on suivra le cheminement expliqué au point précédent.
 
 Pour information, l'algorithme utilise une approche de découpe par moitié de l'exposant pour rendre le calcul plus rapide. C'est une implémentation de l'algorithme de puissance rapide ou "exponentiation rapide".
+
+Bien sûr, ceci n'est qu'un exercice. "En vrai", on utilisera l'opérateur `**`.
