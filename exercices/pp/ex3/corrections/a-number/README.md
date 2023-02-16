@@ -64,7 +64,7 @@ var_dump($a, $message);
     - Si les deux opérations sont vraies (la valeur est plus grande ou égale à 10 ET plus petite ou égale à 20), alors, l'ensemble de la condition sera vraie et le bloc de code de la condition sera exécuté. 
     - Au contraire, si une seule ou les deux opérations sont fausses, alors, l'ensemble de la condition sera fausse et le bloc de code ne sera pas exécuté.
 
-(Cette logique aurait bien sûr été différente si l'on avait utilisé l'[opérateur logique OR](https://fr.wikipedia.org/wiki/Fonction_OU) (`||`).) 
+    (Cette logique aurait bien sûr été différente si l'on avait utilisé l'[opérateur logique OR](https://fr.wikipedia.org/wiki/Fonction_OU) (`||`).) 
 
   4. Si la condition est vraie (et seulement dans ce cas), la valeur de `$message` est écrasée avec une nouvelle valeur.
 
