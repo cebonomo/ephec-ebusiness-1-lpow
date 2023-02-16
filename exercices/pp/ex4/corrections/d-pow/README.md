@@ -85,12 +85,12 @@ Le code utilise une fonction pour calculer la puissance d'un nombre grâce à un
 
 4. Dans le cas où l'exposant est pair, la fonction calcule la puissance en appelant la même fonction avec une base qui est le carré de la base courante et un exposant qui est divisé par 2. En divisant n'importe quel exposant pair par deux, on finira par aboutir à l'exposant 1 (le cas précédent).
 
-Prenons un exemple: 3^4=81.
- - La base vaut 3 et l'exposant vaut 4. Le résultat attendu est 81. L'exposant 4 est pair et nous arrivons donc dans ce cas. 
- - On appelle une deuxième fois la fonction, mais en lui passant, cette fois-ci, 3\*3=9 comme base et 4/2=2 comme exposant: 9^2=81. 
- - Dans ce second appel, l'exposant 2 étant également un nombre pair, on aboutira une nouvelle fois dans ce même cas. 
- - On appellera une troisème fois la fonction, mais en lui passant, cette fois-ci, 9\*9=81 comme base et 2/2=1 comme exposant: 81^1=81. 
- - Par contre, cette fois-ci, l'exposant valant 1, on aboutira au cas plus haut, où l'on retourne directement la base, soit 81 dans notre exemple. 
+    Prenons un exemple: 3^4=81.
+    - La base vaut 3 et l'exposant vaut 4. Le résultat attendu est 81. L'exposant 4 est pair et nous arrivons donc dans ce cas. 
+    - On appelle une deuxième fois la fonction, mais en lui passant, cette fois-ci, 3\*3=9 comme base et 4/2=2 comme exposant: 9^2=81. 
+    - Dans ce second appel, l'exposant 2 étant également un nombre pair, on aboutira une nouvelle fois dans ce même cas. 
+    - On appellera une troisème fois la fonction, mais en lui passant, cette fois-ci, 9\*9=81 comme base et 2/2=1 comme exposant: 81^1=81. 
+    - Par contre, cette fois-ci, l'exposant valant 1, on aboutira au cas plus haut, où l'on retourne directement la base, soit 81 dans notre exemple. 
 
 5. Si l'exposant est impair, on lui soustrait 1 pour qu'il devienne pair (et l'on compense le résultat final en le multipliant par la base). Le nouvel exposant sera donc pair, et l'on suivra le cheminement expliqué au point précédent.
 
