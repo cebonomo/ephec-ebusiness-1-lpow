@@ -69,3 +69,26 @@ var_dump($a, $message);
   4. Si la condition est vraie (et seulement dans ce cas), la valeur de `$message` est écrasée avec une nouvelle valeur.
 
   5. On débugge le résultat.
+
+### Code alternatif
+
+La condition aurait pu également être écrite de cette façon:
+
+```php
+$message = 'ko';
+if ($a >= 10 && $a <= 20) {
+    $message = 'ok';
+}
+```
+
+est équivalent à
+
+```php
+if ($a >= 10 && $a <= 20) {
+    $message = 'ok';
+} else {
+    $message = 'ko';
+}
+```
+
+Dans les deux cas, si le nombre n'est pas compris entre 10 et 20, le message sera 'ko'.

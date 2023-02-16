@@ -43,7 +43,7 @@ Ecrire une programme contenant une fonction calculant la puissance d'un nombre a
  - Si n est pair: le résulat vaut (a² exposé en n/2)
  - Si n est impair: le résultat vaut (a * (a exposé en n-1))
 
-Attention: le but de l'exercice est de ne PAS utiliser l'opérateur de puissance `**` (ou toute fonction native). Il faut trouver un "truc" pour éviter cet opérateur et ainsi mieux comprendre l'utilisation des fonctions.
+Attention: le but de l'exercice est de ne PAS utiliser l'opérateur de puissance `**` (ou toute fonction native). Il faut trouver un "truc" pour éviter cet opérateur et ainsi mieux comprendre l'utilisation des fonctions. Bien sûr, ceci n'est qu'un exercice. "En vrai", on utilisera évidemment l'opérateur `**`.
 
 [Correction](./corrections/d-pow/)
 
