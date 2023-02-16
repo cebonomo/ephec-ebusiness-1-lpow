@@ -40,9 +40,9 @@ Le code calcule une prime (`$bonus`) en fonction des ventes (`$sales`).
 
  2. La variable `$bonus` est initialisée avec une valeur par défaut: 0. Cette variable représente le montant de la prime. Sa valeur par défaut ne sera écrasée que si on entre dans la condition qui suit.
 
- 3. la condition teste la valeur de `$sales`. En effet, le bonus n'est octroyé qu'à partir d'un certain montant de vente. 
-    - Si sa valeur est strictement plus grande que 1000 (`$sales > 1000`), alors on doit calculer le bonus.
-    - Sinon, la valeur étant plus petite ou égale à 1000, alors, on ne doit pas calculer le bonus. Le bonus vaudra alors 0. Etant donné que l'on a déjà défini le `$bonus` à 0, on ne doit rien faire.
+ 3. La condition teste la valeur de `$sales`. En effet, le bonus n'est octroyé qu'à partir d'un certain montant de vente. 
+    - Si la valeur des ventes est strictement plus grande que 1000 (`$sales > 1000`), alors on calcule le bonus.
+    - Sinon, la valeur des ventes étant plus petite ou égale à 1000, alors, on ne calcule pas le bonus. Le bonus vaut 0. Etant donné que l'on a déjà défini la variable `$bonus` à 0, on ne doit rien faire.
 
 4. On calcule le bonus comme valant 10% des ventes.
 
