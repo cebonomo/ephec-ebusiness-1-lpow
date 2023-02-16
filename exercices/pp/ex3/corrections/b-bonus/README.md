@@ -46,6 +46,8 @@ Le code calcule une prime (`$bonus`) en fonction des ventes (`$sales`).
 
 4. On calcule le bonus comme valant 10% des ventes.
 
+5. Au final, on débugge les valeurs.
+
 ### Code alternatif
 
 La condition aurait pu également être écrite de cette façon:
