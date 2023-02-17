@@ -23,9 +23,9 @@ Ecrire un programme contenant une fonction retournant la valeur absolue d'un nom
 #### 2. Signature de nombre
 
 Ecrire une programme contenant une fonction retournant les résultats suivants:
-    - -1: si nombre strictement négatif
-    - 0: si 0 (ou -0)
-    - 1: si nombre strictement positif
+ - -1: si nombre strictement négatif
+ - 0: si 0 (ou -0)
+ - 1: si nombre strictement positif
 
 [Correction](./corrections/b-signature/)
 
