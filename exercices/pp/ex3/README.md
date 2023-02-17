@@ -35,11 +35,11 @@ Idem que l'exercice précédent, mais primes progressives, à partir des montant
 
 #### 4. Equation du premier degré (optionel au Q1, obligatoire au Q2)
 
-Ecrire un programme qui résoud et affiche une équation du premier degré: `ax + b = c`. Les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `x = (c-b)/a`. Exemple d'affichage: `2*3.5-3=4`.
+Ecrire un programme qui résoud et affiche une équation du premier degré: $ax + b = c$. Les valeurs de a, b et c sont des variables. Résoudre l'équation signifie trouver la valeur de x, soit $x = (c-b)/a$. Exemple d'affichage: `2*3.5-3=4`.
 
 Le programme veille à gérer le cas suivant:
- - `a = 0`: pas de solution réelle
- - `b < 0`: affichage avec signe négatif
+ - $a = 0$: pas de solution réelle
+ - $b < 0$: affichage avec signe négatif
 
 [Correction](./corrections/d-first/)
 
