@@ -25,50 +25,43 @@ Ecrire un programme qui affiche le compteur d'une boucle, selon les cas suivants
  - De 1 jusqu'à n (ex, pour n==5: "12345").
  - De n jusqu'à 1 (ex, pour n==5: "54321").
 
-Attention: de 0 jusqu'à n (ex, pour n==5: "012345") donne n+1 boucles au lieu de n boucles! Ce cas est ambigü et il vaut mieux l'éviter.
+[Correction](./corrections/for/a-counter/)
 
-#### 2. Suite
-
-Ecrire un programme qui affecte à une variable une chaîne de caractères concaténant tous les entiers compris entre 1 et une variable n contenant un entier positif. Chaque nombre doit être séparé par un point. Attention qu'il ne faut pas de point à la fin. (ex, pour n==5: "1.2.3.4.5")
-
-#### 3. Tables de multiplication
+#### 2. Tables de multiplication
 
 Ecrire un programme qui calcule les tables de multiplication (0 -> 10) d'une variable contenant un nombre entier compris entre 1 et 10.
 
-#### 4. (Optionel) Nombres composés
+[Correction](./corrections/for/b-tables/)
 
-Ecrire un programme qui liste tous les calculs possibles entre deux entiers positifs et dont le résulat est une variable contenant un nombre entier compris entre 1 et 10. (ex, pour 3: 0+3, 1+2, 2+1, 3+0)
+#### 3. Suite
 
-#### 5. (Optionel) Boucles imbriquées
+Ecrire un programme qui affecte à une variable une chaîne de caractères concaténant entre des parenthèses tous les entiers compris entre 1 et une variable n contenant un entier positif. Chaque nombre doit être séparé par une virgule. Attention qu'aucune virgule ne doit figurer après le dernier nombre. (ex, pour n=5: "(1,2,3,4,5)")
+
+[Correction](./corrections/for/c-suite/)
+
+#### 4. Pyramides
 
 Ecrire un programme affichant les sorties ci-après, le nombre de lignes étant défini dans une variable n contenant un entier positif. Exemple, pour 5 lignes:
 
 Cas 1:
 ```
->
->>
->>>
->>>>
->>>>>
+1
+12
+123
+1234
+12345
 ```
 
 Cas 2:
 ```
->>>>>
->>>>
->>>
->>
->
+12345
+1234
+123
+12
+1
 ```
 
-Cas 3:
-```
->
->>
->>>
->>
->
-```
+[Correction](./corrections/for/d-pyramides/)
 
 ### Enoncés - while
 
@@ -76,17 +69,52 @@ Cas 3:
 
 Créer une variable entière appelée "counter" et initialisez-la à 0. Utiliser une boucle "while" pour afficher chaque nombre entier de 0 à 9, en incrémentant "counter" de 1 à chaque itération.
 
-#### 2. (Optionel) Suite de Fibonacci
+[Correction](./corrections/while/a-counter/)
 
-Ecrire un programme calculant la [suite de Fibonacci](https://fr.wikipedia.org/wiki/Suite_de_Fibonacci) jusqu'à un nombre entier non nul limite.
-    
-#### 3. (Optionel) PPCM
+
+#### 2. PPCM
 
 Ecrire un programme calculant le [PPCM](https://fr.wikipedia.org/wiki/Plus_petit_commun_multiple) de deux entiers non nuls.
 
+Ex: 
+ - 2 et 3 ont 6 comme PPCM
+ - 2 et 4 ont 4 comme PPCM
+ - 4 et 6 ont 12 comme PPCM
+
+Algorithme:
+
+Une méthode consiste à calculer les multiples de chaque nombre jusqu'à trouver le premier en commun.
+
+Exemple pour 2 et 3 (PPCM = 6):
+- Multiples de 2: 2,4,6,...
+- Multiples de 3: 3,6,...
+
+Pour cela, on teste les multiples de manière récurrente:
+    - S'ils sont égaux, le code s'arrête.
+    - Sinon, on calcule le multiple suivant, mais uniquement pour le multiple le plus petit.
+
+Autrement dit: **tant que (while)** les multiples ne sont pas égaux, on calcule un multiple suivant. 
+
+On comprend que cet alogrithme nécessite deux variables supplémentaires pour stocker les multiples respectifs de chaque nombre.
+
+Exemple des états pour 2 et 3:
+ 1. Etat 0: On calcule les premiers multiples des deux nombres initiaux (2 et 3). Les premiers multiples sont respectivement 2\*1=2 et 3\*1=3, soit identiques aux nombres initiaux.
+ 2. Etat 1: on teste les multiples: 2 et 3 sont-ils égaux? Non => Comme 2 est plus petit que 3, on calcule son deuxième multiple: 2*2=4 ou 2+2=4.
+ 3. Etat 2: on teste les multiples: 4 et 3 sont-ils égaux? Non => Comme 3 est plus petit que 4, on calcule son deuxième multiple: 2*3=6 ou 3+3=6.
+ 4. Etat 3: on teste les multiples: 4 et 6 sont-ils égaux? Non => Comme 4 est plus petit que 6, on calcule son troisème multiple: 3*2=6 ou 4+2=6.
+ 5. Etat 4: on teste les multiples: 6 et 6 sont-ils égaux? Oui => la solution est trouvée.
+
+[Correction](./corrections/while/b-ppcm/)
+
+#### 3. Suite de Fibonacci (optionel)
+
+Ecrire un programme calculant la [suite de Fibonacci](https://fr.wikipedia.org/wiki/Suite_de_Fibonacci) jusqu'à un nombre entier non nul limite.
+
+[Correction](./corrections/while/c-fibonacci/)
+
 ### Enoncés - do while (hors cours!)
 
-#### 1. Compteur de boucle
+#### 1. (Optionel) Compteur de boucle
 
 Créer une variable entière appelée "counter" et initialisez-la à 0. Utiliser une boucle "do while" pour afficher chaque nombre entier de 0 à 9, en incrémentant "counter" de 1 à chaque itération.
 
