@@ -90,8 +90,8 @@ Exemple pour 2 et 3 (PPCM = 6):
 - Multiples de 3: 3,6,...
 
 Pour cela, on teste les multiples de manière récurrente:
-    - S'ils sont égaux, le code s'arrête.
-    - Sinon, on calcule le multiple suivant, mais uniquement pour le multiple le plus petit.
+ - S'ils sont égaux, le code s'arrête.
+ - Sinon, on calcule le multiple suivant, mais uniquement pour le multiple le plus petit.
 
 Autrement dit: **tant que (while)** les multiples ne sont pas égaux, on calcule un multiple suivant. 
 
@@ -103,6 +103,16 @@ Exemple des états pour 2 et 3:
  3. Etat 2: on teste les multiples: 4 et 3 sont-ils égaux? Non => Comme 3 est plus petit que 4, on calcule son deuxième multiple: 2*3=6 ou 3+3=6.
  4. Etat 3: on teste les multiples: 4 et 6 sont-ils égaux? Non => Comme 4 est plus petit que 6, on calcule son troisème multiple: 3*2=6 ou 4+2=6.
  5. Etat 4: on teste les multiples: 6 et 6 sont-ils égaux? Oui => la solution est trouvée.
+
+Résumé des états pour 2 et 3
+
+| Etat | Multiples de 2 | Multiples de 3 | Egalité? |
+|------|----------------|----------------|----------|
+| 0    | 2              | 3              | `false`  |
+| 1    | 2+2=4          | 3              | `false`  |
+| 2    | 4              | 3+3=6          | `false`  |
+| 3    | 4+2=6          | 6              | `true`   |
+
 
 [Correction](./corrections/while/b-ppcm/)
 
