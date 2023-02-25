@@ -48,15 +48,15 @@ for ($i = $n; $i >= 1; $i--) {
 Le code réalise des boucles et affiche, lors de chaque itération, l'état du compteur interne (`$i`).
 
  1. La boucle est définie selon le principe suivant:
-    - Le compteur `$i` est initialisé à un état de départ. Cette initialisation ne se fait qu'une seule fois, en amont de toute autre opération. En fonction des cas:
+    - Opération 1: Le compteur `$i` est initialisé à un état de départ. Cette initialisation ne se fait qu'une seule fois, en amont de toute autre opération. En fonction des cas:
         - Cas 1 (de 0 jusqu'à n-1): `$i = 0;`
         - Cas 2 (de 1 jusqu'à n): `$i = 1;`
         - Cas 3 (de n jusqu'à 1): `$i = $n;`
-    - La fin de la boucle est définie selon une condition comparant `$i` à une valeur limite. Cette condition est testée AVANT l'itération et conditionne l'exécution du bloc de code de la boucle. La boucle itère tant que la condition est vraie. En fonction des cas:
+    - Opération 2: La fin de la boucle est définie selon une condition comparant `$i` à une valeur limite. Cette condition est testée AVANT l'itération et conditionne l'exécution du bloc de code de la boucle. La boucle itère tant que la condition est vraie. En fonction des cas:
         - Cas 1 (de 0 jusqu'à n-1): `$i < n;` (tant que i est strictement inférieur à n)
         - Cas 2 (de 1 jusqu'à n): `$i <= n;` (tant que i est inférieur ou égal à n)
         - Cas 3 (de n jusqu'à 1): `$i >= 1;` (tant que i est supérieur ou égal à 1)
-    - Le pas du compteur `$i` (la raison) est défini selon une opération arithmétique. Cette opération est réalisée APRES chaque itération, càd APRES l'exécution du bloc de code de la boucle. En fonction des cas:
+    - Opération 3: Le pas du compteur `$i` (la raison) est défini en affectant à `$i` une nouvelle valeur calculée selon une opération arithmétique (généralement une incrémentation). Cette affectation est réalisée APRES chaque itération, càd APRES l'exécution du bloc de code de la boucle. En fonction des cas:
         - Cas 1 (de 0 jusqu'à n-1): `$i++` (incrémentation)
         - Cas 2 (de 1 jusqu'à n): `$i++` (incrémentation)
         - Cas 3 (de n jusqu'à 1): `$i--` (décrémentation)

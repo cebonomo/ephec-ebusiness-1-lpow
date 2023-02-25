@@ -42,17 +42,17 @@ Le code permet de concatener un ensemble d'entiers allant de n inclus à m inclu
  
     - Lors de la première boucle, `$i` valant `$start` (`$i = $start;`), soit par exemple 1, `$result` vaut, après concaténation, la string "{1".
 
-    - Lors des boucles suivantes, `$i` est incérmenté (`$i++`).
+    - Lors des boucles suivantes, `$i` est incrémenté (`$i++`).
 
     - Lors de la dernière boucle, `$i` valant `$end` (`$i <= $end;`), soit par exemple 5, `$result` termine par "5". 
 
- 6. On teste la valeur `$i` pour savoir si l'itération n'est pas la dernière. En effet, étant donné que la boucle inclut `$end` (`$i <= $end;`), on sait que, lors de la dernière itération, `$i` sera équivalent à `$end`. Donc, tant que `$i < $end`, on se trouve dans une boucle précédant la dernière. Cela permet d'éviter un traitement lors de la dernière boucle.
+ 6. On teste la valeur `$i` pour savoir si l'itération n'est pas la dernière. En effet, étant donné que la boucle inclut `$end` (`$i <= $end;`), on sait que, lors de la dernière itération, `$i` sera équivalent à `$end`. Donc, tant que `$i < $end`, on se trouve dans l'une des itérations précédant la dernière. Concrètement, cela permet d'éviter un traitement lors de la dernière itération.
 
  7. Pour toutes les itérations sauf la dernière, on concatène le séparateur ";". S'il s'agit de la dernière itération, cette concaténation n'est pas effectuée.
     
     - Lors de la première boucle, après concaténation, `$result` vaut, par exemple, la string "{1;".
 
-    - Lors de la dernière boucle, après concaténation, `$result` vaut, par exemple, la string "{1;2;3;4;5", sans qu'aucun séparateur ne soit concaténé à la fin.
+    - Lors de la dernière boucle, en l'absence de concaténation, `$result` vaut, par exemple, la string "{1;2;3;4;5", sans qu'aucun séparateur ne soit ajouté à la fin.
 
  8. On concatène à `$result` une parenthèse fermante, soit le signe de fin de notre ensemble.
 

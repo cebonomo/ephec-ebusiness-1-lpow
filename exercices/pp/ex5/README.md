@@ -43,7 +43,7 @@ Ecrire un programme qui affecte à une variable une chaîne de caractères conca
 
 Ecrire un programme affichant les sorties ci-après, le nombre de lignes étant défini dans une variable n contenant un entier positif. Exemple, pour 5 lignes:
 
-Cas 1:
+Cas 1: croissant
 ```
 1
 12
@@ -52,7 +52,7 @@ Cas 1:
 12345
 ```
 
-Cas 2:
+Cas 2: décroissant
 ```
 12345
 1234
