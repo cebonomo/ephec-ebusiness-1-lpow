@@ -15,9 +15,9 @@ Il existe de nombreuses fonctions ou méthodes de manipulation de tableau. Toute
 
 ### Remarques techniques
 
-#### Boucler sur un tableau
+#### Boucler sur un tableau associatif
 
-TODO
+La boucle "for" tradionnellement incrémentée ne fonctionne pas sur un tableau associatif, car celui-ci ne contient pas d'index numérique. En PHP, on utilise impérativement la variante "foreach" pour boucler sur un array associatif, laquelle permet de connaître à la fois la valeur et la clé.
 
 ### Documentations
 
