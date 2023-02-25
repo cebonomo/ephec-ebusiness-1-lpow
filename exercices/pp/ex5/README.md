@@ -21,9 +21,9 @@
 #### 1. Compteur de boucle
 
 Ecrire un programme qui affiche le compteur d'une boucle, selon les cas suivants:
- - De 0 jusqu'à n-1 (ex, pour n==5: "01234").
- - De 1 jusqu'à n (ex, pour n==5: "12345").
- - De n jusqu'à 1 (ex, pour n==5: "54321").
+ - De 0 jusqu'à n-1 (ex, pour n=5: "01234").
+ - De 1 jusqu'à n (ex, pour n=5: "12345").
+ - De n jusqu'à 1 (ex, pour n=5: "54321").
 
 [Correction](./corrections/for/a-counter/)
 

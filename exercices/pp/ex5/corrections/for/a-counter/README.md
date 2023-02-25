@@ -6,7 +6,7 @@ Le code ci-après est repris des fichiers de solution.
 
 ### PHP
 
-#### Cas 1: de 0 jusqu'à n-1 (ex, pour n==5: "01234")
+#### Cas 1: de 0 jusqu'à n-1 (ex, pour n=5: "01234")
 
 ```php
 <?php
@@ -18,7 +18,7 @@ for ($i = 0; $i < $n; $i++) {
 }
 ```
 
-#### Cas 2: de 1 jusqu'à n (ex, pour n==5: "12345")
+#### Cas 2: de 1 jusqu'à n (ex, pour n=5: "12345")
 
 ```php
 <?php
@@ -30,7 +30,7 @@ for ($i = 1; $i <= $n; $i++) {
 }
 ```
 
-#### Cas 3: de n jusqu'à 1 (ex, pour n==5: "54321")
+#### Cas 3: de n jusqu'à 1 (ex, pour n=5: "54321")
 
 ```php
 <?php
@@ -77,5 +77,3 @@ Le code réalise des boucles et affiche, lors de chaque itération, l'état du c
         - Si la boucle exclut n (ex: `$i < $n;`), `$i` vaut `$n-1` lors de la dernière itération (dans le cas d'une incrémentation). (A noter que dans ce cas, étant donné que la condition est testée avant l'itération, si `$i = $n`, la condition étant directement fausse, la boucle n'itère même pas et son bloc de code n'est jamais exécuté.)
 
     A chaque itération, on connaît ainsi l'état de la boucle grâce à son compteur `$i`.
-
-

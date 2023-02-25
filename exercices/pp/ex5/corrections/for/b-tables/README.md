@@ -34,8 +34,8 @@ Le code permet d'afficher le calcul et le resultat des tables de mulitiplication
 
  3. Le nombre contenu dans `$number` est alors multiplié par `$i`, soit le coefficiant multiplicateur désiré, et le produit est stocké dans `$result`.
 
- 4. Le calcul est affiché à l'aide de la commande `echo`. A noter le petit "hack" en PHP (hors cours) permettant, grâce à une déclaration de string entre des doubles guillemets, d'interpréter les variables sans devoir recourir à leur concaténation.
+ 4. Le calcul est affiché à l'aide de la commande `echo`. (A noter le petit "hack" en PHP (hors cours) permettant, grâce à une déclaration de string entre des doubles guillemets, d'interpréter les variables sans devoir recourir à leur concaténation.)
  
- 5. A noter que l'on utilise une balise HTML `<br>` pour forcer le retour à la ligne. Ceci n'est pas très élégant, mais permet, sans trop d'effort, de gagner en lisibilité du côté navigateur.
+ 5. On utilise une balise HTML `<br>` pour forcer le retour à la ligne. Ceci n'est pas très élégant, mais permet, sans trop d'effort, de gagner en lisibilité du côté navigateur.
 
 
