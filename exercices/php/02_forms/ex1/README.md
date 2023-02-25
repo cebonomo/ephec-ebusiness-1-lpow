@@ -36,7 +36,7 @@ En PHP, la récupération des données du formulaire transmises en HTTP peut se 
  - `$_GET` ([PHP doc - $_GET](https://www.php.net/manual/fr/reserved.variables.get.php)) 
  - `$_POST` ([PHP doc - $_POST](https://www.php.net/manual/fr/reserved.variables.post.php)) 
 
-#### Présence des variables
+#### Présence des variables (hors cours)
 
 En PHP, pour s'assurer de l'existence d'une variable ou d'une entrée de tableau, il est possible d'utiliser notamment les fonctions suivantes:
 

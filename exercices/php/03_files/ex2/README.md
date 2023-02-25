@@ -14,7 +14,7 @@
 
  3. Créer un formulaire de connexion (email + pwd, champs required). Lorsque ce formulaire est soumis, vérifier si le user est présent dans le fichier, sur base de l'email, grâce à la fonction précédemment codée. S'il n'est pas présent, afficher un message d'erreur spécifique. (Attention également aux espaces accidentels (trim).)
  
- 4. Sinon (si le user est bien présent), vérifier si le password est correct. S'il n'est pas correct, afficher un mesage d'erreur spécifique. Pour tester le password hashé, il faut utiliser la méthode PHP `password_verify` ([PHP doc - password_verify](https://www.php.net/manual/fr/function.password-verify.php)). (Attention également aux espaces accidentels (trim).)
+ 4. Sinon (si le user est bien présent), vérifier si le password est correct. S'il n'est pas correct, afficher un mesage d'erreur spécifique. (Optionel, car hors cours:) Pour tester le password hashé, il faut utiliser la méthode PHP `password_verify` ([PHP doc - password_verify](https://www.php.net/manual/fr/function.password-verify.php)). (Attention également aux espaces accidentels (trim).)
  
  5. Si tout est correct, ne plus afficher le formulaire et afficher le message "Bienvenue prénom/nom/email", suivant les valeurs disponibles dans le fichier pour ce user.
 
@@ -22,5 +22,5 @@
 
 #### Fin de ligne
 
-A noter que le charctère de fin de ligne est inclu dans la valeur retournée par `fgets`. Si l'on désire nettoyer le texte, on peut utiliser la fonction PHP `rtrim` ([PHP doc - rtrim](https://www.php.net/manual/fr/function.rtrim.php)) (en spécifiant éventuellement la valeur `PHP_EOL` comme second argument, selon les cas).
+A noter que le caractère de fin de ligne (ex: "\n" sous Linux, "\n\r" sous Windows ou "\r" sous MacOS) (voir aussi `PHP_EOL`) est inclu dans la valeur retournée par `fgets`. Si l'on désire nettoyer le texte, on peut utiliser la fonction PHP `rtrim` ([PHP doc - rtrim](https://www.php.net/manual/fr/function.rtrim.php)) (en spécifiant éventuellement la valeur `PHP_EOL` comme second argument, selon les cas) (hors cours).
 

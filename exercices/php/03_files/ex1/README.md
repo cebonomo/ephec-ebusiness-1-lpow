@@ -12,17 +12,20 @@
 
  2. Si le formulaire est valide, enregistrer les données dans le fichier (dans l'ordre donné par la première ligne), à l'aide de la fonction `fwrite` ([PHP doc - fwrite](https://www.php.net/manual/fr/function.fwrite.php)). 
     - Chaque user occupe une et une seule ligne. Pour délimiter la ligne, il faut utiliser la constante PHP `PHP_EOL` ([PHP doc - constantes pré-définies](https://www.php.net/manual/fr/reserved.constants.php)).
-    - Chaque donnée du user est sérarée par une virgule (",") (comme pour la première ligne). Pour cela, on peut utiliser, par exemple, la méthode PHP `implode` ([PHP doc - implode](https://www.php.net/manual/fr/function.implode.php)). Le charactère de séparation (",") doit être défini dans une constante, car cette valeur ne peut pas être modifiée lors de l'exécution du script.
+    - Chaque donnée du user est sérarée par une virgule (",") (comme pour la première ligne). Pour cela, plusieurs techniques sont possibles:
+        - Ecrire les données en plusieurs fois.
+        - Recourir à une concaténation pour enregistrer l'ensemble de la ligne en une seule fois. Voir éventuellement, par exemple, la méthode PHP `implode` ([PHP doc - implode](https://www.php.net/manual/fr/function.implode.php)) (hors cours) qui est l'inverse de la méthode `explode` ([PHP doc - explode](https://www.php.net/manual/fr/function.explode.php)).
+    - Le charactère de séparation (",") doit être défini dans une constante, car cette valeur ne peut pas être modifiée lors de l'exécution du script.
   
- 3. Par ailleurs, il faut s'assurer que l'utilisateur n'a pas envoyé involontairement d'espaces au début ou en fin des données soumises. Pour nettoyer les données des espaces indésirables, il faut utiliser la fonction PHP `trim` ([PHP doc - trim](https://www.php.net/manual/fr/function.trim.php)).
+ 3. (Optionel, car hors cours) Par ailleurs, il faut s'assurer que l'utilisateur n'a pas envoyé involontairement d'espaces au début ou en fin des données soumises. Pour nettoyer les données des espaces indésirables, il faut utiliser la fonction PHP `trim` ([PHP doc - trim](https://www.php.net/manual/fr/function.trim.php)).
 
- 4. Pour des raisons de sécurité évidentes, le password ne peut pas être enregistré en clair dans le fichier. Il faut donc passer par la fonction PHP `password_hash` ([PHP doc - password_hash](https://www.php.net/manual/fr/function.password-hash.php)) pour hasher le password avant de l'enregistrer.
+ 4. (Optionel, car hors cours) Pour des raisons de sécurité évidentes, le password ne peut pas être enregistré en clair dans le fichier. Il faut donc passer par la fonction PHP `password_hash` ([PHP doc - password_hash](https://www.php.net/manual/fr/function.password-hash.php)) pour hasher le password avant de l'enregistrer.
 
- 5. Il faut également vérifier que les données enregistrées dans le fichier ne contiennent pas le caractère "," dans le texte, sinon la ligne serait corrompues. Concrètement, dans le cas présent, cela peut se produire si l'utilisateur entre ce caractère dans l'un des champs, ou si PHP génère un hash de password qui ne nous convient pas. Pour détecter la présence d'un caractère, utiliser la fonction PHP `strpos` ([PHP doc - strpos](https://www.php.net/manual/fr/function.strpos.php)). Si le caractère est trouvé, ne pas enregister et afficher un message d'erreur spécifique.
+ 5. (Optionel, car hors cours) Il faut également vérifier que les données enregistrées dans le fichier ne contiennent pas le caractère "," dans le texte, sinon la ligne serait corrompues. Concrètement, dans le cas présent, cela peut se produire si l'utilisateur entre ce caractère dans l'un des champs, ou si PHP génère un hash de password qui ne nous convient pas. Pour détecter la présence d'un caractère, utiliser la fonction PHP `strpos` ([PHP doc - strpos](https://www.php.net/manual/fr/function.strpos.php)). Si le caractère est trouvé, ne pas enregister et afficher un message d'erreur spécifique.
 
 ### Remarques théoriques
 
-#### Format CSV
+#### Format CSV (pour information - hors cours)
 
 A noter qu'un fichier de [format CSV](https://fr.wikipedia.org/wiki/Comma-separated_values) (MIME: "text/csv") est un fichier de texte permettant de stocker des valeurs tabulaires. Au sein de chaque ligne, les données sont séparées, normalement, par une virgule.
 
@@ -44,9 +47,9 @@ $absolutePath = realpath($relativePath);
 var_dump($relativePath, $cwd, $absolutePath);
 ```
 
-Pour plus d'information (notions avancées), voir l'article de [phpdelusions](https://phpdelusions.net/articles/paths).
+Pour plus d'information (notions avancées, hors cours), voir l'article de [phpdelusions](https://phpdelusions.net/articles/paths).
 
-#### Accessibilité d'un fichier
+#### Accessibilité d'un fichier (hors cours)
 
 A noter que la fonction `fopen` peut émettre une erreur si le fichier n'existe pas ou s'il n'est pas accessible en lecture et/ou en écriture. Une bonne pratique consiste donc à tester l'accessibilité du fichier au préalable de toute manipulation.
 
@@ -64,7 +67,12 @@ if (!is_readable($filePath)) {
     if ($fp === false) {
         // traitement en cas d'erreur d'ouverture du fichier
     } else {
+
         // traitement normal
+
+        if (!fclose($fp)) {
+            // traitement en cas d'erreur de fermeture du fichier
+        }
     }
 }
 ```
