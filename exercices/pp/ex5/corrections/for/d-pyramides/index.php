@@ -1,6 +1,6 @@
 <?php
 
-$n = 5;
+$n = (int)($_GET['number'] ?? 0);
 
 // cas 1
 for ($i = 1; $i <= $n; $i++) {

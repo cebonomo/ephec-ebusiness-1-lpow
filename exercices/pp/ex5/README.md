@@ -33,11 +33,11 @@ Ecrire un programme qui calcule les tables de multiplication (0 -> 10) d'une var
 
 [Correction](./corrections/for/b-tables/)
 
-#### 3. Suite
+#### 3. Ensemble
 
-Ecrire un programme qui affecte à une variable une chaîne de caractères concaténant entre des parenthèses tous les entiers compris entre 1 et une variable n contenant un entier positif. Chaque nombre doit être séparé par une virgule. Attention qu'aucune virgule ne doit figurer après le dernier nombre. (ex, pour n=5: "(1,2,3,4,5)")
+Ecrire un programme qui affecte à une variable une chaîne de caractères concaténant entre des accolades tous les entiers compris entre 1 et une variable n contenant un entier positif. Chaque nombre doit être séparé par un point-virgule. Attention qu'aucun point-virgule ne doit figurer après le dernier nombre. (ex, pour n=5: "{1;2;3;4;5}")
 
-[Correction](./corrections/for/c-suite/)
+[Correction](./corrections/for/c-set/)
 
 #### 4. Pyramides
 
@@ -129,6 +129,31 @@ Ecrire un programme calculant la [suite de Fibonacci](https://fr.wikipedia.org/w
 Créer une variable entière appelée "counter" et initialisez-la à 0. Utiliser une boucle "do while" pour afficher chaque nombre entier de 0 à 9, en incrémentant "counter" de 1 à chaque itération.
 
 ### Remarques techniques
+
+
+#### Incrémentation/décrémentation
+
+Il existe plusieurs syntaxes d'incrémentation/décrémentation.
+
+```php
+$i = 0;
+$i = $i + 1;
+```
+
+```php
+$i = 0;
+$i += 1;
+```
+
+```php
+$i = 0;
+$i++;
+```
+
+```php
+$i = 0;
+++$i;
+```
 
 #### Quelle boucle choisir?
 
