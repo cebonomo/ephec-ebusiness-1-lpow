@@ -61,7 +61,7 @@ for ($i = 0; $i < $n; $i++) {
 | 4  | 1 -> 4                     |
 | 5  | 1 -> 5                     |
 
-    A noter qu'il faut surtout utiliser une autre variable de compteur pour la boucle #2 (ex: `$j`) pour ne pas interférer avec la boucle #1 (ex: `$i`).
+A noter qu'il faut surtout utiliser une autre variable de compteur pour la boucle #2 (ex: `$j`) pour ne pas interférer avec la boucle #1 (ex: `$i`).
 
 
 #### Cas 1: décroissant
@@ -86,5 +86,5 @@ for ($i = 0; $i < $n; $i++) {
 | 3  | 5-3=2 | 1 -> 2                     |
 | 4  | 5-4=1 | 1 -> 1                     |
 
-    A noter qu'il faut surtout utiliser une autre variable de compteur pour la boucle #2 (ex: `$j`) pour ne pas interférer avec la boucle #1 (ex: `$i`).
+A noter qu'il faut surtout utiliser une autre variable de compteur pour la boucle #2 (ex: `$j`) pour ne pas interférer avec la boucle #1 (ex: `$i`).
 
