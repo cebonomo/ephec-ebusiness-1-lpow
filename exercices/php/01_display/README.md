@@ -1,25 +1,27 @@
-# Exercices PHP - display
+# Exercices PHP
 
-## Objectif
+## Affichage dynamique de HTML
+
+### Objectif
 
  1. Savoir générer du code HTML depuis PHP.
 
  2. Savoir conditionner du code HTML à l'aide de PHP.
 
- 3. Savoir générer udu code HTML depuis une boucle en PHP
+ 3. Savoir générer du code HTML depuis une boucle en PHP.
 
 
-## Enoncés
+### Enoncés
 
-### 1. Affichage simple
+#### 1. Affichage simple
 
 Générer du code HTML depuis PHP. (Pas d'exercice, voir les remarques pratiques.)
 
-### 2. Affichage conditionné
+#### 2. Affichage conditionné
 
-Conditionner du code HTML à l'aide de PHP. (Pas d'exercice, voir remarques pratiques.)
+Conditionner du code HTML à l'aide de PHP. (Pas d'exercice, voir les remarques pratiques.)
 
-### 3. Affichage en boucle
+#### 3. Affichage en boucle
 
 Afficher un tableau HTML de dimension 4x3 (4 lignes sur 3 colonnes). Ce tableau doit être généré dynamiquement depuis PHP.
     - Chaque ligne doit posséder une classe indiquant si elle est paire ou impaire.
@@ -32,13 +34,13 @@ Exemple d'affichage:
 [Correction](./corrections/c-for/)
 
 
-## Remarques pratiques
+### Remarques pratiques
 
-### Afficher du texte
+#### Afficher du texte
 
 Il existe plusieurs façons d'afficher du texte (du HTML, par exemple) dans un fichier PHP.
 
-#### En dehors des balises PHP
+##### En dehors des balises PHP
 
 Naturellement, PHP s'inscrit dans du texte. Tout ce qui n'est pas entre des balises PHP est donc du simple texte, non interprété.
 
@@ -52,7 +54,7 @@ Ceci est du texte.
 ?>
 ```
 
-#### Au sein des balises PHP
+##### Au sein des balises PHP
 
 Au sein d'un code PHP, il est possible, pour afficher du texte dans le navigateur, d'utiliser notamment la commande `echo` ([PHP doc - echo](https://www.php.net/manual/fr/function.echo.php)). 
 
@@ -68,13 +70,13 @@ A noter qu'il existe aussi une syntaxe courte (appelée "short open tag") (hors 
 <?= 'Ceci est du texte.' ?>
 ```
 
-### Contrôle du texte
+#### Contrôle du texte
 
-#### En dehors des balises PHP
+##### En dehors des balises PHP
 
 De même, on peut contrôler du texte qui se trouve entre deux balises PHP.
 
-##### if
+###### if
 
 ```php
 <?php 
@@ -90,7 +92,7 @@ Ceci n'est PAS visible.
 ?>
 ```
 
-##### for
+###### for
 
 ```php
 <?php 
@@ -102,6 +104,6 @@ Ceci est affiché 5 fois.
 ?>
 ```
 
-##### Syntaxe alternative
+###### Syntaxe alternative
 
 A noter (hors cours) qu'il existe une syntaxe alternative des structures de contrôle, particulière à ce cas d'utilisation et plus lisible (voir [PHP doc - syntaxe alternative](https://www.php.net/manual/fr/control-structures.alternative-syntax.php)).
