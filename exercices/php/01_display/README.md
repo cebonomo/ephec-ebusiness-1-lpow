@@ -24,8 +24,8 @@ Conditionner du code HTML à l'aide de PHP. (Pas d'exercice, voir les remarques 
 #### 3. Affichage en boucle
 
 Afficher un tableau HTML de dimension 4x3 (4 lignes sur 3 colonnes). Ce tableau doit être généré dynamiquement depuis PHP.
-    - Chaque ligne doit posséder une classe indiquant si elle est paire ou impaire.
-    - Chaque cellule doit contenir un identifiant basé sur le nommage d'Excel (la lettre majuscule de la colonne suivi du numéro de la ligne). Pour la conversion d'un nombre en lettre, utiliser l'expression suivante (hors cours!): `'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[$col]`, où `$col` représente l'index de la colonne à partir de 0.
+  - Chaque ligne doit posséder une classe indiquant si elle est paire ou impaire.
+  - Chaque cellule doit contenir un identifiant basé sur le nommage d'Excel (la lettre majuscule de la colonne suivi du numéro de la ligne). Pour la conversion d'un nombre en lettre, utiliser l'expression suivante (hors cours!): `'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[$col]`, où `$col` représente l'index de la colonne à partir de 0.
 
 Exemple d'affichage:
 
