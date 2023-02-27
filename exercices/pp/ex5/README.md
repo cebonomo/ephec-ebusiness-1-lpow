@@ -116,9 +116,15 @@ Résumé des états pour 2 et 3
 
 [Correction](./corrections/while/b-ppcm/)
 
-#### 3. Suite de Fibonacci (optionel)
+#### 3. Suite de Fibonacci
 
 Ecrire un programme calculant la [suite de Fibonacci](https://fr.wikipedia.org/wiki/Suite_de_Fibonacci) jusqu'à un nombre entier non nul limite.
+
+La suite de Fibonacci permet de déterminer une valeur de la suite en fonction de ses deux valeurs précédentes. Il est donc nécessaire de déterminer les deux toutes premières valeurs, soit 0 et 1.
+
+Une fois ces deux premières valeurs déterminées, il est facile de calculer la troisième valeur en les additionnant. Le code va ainsi répéter le calcul pour déterminer, lors de chaque itération, la valeur suivante, en fonction des deux dernières valeurs.
+
+La boucle prendra fin en fonction du nombre limite.
 
 [Correction](./corrections/while/c-fibonacci/)
 
