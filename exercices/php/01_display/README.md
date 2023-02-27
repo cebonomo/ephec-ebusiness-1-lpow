@@ -11,19 +11,25 @@
 
 ## Enoncés
 
- 1. Générer du code HTML depuis PHP. (Voir remarques pratiques.)
+### 1. Affichage simple
 
- 2. Conditionner du code HTML à l'aide de PHP. (Voir remarques pratiques.)
+Générer du code HTML depuis PHP. (Pas d'exercice, voir les remarques pratiques.)
 
- 3. Afficher un tableau HTML de dimension 4x3 (4 lignes sur 3 colonnes). Ce tableau doit être généré dynamiquement depuis PHP.
+### 2. Affichage conditionné
+
+Conditionner du code HTML à l'aide de PHP. (Pas d'exercice, voir remarques pratiques.)
+
+### 3. Affichage en boucle
+
+Afficher un tableau HTML de dimension 4x3 (4 lignes sur 3 colonnes). Ce tableau doit être généré dynamiquement depuis PHP.
     - Chaque ligne doit posséder une classe indiquant si elle est paire ou impaire.
-    - Chaque cellule doit contenir un identifiant basé sur le nommage d'Excel (la lettre majuscule de la colonne suivi du numéro de la ligne). Pour la conversion d'un nombre en lettre, utiliser le code suivant (hors cours!): `echo 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[$col];`, où `$col` représente l'index de la colonne à partir de 0.
+    - Chaque cellule doit contenir un identifiant basé sur le nommage d'Excel (la lettre majuscule de la colonne suivi du numéro de la ligne). Pour la conversion d'un nombre en lettre, utiliser l'expression suivante (hors cours!): `'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[$col]`, où `$col` représente l'index de la colonne à partir de 0.
 
-Exemple d'affichage
+Exemple d'affichage:
 
  ![Tableau dynamique](../../../resources/images/dynamic-table.png)
 
-[Corrections](./corrections/)
+[Correction](./corrections/c-for/)
 
 
 ## Remarques pratiques
@@ -56,7 +62,7 @@ Au sein d'un code PHP, il est possible, pour afficher du texte dans le navigateu
 ?>
 ```
 
-A noter qu'il existe aussi une syntaxe courte (appelée "short open tag").
+A noter qu'il existe aussi une syntaxe courte (appelée "short open tag") (hors cours).
 
 ```php
 <?= 'Ceci est du texte.' ?>
