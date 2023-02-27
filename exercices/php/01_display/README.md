@@ -17,7 +17,9 @@
 
  3. Afficher un tableau HTML de dimension 4x3 (4 lignes sur 3 colonnes). Ce tableau doit être généré dynamiquement depuis PHP.
     - Chaque ligne doit posséder une classe indiquant si elle est paire ou impaire.
-    - Chaque cellule doit contenir un identifiant basé sur le nommage d'Excel (la lettre majuscule de la colonne suivi du numéro de la ligne). Pour la conversion d'un nombre en lettre, voir la fonction PHP `chr` ([PHP doc - chr](https://www.php.net/manual/fr/function.chr.php)) (ex: `chr(65)` retournera la string "A").
+    - Chaque cellule doit contenir un identifiant basé sur le nommage d'Excel (la lettre majuscule de la colonne suivi du numéro de la ligne). Pour la conversion d'un nombre en lettre, utiliser le code suivant (hors cours!): `echo 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[$col];`, où `$col` représente l'index de la colonne à partir de 0.
+
+Exemple d'affichage
 
  ![Tableau dynamique](../../../resources/images/dynamic-table.png)
 
