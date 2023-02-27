@@ -2,7 +2,7 @@
 
 Le code ci-après est repris des fichiers de solution.
 
-## Compteur de boucle
+## Compteur de boucle (fo)
 
 ### PHP
 
