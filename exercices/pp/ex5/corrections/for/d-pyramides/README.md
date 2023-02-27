@@ -53,15 +53,15 @@ for ($i = 0; $i < $n; $i++) {
 
     Voici un exemple d'évolution de la longeur de la boucle #2 en fonction de l'état de la boucle #1:
 
-| $i | itérations de $j (inclus)  |
-|----|----------------------------|
-| 1  | 1 -> 1                     |
-| 2  | 1 -> 2                     |
-| 3  | 1 -> 3                     |
-| 4  | 1 -> 4                     |
-| 5  | 1 -> 5                     |
+    | $i | itérations de $j (inclus)  |
+    |----|----------------------------|
+    | 1  | 1 -> 1                     |
+    | 2  | 1 -> 2                     |
+    | 3  | 1 -> 3                     |
+    | 4  | 1 -> 4                     |
+    | 5  | 1 -> 5                     |
 
-A noter qu'il faut surtout utiliser une autre variable de compteur pour la boucle #2 (ex: `$j`) pour ne pas interférer avec la boucle #1 (ex: `$i`).
+    A noter qu'il faut surtout utiliser une autre variable de compteur pour la boucle #2 (ex: `$j`) pour ne pas interférer avec la boucle #1 (ex: `$i`).
 
 
 #### Cas 1: décroissant
@@ -78,13 +78,13 @@ A noter qu'il faut surtout utiliser une autre variable de compteur pour la boucl
 
     Voici un exemple d'évolution de la longeur de la boucle #2 en fonction de l'état de la boucle #1:
 
-| $i | $n-$i | itérations de $j (inclus)  |
-|----|-------|----------------------------|
-| 0  | 5-0=5 | 1 -> 5                     |
-| 1  | 5-1=4 | 1 -> 4                     |
-| 2  | 5-2=3 | 1 -> 3                     |
-| 3  | 5-3=2 | 1 -> 2                     |
-| 4  | 5-4=1 | 1 -> 1                     |
+    | $i | $n-$i | itérations de $j (inclus)  |
+    |----|-------|----------------------------|
+    | 0  | 5-0=5 | 1 -> 5                     |
+    | 1  | 5-1=4 | 1 -> 4                     |
+    | 2  | 5-2=3 | 1 -> 3                     |
+    | 3  | 5-3=2 | 1 -> 2                     |
+    | 4  | 5-4=1 | 1 -> 1                     |
 
-A noter qu'il faut surtout utiliser une autre variable de compteur pour la boucle #2 (ex: `$j`) pour ne pas interférer avec la boucle #1 (ex: `$i`).
+    A noter qu'il faut surtout utiliser une autre variable de compteur pour la boucle #2 (ex: `$j`) pour ne pas interférer avec la boucle #1 (ex: `$i`).
 
