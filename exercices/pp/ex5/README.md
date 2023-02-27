@@ -33,11 +33,11 @@ Ecrire un programme qui calcule les tables de multiplication (0 -> 10) d'une var
 
 [Correction](./corrections/for/b-tables/)
 
-#### 3. Ensemble
+#### 3. Suite
 
-Ecrire un programme qui affecte à une variable une chaîne de caractères concaténant entre des accolades tous les entiers compris entre 1 et une variable n contenant un entier positif. Chaque nombre doit être séparé par un point-virgule. Attention qu'aucun point-virgule ne doit figurer après le dernier nombre. (ex, pour n=5: "{1;2;3;4;5}")
+Ecrire un programme qui affecte à une variable une chaîne de caractères concaténant entre des accolades tous les entiers compris entre 1 et une variable n contenant un entier positif. Chaque nombre doit être séparé par une virgule. Attention qu'aucune virgule ne doit figurer après le dernier nombre. (ex, pour n=5: "{1,2,3,4,5}")
 
-[Correction](./corrections/for/c-set/)
+[Correction](./corrections/for/c-sequence/)
 
 #### 4. Pyramides
 

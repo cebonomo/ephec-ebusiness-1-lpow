@@ -8,7 +8,7 @@ $result = '{';
 for ($i = $start; $i <= $end; $i++) {
     $result .= $i;
     if ($i < $end) {
-        $result .= ';';
+        $result .= ',';
     }
 }
 
