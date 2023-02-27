@@ -1,8 +1,8 @@
-# Exercices PHP
+# Exercices PHP - display
 
-## Affichage dynamique de HTML
+## Exercice 1: affichage dynamique de HTML
 
-### Objectif
+### Objectifs
 
  1. Savoir générer du code HTML depuis PHP.
 
