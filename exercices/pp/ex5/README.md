@@ -6,9 +6,9 @@
 
  1. Savoir utiliser les structures de boucles avec les syntaxes "for" et "while".
 
- 2. Savoir boucler de manière incrémentale depuis un index de départ défini et sur une longueur définie.
+ 2. Savoir boucler de manière incrémentale depuis un indice de départ défini et sur une longueur définie.
 
- 3. Savoir boucler de manière décrémentale depuis un index de départ défini et sur une longueur définie.
+ 3. Savoir boucler de manière décrémentale depuis un indice de départ défini et sur une longueur définie.
 
  4. Savoir boucler sur base d'une condition.
 

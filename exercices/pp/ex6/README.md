@@ -29,11 +29,15 @@ $b = ['a' => 1, 'b' => 2, 'c' => 3]; // initialisation d'un tableau associatifs 
 
 #### Boucler sur un tableau
 
-La boucle "for" est habituellement utilisée pour boucler sur un tableau.
+La boucle "for" est habituellement utilisée pour boucler sur un tableau, avec éventuellement différentes variances.
+
+Il est possible, mais pas forcément recommandé, d'utiliser la notation du "for" incrémenté. Cette notation implique de connaître la longeur du tableau. La boucle ira ainsi de 0 jusqu'à la longueur exlue.
 
 ##### PHP
 
-Il est possible, mais pas recommandé, d'utiliser la notation du "for" incrémenté.
+##### for
+
+En PHP, la longueur d'un tableau peut être connue grâce à la fonction `count` ([PHP doc - count](https://www.php.net/manual/fr/function.count.php)).
 
 ```php
 for ($i = 0, $length = count($array); $i < $length; $i++) {
@@ -41,7 +45,9 @@ for ($i = 0, $length = count($array); $i < $length; $i++) {
 }
 ```
 
-Les notations suivantes sont toutefois à privilégier.
+##### foreach
+
+En PHP, les boucles "foreach" sont à privilégier, car la notation est plus simple et l'exécution plus sûre (en PHP, il est possible qu'il manque un index dans tableau).
 
 ```php
 foreach ($array as $value) {
