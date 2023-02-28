@@ -1,4 +1,4 @@
-# EPHEC - LPOW - TP
+# EPHEC - LPOW/PP - TP
 
 Est présenté ici le code développé durant mes TP du cours de LPOW et PP de l'EPHEC.
 

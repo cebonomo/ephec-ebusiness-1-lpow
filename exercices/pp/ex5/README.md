@@ -41,7 +41,16 @@ Ecrire un programme qui affecte à une variable une chaîne de caractères conca
 
 #### 4. Pyramides
 
-Ecrire un programme affichant les sorties ci-après, le nombre de lignes étant défini dans une variable n contenant un entier positif. Exemple, pour 5 lignes:
+Ecrire un programme affichant un nombre déterminé de chiffres sur un nombre déterminé de lignes.
+ - Le nombre de lignes est défini dans une variable n contenant un entier positif.
+ - Le numéro de chaque ligne détermine, quant à lui, la suite de chiffres à afficher.
+
+Ainsi, pour la première ligne, il faudra afficher le chiffre 1.
+Pour la seconde ligne, il faudra afficher les chiffres 12.
+Pour la troisième ligne, il faudra afficher les chiffres 123.
+Etc.
+
+Exemple, pour 5 lignes:
 
 Cas 1: croissant
 ```
@@ -70,7 +79,6 @@ Cas 2: décroissant
 Créer une variable entière appelée "counter" et initialisez-la à 0. Utiliser une boucle "while" pour afficher chaque nombre entier de 0 à 9, en incrémentant "counter" de 1 à chaque itération.
 
 [Correction](./corrections/while/a-counter/)
-
 
 #### 2. PPCM
 
@@ -134,8 +142,8 @@ La boucle prendra fin en fonction du nombre limite.
 
 Créer une variable entière appelée "counter" et initialisez-la à 0. Utiliser une boucle "do while" pour afficher chaque nombre entier de 0 à 9, en incrémentant "counter" de 1 à chaque itération.
 
-### Remarques techniques
 
+### Remarques techniques
 
 #### Incrémentation/décrémentation
 

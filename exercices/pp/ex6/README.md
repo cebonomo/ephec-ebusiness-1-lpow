@@ -24,7 +24,7 @@ Tant en JS qu'en PHP, il existe plusieurs façon de déclarer un tableau. Je rec
 ```php
 $a = []; // initialisation d'un tableau vide
 $b = [1, 2, 3]; // initialisation d'un tableau contenant des exemples de valeurs (entiers) indexées
-$b = ['a' => 1, 'b' => 2, 'c' => 3]; // initialisation d'un tableau associatifs contenant des exemples de valeurs (entiers) associées à des clés
+$b = ['a' => 1, 'b' => 2, 'c' => 3]; // initialisation d'un tableau associatif contenant des exemples de valeurs (entiers) associées à des clés
 ```
 
 #### Boucler sur un tableau
