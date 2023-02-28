@@ -126,13 +126,25 @@ Résumé des états pour 2 et 3
 
 #### 3. Suite de Fibonacci
 
-Ecrire un programme calculant la [suite de Fibonacci](https://fr.wikipedia.org/wiki/Suite_de_Fibonacci) jusqu'à un nombre entier non nul limite.
+Ecrire un programme calculant la [suite de Fibonacci](https://fr.wikipedia.org/wiki/Suite_de_Fibonacci) jusqu'à un nombre entier limite.
 
 La suite de Fibonacci permet de déterminer une valeur de la suite en fonction de ses deux valeurs précédentes. Il est donc nécessaire de déterminer les deux toutes premières valeurs, soit 0 et 1.
 
 Une fois ces deux premières valeurs déterminées, il est facile de calculer la troisième valeur en les additionnant. Le code va ainsi répéter le calcul pour déterminer, lors de chaque itération, la valeur suivante, en fonction des deux dernières valeurs.
 
 La boucle prendra fin en fonction du nombre limite.
+
+Résumé des états pour les premiers nombres de la suite:
+
+    | n   | $F_n$ | $F_{n+1}$ | $F_{n+2}$ |
+    |-----|-------|-----------|-----------|
+    | 0   | 0     | 1         | $0+1=1$   |
+    | 1   | 1     | 1         | $1+1=2$   | 
+    | 2   | 1     | 2         | $1+2=3$   |
+    | 3   | 2     | 3         | $2+3=5$   |
+    | 4   | 3     | 5         | $3+5=8$   |
+    | 5   | 5     | 8         | $5+8=13$  |
+    | ... |       |           |           |
 
 [Correction](./corrections/while/c-fibonacci/)
 
