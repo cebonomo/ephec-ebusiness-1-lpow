@@ -8,7 +8,7 @@
 
  2. Savoir boucler de manière incrémentale depuis un indice de départ défini et sur une longueur définie.
 
- 3. Savoir boucler de manière décrémentale depuis un indice de départ défini et sur une longueur définie.
+ 3. (Optionnel) Savoir boucler de manière décrémentale depuis un indice de départ défini et sur une longueur définie.
 
  4. Savoir boucler sur base d'une condition.
 
