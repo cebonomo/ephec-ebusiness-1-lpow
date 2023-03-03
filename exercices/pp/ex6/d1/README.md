@@ -26,7 +26,7 @@ Pour cela, il est nécessaire de :
 
 En PHP, la longueur d'un tableau peut être connue grâce à la fonction `count` ([PHP doc - count](https://www.php.net/manual/fr/function.count.php)).
  
-Pour rendre l'exemple plus fun (optionnel), on peut imaginer déterminer l'indice de manière aléatoire. En PHP, voir par exemple la fonction `mt_rand` ([PHP doc - mt_rand](https://www.php.net/manual/fr/function.mt-rand.php)) qui peut retourner un nombre compris entre deux valeurs (hors cours).
+Pour rendre l'exemple plus fun (optionnel), on peut imaginer déterminer l'indice de manière aléatoire. En PHP, voir par exemple la fonction `rand` ([PHP doc - rand](https://www.php.net/manual/fr/function.rand.php)) qui peut retourner un nombre compris entre deux valeurs (hors cours).
 
 #### 2. Calculs
 
