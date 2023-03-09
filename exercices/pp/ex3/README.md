@@ -35,7 +35,7 @@ Idem que l'exercice précédent, mais primes progressives, à partir des montant
 
 #### 4. Equation du premier degré (optionel au Q1, obligatoire au Q2)
 
-Ecrire un programme qui résout et affiche une équation du premier degré: $ax + b = c$. Les valeurs de a, b et c sont des variables. Résoudre l'équation signifie trouver la valeur de x, soit $x = (c-b)/a$. Exemple d'affichage: `2*3.5-3=4`.
+Ecrire un programme qui résout et affiche une équation du premier degré: $ax + b = c$. Dans le code, les valeurs de a, b et c sont des variables. Résoudre l'équation signifie trouver la valeur de x, soit $x = (c-b)/a$. Exemple d'affichage: `2*3.5-3=4`.
 
 Le programme veille à gérer le cas suivant:
  - $a = 0$: pas de solution réelle
@@ -45,15 +45,15 @@ Le programme veille à gérer le cas suivant:
 
 #### 5. Equation du second degré (optionel)
 
-Ecrire un programme qui résout et affiche une équation du second degré: `ax² + bx + c = 0`. Les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `Δ` le discriminant du trinôme `ax² + bx + c`: (`Δ = b² - 4ac`).
+Ecrire un programme qui résout et affiche une équation du second degré: $ax² + bx + c = 0$. Dans le code, les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `Δ` le discriminant du trinôme $ax² + bx + c$: ($Δ = b² - 4ac$).
 
 Le programme veille à gérer les cas suivants: 
- - `a = 0`: équation du premier degré
- - `Δ < 0`: pas de solution réelle  
- - `Δ = 0`: solution valant `x = -(b/(2a))`
- - `Δ > 0`: solution valant `x = (-b-√Δ)/(2a)` et `x = (-b+√Δ)/(2a)`
- - `b < 0`: affichage avec signe négatif
- - `c < 0`: affichage avec signe négatif
+ - $a = 0$: équation du premier degré
+ - $Δ < 0$: pas de solution réelle  
+ - $Δ = 0$: solution valant $x_0 = \frac{-b}{2a}$
+ - $Δ > 0$: solution valant $x_1 = \frac{-b-√Δ}{2a}$ et $x_2 = \frac{-b+√Δ}{2a}$
+ - $b < 0$: affichage avec signe négatif
+ - $c < 0$: affichage avec signe négatif
 
 [Correction](./corrections/e-second/)
 
