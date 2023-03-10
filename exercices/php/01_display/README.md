@@ -20,7 +20,7 @@ Générer du code HTML depuis PHP. Pour cela, afficher la valeur d'une variable 
 Exemple: Afficher un nombre généré aléatoirement dans un paragraphe:
  - "Le nombre vaut xx" et afficher la valeur du nombre.
 
-Pour générer un nombre de manière aléatoire en PHP (hors cours), voir la fonction `rand` ([PHP doc - rand](https://www.php.net/manual/fr/function.rand.php)). Exemple, pour générer un nombre compris entre 0 et 10: `rand(0, 10);`.
+Pour générer un nombre de manière aléatoire en PHP (hors cours), voir la fonction `rand` ([PHP doc - rand](https://www.php.net/manual/fr/function.rand.php)). Exemple, pour générer un nombre compris entre 0 et 10: `$number = rand(0, 10);`.
 
 #### 2. Affichage conditionné
 
@@ -35,7 +35,7 @@ Exemple: conditionner deux parapgraphes en fonction d'un nombre généré aléat
 
 Afficher un tableau HTML de dimension 4x3 (4 lignes sur 3 colonnes). Ce tableau doit être généré dynamiquement depuis PHP.
   - Chaque ligne doit posséder une classe indiquant si elle est paire ou impaire.
-  - Chaque cellule doit contenir un identifiant basé sur le nommage d'Excel (la lettre majuscule de la colonne suivi du numéro de la ligne). Pour la conversion d'un nombre en lettre, utiliser l'expression suivante (hors cours!): `'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[$colIndex]`, où `$colIndex` représente l'indice de la colonne à partir de 0.
+  - Chaque cellule doit contenir un identifiant basé sur le nommage d'Excel (la lettre majuscule de la colonne suivi du numéro de la ligne). Pour la conversion d'un nombre en lettre, utiliser l'expression suivante (hors cours!): `$letter = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[$colIndex];`, où `$colIndex` représente l'indice de la colonne à partir de 0.
 
 Exemple d'affichage:
 
