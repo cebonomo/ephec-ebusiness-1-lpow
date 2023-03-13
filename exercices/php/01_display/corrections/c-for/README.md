@@ -2,7 +2,7 @@
 
 ## for
 
-Pour le code complet, voir le fichier [for-table.php](./for-table.php).
+Pour le code complet, voir le fichier [index.php](./index.php).
 
 ### Code principal
 
