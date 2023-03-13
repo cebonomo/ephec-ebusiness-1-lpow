@@ -25,8 +25,11 @@ $number = rand(0, 9);
 
 ## Explications
 
-Ce code permet de générer un document HTML contenant un nombre aléatoire.
+Ce code permet de générer un document HTML contenant une valeur dynamique (en l'occurrence, un nombre aléatoire).
 
  1. La variable `$number` est initialisée avec une valeur numérique. Cette valeur est générée de manière aléatoire grâce à la fonction native `rand` (hors cours).
 
- 2. La valeur de la variable `$number` ets affichée à l'intérieur d'un paragraphe HTML à l'aide de l'instruction `echo`. On remarque que la variable initialisée en haut de document est donc accessible dans l'ensemble du document.
+ 2. La valeur de la variable `$number` est affichée à l'intérieur d'un paragraphe HTML à l'aide de l'instruction `echo`. 
+ 
+  - ON remarque que, en PHP, le code PHP peut s'insérer partout.
+  - On remarque que, en PHP, la variable initialisée en haut du fichier est donc accessible dans l'ensemble du même fichier.

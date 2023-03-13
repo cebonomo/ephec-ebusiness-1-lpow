@@ -28,5 +28,7 @@ Pour le code complet, voir le fichier [index.php](./index.php).
 
 ## Explications
 
-Ce code permet de conditionner deux paragraphe dans un document HTML. Il existe deux possibilité de réaliser une telle opération, suivant que l'on travaille avec du HTML (version 1) ou du PHP (version 2).
+Ce code permet de conditionner deux paragraphes dans un document HTML.
+
+Il existe deux possibilités de réaliser une telle opération, suivant que l'on travaille avec du HTML (version 1) ou du PHP (version 2).
 

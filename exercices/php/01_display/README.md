@@ -30,8 +30,8 @@ Conditionner du code HTML à l'aide de PHP. Pour cela, dans un document HTML, co
 
 Exemple: conditionner deux parapgraphes en fonction d'un nombre généré aléatoirement. 
  - Paragraphe 1, toujours affiché (voir exercice précédent): "Le nombre vaut xx" et afficher la valeur du nombre.
- - Paragraphe 2, affiché si le nombre est inférieur ou égal à 5: "Donc, le nombre est inférieur ou égal à 5".
- - Paragraphe 3 affiché si le nombre est strictement supérieur à 5: "Donc, le nombre est strictement supérieur à 5".
+ - Paragraphe 2, affiché si le nombre est supérieur ou égal à 5: "Donc, le nombre est supérieur ou égal à 5".
+ - Paragraphe 3 affiché si le nombre est strictement inférieur à 5: "Donc, le nombre est strictement inférieur à 5".
 
  [Correction](./corrections/b-if/)
 
