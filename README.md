@@ -119,20 +119,24 @@ Les lectures qui suivent ne sont pas obligatoires dans le cadre du cours, mais r
 
 ## Ressources EPHEC
 
-### SAR
+### Vos condisciples
 
-Le SAR propose aux étudiants différents axes d'aide à la réussite, notamment un système de tutorat (voir eperso). Pour davantage de renseignements, voir le [cours Moodle SAR](https://moodle.ephec.be/course/view.php?id=11760).
+Aidez-vous les uns les autres! Travaillez en équipe. Expliquez aux autres ce que vous avez compris et demendez-leur de vous aider sur ce pour quoi vous avez plus de mal. Vous progresserez chacun d'autant plus vite.
+
+### Service d'aide à la réussite (SAR)
+
+Le SAR propose aux étudiants différents axes d'aide à la réussite, notamment un système de tutorat (voir eperso). Pour davantage de renseignements, voir le [cours Moodle du SAR](https://moodle.ephec.be/course/view.php?id=11760).
 
 ### IT support
 
-Pour toute question sur l'utilisation des ressources informatique de l'EPHEC, voir la [documentation IT EPHEC](https://confluence.external-share.com/content/ff8db64d-b21b-4413-84e5-6b790a0a5659)
+Pour toute question sur l'utilisation des ressources informatique de l'EPHEC, voir la [documentation IT EPHEC](https://confluence.external-share.com/content/ff8db64d-b21b-4413-84e5-6b790a0a5659).
 
-### Vos condisciples
+### Service social
 
-Aidez-vous les uns les autres! Travaillez en équipe. Expliquez aux autres ce que vous avez compris et demendez-leur de vous aider sur ce pour quoi vous avez plus de mal. Vous progresserez d'autant plus vite.
+Parmi les nombreux soutiens apportés par le service social de l'EPHEC, certaines aides financières en matériel informatique peuvent être octroyées aux étudiants. Pour davantage de renseignements, voir le [cours Moodle du service social](https://moodle.ephec.be/course/view.php?id=11765).
 
 
-## Documentation
+## Documentations
 
 Coder nécessite de se référer de manière continue à la documentation.
 
