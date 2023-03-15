@@ -22,7 +22,16 @@
 
 ### Fin de ligne
 
-A noter que le caractère de fin de ligne (ex: "\n" sous Linux, "\n\r" sous Windows ou "\r" sous MacOS) (voir aussi `PHP_EOL`) est inclu dans la valeur retournée par `fgets`. Si l'on désire nettoyer le texte, on peut utiliser la fonction PHP `rtrim` ([PHP doc - rtrim](https://www.php.net/manual/fr/function.rtrim.php)) (en spécifiant éventuellement la valeur `PHP_EOL` comme second argument, selon les cas) (hors cours).
+En informatique, un retour à la ligne, càd une fin de ligne, est codée par un caractère spécial "invisible". Ce caractère spécial change en fonction des OS:
+ - "\n" sous Linux
+ - "\n\r" sous Windows 
+ - "\r" sous MacOS
+
+Pour encoder ce caractère en PHP, il est impératif d'utiliser des doubles guillemets.
+
+Exemple: `"Ligne 1\nLigne2"`.
+
+A noter que, en PHP, on peut utiliser la constante native `PHP_EOL` ([PHP doc - constantes pré-définies](https://www.php.net/manual/fr/reserved.constants.php)) qui s'adaptera au système courant (hors cours).
 
 ### Chemin de fichier
 

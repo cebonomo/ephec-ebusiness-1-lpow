@@ -18,7 +18,7 @@
         - Recourir à une concaténation pour enregistrer l'ensemble de la ligne en une seule fois.
         - Voir éventuellement, par exemple, la méthode PHP `implode` ([PHP doc - implode](https://www.php.net/manual/fr/function.implode.php)) (hors cours) qui est l'inverse de la méthode `explode` ([PHP doc - explode](https://www.php.net/manual/fr/function.explode.php)).
     - Le charactère de séparation (",") doit être défini dans une constante, car cette valeur ne peut pas être modifiée lors de l'exécution du script.
-    - Chaque user occupe une et une seule ligne. Pour délimiter la ligne, il faut ajouter un caractère spécial indiquant la fin de la ligne. Ce caractère peut varier en fonction des systèmes ("\n" pour Linux). En PHP, on peut utiliser la constante native `PHP_EOL` ([PHP doc - constantes pré-définies](https://www.php.net/manual/fr/reserved.constants.php)) qui s'adaptera au système courant (hors cours).
+    - Chaque user occupe une et une seule ligne. Pour délimiter la ligne, il faut ajouter un caractère spécial indiquant la fin de la ligne. (Voir remarques)
   
  3. (Optionel, car hors cours) Par ailleurs, il faut s'assurer que l'utilisateur n'a pas envoyé involontairement d'espaces au début ou en fin des données soumises. Pour nettoyer les données des espaces indésirables, il faut utiliser la fonction PHP `trim` ([PHP doc - trim](https://www.php.net/manual/fr/function.trim.php)).
 
