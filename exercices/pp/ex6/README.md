@@ -4,8 +4,8 @@
 
 ### Types de tableau
 
- - [Tableaux indexés](./d1/).
- - [Tableaux indexés à n dimensions](./dn/).
+ - [Tableaux indexés](./d1/)
+ - [Tableaux indexés à n dimensions](./dn/)
 
 ### Remarques théoriques
 

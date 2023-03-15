@@ -35,7 +35,8 @@ Le code affiche de mamnière aléatoire l'un des 7 nains de Blanche-Neige.
  
     Chacune des 7 entrées est donc indexée dans le tableau, selon un indice allant de 0 à 6:
 
-    | **Indice** | 0 | 1 | 2 | 3 | 4 | 5 | 6  |
+    | **Indice** | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+    |------------|---|---|---|---|---|---|---|
     | **Entrée** | Prof | Joyeux | Dormeur | Grincheux | Timide | Simplet | Atchoum |
 
     On remarque que l'on commence un tableau par l'indice 0!
