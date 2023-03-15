@@ -31,7 +31,7 @@
 
 ### Remarques techniques
 
-#### Client vs. server
+#### Validation client vs. server
 
 Il existe deux validations de formulaires:
  - La validation des données côté client est une nécessité pour des raisons d'UX.
@@ -39,6 +39,3 @@ Il existe deux validations de formulaires:
 
 Sur la validation côté client, voir [MDN docs - validation des données de formulaires](https://developer.mozilla.org/fr/docs/Learn/Forms/Form_validation).
 
-#### novalidate (hors cours)
-
-Pour tester le comportement du côté serveur, il est nécessaire de pouvoir soumettre des données incorrectes. Il faut donc désactiver la validation du côté client, de manière temporaire. Pour cela, on peut utiliser l'attribut `novalidate`. 

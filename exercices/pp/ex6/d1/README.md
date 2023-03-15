@@ -52,7 +52,7 @@ Pour cela, il faut parcourir le tableau et retenir le nombre le plus élevé.
 
 [Correction](./corrections/read/3-top/)
 
-#### 4. Recherche d'indice
+#### 4. Recherche d'indic
 
 Ecrire un programme affichant l'indice (ou index) d'une valeur contenue dans un tableau. Si plusieurs valeurs identiques existent dans le tableau, la fonction retournera uniquement l'indice de la première valeur. Par exemple, pour le tableau `['chiot', 'chaton', 'chaton', ...]`, la fonction retournera l'indice `1` pour la valeur `'chaton'`.
 
