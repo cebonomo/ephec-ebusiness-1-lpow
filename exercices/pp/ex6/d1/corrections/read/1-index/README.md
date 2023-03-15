@@ -29,9 +29,9 @@ echo $randomDwarf;
 
 ## Explications
 
-Le code affiche de mamnière aléatoire l'un des 7 nains de Blanche-Neige.
+Le code affiche de manière aléatoire l'un des 7 nains de Blanche-Neige.
 
- 1. La variable `$dwarves` est initialisée avec un array. Cette variable liste le prénom des 7 nains de Blanche-Neige.
+ 1. La variable `$dwarves` est initialisée avec une liste de string. Cette liste est un tableau (un "array"), et chaque entrée est une string. Cette variable représente la liste de prénoms des 7 nains de Blanche-Neige, dont on va extraire une valeur.
  
     Chacune des 7 entrées est donc indexée dans le tableau, selon un indice allant de 0 à 6:
 
@@ -39,7 +39,7 @@ Le code affiche de mamnière aléatoire l'un des 7 nains de Blanche-Neige.
     |------------|---|---|---|---|---|---|---|
     | **Entrée** | Prof | Joyeux | Dormeur | Grincheux | Timide | Simplet | Atchoum |
 
-    On remarque que l'on commence un tableau par l'indice 0!
+    On remarque que l'on commence un tableau par l'indice 0! Le dernier indice vaut donc n-1.
 
  2. La variable `$length` est initialisée avec une valeur numérique. 
  

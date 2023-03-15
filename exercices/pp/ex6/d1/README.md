@@ -36,13 +36,27 @@ Pour rendre l'exemple plus fun (optionnel), on peut imaginer déterminer l'indic
 
 Ecrire un programme calculant et affichant la moyenne d'une liste de nombres.
 
-### 3. Recherche d'entrée
+Pour cela, il est donc nécessaire de:
+
+ 1. Calculer la somme des termes présents dans la liste. Pour cela, il faut extraire chaque valeur en parcourant la totalité de la liste, et additionner chaque valeur à un total.
+
+ 2. Diviser la somme des termes par le nombre de termes. Pour connaître le nombre de termes, il faut simplement connaître la longueur du tableau.
+
+[Correction](./corrections/read/2-average/)
+
+#### 3. Recherche d'entrée
 
 Ecrire un programme affichant la valeur la plus élevée d'une liste de nombres.
+
+Pour cela, il faut parcourir le tableau et retenir le nombre le plus élevé.
+
+[Correction](./corrections/read/3-top/)
 
 #### 4. Recherche d'indice
 
 Ecrire un programme affichant l'indice (ou index) d'une valeur contenue dans un tableau. Si plusieurs valeurs identiques existent dans le tableau, la fonction retournera uniquement l'indice de la première valeur. Par exemple, pour le tableau `['chiot', 'chaton', 'chaton', ...]`, la fonction retournera l'indice `1` pour la valeur `'chaton'`.
+
+[Correction](./corrections/read/4-search/)
 
 ## Exercices 2: écriture
 
