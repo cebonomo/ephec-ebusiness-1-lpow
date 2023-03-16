@@ -36,9 +36,9 @@ function getRowClass($rowIndex)
 {
     $rowNumber = getRowNumber($rowIndex);
     if ($rowNumber % 2 == 0) {
-        return "even";
+        return "even"; //pair
     }
-    return "odd";
+    return "odd"; //impair
 }
 ```
 
