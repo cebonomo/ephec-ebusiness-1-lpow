@@ -47,6 +47,14 @@ Exemple d'affichage:
 
 [Correction](./corrections/c-for/)
 
+#### 4. Affichage de liste (array indexé à 1 dimension)
+
+Afficher de manière dynamique une liste HTML. Cette liste provient d'un array de string en PHP. Autrement dit, il faut transformer une liste PHP en liste HTML. (Exemple: liste de mes animaux préférés, listes des barbapapas, listes des Schtroumpfs, ...)
+
+#### 5. Affichage du morpion (array indexé à 2 dimensions)
+
+Reprendre le jeu du morpion et afficher-le dans un tableau HTML. Les lignes gagnantes doivent être colorées en vert.
+
 ### Remarques pratiques
 
 #### Afficher du texte
