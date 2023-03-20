@@ -35,9 +35,9 @@ Le code affiche de manière aléatoire l'un des 7 nains de Blanche-Neige.
  
     Chacune des 7 entrées est donc indexée dans le tableau, selon un indice allant de 0 à 6:
 
-    | **Indice** | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
-    |------------|---|---|---|---|---|---|---|
-    | **Entrée** | Prof | Joyeux | Dormeur | Grincheux | Timide | Simplet | Atchoum |
+    | **Indices** | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+    |-------------|---|---|---|---|---|---|---|
+    | **Entrées** | Prof | Joyeux | Dormeur | Grincheux | Timide | Simplet | Atchoum |
 
     On remarque que l'on commence un tableau par l'indice 0! Le dernier indice vaut donc n-1.
 
@@ -53,8 +53,9 @@ Le code affiche de manière aléatoire l'un des 7 nains de Blanche-Neige.
 
  3. La variable `$randomIndex` est initialisée avec une valeur numérique. 
  
-  - La valeur se situe obligatoirement dans un range d'entiers compris entre le premier et le dernier indice du tableau, soit respectivement 0 et 6. Il est important de ne pas utiliser un indice qui ne serait pas défini dans le tableau. 
-  - Une fois le range connu, pour déterminer de manière (pseudo) aléatoire un entier (fonctionnalité optionelle), on utilise une fonction native du langage. En PHP, il s'agit de la fonction `rand` ([PHP doc - rand](https://www.php.net/manual/fr/function.rand.php)) (hors cours). Dans ce cas, cette fonction reçoit en argument la limite inférieure et la limite supérieure du range, et retroune un entier compris dans ce range.
+    - La valeur se situe obligatoirement dans un range d'entiers compris entre le premier et le dernier indice du tableau, soit respectivement 0 et 6. Il est important de ne pas utiliser un indice qui ne serait pas défini dans le tableau. 
+
+    - Une fois le range connu, pour déterminer de manière (pseudo) aléatoire un entier (fonctionnalité optionelle), on utilise une fonction native du langage. En PHP, il s'agit de la fonction `rand` ([PHP doc - rand](https://www.php.net/manual/fr/function.rand.php)) (hors cours). Dans ce cas, cette fonction reçoit en argument la limite inférieure et la limite supérieure du range, et retroune un entier compris dans ce range.
 
  4. Grâce à `$randomIndex`, on extrait l'entrée associée du tableau, que l'on affecte à la variable `$randomDwarf`. Concrètement, cette variable contient donc le prénom de l'un des 7 nains.
 
