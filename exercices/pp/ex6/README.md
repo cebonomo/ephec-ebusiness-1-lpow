@@ -40,7 +40,7 @@ $list = ['a', 'b', 'c'];
 $length = count($list); // int 3
 ```
 
-#### Indices
+#### Indices d'un tableau
 
 Dans un tableau indexé, chaque valeur est associé à un indice (ou index). Cet indice est un entier. Le premier indice est 0, et les indices suivants sont incrémentés. Le dernier indice vaut donc la longueur du tableau - 1.
 
@@ -50,9 +50,9 @@ Dans un tableau indexé, chaque valeur est associé à un indice (ou index). Cet
 
 Exemple pour l'array `['a', 'b', 'c']`:
 
-| **Indice** | 0 | 1 | 2 |
+| **Indices** | 0 | 1 | 2 |
 |------------|---|---|---|
-| **Entrée** | a | b | c |
+| **Entrées** | a | b | c |
 
 ##### PHP
 
