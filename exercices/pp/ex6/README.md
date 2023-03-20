@@ -4,7 +4,7 @@
 
 ### Types de tableau
 
- - [Tableaux indexés](./d1/)
+ - [Tableaux indexés simples](./d1/)
  - [Tableaux indexés à n dimensions](./dn/)
 
 ### Remarques théoriques
@@ -17,25 +17,61 @@ Il existe de nombreuses fonctions ou méthodes de manipulation de tableau. Toute
 
 #### Différentes formes de déclaration
 
-Tant en JS qu'en PHP, il existe plusieurs façon de déclarer un tableau. Je recommande la notation suivante, car plus récente et plus simple.
+Tant en JS qu'en PHP, il existe plusieurs façons de déclarer un tableau. Je recommande la notation suivante, car plus récente et plus simple.
 
 ##### PHP
 
 ```php
 $a = []; // initialisation d'un tableau vide
 $b = [1, 2, 3]; // initialisation d'un tableau contenant des exemples de valeurs (entiers) indexées
-$b = ['a' => 1, 'b' => 2, 'c' => 3]; // initialisation d'un tableau associatif contenant des exemples de valeurs (entiers) associées à des clés
+$c = ['a', 'b', 'c']; // string comme exemples de valeurs
+```
+
+#### La longueur d'un tableau
+
+La longueur d'un tableau correspond au nombre d'entrées de ce tableau, càd au nombre d'éléments présents dans le tableau. Tous les langages proposent une méthode pour connaître la longueur d'un tableau.
+
+##### PHP
+
+En PHP, la longueur d'un tableau peut être connue grâce à la fonction `count` ([PHP doc - count](https://www.php.net/manual/fr/function.count.php)).
+
+```php
+$list = ['a', 'b', 'c']; 
+$length = count($list); // int 3
+```
+
+#### Indices
+
+Dans un tableau indexé, chaque valeur est associé à un indice (ou index). Cet indice est un entier. Le premier indice est 0, et les indices suivants sont incrémentés. Le dernier indice vaut donc la longueur du tableau - 1.
+
+ - Premier indice: 0
+ - Indice suivants: 0++
+ - Dernier indice: longueur - 1
+
+Exemple pour l'array `['a', 'b', 'c']`:
+
+| **Indice** | 0 | 1 | 2 |
+|------------|---|---|---|
+| **Entrée** | a | b | c |
+
+##### PHP
+
+Pour extraire la valeur associé à un indice:
+
+```php
+$list = ['a', 'b', 'c']; 
+$b = $list[1]; // $b vaut 'b', car 'b' est associé à l'indice 1 du tableau $list
 ```
 
 #### Boucler sur un tableau
 
-La boucle "for" est habituellement utilisée pour boucler sur un tableau, avec éventuellement différentes variances.
-
-Il est possible, mais pas forcément recommandé, d'utiliser la notation du "for" incrémenté. Cette notation implique de connaître la longeur du tableau. La boucle ira ainsi de 0 jusqu'à la longueur exlue.
+La boucle "for" est habituellement utilisée pour boucler sur un tableau, avec éventuellement différentes variantes.
 
 ##### PHP
 
-##### for
+###### for
+
+Il est possible d'utiliser la notation du "for" incrémenté. Cette notation implique de connaître la longeur du tableau. La boucle ira ainsi de 0 jusqu'à la longueur exlue.
 
 En PHP, la longueur d'un tableau peut être connue grâce à la fonction `count` ([PHP doc - count](https://www.php.net/manual/fr/function.count.php)).
 
@@ -45,9 +81,9 @@ for ($i = 0, $length = count($array); $i < $length; $i++) {
 }
 ```
 
-##### foreach
+###### foreach
 
-En PHP, les boucles "foreach" sont à privilégier, car la notation est plus simple et l'exécution plus sûre (en PHP, il est possible qu'il manque un index dans tableau).
+En PHP, les boucles "foreach" sont à privilégier, car la notation est plus simple et l'exécution plus sûre.
 
 ```php
 foreach ($array as $value) {
