@@ -74,6 +74,8 @@ Ecrire un programme affichant l'indice (ou index) d'une valeur contenue dans un 
  
 Remplacer un élément de tableau selon son indice. Il s'agit de remplacer une entrée de l'indice x par une nouvelle valeur.
 
+[Correction](./corrections/write/1-replace/)
+
 #### 2. Split
  
 Ecrire un programme séparant, depuis une liste de nombres, les nombres strictements positifs, les 0 et les nombres strictement négatifs.

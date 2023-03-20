@@ -10,6 +10,6 @@ $dwarves = [
     'Atchoum',
 ];
 
-$dwarves[4] = 'Dur d\'oreille';
+$dwarves[5] = 'Dur d\'oreille';
 
 var_dump($dwarves);
