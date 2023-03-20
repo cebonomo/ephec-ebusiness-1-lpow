@@ -60,7 +60,7 @@ Le code permet de calculer la moyenne d'une liste de nombres.
  
  7. La variable `$average` est initialisée avec une valeur numérique. Cette variable représente la moyenne des nombres de la liste. Pour calculer cette moyenne, on divise `$sum` par `$length`, càd respectivement la somme des termes par le nombre de termes. Dans notre cas, on divise 9 par 3, ce qui donne une moyenne de 3.
 
-    Attention: ce code ne tient pas compte de la possibilité que le tableau peut être vide. Dans ce cas, la longueur équivaut à 0. Autrement dit, on réalise une division par 0, ce qu'il faut éviter.
+    **Attention:** ce code ne tient pas compte de la possibilité que le tableau peut être vide. Dans ce cas, la longueur équivaut à 0. Autrement dit, on réalise une division par 0, ce qu'il faut éviter.
 
     Pour éviter un tel problème, il faut tester la longueur:
 

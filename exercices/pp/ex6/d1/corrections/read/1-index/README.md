@@ -58,6 +58,8 @@ Le code affiche de manière aléatoire l'un des 7 nains de Blanche-Neige.
 
  4. Grâce à `$randomIndex`, on extrait l'entrée associée du tableau, que l'on affecte à la variable `$randomDwarf`. Concrètement, cette variable contient donc le prénom de l'un des 7 nains.
 
+    **Attention:** ce code ne fonction que sur un tableau non vide. Si le tableau est vide il ne possède aucun indice. Le code n'est donc pas valide pour un tel cas de figure.
+
  5. Le prénom est affiché.
 
 
