@@ -79,6 +79,8 @@ Remplacer un élément de tableau selon son indice. Il s'agit de remplacer une e
 #### 2. Split
  
 Ecrire un programme séparant, depuis une liste de nombres, les nombres strictements positifs, les 0 et les nombres strictement négatifs.
+
+[Correction](./corrections/write/2-split/)
  
 #### 3. Order (optionnel)
 
@@ -87,5 +89,7 @@ Ecrire une fonction classant par ordre croissant une liste de nombres.
 Algorithme:
 
 0. Soit un tableau de nombres.
-1. Pour chaque entrée du tableau, boucler sur chaque entrée. Autrement dit, imbriquer deux boucles iétrant sur le tableau. Il est important de travailler avec les indices du tableau => utiliser for plutôt que foreach.
+1. Pour chaque entrée du tableau, boucler sur chaque entrée. Autrement dit, imbriquer deux boucles itérant deux sur le tableau. On va ainsi croiser les données. Attention, il est important de travailler avec les indices du tableau => utiliser for plutôt que foreach.
 2. Si la valeur de i est plus petite que la valeur de j, intervertir les deux valeurs.
+
+[Correction](./corrections/write/3-order/)
