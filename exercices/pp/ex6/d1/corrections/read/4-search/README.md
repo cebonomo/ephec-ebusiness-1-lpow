@@ -75,7 +75,9 @@ Le code permet de trouver la première occurrence d'une valeur d'un tableau.
 
     2. Avec une boucle de type "for"/"foreach", une possibilité serait de tester la valeur de `$result`. Si elle comporte une valeur différente de la valeur initiale, c'est que cette valeur a été écrasée par un indice. Il ne faudrait donc plus écraser la variable pour la suite de la boucle.
  
-    3. Dans l'exemple de correction, dès lors que l'on a trouvé une occurence, on interrompt la boucle avec l'instruction `break` (cf. `switch`). Cette instruction permet de sortir de la boucle courante (comme elle permet de sortir du `switch`). La boucle se termine et la variable `$result` n'est pas écrasée.
+    3. Dans l'exemple de correction, dès lors que l'on a trouvé une occurence, on interrompt la boucle avec l'instruction `break` (cf. `switch`) (Hors cours). Cette instruction permet de sortir de la boucle courante (comme elle permet de sortir du `switch`). La boucle se termine et la variable `$result` n'est pas écrasée.
+
+    D'autres solutions sont envisageables pour contourner l'instruction `break`, comme l'utilisation d'une boucle "while" à la place d'une boucle "for" ou encore l'utilisation d'un "return" depuis une fonction.
 
 6. La variable `$result` est débuggée.
 
