@@ -100,6 +100,10 @@ foreach ($array as $key => $value) {
 }
 ```
 
+#### Manipulations
+
+Il existe de nombreuses fonctions ou méthodes de manipulation de tableau. Toutefois, cette matière n'est pas abordée au cours. Pour plus d'informations, voir la documentation.
+
 ### Documentations
 
 #### JS
