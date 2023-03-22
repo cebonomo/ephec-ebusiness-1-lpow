@@ -55,7 +55,7 @@ Afficher de manière dynamique une liste HTML. Cette liste provient d'un array d
 
 #### 5. Affichage du morpion (array indexé à 2 dimensions)
 
-Reprendre le jeu du morpion et afficher-le dans un tableau HTML. Les lignes gagnantes doivent être colorées en vert.
+Reprendre le jeu du morpion et l'afficher dans un tableau HTML.
 
 ### Remarques pratiques
 
