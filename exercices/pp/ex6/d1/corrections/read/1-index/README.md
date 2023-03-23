@@ -19,8 +19,8 @@ $dwarves = [
     'Atchoum',
 ];
 
-$length = count($dwarves);
-$randomIndex = rand(0, $length-1);
+$length = count($dwarves); // 7
+$randomIndex = rand(0, $length-1); // nombre compris entre 0 et 6
 
 $randomDwarf = $dwarves[$randomIndex];
 
