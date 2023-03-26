@@ -76,13 +76,13 @@ Le code permet de trouver la première occurrence d'une valeur d'un tableau.
 
     Si l'on avait continué à itérer, on serait tombé sur le doublon (par exemple en stockant l'indice dans une variable de résultat). L'indice trouvé serait alors celui de la dernière occurrence de la valeur recherchée (indice 5). Ceci n'est pas le comportement demandé. 
  
-    Pour empêcher un tel comportement, il existe plusieurs plusieurs autres possibilités:
+    A noter que, pour empêcher un tel comportement, il existe plusieurs autres possibilités, comme par exemple:
 
-    1. Il est possibile d'imaginer le même code avec une boucle "while" que l'on conditionnerait en fonction de l'état de la recherche.
+    - Il est possibile d'imaginer le même code avec une boucle "while" que l'on conditionnerait en fonction de l'état de la recherche.
 
-    2. Avec une boucle de type "for"/"foreach", une possibilité serait de tester la valeur de résultat et de conditionner son écrasement. Si elle comporte une valeur différente de la valeur initiale, c'est que cette valeur a été écrasée par un indice. Il ne faudrait donc plus écraser la variable pour la suite de la boucle.
+    - Avec une boucle de type "for"/"foreach", une possibilité serait de tester la valeur de résultat et de conditionner son écrasement. Si elle comporte une valeur différente de la valeur initiale, c'est que cette valeur a été écrasée par un indice. Il ne faudrait donc plus écraser la variable pour la suite de la boucle.
  
-    5. Il est possible d'opérer de la même façon hors d'une fonction. Pour cela, il faudrait utiliser l'instruction `break` (cf. `switch`) (hors cours). Cette instruction permet de sortir de la boucle courante (comme elle permet de sortir du `switch`). 
+    - Il est possible d'interrompre une boucle for, et donc d'opérer de la même façon qu'un `return` hors d'une fonction. Pour cela, il faudrait utiliser l'instruction `break` (cf. `switch`) (hors cours). Cette instruction permet de sortir de la boucle courante (comme elle permet de sortir du `switch`). 
 
     ```php
     $result = null; // pas 0 par défaut, car 0 est un index!

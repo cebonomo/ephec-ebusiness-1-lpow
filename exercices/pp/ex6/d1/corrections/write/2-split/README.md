@@ -51,20 +51,22 @@ Le code séparent les valeurs positives, négatives et null d'un tableau de nomb
     A noter que l'utilisation de l'instruction `continue` (hors cours) permettrait de passer directement à l'itération suivante, sans nécessiter de "else".
 
     ```php
-    // positifs
-    if ($number > 0) {
-        $positives[] = $number;
-        continue;
-    } 
+    foreach ($numbers as $number) {
+        // positifs
+        if ($number > 0) {
+            $positives[] = $number;
+            continue;
+        } 
 
-    // négatifs
-    if ($number < 0) {
-        $negatives[] = $number;
-        continue;
+        // négatifs
+        if ($number < 0) {
+            $negatives[] = $number;
+            continue;
+        }
+
+        // zéros
+        $zeros[] = $number;
     }
-
-    // zéros
-    $zeros[] = $number;
     ```
 
  5. On débugge les variables de résultats.
