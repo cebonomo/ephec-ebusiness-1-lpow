@@ -10,21 +10,13 @@ $positives = [];
 $negatives = [];
 
 foreach ($numbers as $number) {
-
-    // positifs
     if ($number > 0) {
         $positives[] = $number;
-        continue;
-    } 
-
-    // négatifs
-    if ($number < 0) {
+    } elseif ($number < 0) {
         $negatives[] = $number;
-        continue;
+    } else {
+        $zeros[] = $number;
     }
-
-    // zéros
-    $zeros[] = $number;
 }
 
 var_dump($zeros, $positives, $negatives);

@@ -1,5 +1,15 @@
 <?php
 
+function searchIndexOf($array, $search)
+{
+    foreach ($array as $index => $value) {
+        if ($search == $value) {
+            return $index;
+        }
+    }
+    return null; // valeur par défaut
+}
+
 $dwarves = [
     'Prof',
     'Joyeux',
@@ -11,14 +21,5 @@ $dwarves = [
     'Atchoum',
 ];
 
-$search = 'Timide';
-
-$result = null; // pas 0 par défaut, car 0 est un index!
-foreach ($dwarves as $index => $value) {
-    if ($search == $value) {
-        $result = $index;
-        break; // évite de trouver le second!
-    }
-}
-
+$result = searchIndexOf($dwarves , 'Timide');
 var_dump($result);

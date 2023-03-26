@@ -19,21 +19,13 @@ $positives = [];
 $negatives = [];
 
 foreach ($numbers as $number) {
-
-    // positifs
     if ($number > 0) {
         $positives[] = $number;
-        continue;
-    } 
-
-    // négatifs
-    if ($number < 0) {
+    } elseif ($number < 0) {
         $negatives[] = $number;
-        continue;
+    } else {
+        $zeros[] = $number;
     }
-
-    // zéros
-    $zeros[] = $number;
 }
 
 var_dump($zeros, $positives, $negatives);
@@ -56,16 +48,23 @@ Le code séparent les valeurs positives, négatives et null d'un tableau de nomb
     - Si le nombre courant est négatif (`$number < 0`), on l'ajoute à la fin de la liste des nombres négatifs `$negatives`.
     - Sinon, le nombre est nul, et on l'ajouter à la fin de la liste des nombres nuls `$zeros`.
 
-    A noter l'utilisation de `continue` (hors cours) qui permet de passer directement à l'itération suivante. Cette instruction aurait pu être contournée avec l'utilisation de "else".
+    A noter que l'utilisation de l'instruction `continue` (hors cours) permettrait de passer directement à l'itération suivante, sans nécessiter de "else".
 
     ```php
+    // positifs
     if ($number > 0) {
         $positives[] = $number;
-    } elseif ($number < 0) {
+        continue;
+    } 
+
+    // négatifs
+    if ($number < 0) {
         $negatives[] = $number;
-    } else {
-        $zeros[] = $number;
+        continue;
     }
+
+    // zéros
+    $zeros[] = $number;
     ```
 
  5. On débugge les variables de résultats.

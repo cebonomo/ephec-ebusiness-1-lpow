@@ -9,6 +9,16 @@ Le code ci-après est repris des fichiers de solution.
 ```php
 <?php
 
+function searchIndexOf($array, $search)
+{
+    foreach ($array as $index => $value) {
+        if ($search == $value) {
+            return $index;
+        }
+    }
+    return null; // valeur par défaut
+}
+
 $dwarves = [
     'Prof',
     'Joyeux',
@@ -20,16 +30,7 @@ $dwarves = [
     'Atchoum',
 ];
 
-$search = 'Timide';
-
-$result = null; // pas 0 par défaut, car 0 est un index!
-foreach ($dwarves as $index => $value) {
-    if ($search == $value) {
-        $result = $index;
-        break; // évite de trouver le second!
-    }
-}
-
+$result = searchIndexOf($dwarves , 'Timide');
 var_dump($result);
 ```
 
@@ -47,11 +48,15 @@ Le code permet de trouver la première occurrence d'une valeur d'un tableau.
 
     On remarque que l'on commence un tableau par l'indice 0!
 
- 2. La variable `$search` est initialisée avec la string "Timide". Cette variable représente la valeur à rechercher dans le tableau.
+ 2. La variable `$result` est initialisée avec le retour de l'appel de fonction `searchIndexOf`. Cette variable représente l'index de la valeur recherchée dans le tableau. 
+ 
+    La valeur de la variable sera donc un entier compris, dans notre cas, entre 0 et 7. Attention toutefois que la fonction retourne `null` si aucune valeur n'a été trouvée (voir ci-après).
+ 
+    Lors de l'appel, on passe à la fonction deux arguments: le tableau de recherche `$dwarves` et le terme de la recherche, soit la string "Timide". 
 
- 3. La variable `$result` est initialisée avec la valeur `null`. Cette variable représente l'indice de la valeur recherchée, selon la position de la valeur dans le tableau. La valeur finale de la variable sera donc un entier compris, dans notre cas, entre 0 et 7. Il est donc difficile de déterminer une valeur par défaut, car cette valeur doit différer de 0. En effet, imaginons qu'aucune occurence ne soit trouvée. Dans un tel cas, la valeur initiale de la variable ne sera pas écrasée. Il ne faut donc pas que cette valeur soit 0, car cela signifierait que la valeur se trouverait à l'indice 0, ce qui est faux. Pour cette raison, on doit prendre une valeur différente de toutes les valeurs possibles.
-
- 3. Pour trouver une valeur dans un tableau, il est nécessaire d'itérer sur chacune de ses valeurs à l'aide d'une boucle "for". Concrètement, la boucle "foreach" parcourt le tableau `$dwarves` et, lors de chaque itération, affecte la prochaine valeur de la liste à la variable `$value`, et, en même temps, affecte la clé associée (l'indice dans notre cas) à la variable `$index`.
+ 3. La fonction `searchIndexOf` permet de rechercher la valeur `$search` dans le tableau `$array` et de retourner l'index associé à la valeur. Dans notre exemple, le tableau de recherche est donc `$dwarves` et `$search` contient la string "Timide". 
+ 
+    Pour trouver une valeur dans un tableau, il est nécessaire d'itérer sur chacune de ses valeurs à l'aide d'une boucle. Concrètement, la boucle "foreach" parcourt le tableau `$array` et, lors de chaque itération, affecte la prochaine valeur de la liste à la variable `$value`, et, en même temps, affecte la clé associée (l'indice dans notre cas) à la variable `$index`.  
 
     Valeurs des variables lors de chaque itération:
 
@@ -65,20 +70,32 @@ Le code permet de trouver la première occurrence d'une valeur d'un tableau.
     | ...       | ...       |
 
 
- 4. Dès lors que la valeur de `$value` est identique à la valeur de `$search`, c'est qu'on a trouvé une occurence de la valeur recherchée. Etant donné que l'on demande l'indice, on affecte à la variable `$result` la valeur de `$index`, càd l'indice courant. Dans notre cas, l'indice est 4 (et pas 5).
+ 4. Dès lors que la valeur de `$value` est identique à la valeur de `$search`, c'est qu'on a trouvé une occurence de la valeur recherchée. Etant donné que l'on demande l'indice, la fonction retourne l'indice trouvé.
 
- 5. Si l'on continue à itérer, on peut, en cas de doublon, retomber dans le cas précédent et écraser la valeur de `$result`. L'indice trouvé serait alors celui de la dernière occurrence de la valeur recherchée (indice 5). Ceci n'est pas le comportement demandé. 
+    Le fait de retourner directement l'indice permet d'interrompre la boucle. Autrement dit, on retourne seulement le résultat pour la première occurrence trouvée. Dans notre cas, l'indice est 4 (et pas 5).
+
+    Si l'on avait continué à itérer, on serait tombé sur le doublon (par exemple en stockant l'indice dans une variable de résultat). L'indice trouvé serait alors celui de la dernière occurrence de la valeur recherchée (indice 5). Ceci n'est pas le comportement demandé. 
  
-    Pour empêcher cela, plusieurs possibilités:
+    Pour empêcher un tel comportement, il existe plusieurs plusieurs autres possibilités:
 
     1. Il est possibile d'imaginer le même code avec une boucle "while" que l'on conditionnerait en fonction de l'état de la recherche.
 
-    2. Avec une boucle de type "for"/"foreach", une possibilité serait de tester la valeur de `$result`. Si elle comporte une valeur différente de la valeur initiale, c'est que cette valeur a été écrasée par un indice. Il ne faudrait donc plus écraser la variable pour la suite de la boucle.
+    2. Avec une boucle de type "for"/"foreach", une possibilité serait de tester la valeur de résultat et de conditionner son écrasement. Si elle comporte une valeur différente de la valeur initiale, c'est que cette valeur a été écrasée par un indice. Il ne faudrait donc plus écraser la variable pour la suite de la boucle.
  
-    3. Dans l'exemple de correction, dès lors que l'on a trouvé une occurence, on interrompt la boucle avec l'instruction `break` (cf. `switch`) (Hors cours). Cette instruction permet de sortir de la boucle courante (comme elle permet de sortir du `switch`). La boucle se termine et la variable `$result` n'est pas écrasée.
+    5. Il est possible d'opérer de la même façon hors d'une fonction. Pour cela, il faudrait utiliser l'instruction `break` (cf. `switch`) (hors cours). Cette instruction permet de sortir de la boucle courante (comme elle permet de sortir du `switch`). 
 
-    D'autres solutions sont envisageables pour contourner l'instruction `break`, comme l'utilisation d'une boucle "while" à la place d'une boucle "for" ou encore l'utilisation d'un "return" depuis une fonction.
+    ```php
+    $result = null; // pas 0 par défaut, car 0 est un index!
+    foreach ($array as $index => $value) {
+        if ($search == $value) {
+            $result = $index;
+            break; // évite de trouver le second!
+        }
+    }
+    ```
 
-6. La variable `$result` est débuggée.
+ 5. La fonction retourne la valeur `null` par défaut, càd que cette valeur est retournée si aucune occurrence du terme de recher n'a été trouvée. Il est difficile de déterminer une valeur par défaut dans ce cas, car cette valeur doit différer de 0, qui est une valeur d'index valide.
+
+ 6. La variable `$result` est débuggée.
 
 
