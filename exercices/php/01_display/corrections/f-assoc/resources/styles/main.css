@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "HM Sans Regular";
+    src: url("https://s1-cdn.hm.com/global/fonts/4.0.15/hm/font/HMSans-Regular.woff2");
+}
+
+@font-face {
+    font-family: "HM Sans Semi Bold";
+    src: url("https://s1-cdn.hm.com/global/fonts/4.0.15/hm/font/HMSans-SemiBold.woff2");
+}
+
+* {
+    font-family: "HM Sans Regular","MS PGothic",sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #faf9f8;
+    max-width: 1064px;
+    margin: 20px auto;
+}
+
+body.sitcky {
+    margin-top: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sitcky header { 
+    position: sticky;
+    top: 0px;
+    background: #faf9f8;
+    padding: 15px;
+ 
+}
+
+img.logo {
+    width: 10%;
+}
+
+h1 {
+    font-family:  "HM Sans Semi Bold","MS PGothic",sans-serif;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.sitcky h1 {
+    position: sticky;
+    top: 20px;
+    margin-top: -20px;
+}
+
+.articles {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+.marketing-marker {
+    font-size: 11px;
+    color: #222;
+    min-height: 20px;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    text-transform: none;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.item-price {      
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.item-color {
+    border-radius: 50%;
+    display: block;
+    height: 8px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 8px;
+    margin-top: 5px;
+}
+
+.gallery img {
+    display: none;
+}
+
+.gallery img:first-of-type {
+    display: inline-block;
+}

@@ -57,6 +57,7 @@ Afficher de manière dynamique une liste HTML. Cette liste provient d'un array d
 
 Reprendre le jeu du morpion et l'afficher dans un tableau HTML.
 
+
 ### Remarques pratiques
 
 #### Afficher du texte
