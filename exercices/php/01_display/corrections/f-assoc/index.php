@@ -1,6 +1,6 @@
 <?php
 
-$articles = include './data/products/articles.php';
+$articles = include 'articles.php';
 
 ?><!DOCTYPE html>
 <html lang="fr">

@@ -63,8 +63,8 @@ Créer une page web d'un site proposant une liste de produits.
 
 Dans un "vrai" site, les données sur les produits proviendraient d'une base de données. Pour faire simple, nous simulerons la récupération de ces données en les écirvant en dur en PHP, dans un tableau associatif. 
 
-  - Exemple de données: [data/products/articles.php](./corrections/f-assoc/data/products/articles.php).
-  - Exemple d'inclusion des données (data/products/articles.php) dans la page principale (hors cours): `$articles = include './data/products/articles.php';`
+  - Exemple de données: [articles.php](./corrections/f-assoc/articles.php).
+  - Exemple d'inclusion des données (data/products/articles.php) dans la page principale (hors cours): `$articles = include 'articles.php';`
   - Exemple de template: [index.html](./templates/f-assoc/index.html)
 
   ![H&M](../../../resources/images/hm.png)
