@@ -5,7 +5,7 @@ $articles = include 'articles.php';
 ?><!DOCTYPE html>
 <html lang="fr">
     <head>
-        <base>https://cdn.jsdelivr.net/gh/Raphhh/ephec-lpow-tp@masterexercices/php/01_display/corrections/f-assoc/</base>
+    <base href="https://cdn.jsdelivr.net/gh/Raphhh/ephec-lpow-tp@master/exercices/php/01_display/templates/f-assoc/"></base>
         <title>H&M edition</title>
         <link href="./resources/styles/main.css" rel="stylesheet"></link>
         <link rel="icon" type="image/vnd.microsoft.icon" href="https://www2.hm.com/etc.clientlibs/settings/wcm/designs/hm/clientlibs/shared/resources/favicon/favicon.ico">
