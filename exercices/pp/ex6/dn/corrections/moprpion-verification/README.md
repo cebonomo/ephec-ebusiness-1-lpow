@@ -65,12 +65,4 @@ var_dump($result);
 
 3. Une seconde boucle "foreach" parcourt la seconde dimension du tableau. Cette dimension représnte les cellules de chaque ligne. Chaque cellule (`$cell`) contient une valeur à tester.
 
-4. La variable `$rowResult` est initialisée avec la valeur par défaut `true`. Cette variable représente le resultat de la ligne tel qu'il nous faut encore le déterminer.
-
-5. On teste la valeur de chaque cellule de la ligne. Dès lors qu'une de ces valeurs ne contient pas la valeur de référence, c'est que la ligne entière est mauvaise. C'est pourquoi, par défaut, `$rowResult` vaut `true`, mais que si une seule cellule n'est pas correcte, `$rowResult` vaut `false`.
-
-    On note l'utilisation de l'instruction `break` (hors cours). Celle-ci permet d'interrompre la boucle courrante (celle des cellules). Dans ce cas-ci, cette instruction n'est pas obligatoire: le résultat ne serait pas modifié en l'abscence de l'instruction. Elle permet juste d'épargner du temps de calcul en racourciçant la boucle.
-
-6. Dès qu'une ligne est correcte, càd que `$rowResult` vaut `true` après avoir parcouru toutes les cellules, on considère que le jeu est valide. On retourne `true`. 
-
-7. Si on arrive à la fin de la fonction, c'est qu'on n'a pas retourné `true` parce qu'aucune ligne n'était valide. Autrement dit, il faut retourner `false`.
+TODO!!!!
