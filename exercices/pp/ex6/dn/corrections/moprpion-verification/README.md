@@ -6,107 +6,42 @@ Le code ci-après est repris des fichiers de solution.
 
 ### PHP
 
-#### Test des lignes horizontales avec foreach et retour en booléen
-
 ```php
 <?php
 
+function testRow($row, $value)
+{
+    $score = 0;
+    $suite = 0;
+    foreach ($row as $cell) {
+
+        if ($cell == $value) {
+            $suite++;
+        } else {
+            $suite = 0; 
+        }
+
+        if ($suite == 5) {
+            $score++;
+        }
+    }
+    return $score;
+}
+
 function testRows($game, $value) 
 {
+    $score = 0;
     foreach ($game as $row) {
-        $rowResult = true;
-        foreach ($row as $cell) {
-            if ($cell != $value) {
-                $rowResult = false; 
-                break;
-            }
-        }
-        if ($rowResult) {
-            return true;
-        }
+       $score += testRow($row, $value);
     }
-
-    return false;
+    return $score;
 }
 
 
 $game = [
-  ['', 'x', 'o'],
-  ['x', 'x', 'x'],
-  ['o', 'o', 'o'],
-];
-
-$result = testRows($game, 'x');
-var_dump($result);
-
-$result = testRows($game, 'o');
-var_dump($result);
-```
-
-#### Test des lignes horizontales avec foreach et retour en tableau 
-
-```php
-<?php
-
-function testRows($game, $value) 
-{
-    $result = [];
-
-    foreach ($game as $row) {
-        $rowResult = true;
-        foreach ($row as $cell) {
-            if ($cell != $value) {
-                $rowResult = false; 
-                break;
-            }
-        }
-        $result[] = $rowResult;
-    }
-
-    return $result;
-}
-
-
-$game = [
-  ['', 'x', 'o'],
-  ['x', 'x', 'x'],
-  ['o', 'o', 'o'],
-];
-
-$result = testRows($game, 'x');
-var_dump($result);
-
-$result = testRows($game, 'o');
-var_dump($result);
-```
-
-#### Test des lignes horizontales avec for et retour en tableau 
-
-```php
-<?php
-
-function testRows($game, $value) 
-{
-    $result = [];
-    for ($i = 0, $rowLength = count($game); $i < $rowLength; $i++) {
-        $rowResult = true;
-        for ($j = 0, $colLength = count($game[$i]); $j < $colLength; $j++) {
-            if ($game[$i][$j] != $value) {
-                $rowResult = false; 
-                break;
-            }
-        }
-        $result[] = $rowResult;
-    }
-
-    return $result;
-}
-
-
-$game = [
-  ['', 'x', 'o'],
-  ['x', 'x', 'x'],
-  ['o', 'o', 'o'],
+  ['o', 'x', 'x', 'x', 'x', 'o', 'x', 'x', 'x', 'x', 'x', 'o'],
+  ['x', 'x', 'x', 'x', 'x', 'x', 'o', 'x', 'x', 'x', 'x', 'x'],
+  ['o', 'o', 'o', 'o', 'o', 'o', 'x', 'x', 'x', 'x', 'x', 'x'],
 ];
 
 $result = testRows($game, 'x');

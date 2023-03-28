@@ -2,10 +2,6 @@
 
 ## Exercices 6: tableaux associatifs (PHP)
 
-### Types de tableau
-
- - [Tableaux associatifs à n dimensions](./dn/).
-
 ### Remarques théoriques
 
 #### En JS
