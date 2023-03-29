@@ -65,6 +65,21 @@ $list = ['a', 'b', 'c'];
 $b = $list[1]; // $b vaut 'b', car 'b' est associé à l'indice 1 du tableau $list
 ```
 
+Pour écraser la valeur associée à un indice:
+
+```php
+$list = ['a', 'b', 'c']; 
+$list[1] = 'B';
+```
+
+POur rajouter une valeur en fin de tableau:
+
+```php
+$list = ['a', 'b', 'c']; 
+$list[] = 'd'; // l'indice de 'd' sera 3
+$d = $list[3]; // $d vaut 'd'
+```
+
 #### Boucler sur un tableau
 
 La boucle "for" est habituellement utilisée pour boucler sur un tableau, avec éventuellement différentes variantes.

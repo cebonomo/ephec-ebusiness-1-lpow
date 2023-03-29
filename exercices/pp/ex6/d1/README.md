@@ -78,7 +78,7 @@ Remplacer un élément de tableau selon son indice. Il s'agit de remplacer une e
 
 #### 2. Split
  
-Ecrire un programme séparant, depuis une liste de nombres, les nombres strictements positifs, les 0 et les nombres strictement négatifs.
+Ecrire un programme séparant, depuis une liste de nombres, les nombres strictement positifs, les 0 et les nombres strictement négatifs.
 
 [Correction](./corrections/write/2-split/)
  
