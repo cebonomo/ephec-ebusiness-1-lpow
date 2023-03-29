@@ -69,7 +69,7 @@ Dans un "vrai" site, les données sur les produits proviendraient d'une base de 
   - Exemple d'inclusion des données (data/products/articles.php) dans la page principale (hors cours): `$articles = include 'articles.php';` (code à inclure depuis index.php).
   - Exemple de template: [index.html](./templates/f-assoc/index.html) (HTML de base sur lequel travailler).
 
-  ![H&M](../../../resources/images/hm.png)
+  ![H&M](../../../resources/images/hm-small.png)
 
 ### Remarques pratiques
 
