@@ -55,7 +55,7 @@ $articles = [
             <?php } ?>
         </div>
         <div>
-            <p class="marketing-marker">
+            <p>
                 <?php if ($article['isPremium']) { ?>
                     Premium Selection
                 <?php } ?>
