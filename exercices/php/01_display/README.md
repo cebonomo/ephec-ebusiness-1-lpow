@@ -57,11 +57,13 @@ Afficher de manière dynamique une liste HTML. Cette liste provient d'un array d
 
 Reprendre le jeu du morpion et l'afficher dans un tableau HTML.
 
+![Morpion](../../../resources/images/morpion.png)
+
 #### 6. Affichage d'une page de site marchand (array associatif).
 
 Créer une page web d'un site proposant une liste de produits. 
 
-Dans un "vrai" site, les données sur les produits proviendraient d'une base de données. Pour faire simple, nous simulerons la récupération de ces données en les écirvant en dur en PHP, dans un tableau associatif. 
+Dans un "vrai" site, les données sur les produits proviendraient d'une base de données. Pour faire simple, nous simulerons la récupération de ces données en les écrivant en dur en PHP, dans un tableau associatif. 
 
   - Exemple de données: [articles.php](./corrections/f-assoc/articles.php) (fichier à importer).
   - Exemple d'inclusion des données (data/products/articles.php) dans la page principale (hors cours): `$articles = include 'articles.php';` (code à inclure depuis index.php).
