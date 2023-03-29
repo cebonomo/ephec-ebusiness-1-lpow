@@ -59,6 +59,8 @@ Reprendre le jeu du morpion et l'afficher dans un tableau HTML.
 
 ![Morpion](../../../resources/images/morpion.png)
 
+[Correction](./corrections/e-list2d/)
+
 #### 6. Affichage d'une page de site marchand (array associatif).
 
 Créer une page web d'un site proposant une liste de produits. 
