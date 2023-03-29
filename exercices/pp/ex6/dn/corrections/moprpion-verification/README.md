@@ -62,9 +62,7 @@ var_dump($result);
 
 ## Explications
 
-### Selon les versions
-
-#### Test des lignes horizontales avec foreach et retour en booléen
+Le code compte le nombre de points de manière horizontale.
 
 1. La fonction `testRows` vérifie les alignements horizontaux. Elle reçoit deux arguments: 
     - `$game` est un tableau à 2 dimensions contenant l'état du jeu.
