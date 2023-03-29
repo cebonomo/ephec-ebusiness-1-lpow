@@ -29,13 +29,14 @@ En PHP, la récupération des données du formulaire transmises en HTTP peut se 
 
 Soit le formulaire HTML suivant:
 ```html
-<form method="post" action="">
+<form method="post" action="form.php">
     <input name="pet" value="petit chaton">
 </form>
 ```
 Lorsque le formulaire est envoyé, on retrouve les valeurs suivantes dans PHP:
 ```php
 <?php
+// fichier form.php
 
 if (isset($_POST['pet'])) { // si la clé existe (càd si le formulaire a été envoyé avec ce champ)
     echo $_POST['pet']; // affiche "petit chaton"
