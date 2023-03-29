@@ -78,7 +78,7 @@ Le code compte le nombre de points de manière horizontale.
     - `$row` est un tableau contenant les valeurs des cellules de la ligne.
     - `$value` est une string représentant la valeur à tester (soit "x", soit "o").
 
-6. Dans la fonction `testRow`, la variable `$score` est initialisée avec la valeu numérique 0. Cette variable représente le score de la ligne, lequel sera retourné en fin de fonction.
+6. Dans la fonction `testRow`, la variable `$score` est initialisée avec la valeur numérique 0. Cette variable représente le score de la ligne, lequel sera retourné en fin de fonction.
 
 7. La variable `$suite` est initialisée avec la valeur numérique 0. Cette variable représente le nombre de valeurs trouvées d'affilée. On doit trouver 5 valeurs d'affilée pour bénéficier de 1 point.
 
