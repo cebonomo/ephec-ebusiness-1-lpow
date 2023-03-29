@@ -22,6 +22,8 @@ Dans un programme, déclarer un tableau associatif contenant les informations d'
 | color | array associatif |`['title' => 'Noir', 'value' => '#272628']`|
 | images | array indexé | `['image1.png', 'image2.png']` |
 
+[Correction](./corrections/a-product/)
+
 ### Remarques théoriques
 
 #### En JS
