@@ -35,7 +35,7 @@ A noter que, en PHP, on peut utiliser la constante native `PHP_EOL` ([PHP doc - 
 
 ### Chemin de fichier
 
-Plusieurs types de chemin de fichier peuvent être passés en argument. S'il s'agit d'un chemin relatif vers un fichier présent sur le serveur, ce qui sera souvent le cas, le chemin absolu est établi d'après le "CWD" (current working directory), c'est-à-dire le répertoire contenant le script principal appelé (souvent celui référencé dans l'URL). Le CWD va donc changer en fonction de l'emplacement du script appelé.
+A noter que plusieurs types de chemin de fichier peuvent être passés en argument. S'il s'agit d'un chemin relatif vers un fichier présent sur le serveur, ce qui sera souvent le cas, le chemin absolu est établi d'après le "CWD" (current working directory), c'est-à-dire le répertoire contenant le script principal appelé (souvent celui référencé dans l'URL). Le CWD va donc changer en fonction de l'emplacement du script appelé.
 
 ```php
 <?php
@@ -50,6 +50,8 @@ Pour plus d'information (notions avancées, hors cours), voir l'article de [phpd
 ### Accessibilité d'un fichier (hors cours)
 
 A noter que la fonction `fopen` peut émettre une erreur si le fichier n'existe pas ou s'il n'est pas accessible en lecture et/ou en écriture. Une bonne pratique consiste donc à tester l'accessibilité du fichier au préalable de toute manipulation.
+
+Exemple:
 
 ```php
 <?php
