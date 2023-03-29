@@ -73,6 +73,8 @@ Dans un "vrai" site, les données sur les produits proviendraient d'une base de 
 
   ![H&M](../../../resources/images/hm-small.png)
 
+[Correction](./corrections/f-assoc/)
+
 ### Remarques pratiques
 
 #### Afficher du texte

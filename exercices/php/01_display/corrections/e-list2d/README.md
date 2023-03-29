@@ -1,6 +1,6 @@
 # PHP - display - corrections
 
-## array 2d
+## array 2d (mporion)
 
 Pour le code complet, voir le fichier [index.php](./index.php).
 
@@ -37,12 +37,14 @@ for ($i = 0; $i < $size; $i++) {
 
 #### Affichage de la grille
 
+(Afin de simplifier l'affichage, les classes CSS ne sont pas reprises ici. Voir fichiers complets.)
+
 ```php
 <table>
 <?php foreach ($game as $row) { ?>
     <tr>
         <?php foreach ($row as $cell) { ?>
-            <td class="<?php echo $cell; ?>"><?php echo $cell; ?></td>
+            <td><?php echo $cell; ?></td>
         <?php } ?>
     </tr>
 <?php } ?>
