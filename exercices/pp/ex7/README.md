@@ -2,6 +2,26 @@
 
 ## Exercices 6: tableaux associatifs (PHP)
 
+### Objectifs
+
+ 1. Savoir déclarer un tableau associatif.
+
+ 2. Savoir accéder au valeur depuis une clé.
+
+### Enoncés
+
+#### 1. Création d'un produit
+
+Dans un programme, déclarer un tableau associatif contenant les informations d'un produit de catalogue.
+
+| Clé | Type | Exemple de valeur |
+|-----|------|-------------------|
+| isPremium | bool | true |
+| title | string | Pantalon ample en lin |
+| price | string | 69,99 € |
+| color | array associatif |`['title' => 'Noir', 'value' => '#272628']`|
+| images | array indexé | `['image1.png', 'image2.png']` |
+
 ### Remarques théoriques
 
 #### En JS
