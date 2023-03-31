@@ -67,11 +67,16 @@ Créer une page web d'un site proposant une liste de produits.
 
 Dans un "vrai" site, les données sur les produits proviendraient d'une base de données. Pour faire simple, nous simulerons la récupération de ces données en les écrivant en dur en PHP, dans un tableau associatif. 
 
-  - Exemple de données: [articles.php](./corrections/f-assoc/articles.php) (fichier à importer).
-  - Exemple d'inclusion des données (data/products/articles.php) dans la page principale (hors cours): `$articles = include 'articles.php';` (code à inclure depuis index.php).
-  - Exemple de template: [index.html](./templates/f-assoc/index.html) (HTML de base sur lequel travailler).
+Etapes d'intégration:
 
-  ![H&M](../../../resources/images/hm-small.png)
+  1. Copier le template [index.html](./templates/f-assoc/index.html) et coller le dans un fichier PHP, lequel fichier sera la page principale.
+  2. Télécharger le fichier de données [articles.php](./corrections/f-assoc/articles.php) et placer ce fichier dans le même répertoire que le fichier PHP de la page principale.
+  3. Inclure le fichier de données dans la page principale (hors cours): `$articles = include 'articles.php';`. La variable `$articles` contient désormais les données présentes dans le fichier `article.php`. Il faut imaginer que cette variable a été alimentée depuis une base de donnnées, par exemple.
+  4. Modifier le HTML de la page principale pour afficher les données contenues dans la variable `$articles`.
+  
+Résultat attendu:
+
+![H&M](../../../resources/images/hm-small.png)
 
 [Correction](./corrections/f-assoc/)
 
