@@ -71,8 +71,8 @@ Ecrire un programme affichant l'indice (ou index) d'une valeur contenue dans un 
 ### Enoncés
 
 #### 1. Remplacement
- 
-Remplacer un élément de tableau selon son indice. Il s'agit de remplacer une entrée de l'indice x par une nouvelle valeur.
+
+Ecrire un programme remplaçant, au sein d'un tableau, toutes les occurrences d'une valeur par une valeur de remplacement. Par exemple, pour le tableau `['a', 'b', 'c']`, si on désire remplacer la valeur "b" par la valeur "B", le tableau après modification sera `['a', 'B', 'c']`.
 
 [Correction](./corrections/write/1-replace/)
 

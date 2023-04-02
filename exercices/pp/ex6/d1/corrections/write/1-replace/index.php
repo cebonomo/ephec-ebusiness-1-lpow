@@ -10,6 +10,13 @@ $dwarves = [
     'Atchoum',
 ];
 
-$dwarves[5] = 'Dur d\'oreille';
+$search = 'Simplet';
+$replacement = 'Dur d\'oreille';
+
+foreach ($dwarves as $index => $dwarf) {
+    if ($dwarf == $search) {
+        $dwarves[$index] = $replacement;
+    }
+}
 
 var_dump($dwarves);
