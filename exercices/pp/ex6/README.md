@@ -72,7 +72,7 @@ $list = ['a', 'b', 'c'];
 $list[1] = 'B';
 ```
 
-POur rajouter une valeur en fin de tableau:
+Pour rajouter une valeur en fin de tableau:
 
 ```php
 $list = ['a', 'b', 'c']; 
@@ -82,7 +82,7 @@ $d = $list[3]; // $d vaut 'd'
 
 #### Boucler sur un tableau
 
-La boucle "for" est habituellement utilisée pour boucler sur un tableau, avec éventuellement différentes variantes.
+La boucle "for" est habituellement utilisée pour boucler sur un tableau (puisque la longueur du tableua étant connue, le nombre d'itérations de la boucle l'est également), avec éventuellement différentes variantes, bien que rien n'exclut d'utiliser une boucle "while" (puisque une telle boucle peut tout faire).
 
 ##### PHP
 
