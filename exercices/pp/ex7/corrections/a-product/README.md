@@ -2,7 +2,7 @@
 
 Le code ci-après est repris des fichiers de solution.
 
-## Array associ (produit)
+## Déclaration d'un array associatif (produit)
 
 ### PHP
 

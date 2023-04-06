@@ -24,6 +24,10 @@ Dans un programme, déclarer un tableau associatif contenant les informations d'
 
 [Correction](./corrections/a-product/)
 
+#### 2. Calculs 2d
+
+Ecrire une fonction qui reçoit un tableau à deux dimensions de nombres. La fonction retourne un tableau associatif contenant le total, la somme et la moyenne de ces nombres.
+
 ### Remarques théoriques
 
 #### En JS
