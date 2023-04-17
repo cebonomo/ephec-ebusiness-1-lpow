@@ -23,15 +23,19 @@ function getRandomValue()
    }
 }
 
-$size = 6;
-
-$grid = [];
-for ($i = 0; $i < $size; $i++) {
-   $grid[$i] = [];
-   for ($j = 0; $j < $size; $j++) {
-      $grid[$i][$j] = getRandomValue();
+function generateGrid($size)
+{
+   $grid = [];
+   for ($i = 0; $i < $size; $i++) {
+      $grid[$i] = [];
+      for ($j = 0; $j < $size; $j++) {
+         $grid[$i][$j] = getRandomValue();
+      }
    }
+   return $grid;
 }
+
+$grid = generateGrid(6);
 
 ```
 
