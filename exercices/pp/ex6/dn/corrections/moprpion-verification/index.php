@@ -1,42 +1,42 @@
 <?php
 
-function testRow($row, $value)
+function calculateScoreRow($row, $value)
 {
     $score = 0;
-    $suite = 0;
+    $counter = 0;
     foreach ($row as $cell) {
 
         if ($cell == $value) {
-            $suite++;
-            if ($suite == 5) {
+            $counter++;
+            if ($counter == 5) {
                 $score++;
-                $suite = 0;
+                $counter = 0;
             }
         } else {
-            $suite = 0; 
+            $counter = 0; 
         }
 
     }
     return $score;
 }
 
-function testRows($game, $value) 
+function calculateScoreGrid($grid, $value) 
 {
     $score = 0;
-    foreach ($game as $row) {
-       $score += testRow($row, $value);
+    foreach ($grid as $row) {
+       $score += calculateScoreRow($row, $value);
     }
     return $score;
 }
 
-$game = [
+$grid = [
     ['o', 'x', 'x', 'x', 'x', 'o', 'x', 'x', 'x', 'x', 'x', 'o'],
     ['x', 'x', 'x', 'x', 'x', 'x', 'o', 'x', 'x', 'x', 'x', 'x'],
     ['o', 'o', 'o', 'o', 'o', 'o', 'x', 'x', 'x', 'x', 'x', 'x'],
   ];
   
-$result = testRows($game, 'x');
+$result = calculateScoreGrid($grid, 'x');
 var_dump($result);
 
-$result = testRows($game, 'o');
+$result = calculateScoreGrid($grid, 'o');
 var_dump($result);

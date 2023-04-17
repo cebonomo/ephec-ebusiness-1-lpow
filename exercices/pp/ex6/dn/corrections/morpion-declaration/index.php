@@ -14,12 +14,12 @@ function getRandomValue()
 
 $size = 6;
 
-$game = [];
+$grid = [];
 for ($i = 0; $i < $size; $i++) {
-   $game[$i] = [];
+   $grid[$i] = [];
    for ($j = 0; $j < $size; $j++) {
-      $game[$i][$j] = getRandomValue();
+      $grid[$i][$j] = getRandomValue();
    }
 }
 
-var_dump($game);
+var_dump($grid);

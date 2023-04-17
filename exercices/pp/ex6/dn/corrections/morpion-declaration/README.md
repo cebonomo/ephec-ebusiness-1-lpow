@@ -23,15 +23,15 @@ function getRandomValue()
 
 $size = 6;
 
-$game = [];
+$grid = [];
 for ($i = 0; $i < $size; $i++) {
-   $game[$i] = [];
+   $grid[$i] = [];
    for ($j = 0; $j < $size; $j++) {
-      $game[$i][$j] = getRandomValue();
+      $grid[$i][$j] = getRandomValue();
    }
 }
 
-var_dump($game);
+var_dump($grid);
 ```
 
 ## Explications
@@ -40,7 +40,7 @@ Le code déclare un tableau à deux dimensions de taille 6x6 et contenant, de ma
 
 1. La variable `$size` est initialisée avec la valeur numérique 6. Cette variable représente la taille de la grille du jeu de morpion, pour chacune de ses deux dimensions.
 
-2. La variable `$game` est initialisée avec un tableau vide. Cette variable représente la grille du jeu de morpion, tel qu'elle doit encore être modifiée à sa taille correcte. Pour le moment, seule la première dimension a été initialisée. Cette première dimension correspond aux lignes du jeu.
+2. La variable `$grid` est initialisée avec un tableau vide. Cette variable représente la grille du jeu de morpion, tel qu'elle doit encore être modifiée à sa taille correcte. Pour le moment, seule la première dimension a été initialisée. Cette première dimension correspond aux lignes du jeu.
 
 3. Une première boucle "for" permet de modifier la première dimension de la grille. Pour modifier cette première dimension selon la taille souhaitée, on itère de 0 à `$size`. Attention que l'on commence la boucle à 0 pour s'ajuster sur la logique des indices (index) des tableaux qui comment également à 0.
 

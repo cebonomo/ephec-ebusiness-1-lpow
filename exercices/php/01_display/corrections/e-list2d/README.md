@@ -25,11 +25,11 @@ function getRandomValue()
 
 $size = 6;
 
-$game = [];
+$grid = [];
 for ($i = 0; $i < $size; $i++) {
-   $game[$i] = [];
+   $grid[$i] = [];
    for ($j = 0; $j < $size; $j++) {
-      $game[$i][$j] = getRandomValue();
+      $grid[$i][$j] = getRandomValue();
    }
 }
 
@@ -41,7 +41,7 @@ for ($i = 0; $i < $size; $i++) {
 
 ```php
 <table>
-<?php foreach ($game as $row) { ?>
+<?php foreach ($grid as $row) { ?>
     <tr>
         <?php foreach ($row as $cell) { ?>
             <td><?php echo $cell; ?></td>
@@ -55,7 +55,7 @@ for ($i = 0; $i < $size; $i++) {
 
 Ce code permet de générer un document HTML contenant une grille du jeu du morpion
 
-1. La variable `$game` ets initialisée avec un tableau à 2d. Pour cette partie, se référer aux exercices de principes de programmation.
+1. La variable `$grid` ets initialisée avec un tableau à 2d. Pour cette partie, se référer aux exercices de principes de programmation.
 
 2. Dans le "body" du document, on crée un tableau HTML avec la balise "table".
 

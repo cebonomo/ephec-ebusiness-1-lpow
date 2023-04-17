@@ -14,11 +14,11 @@ function getRandomValue()
 
 $size = 6;
 
-$game = [];
+$grid = [];
 for ($i = 0; $i < $size; $i++) {
-   $game[$i] = [];
+   $grid[$i] = [];
    for ($j = 0; $j < $size; $j++) {
-      $game[$i][$j] = getRandomValue();
+      $grid[$i][$j] = getRandomValue();
    }
 }
 
@@ -49,7 +49,7 @@ for ($i = 0; $i < $size; $i++) {
     </head>
     <body>
         <table>
-        <?php foreach ($game as $row) { ?>
+        <?php foreach ($grid as $row) { ?>
             <tr>
                 <?php foreach ($row as $cell) { ?>
                     <td class="<?php echo $cell; ?>"><?php echo $cell; ?></td>
