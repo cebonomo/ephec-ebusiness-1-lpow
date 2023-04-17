@@ -39,11 +39,11 @@ Ce problème étant avancé, il est intéressant de construire des versions diff
  2. Pour chaque ligne, parcourir chaque cellule et compter le nombre de fois que le signe recherché ("x" ou "o") est présent d'affilée.
  
   Pour cela:
-  
-    - Si la cellule contient le signe recherché, incrémenter un compteur.
-    - Si la cellule ne contient PAS le signe recherché, réinitialiser le compteur.
-    - Dès que le compteur atteint 5, incrémenter le score de la ligne et réinitialiser le compteur.
-    - Retourner le score final de la ligne.
+
+  - Si la cellule contient le signe recherché, incrémenter un compteur.
+  - Si la cellule ne contient PAS le signe recherché, réinitialiser le compteur.
+  - Dès que le compteur atteint 5, incrémenter le score de la ligne et réinitialiser le compteur.
+  - Retourner le score final de la ligne.
 
 [Correction](./corrections/moprpion-verification/)
 
