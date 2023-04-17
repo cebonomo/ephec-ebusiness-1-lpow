@@ -16,7 +16,7 @@
  
 Soit une grille de [jeu du morpion](https://fr.wikipedia.org/wiki/Morpion_(jeu)) contenant 3 valeurs possibles ("", "o" et "x").
 
-Déclarer un exemple de grille de taille x (x lignes sur x colonnes).
+Déclarer un exemple de grille de taille n (n lignes sur n colonnes).
 
 Pour rendre l'exemple plus intéressant, on peut imaginer déterminer chaque valeur de manière aléatoire. En PHP, voir par exemple la fonction `rand` ([PHP doc - rand](https://www.php.net/manual/fr/function.rand.php)) qui peut retourner un nombre compris entre deux valeurs (hors cours). Il est donc possible de déterminer une valeur ("", "o" et "x") en fonction de 3 nombres différents.
 
@@ -36,11 +36,13 @@ Ce problème étant avancé, il est intéressant de construire des versions diff
 ###### Score horizontal
 
  1. Parcourir chaque ligne et additionner le score de chaque ligne.
- 2. Pour chaque ligne, parcourir chaque cellule et compter le nombre de fois que le signe recherché ("x" ou "o") est présent d'affilée. Pour cela:
-   - Si la cellule contient le signe recherché, incrémenter un compteur.
-   - Si la cellule ne contient PAS le signe recherché, réinitialiser le compteur.
-   - Dès que le compteur atteint 5, incrémenter le score de la ligne et réinitialiser le compteur.
-   - Retourner le score final de la ligne.
+ 2. Pour chaque ligne, parcourir chaque cellule et compter le nombre de fois que le signe recherché ("x" ou "o") est présent d'affilée.
+ 
+  Pour cela:
+    - Si la cellule contient le signe recherché, incrémenter un compteur.
+    - Si la cellule ne contient PAS le signe recherché, réinitialiser le compteur.
+    - Dès que le compteur atteint 5, incrémenter le score de la ligne et réinitialiser le compteur.
+    - Retourner le score final de la ligne.
 
 [Correction](./corrections/moprpion-verification/)
 
