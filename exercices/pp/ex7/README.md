@@ -28,6 +28,24 @@ Dans un programme, déclarer un tableau associatif contenant les informations d'
 
 Ecrire une fonction qui reçoit un tableau à deux dimensions de nombres. La fonction retourne un tableau associatif contenant le total, la somme et la moyenne de ces nombres.
 
+Exemple:
+
+Entrée:
+```php
+[
+    [1, 2, 3],
+    [2, 3, 7],
+]
+```
+Sortie:
+```php
+[
+    'total' => 6, 
+    'sum' => 18, 
+    'average' => 3
+]
+```
+
 [Correction](./corrections/b-matrix/)
 
 ### Remarques théoriques
