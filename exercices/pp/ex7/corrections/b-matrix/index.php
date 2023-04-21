@@ -22,3 +22,13 @@ function calculate($matrix)
         'average' => $average,
     ];
 }
+
+//on teste la fonction
+
+$numbers = [
+    [1, 2, 3],
+    [2, 3, 7],
+];
+
+$result = calculate($numbers);
+var_dump($result); // ['total' => 6, 'sum' => 18, 'average' => 3]

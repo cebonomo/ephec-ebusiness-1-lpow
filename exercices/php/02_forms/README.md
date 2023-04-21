@@ -11,6 +11,8 @@
 
 ## Remarques théoriques
 
+Revoir la partie HTML consacrée aux [formulaires](../../../exercices/html/ex7).
+
 ### Récupération des données HTTP
 
 En PHP, la récupération des données du formulaire transmises en HTTP peut se faire notamment via les [superglobales](https://www.php.net/manual/fr/language.variables.superglobals.php) suivantes:
@@ -30,7 +32,7 @@ En PHP, la récupération des données du formulaire transmises en HTTP peut se 
 Soit le formulaire HTML suivant:
 ```html
 <form method="post" action="form.php">
-    <input name="pet" value="petit chaton">
+    <input type="submit" name="pet" value="petit chaton">
 </form>
 ```
 Lorsque le formulaire est envoyé, on retrouve les valeurs suivantes dans PHP:
@@ -38,12 +40,14 @@ Lorsque le formulaire est envoyé, on retrouve les valeurs suivantes dans PHP:
 <?php
 // fichier form.php
 
-if (isset($_POST['pet'])) { // si la clé existe (càd si le formulaire a été envoyé avec ce champ)
+if (isset($_POST['pet'])) { // si la clé "pet" existe (càd si le formulaire a été envoyé avec ce champ)
     echo $_POST['pet']; // affiche "petit chaton"
 }
 ```
 
-On remarque que seule la variable `$_POST` contient les informations provenant du formulaire, étant donné que le formulaire est envoyé en POST.
+On remarque que seule la variable `$_POST` contient les informations provenant du formulaire, étant donné que le formulaire est envoyé via une requête HTTP en POST, tel que spécifié dans l'attribut `method`.
+
+De même, c'est bien la ressource spécifiée dans l'attribut `action` qui est appelée par la requête HTTP.
 
 ### Présence des variables (hors cours)
 

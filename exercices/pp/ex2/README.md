@@ -44,6 +44,10 @@ Ecrire un programme qui indique si un nombre contenu dans une variable est un no
 
 ### Remarques techniques
 
+#### Noms de variable
+
+Un bon nom de variable est toujours le terme qui permet au mieux de comprendre le code. Autrement dit, le nom de la variable doit décrire son contenu.
+
 #### Déclarations et définitions
 
 ##### JavaScript

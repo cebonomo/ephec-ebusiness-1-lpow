@@ -61,6 +61,10 @@ Selon les paradigmes et les languages, la notion de fonction peut varier. En Jav
 
 ### Remarques techniques
 
+#### Noms de fonction
+
+Un bon nom de fonction est toujours le terme qui permet au mieux de comprendre le code. Autrement dit, le nom de la fonction doit décrire son comportement.
+
 #### Portée des variables et fonctions
 
 La portée d'une variable n'est pas gérée de la même manière en JS et en PHP. 
