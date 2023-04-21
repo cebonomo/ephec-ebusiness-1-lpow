@@ -19,11 +19,11 @@
 Créer un formulaire dont l'action définit une page de traitement spécifique, de sorte que la page du formulaire ne soit PAS rafraîchie lorsque l'utilisateur soumet le formulaire.
 
 Ce formulaire doit comprendre les champs suivants:
-    - Text
-    - Textarea
-    - Radio
-    - Checkbox
-    - Select
+   - Text
+   - Textarea
+   - Radio
+   - Checkbox
+   - Select
 
 Afficher la valeur de chaque champ dans une document HTML.
 
