@@ -66,6 +66,7 @@
 Un formulaire se compose d'un élément `form` dans lequel se trouvent plusieurs élements de champ (`input`, `select`, ...). Parmi ces éléments de champ se trouve un bouton de soumission du formulaire. Lorsque l'utilisateur clique sur le bouton de soumission, il soumet le formulaire. Dès lors, est soumis l'ensemble des champs se trouvant dans le même formulaire que le bouton.
 
 Sur les formulaires, d'une manière globale, voir [MDN docs - forms](https://developer.mozilla.org/en-US/docs/Learn/Forms).
+Voir également [MDN docs - Comment structurer un formulaire HTML](https://developer.mozilla.org/fr/docs/Learn/Forms/How_to_structure_a_web_form)
 
 #### HTTP
 

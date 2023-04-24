@@ -82,4 +82,6 @@ Exemple:
 $number = $_GET['number'] ?? 0; // affecte la valeur get ou 0 par défaut
 ```
 
- 
+### Validation des formulaires
+
+**DISCLAIMER:** Les formulaires constituant une entrée majeure dans un programme, les données soumises doivent impérativement faire l'objet de différents types de vérification, en particulier de vérification de sécurité. Sans cela, le programme est vulnérable à de nombreuses attaques. Toutefois, ce sujet dépasse le cadre de ce cours et n'est donc pas traité ici. Attention toutefois, dans un vrai programme, à ne jamais coder de formulaire sans validation!
