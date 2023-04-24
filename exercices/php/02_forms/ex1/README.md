@@ -33,3 +33,5 @@ Afficher la valeur de chaque champ dans un document HTML.
  Créer un formulaire identique au premier énoncé mais dont l'action définit la page courante, de sorte que la page soit rafraîchie lorsque l'utilisateur soumet le formulaire.
  
  Pour chacun des champs, afficher dans le champ la valeur soumise par l'utilisateur de sorte que cette valeur ne soit pas perdue lorsque la page se rafraîchit.
+
+ [Correction](./corrections/b-isset/)

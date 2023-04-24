@@ -1,7 +1,7 @@
 <?php
 
 $textValue = $_POST['my-input-text'] ?? '';
-$textareaValue =  $_POST['my-textarea'] ?? '';
+$textareaValue = $_POST['my-textarea'] ?? '';
 $radioValue = $_POST['my-input-radio'] ?? 'radio-value-a';
 $selectValue = $_POST['my-select-simple'] ?? '';
 
