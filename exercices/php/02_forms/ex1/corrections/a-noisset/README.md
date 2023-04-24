@@ -16,6 +16,8 @@ Voir [index.html](./index.html).
     <input type="text" name="my-input-text">
     ...
 
+    <input type="submit" name="my-submit">
+
 </form>
 ```
 

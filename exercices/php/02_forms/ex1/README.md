@@ -20,11 +20,7 @@
 
 Créer un formulaire dont l'action définit une page de traitement spécifique, de sorte que la page du formulaire ne soit PAS rafraîchie lorsque l'utilisateur soumet le formulaire.
 
-Ce formulaire doit comprendre au moins les champs suivants:
-   - Text
-   - Textarea
-   - Radio (plusieurs liées dont 1 sélectionné par défaut)
-   - Select (avec valeur par défaut)
+Ce formulaire doit comprendre au moins un champ texte (en sachant que seules les checkbox ne pourront pas être traitées ici).
 
 Afficher la valeur de chaque champ dans un document HTML.
 
@@ -34,8 +30,6 @@ Afficher la valeur de chaque champ dans un document HTML.
 
  Ce cas implique l'utilisation de fonctions natives telles que `isset` ([PHP doc - isset](https://www.php.net/manual/fr/function.isset.php)) (hors cours).
  
- Créer un formulaire identique au premier énoncé (avec en plus des checkbox liées entre elles) mais dont l'action définit la page courante, de sorte que la page soit rafraîchie lorsque l'utilisateur soumet le formulaire.
-
- Tester si le formulaire a été soumis et afficher un message en conséquence.
+ Créer un formulaire identique au premier énoncé mais dont l'action définit la page courante, de sorte que la page soit rafraîchie lorsque l'utilisateur soumet le formulaire.
  
  Pour chacun des champs, afficher dans le champ la valeur soumise par l'utilisateur de sorte que cette valeur ne soit pas perdue lorsque la page se rafraîchit.
