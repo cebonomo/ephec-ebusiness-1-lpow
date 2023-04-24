@@ -10,7 +10,7 @@
 
  3. Comprendre l'utilité d'une fonction en cas de code/logique dupliqué.
 
- 4. (Optionel au Q1) Comprendre le principe d'appel récurrent.
+ 4. (Optionnel au Q1) Comprendre le principe d'appel récurrent.
 
 ### Enoncés
 
@@ -35,7 +35,7 @@ Ecrire un programme contenant une fonction permettant de diviser 2 nombres (atte
 
 [Correction](./corrections/c-division/)
 
-#### 4. Puissances (optionel au Q1, obligatoire au Q2)
+#### 4. Puissances (optionnel au Q1, obligatoire au Q2)
 
 Ecrire une programme contenant une fonction calculant la puissance d'un nombre a exposé en n, selon le principe suivant:
  - Si n vaut 0: le résultat vaut 1
@@ -47,7 +47,7 @@ Attention: le but de l'exercice est de ne PAS utiliser l'opérateur de puissance
 
 [Correction](./corrections/d-pow/)
 
-#### 5. Equation du second degré (Optionel)
+#### 5. Equation du second degré (Optionnel)
  
  Refactorer le programme de l'équation du second degré. Refactorer signifie réécrire le code d'une meilleure façon. En effet, on remarque que ce programme tel qu'écrit dans sa [première version](../ex3/corrections/e-second/) comporte plusieurs morceaux de code fort similaires. De telles duplications de code sont à proscrire. Il serait donc intéressant de réécrire le programme en utilisant des fonctions.
 

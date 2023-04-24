@@ -33,7 +33,7 @@ Idem que l'exercice précédent, mais primes progressives, à partir des montant
 
 [Correction](./corrections/c-bonus/)
 
-#### 4. Equation du premier degré (optionel au Q1, obligatoire au Q2)
+#### 4. Equation du premier degré (optionnel au Q1, obligatoire au Q2)
 
 Ecrire un programme qui résout et affiche une équation du premier degré: $ax + b = c$. Dans le code, les valeurs de a, b et c sont des variables. Résoudre l'équation signifie trouver la valeur de x, soit $x = (c-b)/a$. Exemple d'affichage: `2*3.5-3=4`.
 
@@ -43,7 +43,7 @@ Le programme veille à gérer le cas suivant:
 
 [Correction](./corrections/d-first/)
 
-#### 5. Equation du second degré (optionel)
+#### 5. Equation du second degré (optionnel)
 
 Ecrire un programme qui résout et affiche une équation du second degré: $ax² + bx + c = 0$. Dans le code, les valeurs de `a`, `b` et `c` sont des variables. Résoudre l'équation signifie trouver la valeur de `x`, soit `Δ` le discriminant du trinôme $ax² + bx + c$: ($Δ = b² - 4ac$).
 

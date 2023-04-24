@@ -23,7 +23,7 @@
  
  3. Si les deux mots de passe sont différents, afficher un message d'erreur spécifique.
 
- 4. (Optionel, car hors cours) Vérifier le format de l'email soumis. Il est nécessaire de s'assurer que la valeur transmise est effectivement un email. Pour cela (hors cours), il faut utiliser, par exemple, la fonction PHP `filter_var` ([PHP doc - filter_var](https://www.php.net/manual/fr/function.filter-var.php)) avec le filtre de validation `FILTER_VALIDATE_EMAIL` ([PHP doc - types de filtres](https://www.php.net/manual/fr/filter.filters.php)). Si le format n'est pas valide, afficher un message d'erreur spécifique.
+ 4. (Optionnel, car hors cours) Vérifier le format de l'email soumis. Il est nécessaire de s'assurer que la valeur transmise est effectivement un email. Pour cela (hors cours), il faut utiliser, par exemple, la fonction PHP `filter_var` ([PHP doc - filter_var](https://www.php.net/manual/fr/function.filter-var.php)) avec le filtre de validation `FILTER_VALIDATE_EMAIL` ([PHP doc - types de filtres](https://www.php.net/manual/fr/filter.filters.php)). Si le format n'est pas valide, afficher un message d'erreur spécifique.
  
  5. Lorsque le formulaire est réaffiché avec les erreurs, les valeurs des champs ne doivent pas être perdues, sauf les mots de passe erronés.
  

@@ -14,7 +14,7 @@
 
  5. Savoir boucler sur les index d'un tableau.
 
- 6. (Optionel) Comprendre l'instruction `break` dans une boucle. 
+ 6. (Optionnel) Comprendre l'instruction `break` dans une boucle. 
 
 ### Enoncés
 

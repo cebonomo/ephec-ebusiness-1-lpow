@@ -24,7 +24,7 @@ body {
 }
 ```
 
- 2. Ajout, dans `styles/main.css`, des proptiétés de dépassement de contenu (optionel):
+ 2. Ajout, dans `styles/main.css`, des proptiétés de dépassement de contenu (optionnel):
     - `overflow` ([MDN docs - overflow](https://developer.mozilla.org/fr/docs/Web/CSS/overflow))
 
  ```css

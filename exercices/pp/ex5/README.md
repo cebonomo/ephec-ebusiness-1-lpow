@@ -150,7 +150,7 @@ Résumé des états pour les premiers nombres de la suite:
 
 ### Enoncés - do while (hors cours!)
 
-#### 1. (Optionel) Compteur de boucle
+#### 1. (Optionnel) Compteur de boucle
 
 Créer une variable entière appelée "counter" et initialisez-la à 0. Utiliser une boucle "do while" pour afficher chaque nombre entier de 0 à 9, en incrémentant "counter" de 1 à chaque itération.
 

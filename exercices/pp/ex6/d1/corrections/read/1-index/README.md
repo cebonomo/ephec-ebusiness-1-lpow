@@ -55,7 +55,7 @@ Le code affiche de manière aléatoire l'un des 7 nains de Blanche-Neige.
  
     - La valeur se situe obligatoirement dans un range d'entiers compris entre le premier et le dernier indice du tableau, soit respectivement 0 et 6. Il est important de ne pas utiliser un indice qui ne serait pas défini dans le tableau. 
 
-    - Une fois le range connu, pour déterminer de manière (pseudo) aléatoire un entier (fonctionnalité optionelle), on utilise une fonction native du langage. En PHP, il s'agit de la fonction `rand` ([PHP doc - rand](https://www.php.net/manual/fr/function.rand.php)) (hors cours). Dans ce cas, cette fonction reçoit en argument la limite inférieure et la limite supérieure du range, et retroune un entier compris dans ce range.
+    - Une fois le range connu, pour déterminer de manière (pseudo) aléatoire un entier (fonctionnalité optionnelle), on utilise une fonction native du langage. En PHP, il s'agit de la fonction `rand` ([PHP doc - rand](https://www.php.net/manual/fr/function.rand.php)) (hors cours). Dans ce cas, cette fonction reçoit en argument la limite inférieure et la limite supérieure du range, et retroune un entier compris dans ce range.
 
  4. Grâce à `$randomIndex`, on extrait l'entrée associée du tableau, que l'on affecte à la variable `$randomDwarf`. Concrètement, cette variable contient donc le prénom de l'un des 7 nains.
 

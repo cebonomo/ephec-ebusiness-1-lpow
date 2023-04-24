@@ -8,9 +8,9 @@
 
  2. Savoir utiliser la valeur d'un champ.
 
- 3. (Optionel) Savoir si un formulaire a été soumis.
+ 3. (Optionnel) Savoir si un formulaire a été soumis.
 
- 4. (Optionel) Savoir si un champ a été soumis.
+ 4. (Optionnel) Savoir si un champ a été soumis.
 
 ### Ennoncés
 
@@ -26,7 +26,7 @@ Afficher la valeur de chaque champ dans un document HTML.
 
 [Correction](./corrections/a-noisset/)
 
-#### 2. Formulaire avec isset (optionel - hors cours)
+#### 2. Formulaire avec isset (optionnel)
 
  Ce cas implique l'utilisation de fonctions natives telles que `isset` ([PHP doc - isset](https://www.php.net/manual/fr/function.isset.php)) (hors cours).
  
