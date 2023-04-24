@@ -8,7 +8,9 @@ Pour le code complet, voir les fichiers.
 
 #### Test de clé
 
-##### isset
+PLusieurs possibilités de syntaxe sont possibles en PHP. En voici deux exemples.
+
+##### Syntaxe avec "isset"
 
 ```php
 $textValue = '';
@@ -17,7 +19,7 @@ if (isset($_POST['my-input-text'])) {
 }
 ```
 
-##### ??
+##### Syntaxe avec "??"
 
 ```php
 $textValue = $_POST['my-input-text'] ?? '';
