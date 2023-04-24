@@ -38,4 +38,4 @@ $textValue = $_POST['my-input-text'] ?? '';
 
 ## Explications
 
-Le code est identique au premier exercice, si ce n'est que l'on va tester la présence des clés avant l'affichage.
+Le code est identique au premier exercice, si ce n'est que l'on va tester la présence des clés avant l'affichage. Autrement dit, plus d'erreurs PHP. On peut également réaliser le traitement dans le même fichier que le formulaire.

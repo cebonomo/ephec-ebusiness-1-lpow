@@ -8,8 +8,6 @@ Pour le code complet, voir les fichiers.
 
 #### Formulaire HTML
 
-Voir [index.html](./index.html).
-
 ```html
 <form method="post" action="process.php">
 
@@ -23,8 +21,6 @@ Voir [index.html](./index.html).
 
 #### Traitement PHP
 
-Voir [process.php](./process.php).
-
 ```php
 <p>Le champ text contient "<?php echo $_POST['my-input-text']; ?>"</p>
 ```
@@ -33,5 +29,7 @@ Voir [process.php](./process.php).
 
 Le programme contient 2 fichiers:
 
- - "index.html" contient un formulaire renvoyant vers "process.php".
- - "process.php" contient un document HTML affichant les données POST du formulaire.
+ - [index.html](./index.html) contient un formulaire renvoyant vers "process.php".
+ - [process.php](./process.php) contient un document HTML affichant les données POST du formulaire.
+
+A noter que, étant donné l'absence de test de clé, on est obligé d'utiliser deux fichiers différents dans notre cas pour affiche rle formulaire. Si l'on se rend directement sur "process.php", cela engendrera des erreurs PHP.
