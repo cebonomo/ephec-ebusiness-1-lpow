@@ -1,6 +1,6 @@
-# PHP - diformssplay - corrections
+# PHP - forms - corrections
 
-## soumission sans isset
+## Soumission sans isset
 
 Pour le code complet, voir les fichiers.
 
