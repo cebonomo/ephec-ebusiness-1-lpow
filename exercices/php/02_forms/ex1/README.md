@@ -1,6 +1,6 @@
 # Exercices PHP - forms
 
-## Exercice 1: soumission
+## Exercices 1: soumission
 
 ### Objectifs
 
