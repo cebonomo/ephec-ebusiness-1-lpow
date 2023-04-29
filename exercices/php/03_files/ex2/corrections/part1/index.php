@@ -57,24 +57,21 @@ if (isValidUser($postedUser)) { // formulaire posté avec toutes les données
     
     $fp = fopen('users.csv', 'a+');
     if ($fp === false) { // traitement en cas d'erreur d'ouverture du fichier
-
         $message =  'Erreur d\'ouverture du fichier';
         
     } else { // traitement normal
         
         $userFromFile = selectUserByEmail($fp, $postedUser['email']);
-        if ($userFromFile == null) { // il s'agit d'un nouveau user
 
+        if ($userFromFile == null) { // il s'agit d'un nouveau user
             insertUser($fp, $postedUser);
             $message = 'Utilisateur rajouté!';
             
-        } else { // le user existe déjà     
+        } elseif ($postedUser['password'] == $userFromFile['password']) { // user ok!
+            $message = 'Utilisateur connecté!';
 
-            if ($postedUser['password'] == $userFromFile['password']) {
-                $message = 'Utilisateur connecté!';
-            } else {
-                $message = 'Le mot de passe n\'est pas correct!';
-            }
+        } else { // mauvais pwd...
+            $message = 'Le mot de passe n\'est pas correct!';
         }
         
         if (!fclose($fp)) { // traitement en cas d'erreur de fermeture du fichier
