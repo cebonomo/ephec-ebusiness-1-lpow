@@ -22,13 +22,12 @@
  
  Format des données:
 
-  - Chaque donnée du user est sérarée par un point-virgule (";") (comme pour la première ligne). Pour cela, plusieurs techniques sont possibles:
+  - Chaque donnée du user est sérarée par un point-virgule (";") (voir remarques). Pour cela, plusieurs techniques sont possibles:
     - Ecrire les données en plusieurs fois.
     - Recourir à une concaténation pour enregistrer l'ensemble de la ligne en une seule fois.
     - Voir éventuellement, par exemple, la méthode PHP `implode` ([PHP doc - implode](https://www.php.net/manual/fr/function.implode.php)) (hors cours) qui est l'inverse de la méthode `explode` ([PHP doc - explode](https://www.php.net/manual/fr/function.explode.php)).
-  - Le charactère de séparation (",") doit être défini dans une constante, car cette valeur ne peut pas être modifiée lors de l'exécution du script.
-  - Chaque user occupe une et une seule ligne. Pour délimiter la ligne, il faut ajouter un caractère spécial indiquant la fin de la ligne. (Voir remarques sur les fichiers)
-  
+  - Le charactère de séparation (";") doit être défini dans une constante, car cette valeur ne peut pas être modifiée lors de l'exécution du script.
+  - Chaque user occupe une et une seule ligne. Pour délimiter la ligne, il faut ajouter un caractère spécial indiquant la fin de la ligne ("\n") (voir remarques sur les fichiers).
 
 #### 2. Validations supplémentaires (optionnel)
 
@@ -42,8 +41,8 @@
 
 #### Format CSV (pour information - hors cours)
 
-A noter qu'un fichier de [format CSV](https://fr.wikipedia.org/wiki/Comma-separated_values) (MIME: "text/csv") est un fichier de texte permettant de stocker des valeurs tabulaires. Au sein de chaque ligne, les données sont séparées, normalement, par une virgule. Toutefois, par défaut, MS Excell sépare les données entre point-virgule.
+A noter qu'un fichier de [format CSV](https://fr.wikipedia.org/wiki/Comma-separated_values) (MIME: "text/csv") est un fichier de texte permettant de stocker des valeurs tabulaires. Au sein de chaque ligne, les données sont séparées, normalement, par une virgule. Toutefois, par défaut, MS Excell sépare les données par des points-virgules.
 
 A noter que dans une vraie application, nous ne passerions pas par un fichier pour stocker nos données, mais par une base de données, un outil de stockage bien plus puissant. Un fichier CSV servirait plutôt lors de l'export de données que l'on souhaite, par exemple, télécharger.
 
-A noter que PHP dispose de fonctions spécifiques au format CSV, mais que celles-ci ne sont pas étudiées ici, car l'objectif de l'exercice est bien de traiter un fichier texte de manière générale, quelque soit son format.
+A noter que PHP dispose de fonctions spécifiques pour manipuler des ressources au format CSV, mais que celles-ci ne sont pas étudiées ici, car l'objectif de l'exercice est bien de traiter un fichier texte de manière générale, quelque soit son format.
