@@ -26,7 +26,15 @@ function selectUserByEmail($fp, $email)
 }
 
 function insertUser($fp, $user)
-{   
+{ 
+    /**
+     * DISCLAIMER: 
+     * Attention, un enregistrement du password en clair
+     * consitue une faille de sécurité majeure!
+     * Cet exercice est réalisé uniquement dans un cadre pédagogique,
+     * et un tel code ne doit jamais être utilisé en production.
+     * Ne pas stocker de vrais passwords dans ce fichier.
+     **/  
     $line = $user['email'] . CSV_SEPARATOR . $user['password'] . CSV_SEPARATOR . "\n"; 
     return fwrite($fp, $line);
 }
@@ -56,7 +64,7 @@ $postedUser = extractUserFromPost($_POST);
 if (isValidUser($postedUser)) { // formulaire posté avec toutes les données
     
     $fp = fopen('users.csv', 'a+');
-    if ($fp === false) { // traitement en cas d'erreur d'ouverture du fichier
+    if ($fp == false) { // traitement en cas d'erreur d'ouverture du fichier
         $message =  'Erreur d\'ouverture du fichier';
         
     } else { // traitement normal
