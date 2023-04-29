@@ -9,14 +9,26 @@
 
  1. [PHP doc - Fonctions sur les systèmes de fichiers](https://www.php.net/manual/fr/ref.filesystem.php)
 
-## Fonctions de fichiers
+### Fonctions de fichiers
 
  - `fopen` ([PHP doc - fopen](https://www.php.net/manual/fr/function.fopen.php))
  - `fclose` ([PHP doc - fclose](https://www.php.net/manual/fr/function.fclose.php))
  - `feof` ([PHP doc - feof](https://www.php.net/manual/fr/function.feof.php))
  - `fgetc` ([PHP doc - fgetc](https://www.php.net/manual/fr/function.fgetc.php))
  - `fgets` ([PHP doc - fgets](https://www.php.net/manual/fr/function.fgets.php))
- 
+
+### Modes d'ouverture
+
+| Mode | Lecture | Ecriture | Truncate | Pointeur | Création de fichier |
+|-|-|-|-|-|
+| r  | Oui | Non | Non | Début | Non |
+| r+ | Oui | Oui | Non | Début | Non |
+| w  | Non | Oui | Oui | NA | Oui |
+| w+ | Oui | Oui | Oui | NA | Oui |
+| a  | Non | Oui | Non | Début en lecture, fin en écriture   | Oui |
+| a+ | Oui | Oui | Non | Début en lecture, fin en écriture   | Oui |
+
+Pour les autres modes (hors cours), voir ([PHP doc - fopen](https://www.php.net/manual/fr/function.fopen.php)).
 
 ## Remarques techniques
 
@@ -35,44 +47,16 @@ A noter que, en PHP, on peut utiliser la constante native `PHP_EOL` ([PHP doc - 
 
 ### Chemin de fichier
 
-A noter que plusieurs types de chemin de fichier peuvent être passés en argument. S'il s'agit d'un chemin relatif vers un fichier présent sur le serveur, ce qui sera souvent le cas, le chemin absolu est établi d'après le "CWD" (current working directory), c'est-à-dire le répertoire contenant le script principal appelé (souvent celui référencé dans l'URL). Le CWD va donc changer en fonction de l'emplacement du script appelé.
+A noter que plusieurs types de valeur peuvent être passés en argument pour spécifier la ressource à ouvrir.
 
-```php
-<?php
-$relativePath = 'file.txt';
-$cwd = getcwd();
-$absolutePath = realpath($relativePath);
-var_dump($relativePath, $cwd, $absolutePath);
-```
+S'il s'agit d'un chemin absolu vers un fichier présent sur le serveur, le chemin est établi depuis la racine du système ("/" sous Unix).
+
+S'il s'agit d'un chemin relatif vers un fichier présent sur le serveur, ce qui sera souvent le cas, le chemin est établi d'après le "CWD" (current working directory), c'est-à-dire le répertoire contenant le script principal appelé (a priori, celui référencé dans l'URL).
+
+A noter (notion avancée, hors cours) que le chemin d'un fichier n'est donc pas établi par défaut d'après le DOCUMENT_ROOT.
 
 Pour plus d'information (notions avancées, hors cours), voir l'article de [phpdelusions](https://phpdelusions.net/articles/paths).
 
-### Accessibilité d'un fichier (hors cours)
+### Accessibilité de fichier
 
-A noter que la fonction `fopen` peut émettre une erreur si le fichier n'existe pas ou s'il n'est pas accessible en lecture et/ou en écriture. Une bonne pratique consiste donc à tester l'accessibilité du fichier au préalable de toute manipulation.
-
-Exemple:
-
-```php
-<?php
-
-$filePath = 'file.txt';
-
-if (!is_readable($filePath)) {
-    // traitement en cas d'impossibilité de lecture
-} elseif (!is_writable($filePath)) {
-    // traitement en cas d'impossibilité d'écriture
-} else {
-    $fp = fopen($filePath, 'w+');
-    if ($fp === false) {
-        // traitement en cas d'erreur d'ouverture du fichier
-    } else {
-
-        // traitement normal
-
-        if (!fclose($fp)) {
-            // traitement en cas d'erreur de fermeture du fichier
-        }
-    }
-}
-```
+A noter que la fonction `fopen` peut émettre, dans certains cas, une erreur si le fichier n'existe pas ou s'il n'est pas accessible en lecture et/ou en écriture. A noter qu'une bonne pratique consiste donc à tester l'accessibilité du fichier au préalable de toute manipulation (hors cours).

@@ -8,7 +8,7 @@
 
 ### Enoncés
 
- 1. Reprendre le script précédent (écriture de fichier). Rajouter une fonction qui retourne les données d'un user: la fonction doit lire le fichier à l'aide de la fonction `fgets` ([PHP doc - fgets](https://www.php.net/manual/fr/function.fgets.php)), et retourner les données d'un user dont on aura donné l'email en argument de la fonction. Pour cela, utiliser la méthode PHP `explode` ([PHP doc - explode](https://www.php.net/manual/fr/function.explode.php)).
+ 1. Reprendre le script précédent (écriture de fichier). Rajouter une fonction qui retourne les données d'un user depuis le fichier: la fonction doit lire le fichier à l'aide de la fonction `fgets` ([PHP doc - fgets](https://www.php.net/manual/fr/function.fgets.php)), et retourner les données d'un user dont on aura donné l'email en argument de la fonction. Pour cela, utiliser la méthode PHP `explode` ([PHP doc - explode](https://www.php.net/manual/fr/function.explode.php)).
 
  2. Lorsque le formulaire est soumis, avant d'enregistrer le user dans le fichier, vérifier si le user n'est pas déjà enregistré, sur base de l'email, grâce à la fonction précédemment codée. Il ne peut donc pas exister plus d'un email différent dans ce fichier. Si l'email existe déjà, ne pas enregistrer et afficher un message d'erreur spécifique.
 
