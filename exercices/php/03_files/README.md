@@ -20,13 +20,13 @@
 ### Modes d'ouverture
 
 | Mode | Lecture | Ecriture | Truncate | Pointeur | Création de fichier |
-|-|-|-|-|-|
+|-|-|-|-|-|-|
 | r  | Oui | Non | Non | Début | Non |
 | r+ | Oui | Oui | Non | Début | Non |
-| w  | Non | Oui | Oui | NA | Oui |
-| w+ | Oui | Oui | Oui | NA | Oui |
-| a  | Non | Oui | Non | Début en lecture, fin en écriture   | Oui |
-| a+ | Oui | Oui | Non | Début en lecture, fin en écriture   | Oui |
+| w  | Non | Oui | Oui | NA    | Oui |
+| w+ | Oui | Oui | Oui | NA    | Oui |
+| a  | Non | Oui | Non | Début en lecture, fin en écriture | Oui |
+| a+ | Oui | Oui | Non | Début en lecture, fin en écriture | Oui |
 
 Pour les autres modes (hors cours), voir ([PHP doc - fopen](https://www.php.net/manual/fr/function.fopen.php)).
 
