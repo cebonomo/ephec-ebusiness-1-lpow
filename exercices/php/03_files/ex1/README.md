@@ -10,7 +10,7 @@
 
 #### 1. Enregistrement d'un user
 
- 1. Reprendre le [formulaire](./templates/part1/index.php) proposé.
+ 1. Reprendre le [formulaire](./templates/part1/index.php) proposé et en comprendre le code.
 
  2. Si le formulaire est valide, enregistrer les données dans un fichier "users.csv".
  

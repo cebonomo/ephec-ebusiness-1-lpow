@@ -1,7 +1,5 @@
 <?php
 
-define('CSV_SEPARATOR', ';');
-
 function createUser($email, $password)
 {
     return [
