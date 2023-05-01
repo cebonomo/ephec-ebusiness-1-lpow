@@ -2,35 +2,6 @@
 
 define('CSV_SEPARATOR', ';');
 
-function selectUserByEmail($fp, $email)
-{       
-    while (feof($fp) == false) {
-        
-        $line = fgets($fp);
-        $data = explode(CSV_SEPARATOR, $line);
-        
-        if ($data[0] == $email) {
-            return createUser($data[0], $data[1]);
-        }
-    }
-    
-    return null;
-}
-
-function insertUser($fp, $user)
-{ 
-    /**
-     * DISCLAIMER: 
-     * Attention, un enregistrement du password en clair
-     * consitue une faille de sécurité majeure!
-     * Cet exercice est réalisé uniquement dans un cadre pédagogique,
-     * et un tel code ne doit jamais être utilisé en production.
-     * Ne pas stocker de vrais passwords dans ce fichier.
-     **/  
-    $line = $user['email'] . CSV_SEPARATOR . $user['password'] . CSV_SEPARATOR . "\n"; 
-    return fwrite($fp, $line);
-}
-
 function createUser($email, $password)
 {
     return [
@@ -63,29 +34,7 @@ $postedUser = extractUserFromPost($_POST);
 
 if (isValidUser($postedUser)) { // formulaire posté avec toutes les données
     
-    $fp = fopen('users.csv', 'a+');
-    if ($fp == false) { // traitement en cas d'erreur d'ouverture du fichier
-        $message =  'Erreur d\'ouverture du fichier';
-        
-    } else { // traitement normal
-        
-        $userFromFile = selectUserByEmail($fp, $postedUser['email']);
-
-        if ($userFromFile == null) { // il s'agit d'un nouveau user
-            insertUser($fp, $postedUser);
-            $message = 'Utilisateur rajouté!';
-            
-        } elseif ($postedUser['password'] == $userFromFile['password']) { // user ok!
-            $message = 'Utilisateur connecté!';
-
-        } else { // mauvais pwd...
-            $message = 'Le mot de passe n\'est pas correct!';
-        }
-        
-        if (!fclose($fp)) { // traitement en cas d'erreur de fermeture du fichier
-            $message = 'Erreur de fermeture du fichier.';
-        }
-    }
+   // ajouter le code ici
     
 }
 
