@@ -86,8 +86,8 @@ $selectValue = $_POST['my-select-simple'] ?? '';
     <br>
 
 
-    <input type="submit" name="my-submit">
-    <input type="reset" name="my-reset">
+    <input type="submit">
+    <input type="reset">
 
 </form>
 

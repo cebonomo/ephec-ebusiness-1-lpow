@@ -14,7 +14,7 @@ Pour le code complet, voir les fichiers.
     <input type="text" name="my-input-text">
     ...
 
-    <input type="submit" name="my-submit">
+    <input type="submit">
 
 </form>
 ```
