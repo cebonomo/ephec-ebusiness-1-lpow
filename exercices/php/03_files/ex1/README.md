@@ -12,7 +12,7 @@
 
  1. Reprendre le [formulaire](./templates/part1/index.php) proposé et en comprendre le code.
 
- 2. Si le formulaire est valide, enregistrer les données dans un fichier "users.csv".
+ 2. Si le formulaire est valide, enregistrer les données dans un fichier "users.csv" (et vérifier leur bon enregistrement directement dans le fichier, depuis le système de fichiers).
  
  Gestion du fichier:
 
@@ -28,6 +28,8 @@
     - Voir éventuellement, par exemple, la méthode PHP `implode` ([PHP doc - implode](https://www.php.net/manual/fr/function.implode.php)) (hors cours) qui est l'inverse de la méthode `explode` ([PHP doc - explode](https://www.php.net/manual/fr/function.explode.php)).
   - Le charactère de séparation (";") doit être défini dans une constante, car cette valeur ne peut pas être modifiée lors de l'exécution du script.
   - Chaque user occupe une et une seule ligne. Pour délimiter la ligne, il faut ajouter un caractère spécial indiquant la fin de la ligne ("\n") (voir remarques sur les fichiers).
+
+DISCLAIMER: Attention, un enregistrement du password en clair consitue une faille de sécurité majeure! Cet exercice est réalisé uniquement dans un cadre pédagogique, et un tel code ne doit jamais être utilisé en production. Ne pas stocker de vrais passwords dans ce fichier.
 
 [Correction](./corrections/part1/)
 

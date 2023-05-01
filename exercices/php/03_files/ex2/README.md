@@ -14,9 +14,9 @@
  
  2. Rajouter une fonction qui retourne les données d'un user depuis le fichier: la fonction doit lire le fichier à l'aide de la fonction `fgets` ([PHP doc - fgets](https://www.php.net/manual/fr/function.fgets.php)), et retourner les données d'un user dont on aura donné l'email en argument de la fonction. Pour cela, utiliser la méthode PHP `explode` ([PHP doc - explode](https://www.php.net/manual/fr/function.explode.php)).
 
- 3. Lorsque le formulaire est soumis, avant d'enregistrer le user dans le fichier, vérifier si le user n'est pas déjà enregistré, sur base de l'email, grâce à la fonction précédemment codée. Il ne peut donc pas exister plus d'un email différent dans ce fichier.
+ 3. Lorsque le formulaire est soumis, avant d'enregistrer le user dans le fichier, vérifier si le user n'est pas déjà enregistré, sur base de l'email, grâce à la fonction précédemment codée. Il ne peut pas exister plus d'un email différent dans ce fichier. Donc, n'enregistrer le user que s'il n'a pas été trouvé.
  
- 4. Si l'email existe déjà (càd si le user est bien présent), ne pas enregistrer. Vérifier si le password est correct et afficher un message en fonction. SI le password est correct, on peut considérer que l'utilisateur est connecté.
+ 4. Si l'email existe déjà (càd si le user est bien présent), vérifier si le password est correct et afficher un message en fonction. Si le password est correct, on peut considérer que l'utilisateur est connecté.
  
 [Correction](./corrections/part1/)
 
