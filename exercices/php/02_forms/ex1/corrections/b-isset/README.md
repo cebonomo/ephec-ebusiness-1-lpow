@@ -33,7 +33,7 @@ $textValue = $_POST['my-input-text'] ?? '';
     <input type="text" name="my-input-text" value="<?php echo $textValue; ?>">
     ...
 
-    <input type="submit" name="my-submit">
+    <input type="submit">
 
 </form>
 ```
