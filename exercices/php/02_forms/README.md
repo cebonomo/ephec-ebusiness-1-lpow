@@ -3,7 +3,7 @@
 ## Exercices
 
  1. [Exercices 1: soumission](./ex1/)
- 2. [Exercices 2: validation](./ex2/)
+ 2. [Exercices 2: validation (hors cours)](./ex2/)
 
 ## Documentation
 

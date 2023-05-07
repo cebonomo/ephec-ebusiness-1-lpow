@@ -1,6 +1,6 @@
 # Exercices PHP - forms
 
-## Exercices 2: validation
+## Exercices 2: validation (hors cours)
 
 ### Objectifs
 
