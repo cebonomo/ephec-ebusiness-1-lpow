@@ -33,6 +33,10 @@ Par rapport à l'exercice précédent, ajouter des validations supplémentaires.
 
 Ecrire un programme affichant une phrase absurde générée aléatoirement depuis des listes de parties de phrases (groupe sujet, groupe verbal, ...). Les listes sont contenues dans un fichier CSV (voir [le fichier d'exemple](./corrections/absurdity/sentences.csv)). Il est donc nécessaire de lire le fichier, puis de mélanger de manière aléatoire les données afin de retenir un jeu de parties de phrase inédit.
 
+Pour générer un nombre de manière aléatoire en PHP (hors cours), voir la fonction `rand` ([PHP doc - rand](https://www.php.net/manual/fr/function.rand.php)).
+
+[Correction](./corrections/absurdity/)
+
 ## Remarques techniques
 
 ### Fin de ligne
