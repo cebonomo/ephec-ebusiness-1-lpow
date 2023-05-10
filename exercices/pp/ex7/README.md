@@ -52,7 +52,7 @@ Sortie:
 
 #### En JS
 
-A noter qu'il n'existe pas de tableau associatif en JS, au sens strict du terme. Pour une équivalence en matière de structures de donnée, il faut se tourner vers les objets.
+A noter qu'il n'existe pas de tableau associatif en JS, au sens strict du terme. Pour une équivalence en matière de structure de données, il faut se tourner vers les objets.
 
 ### Remarques techniques
 
@@ -68,9 +68,9 @@ Exemple pour l'array `['a' => 1, 'b' => 6, 'c' => 12]`:
 
 #### Boucler sur un tableau associatif
 
-Etant donné qu'un tableau associatif demeure un tableau, il est possible de boucler sur un tel tableau, même si une telle manoeuvre est sans doute moins fréquente que pour un tableau associatif.
+Etant donné qu'un tableau associatif demeure un tableau, il est possible d'itérer dessus, même si une telle manoeuvre est sans doute moins fréquente que pour un tableau indexé.
 
-La boucle "for" tradionnellement incrémentée ne fonctionne pas sur un tableau associatif, car celui-ci ne contient pas d'index numérique. En PHP, on utilise impérativement la variante "foreach" pour boucler sur un array associatif, laquelle permet de connaître à la fois la valeur et la clé.
+La boucle "for" tradionnellement incrémentée ne fonctionne pas sur un tableau associatif, car celui-ci ne contient pas d'indice numérique. En PHP, on utilise impérativement la variante "foreach" pour itérer sur un array associatif, laquelle syntaxe permet de connaître à la fois la valeur et la clé.
 
 ##### foreach
 

@@ -26,6 +26,11 @@
 
  2. (Hors cours) Pour tester le password hashé, il faut utiliser la méthode PHP `password_verify` ([PHP doc - password_verify](https://www.php.net/manual/fr/function.password-verify.php)).
 
+
+#### 3. Générateur de phrases absurdes (bonus)
+
+Ecrire un programme affichant une phrase absurde générée aléatoirement depuis des listes de parties de phrases (groupe sujet, groupe verbal, ...). Les listes sont contenues dans un fichier CSV (voir [le fichier d'exemple](./corrections/absurdity/sentences.csv)). Il est donc nécessaire de lire le fichier, puis de mélanger de manière aléatoire les données et de retenir un jeu de parties de phrase inédit.
+
 ## Remarques techniques
 
 ### Fin de ligne
