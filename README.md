@@ -54,6 +54,11 @@ Raccourci clavier pour ouvrir le devtools:
 
 [Tuto Chrome DevTools](https://www.youtube.com/watch?v=BrsyIyYSP1c)
 
+#### Code source
+
+Le code HTML affiché dans le devtools est le code tel qu'interprété par le navigateur (et donc avec modifications possibles). Pour consulter le code source tel qu'envoyé par le serveur, il faut passer par le raccourci clavier:
+ - Windows/Linux:  `Control`+`u`
+
 #### Gestion du cache
 
 Le [cache](https://fr.wikipedia.org/wiki/Cache_web) est un système qui (notamment) autorise le navigateur à garder en mémoire des ressources, plutôt qu'à les demander par HTTP une nouvelle fois. Cela peut être le cas des styles CSS, des images, etc. Etant donné ce cache, il se peut qu'un fichier soit modifié du côté du serveur (par exemple, une déclaration CSS), mais que le navigateur ne rafraîchisse pas cette ressource (et que le nouveau style ne soit pas affiché).
