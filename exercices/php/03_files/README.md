@@ -2,8 +2,8 @@
 
 ## Exercices
 
- 1. [Exercice 1 - Ecriture de fichier](./ex1/)
- 2. [Exercice 2 - Lecture de fichier](./ex2/)
+ 1. [Exercices 1 - Ecriture de fichier](./ex1/)
+ 2. [Exercices 2 - Lecture de fichier](./ex2/)
 
 ## Documentation
 

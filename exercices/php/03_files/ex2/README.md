@@ -1,6 +1,6 @@
 # Exercices PHP - files
 
-## Exercice 2 - Lecture de fichier
+## Exercices 2 - Lecture de fichier
 
 ### Objectifs
 

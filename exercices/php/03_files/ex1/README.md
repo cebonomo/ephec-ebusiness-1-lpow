@@ -1,6 +1,6 @@
 # Exercices PHP - files
 
-## Exercice 1 - Ecriture de fichier
+## Exercices 1 - Ecriture de fichier
 
 ### Objectifs
 
