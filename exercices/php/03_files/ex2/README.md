@@ -22,14 +22,16 @@
 
 #### 2. Validations supplémentaires (optionnel)
 
- 1. (Hors cours) Par ailleurs, il faut s'assurer que l'utilisateur n'ait pas envoyé involontairement d'espaces au début ou en fin des données soumises. Pour nettoyer les données des espaces indésirables, il faut utiliser la fonction PHP `trim` ([PHP doc - trim](https://www.php.net/manual/fr/function.trim.php)).
+Par rapport à l'exercice précédent, ajouter des validations supplémentaires.
+
+ 1. (Hors cours) Il faut s'assurer que l'utilisateur n'ait pas envoyé involontairement d'espaces au début ou en fin des données soumises. Pour nettoyer les données des espaces indésirables, il faut utiliser la fonction PHP `trim` ([PHP doc - trim](https://www.php.net/manual/fr/function.trim.php)).
 
  2. (Hors cours) Pour tester le password hashé, il faut utiliser la méthode PHP `password_verify` ([PHP doc - password_verify](https://www.php.net/manual/fr/function.password-verify.php)).
 
 
 #### 3. Générateur de phrases absurdes (bonus)
 
-Ecrire un programme affichant une phrase absurde générée aléatoirement depuis des listes de parties de phrases (groupe sujet, groupe verbal, ...). Les listes sont contenues dans un fichier CSV (voir [le fichier d'exemple](./corrections/absurdity/sentences.csv)). Il est donc nécessaire de lire le fichier, puis de mélanger de manière aléatoire les données et de retenir un jeu de parties de phrase inédit.
+Ecrire un programme affichant une phrase absurde générée aléatoirement depuis des listes de parties de phrases (groupe sujet, groupe verbal, ...). Les listes sont contenues dans un fichier CSV (voir [le fichier d'exemple](./corrections/absurdity/sentences.csv)). Il est donc nécessaire de lire le fichier, puis de mélanger de manière aléatoire les données afin de retenir un jeu de parties de phrase inédit.
 
 ## Remarques techniques
 
