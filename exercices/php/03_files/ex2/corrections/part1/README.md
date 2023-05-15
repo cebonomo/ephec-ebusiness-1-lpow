@@ -30,6 +30,7 @@ function selectUserByEmail($fp, $email)
 #### Appel de la fonction
 
 ```php
+$fp = fopen('users.csv', 'a+');
 $userFromFile = selectUserByEmail($fp, $_POST_['email']);
 ```
 
@@ -37,7 +38,7 @@ $userFromFile = selectUserByEmail($fp, $_POST_['email']);
 
 ```php
 if ($userFromFile == null) { // il s'agit d'un nouveau user (pas présent dans le fichier)
-    insertUser($fp, $_POST); //on insert le user dans le fichier
+    insertUser($fp, $_POST); //on insert le user dans le fichier (voir exercice précédent)
     $message = 'Utilisateur rajouté!';
     
 } elseif ($_POST['password'] == $userFromFile[1]) { // user ok!
