@@ -2,12 +2,11 @@
 
 ## Ecriture dans un fichier
 
-Pour le code complet et correct, voir directement les fichiers de code: 
- - [index.php](./index.php)
+Pour le code complet et correct, voir directement les fichiers de code.
 
 ### Code principal simplifié
 
-#### Définir la constante
+#### Définition de la constante
 
 On définit une constante comprenant le séparateur des données (CSV).
 
