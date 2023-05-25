@@ -123,13 +123,14 @@ function bar($foo)
 bar($foo);
 ```
 
-**ATTENTION:** ceci implique qu'une variable internes à une fonction peut avoir le nom d'une variable externe à la fonction sans pour autant que ces deux variables soient confondues.
+**ATTENTION:** ceci implique qu'une variable interne à une fonction peut avoir le nom d'une variable externe à la fonction sans pour autant que ces deux variables soient confondues.
 
-Exemple: Dans le code suivant,  on remarque que:
+Exemple: Dans le code suivant, on remarque que:
 
- - La variable `$a` externe à la fonction n'est pas modifiée par la fonction.
  - La variable `$a` externe à la fonction transmet sa valeur au premier paramètre de la fonction (soit `$b`), et non à la variable portant le même nom.
- - Le fait que les variables possèdent le même nom est simplement un hasard. Il ne s'agit pas des mêmes variables!
+ - La variable `$a` externe à la fonction n'est pas modifiée par la fonction.
+ 
+Autrement dit, le fait que les variables possèdent le même nom est simplement un hasard. Il ne s'agit pas des mêmes variables!
 
 ```php
 <?php
