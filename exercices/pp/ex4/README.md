@@ -123,6 +123,32 @@ function bar($foo)
 bar($foo);
 ```
 
+**ATTENTION:** ceci implique qu'une variable internes à une fonction peut avoir le nom d'une variable externe à la fonction sans pour autant que ces deux variables soient confondues.
+
+Exemple: Dans le code suivant,  on remarque que:
+
+ - La variable `$a` externe à la fonction n'est pas modifiée par la fonction.
+ - La variable `$a` externe à la fonction transmet sa valeur au premier paramètre de la fonction (soit `$b`), et non à la variable portant le même nom.
+ - Le fait que les variables possèdent le même nom est simplement un hasard. Il ne s'agit pas des mêmes variables!
+
+```php
+<?php
+
+function foo($b, $a) // $b vaut 1 et $a vaut 2
+{
+    $a = $b + 3; // 1 + 3 = 4 (=> $a vaut désdormais 4, mais seulement la variable interne à la fonction)
+    return $a; // retourne 4
+}
+
+$a = 1;
+$b = 2;
+$c = foo($a, $b); // on passe les valeurs à la fonction (et pas les variables), soit, respectivement, 1 et 2
+
+var_dump($a); // 1 (=> $a n'a pas été modifié dans la fonction, car il s'agit d'une autre variable)
+var_dump($b); // 2
+var_dump($c); // 4 (=> $c vaut le résultat de la fonction)
+```
+
 ##### Accès à une variable locale
 
 JS et PHP partagent le point commun qu'une variable locale à une fonction n'est pas accessible en dehors de celle-ci (en tout cas, pour JS, si la variable est déclarée avec `let`).
