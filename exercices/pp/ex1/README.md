@@ -116,7 +116,7 @@ true == true
 // que vaut l'expression?
 ```
 
-###### Avec transtypage (optionnel)
+###### Avec transtypage (hors cours)
 
 ```javascript
 6 == '6' //égalité non stricte
@@ -202,6 +202,8 @@ true || false
 
 A noter que (notions avancées), en JavaScript, le comportement des opérateurs `&&` et `||` diffèrent de ce qu'on attendrait normalement d'eux, puisque, en réalité, ils ne retournent pas un `boolean`, mais l'une des deux valeurs faisant l'objet de la comparaison. Cela sert surtout dans le cas de `||` qui retourne la première valeur si truely (apparentée à `true` pour un autre type), sinon la seconde valeur. En PHP, d'autres opérateurs assureront cette même fonction, notamment `?:` ou encore `??` ([démo avancée](https://onlinephp.io/c/86c53)).
 
+A noter que PHP propose d'autres opérateurs logiques (`and` et `or`) au comportement similaire à JS. Pour plus d'information, voir [PHP doc - opérateurs logiques](https://www.php.net/manual/fr/language.operators.logical.php).
+
 #### Opérateurs de concaténation  (optionnel au Q1, obligatoire au Q2)
 
 ##### JavaScript
@@ -215,6 +217,12 @@ A noter que (notions avancées), en JavaScript, le comportement des opérateurs 
 ```javascript
 // opérateur de concaténation spécifique à javascript
 '1' + '2'
+// que vaut l'expression?
+```
+
+```javascript
+// opérateur de concaténation spécifique à javascript
+1 + 2
 // que vaut l'expression?
 ```
 
@@ -235,6 +243,25 @@ A noter que (notions avancées), en JavaScript, le comportement des opérateurs 
 '1' . '2';
 // que vaut l'expression?
 ```
+
+```php
+<?php
+
+// opérateur de concaténation spécifique à php
+1 . 2;
+// que vaut l'expression?
+```
+A noter qu'avec ce dernier exemple, on remarque une différence singulière en JS et PHP. Puisque PHP distingue deux opérateurs de concaténatiion et d'addition, les nombres sont convertis en chaînes de caractères lors de la concaténation, et, inversement, les chaînes de caractères sont converties en nombres lors d'une addition. Autrement dit, en PHP, le résultat de l'opération dépend uniquement de l'opérateur, tandis qu'en JS, cela dépend du type de valeur.
+
+Récapitulatif
+
+| opération   | JS   | PHP  |
+|-------------|------|------|
+| `1 + 2`     | `3`  | `3`  | 
+| `'1' + '2'` | `12` | `3`  |
+| `1 . 2`     | NA   | `12` | 
+| `'1' . '2'` | NA   | `12` | 
+
 
 #### Opérateurs d'affectation (ou assignation)
 
