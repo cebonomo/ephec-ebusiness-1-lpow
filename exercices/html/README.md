@@ -16,7 +16,7 @@ Les différents exercices présentés dans cette partie se complètent les uns l
 
 ### HTML, c'est quoi?
 
-Le HTML est un [format de données](https://fr.wikipedia.org/wiki/Format_de_donn%C3%A9es) permettant de structurer de manière sémantique des informations au sein d'un [document numérique](https://fr.wikipedia.org/wiki/Document_num%C3%A9rique).
+Le HTML est un [format de données](https://fr.wikipedia.org/wiki/Format_de_donn%C3%A9es) permettant de **structurer de manière sémantique** des informations au sein d'un [document numérique](https://fr.wikipedia.org/wiki/Document_num%C3%A9rique).
 
  - **Document numérique:** En informatique, par document numérique, on entend un contenu cohérent d'informations organisées dans un format spécifique. (Ex: un texte, une image, un mail, etc.). Un document peut être stocké sous la forme d'un fichier.
  - **Format de données:** En informatique, par format de données, on entend la façon dont est organisée l'information. (Ex: une même image peut être organisée en bitmap ou en jpg, un même son peut être organisé en wav ou en mp3, etc.). Le format de données est souvent donné à titre informatif par l'extension des fichiers.
@@ -33,7 +33,7 @@ Un document HTML peut soit être lu comme texte par un éditeur de texte, soit �
 
 ### Contenu du HTML
 
-Un document HTML (à l'instar de nombreux autres format de données) est séparé en deux grandes catégories:
+Un document HTML (à l'instar de nombreux autres formats de données) est séparé en deux grandes catégories:
 
  1. Un en-tête contenant les métadonnées (titre, charset, ...).
  2. Un corps contenant les données (ce qui sera affiché dans le navigateur).
@@ -81,6 +81,10 @@ Lors de l'écriture du code, il est important de conserver un code valide à tou
 
 Pour déterminer si un code HTML est valide, il faut le soumettre au [W3C validator](https://validator.w3.org/).
 
+### Code style
+
+Par convention, il est recommandé d'écrire les balises et attributs en minuscules (à l'exception du doctype qui s'écrit en majuscule), ainsi que d'utiliser des doubles guillemets dans les attributs. 
+
 ### Comment bien écrire son code?
 
 Procédure pour écrire du HTML valide (principe général du "quand on l'ouvre, on la ferme"):
@@ -107,7 +111,7 @@ Procédure pour écrire du HTML valide (principe général du "quand on l'ouvre,
 |-----|-----------|------------|---------|---------------|
 | `!DOCTYPE` | `html` | Préambule requis indiquant les spécifications HTML du document. | `<!DOCTYPE html>` | [MDN docs - doctype](https://developer.mozilla.org/fr/docs/Glossary/Doctype)|
 | `html` | `lang` | Racine du document. Doit comprendre au moins les balises `head` et `body`. L'attribut `lang` est obligatoire. | `<html lang="fr"></html>` | [MDN docs - html](https://developer.mozilla.org/fr/docs/Web/HTML/Element/html)|
-| `head` | | En-tête du document contenant les informations (métadonnées) générales du document. Doit comprendre au moins la balise `title`. | `<head></head>`| [MDN docs - en-tête du document](https://developer.mozilla.org/fr/docs/Web/HTML/Element/head)|
+| `head` | | En-tête du document contenant les informations (métadonnées) générales du document. Doit comprendre au moins la balise `title`. | `<head></head>`| [MDN docs - head](https://developer.mozilla.org/fr/docs/Web/HTML/Element/head)|
 | `meta` | `charset` |  Information de métadonnées diverses (charset, entêtes HTTP, instructions d'indexation, viewport, ...).  | `<meta charset="utf-8">`| [MDN docs - meta](https://developer.mozilla.org/fr/docs/Web/HTML/Element/meta)) 
 | `title` | | Titre du document. Ne peut pas être vide. | `<title>LPOW</title>` | [MDN docs - title](https://developer.mozilla.org/fr/docs/Web/HTML/Element/title)|
 | `body` | | Corps du document contenant le contenu du document (ce qui est affiché dans un navigateur). | `<body></body>`  | [MDN docs - body](https://developer.mozilla.org/fr/docs/Web/HTML/Element/body)|
