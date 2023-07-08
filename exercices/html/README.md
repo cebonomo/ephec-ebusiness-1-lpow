@@ -12,6 +12,67 @@ Les différents exercices présentés dans cette partie se complètent les uns l
 6. [Exercice 6: liens](./ex6)
 7. [Exercice 7: formulaires](./ex7)
 
+## Remarques théoriques
+
+### HTML, c'est quoi?
+
+Le HTML est un [format de données](https://fr.wikipedia.org/wiki/Format_de_donn%C3%A9es) permettant de structurer de manière sémantique des informations au sein d'un [document numérique](https://fr.wikipedia.org/wiki/Document_num%C3%A9rique).
+
+ - **Document numérique:** En informatique, par document numérique, on entend un contenu cohérent d'informations organisées dans un format spécifique. (Ex: un texte, une image, un mail, etc.). Un document peut être stocké sous la forme d'un fichier.
+ - **Format de données:** En informatique, par format de données, on entend la façon dont est organisée l'information. (Ex: une même image peut être organisée en bitmap ou en jpg, un même son peut être organisé en wav ou en mp3, etc.). Le format de données est souvent donné à titre informatif par l'extension des fichiers.
+ - **Structure:** Dans le cadre du HTML, représente la hiérarchie et l'ordre des informations. (Ex: le titre précède les paragraphes qui eux-mêmes contiennent des liens, etc.)
+ - **Sémantique:** Dans le cadre du HTML, indique le sens, la signification d'une information, càd ce qu'elle réprésente. (Ex: un titre, un paragraphe, une image, une vidéo, etc.) 
+
+A noter que HTML est un format de données textuel, càd d'un format lisible dans un éditeur de texte (par opposition à un contenu binaire).
+
+### Fichier HTML
+
+Un document HTML peut être enregistré dans un fichier ([MIME](https://fr.wikipedia.org/wiki/Multipurpose_Internet_Mail_Extensions): `text/html`) qui portera de manière traditionnelle l'extension `.html` (voire pour les sources anciennes `.htm`).
+
+Un document HTML peut soit être lu comme texte par un éditeur de texte, soit être interprété par un navigateur qui réalise un rendu visuel des données.
+
+### Contenu du HTML
+
+Un document HTML (à l'instar de nombreux autres format de données) est séparé en deux grandes catégories:
+
+ 1. Un en-tête contenant les métadonnées (titre, charset, ...).
+ 2. Un corps contenant les données (ce qui sera affiché dans le navigateur).
+
+#### Balises
+
+Pour réaliser la structure sémantique d'un document, HTML utilise un système de "balises". Une balise permet de structurer les informations tout en spécifiant la sémantique de chaque information (ainsi que des métadonnées propres à chaque information). 
+
+Une balise n'est donc pas l'information en tant que telle et n'est normalement jamais affichée dans un navigateur. Seule l'information est affichée.
+
+Une balise contenant une information devient un "élément".
+
+##### Structure
+
+Une balise permet de contraindre l'information au sein d'un élément. Elle indique le début (balise d'ouverture) et la fin de l'information (balise de fermeture). Ce qui se trouve entre la balise d'ouverture et la balise de fermeture d'un élément s'appelle le contenu.
+
+Par exemple, un paragraphe possède forcément un début et une fin. C'est ce qu'indique toute balise grâce à des signes arbitraires.
+
+- Le début de l'information est indiqué par les signes `<>` qui constituent la base d'une balise d'ouverture.
+- La fin de l'information est indiquée par les signes `</>` qui constituent la base d'une balise de fermeture. A noter qu'il existe des balises impaires qui ne se ferment pas (car elles ne contiennent pas d'information à indiquer entre balises). 
+
+Exemple: `<>Ceci est l'information 1.</><>Ceci est l'information 2.</>`
+
+L'information peut être organisée en arbre, càd dire qu'un élément parent peut contenir des éléments enfants dans son contenu.
+
+Attention: ce code n'est pas valide, car s'il permet de résoudre le problème de la structure de l'information, il ne résoud pas encore le problème de sa sémantique.
+
+##### Sémantique
+
+Une balise permet de signifier l'information grâce à un nom arbitraire. HTML possède donc une liste de noms de balise où chacun indique une sémantique particulière. Pour chaque sens, il faut donc connaître le nom associé.
+
+Par exemple, pour spécifier que le contenu est un paragraphe (plutôt qu'un titre ou autre), on utilise une balise spéciale. Le nom de cette balise est `p` (comme "paragraphe"). Autrement dit, tout contenu qui se trouve à l'intérieur d'une balise `p` est un paragraphe.
+
+Exemple: `<p>Ceci est un paragraphe.</p>`
+
+##### Métadonnées
+
+Chaque information peut être accompagnée par des métadonnées. Ces métadonnées sont contenues dans des "attributs", lesquels sont spécifiés dans la balise d'ouverture. Il s'agit d'infromations complémentaires, souvent techniques (URL d'une image, d'un lien, etc.)
+
 ## Remarques pratiques
 
 ### Validité du code HTML
@@ -36,3 +97,45 @@ Procédure pour écrire du HTML valide (principe général du "quand on l'ouvre,
  1. [MDN - Introduction au HTML](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML)
  2. [MDN - Apprendre le HTML : guides et didacticiels](https://developer.mozilla.org/fr/docs/Learn/HTML)
  4. [alsacréations - Structure de document HTML 5](https://www.alsacreations.com/article/lire/1374-html5-structure-globale-document.html)
+
+
+## Balises vues au cours
+
+### Document de base
+
+| Tag | Attributs | Sémantique | Exemple | Documentation |
+|-----|-----------|------------|---------|---------------|
+| `!DOCTYPE` | `html` | Préambule requis indiquant les spécifications HTML du document. | `<!DOCTYPE html>` | [MDN docs - doctype](https://developer.mozilla.org/fr/docs/Glossary/Doctype)|
+| `html` | `lang` | Racine du document. Doit comprendre au moins les balises `head` et `body`. L'attribut `lang` est obligatoire. | `<html lang="fr"></html>` | [MDN docs - html](https://developer.mozilla.org/fr/docs/Web/HTML/Element/html)|
+| `head` | | En-tête du document contenant les informations (métadonnées) générales du document. Doit comprendre au moins la balise `title`. | `<head></head>`| [MDN docs - en-tête du document](https://developer.mozilla.org/fr/docs/Web/HTML/Element/head)|
+| `meta` | `charset` |  Information de métadonnées diverses (charset, entêtes HTTP, instructions d'indexation, viewport, ...).  | `<meta charset="utf-8">`| [MDN docs - meta](https://developer.mozilla.org/fr/docs/Web/HTML/Element/meta)) 
+| `title` | | Titre du document. Ne peut pas être vide. | `<title>LPOW</title>` | [MDN docs - title](https://developer.mozilla.org/fr/docs/Web/HTML/Element/title)|
+| `body` | | Corps du document contenant le contenu du document (ce qui est affiché dans un navigateur). | `<body></body>`  | [MDN docs - body](https://developer.mozilla.org/fr/docs/Web/HTML/Element/body)|
+
+### Structures
+
+TODO
+
+### Textes
+
+TODO
+
+### Images
+
+TODO
+
+### Listes
+
+TODO
+
+### Tableaux
+
+TODO
+
+### Liens
+
+TODO
+
+### Formulaires
+
+TODO
