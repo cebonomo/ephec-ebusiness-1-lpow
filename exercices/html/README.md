@@ -31,12 +31,16 @@ Un document HTML peut être enregistré dans un fichier ([MIME](https://fr.wikip
 
 Un document HTML peut soit être lu comme texte par un éditeur de texte, soit être interprété par un navigateur qui réalise un rendu visuel des données.
 
-### Contenu du HTML
+### Format HTML
+
+#### Document
 
 Un document HTML (à l'instar de nombreux autres formats de données) est séparé en deux grandes catégories:
 
  1. Un en-tête contenant les métadonnées (titre, charset, ...).
  2. Un corps contenant les données (ce qui sera affiché dans le navigateur).
+
+Tout document HTML doit débuter par un doctype.
 
 #### Balises
 
@@ -69,7 +73,7 @@ Par exemple, pour spécifier que le contenu est un paragraphe (plutôt qu'un tit
 
 Exemple: `<p>Ceci est un paragraphe.</p>`
 
-##### Métadonnées
+##### Attributs
 
 Chaque information peut être accompagnée par des métadonnées. Ces métadonnées sont contenues dans des "attributs", lesquels sont spécifiés dans la balise d'ouverture. Il s'agit d'infromations complémentaires, souvent techniques (URL d'une image, d'un lien, etc.)
 
