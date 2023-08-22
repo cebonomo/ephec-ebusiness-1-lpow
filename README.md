@@ -38,7 +38,8 @@ Néanmoins, en cas de difficulté, il ne faut pas rester bloqué. Au cours de TP
 
 ### Navigateur (browser)
 
-Principaux navigateurs:
+#### Principaux navigateurs
+
  - [Firefox](https://www.mozilla.org/fr/firefox/new/) (Mozilla)
  - [Chrome](https://www.google.com/intl/fr/chrome/) (Alphabet)
  - [Safari](https://www.apple.com/fr/safari/) (Apple)

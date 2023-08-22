@@ -77,6 +77,7 @@ Exemple: `<p>Ceci est un paragraphe.</p>`
 
 Chaque information peut être accompagnée par des métadonnées. Ces métadonnées sont contenues dans des "attributs", lesquels sont spécifiés dans la balise d'ouverture. Il s'agit d'infromations complémentaires, souvent techniques (URL d'une image, d'un lien, etc.)
 
+
 ## Remarques pratiques
 
 ### Validité du code HTML
