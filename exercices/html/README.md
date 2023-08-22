@@ -123,27 +123,60 @@ Procédure pour écrire du HTML valide (principe général du "quand on l'ouvre,
 
 ### Structures
 
-TODO
+| Tag | Attributs | Sémantique | Exemple | Documentation |
+|-----|-----------|------------|---------|---------------|
+| `div` | | Conteneur généraliste de type block | `<div><p>Lorem ipsum</p><p>Id faucibus</p></div>` | [MDN docs - div](https://developer.mozilla.org/fr/docs/Web/HTML/Element/div) |
+| `span` | | Conteneur généraliste de type inline | `<p><span>Lorem ipsum</span> dolor sit amet</p>` | [MDN docs - span](https://developer.mozilla.org/fr/docs/Web/HTML/Element/span) |
+| `section` | | Conteneur sémantique  | `<section></section>` | [MDN docs - section](https://developer.mozilla.org/fr/docs/Web/HTML/Element/section) |
+| `article` | | Conteneur sémantique  | `<article></article>` | [MDN docs - article](https://developer.mozilla.org/fr/docs/Web/HTML/Element/article) |
+| `header` | | Conteneur sémantique introductif | `<header></header>` | [MDN docs - header](https://developer.mozilla.org/fr/docs/Web/HTML/Element/header) |
+| `footer` | | Conteneur sémantique de pied de page ou de section | `<footer></footer>` | [MDN docs - footer](https://developer.mozilla.org/fr/docs/Web/HTML/Element/footer) |
+| `aside` | | Conteneur sémantique | `<aside></aside>` | [MDN docs - aside](https://developer.mozilla.org/fr/docs/Web/HTML/Element/aside) |
+| `nav` | | Conteneur sémantique de navigation | `<nav></nav>` | [MDN docs - nav](https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav) |
 
 ### Textes
 
-TODO
+| Tag | Attributs | Sémantique | Exemple | Documentation |
+|-----|-----------|------------|---------|---------------|
+| `h1`, `h2`, `h3`, ... | | Titre de section | | [MDN docs - h1](https://developer.mozilla.org/fr/docs/Web/HTML/Element/h1) |
+| `p` | | Paragraphe | | [MDN docs - p](https://developer.mozilla.org/fr/docs/Web/HTML/Element/p) |
+| `br` | | Retour à la ligne | | [MDN docs - br](https://developer.mozilla.org/fr/docs/Web/HTML/Element/br) |
 
 ### Images
 
-TODO
+| Tag | Attributs | Sémantique | Exemple | Documentation |
+|-----|-----------|------------|---------|---------------|
+| `img` | `src`, `alt` | Image | `<img src="images/petit-chaton.png" alt="Petit chaton">` | [MDN docs - img](https://developer.mozilla.org/fr/docs/Web/HTML/Element/img) |
 
 ### Listes
 
-TODO
+| Tag | Attributs | Sémantique | Exemple | Documentation |
+|-----|-----------|------------|---------|---------------|
+| `ul` | | Liste à puce | `<ul><li>Chat</li><li>Chien</li></ul>` | [MDN docs - ul](https://developer.mozilla.org/fr/docs/Web/HTML/Element/ul) |
+| `ol` | | Liste ordonnée | `<ol><li>Chat</li><li>Chien</li></ol>` | [MDN docs - ol](https://developer.mozilla.org/fr/docs/Web/HTML/Element/ol) |
+| `li` | | Elements de liste | `` | [MDN docs - li](https://developer.mozilla.org/fr/docs/Web/HTML/Element/li) |
+| `dl` | | Liste de définition | `` | [MDN docs - dl](https://developer.mozilla.org/fr/docs/Web/HTML/Element/dl) |
+| `dt` | | Terme de définition | `` | [MDN docs - dl](https://developer.mozilla.org/fr/docs/Web/HTML/Element/dt) |
+| `dd` | | Définition de terme | `` | [MDN docs - dd](https://developer.mozilla.org/fr/docs/Web/HTML/Element/dd) |
 
 ### Tableaux
 
-TODO
+| Tag | Attributs | Sémantique | Exemple | Documentation |
+|-----|-----------|------------|---------|---------------|
+| `table` | | Conteneur de tableau | | [MDN docs - table](https://developer.mozilla.org/fr/docs/Web/HTML/Element/table) |
+| `tr` | | Ligne de tableau | | [MDN docs - tr](https://developer.mozilla.org/fr/docs/Web/HTML/Element/tr) |
+| `th` | `rowspan`, `colspan` | Cellule de titre | | [MDN docs - th](https://developer.mozilla.org/fr/docs/Web/HTML/Element/th) |
+| `td` | `rowspan`, `colspan` | Cellule de donnée | | [MDN docs - td](https://developer.mozilla.org/fr/docs/Web/HTML/Element/td) |
+| `caption` | | Légende de tableau | | [MDN docs - caption](https://developer.mozilla.org/fr/docs/Web/HTML/Element/caption) |
+| `thead` | | En-tête de tableau | | [MDN docs - thead](https://developer.mozilla.org/fr/docs/Web/HTML/Element/thead) |
+| `tbody` | | Corps de tableau | | [MDN docs - tbody](https://developer.mozilla.org/fr/docs/Web/HTML/Element/tbody) |
+| `tfoot` | | Pied de tableau | | [MDN docs - tfoot](https://developer.mozilla.org/fr/docs/Web/HTML/Element/tfoot) |
 
 ### Liens
 
-TODO
+| Tag | Attributs | Sémantique | Exemple | Documentation |
+|-----|-----------|------------|---------|---------------|
+| `a` | `href` | Hyperlien | `<a href="https://www.ephec.be/">Ephec</a>` | [MDN docs - a](https://developer.mozilla.org/fr/docs/Web/HTML/Element/a) |
 
 ### Formulaires
 
