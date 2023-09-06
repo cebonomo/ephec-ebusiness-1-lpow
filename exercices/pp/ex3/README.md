@@ -1,6 +1,6 @@
 # Principes de programmation
 
-## Exercices 3: conditions
+## Conditions
 
 ### Objectifs
 
@@ -68,6 +68,10 @@ Ecrire un programme qui corrige la réponse à une question:
  - Si aucune valeur (string vide): Message d'erreur spécifique indiquant qu'une réponse est requise.
 
 [Correction](./corrections/f-quiz/)
+
+### Exercices supplémentaires
+
+[Plus d'exercices sur cette matière](./sup.md)
 
 ### Remarques théoriques
 

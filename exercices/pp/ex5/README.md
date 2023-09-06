@@ -1,6 +1,6 @@
 # Principes de programmation
 
-## Exercices 5: boucles
+## Boucles
 
 ### Objectifs
 

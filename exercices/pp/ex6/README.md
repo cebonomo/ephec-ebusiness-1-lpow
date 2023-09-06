@@ -1,6 +1,6 @@
 # Principes de programmation
 
-## Exercices 6: tableaux indexés
+## Tableaux indexés
 
 ### Types de tableau
 

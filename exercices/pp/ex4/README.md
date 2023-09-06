@@ -1,6 +1,6 @@
 # Principes de programmation
 
-## Exercices 4: fonctions
+## Fonctions
 
 ### Objectifs
 

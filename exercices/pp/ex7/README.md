@@ -1,6 +1,6 @@
 # Principes de programmation
 
-## Exercices 6: tableaux associatifs (PHP)
+## Tableaux associatifs (PHP)
 
 ### Objectifs
 

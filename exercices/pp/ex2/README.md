@@ -1,6 +1,6 @@
 # Principes de programmation
 
-## Exercices 2: variables (et constantes)
+## Variables (et constantes)
 
 ### Objectifs
 
@@ -41,6 +41,10 @@ Ecrire un programme qui affecte à une variable la chaîne de caractères `J'ai 
 Ecrire un programme qui indique si un nombre contenu dans une variable est un nombre pair. Afficher le résultat.
 
 [Correction](./corrections/e-even/)
+
+### Exercices supplémentaires
+
+[Plus d'exercices sur cette matière](./sup.md)
 
 ### Remarques techniques
 
