@@ -25,6 +25,7 @@ Les différents exercices présentés dans cette partie visent à comprendre ce 
  5. Clique sur "La connexion est sécurisée" et lis ce qui est indiqué
  6. Clique sur l'icône Certificat pour voir le certificat du site de l'EPHEC
 
+<img src="images/https-certificat.png" />
     ![Image](images/https-certificat.png)
 
  7. Par quelle organisation le certificat a-t-il été émis ?
