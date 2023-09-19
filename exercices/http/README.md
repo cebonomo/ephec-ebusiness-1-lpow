@@ -42,7 +42,7 @@ Les différents exercices présentés dans cette partie visent à comprendre ce 
  2. Ouvre le [DevTools](../../#devtools)
  3. Clique sur l'onglet "Réseau"
 
-    <img src="images/devtools-reseau.png" style="height:4rem" />
+    <img src="images/devtools-reseau.png" style="height:13rem" />
 
  4. Clique sur l'icone représentant un rond barré "Clear network log"
  5. Clique dans la zone de texte
