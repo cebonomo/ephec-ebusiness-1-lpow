@@ -27,7 +27,7 @@ Ceci implique que le client FTP aient bien accès aux dossiers, ce qui n'est pas
 
 ### Remarques
 
-Les extensions de fichier ne sont pas affichées par défaut par les gestionnaires de fichiers. Lire les [bonnes pratiques](../../#https://github.com/cebonomo/ephec-ebusiness-1-lpow/tree/master#extensions-de-fichier-cach%C3%A9es) à ce sujet.
+Les extensions de fichier ne sont pas affichées par défaut par les gestionnaires de fichiers. Lire les [bonnes pratiques](../../#extensions-de-fichier-cach%C3%A9es) à ce sujet.
 
 Le statut de la réponse HTTP peut être connu via le [web tools](https://en.wikipedia.org/wiki/Web_development_tools) du navigateur.
 
