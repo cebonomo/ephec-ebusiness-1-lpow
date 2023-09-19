@@ -4,7 +4,7 @@ Les différents exercices présentés dans cette partie visent à comprendre ce 
 
 ## Exercice 1: Découverte des sites non sécurisés
 
- 1. Ouvre Internet Explorer
+ 1. Ouvre Microsoft Edge (ou ton navigateur préféré)
  2. Ouvre l'url suivante : https://whynohttps.com/
  3. Choisis une url non sécurisée.
  4. Clique sur l'indication "Non sécurisé" à gauche de la barre de navigation
@@ -15,7 +15,7 @@ Les différents exercices présentés dans cette partie visent à comprendre ce 
  
 ## Exercice 2: Ouvrir un site Web en HTTP
 
- 1. Ouvre Internet Explorer
+ 1. Ouvre Microsoft Edge (ou ton navigateur préféré)
  2. Ouvre l'url suivante : http://www.ephec.be/
  3. Une fois la page apparue, qu'observes-tu dans l'url ?
  4. Clique sur le cadenas qui se situe à gauche de la barre de navigation
@@ -36,3 +36,15 @@ Les différents exercices présentés dans cette partie visent à comprendre ce 
  * [Page Wikipédia sur le HTTPS (sécurisé)](https://fr.wikipedia.org/wiki/Hypertext_Transfer_Protocol_Secure "HTTPS")
  * [Page Wikipédia sur l'attaque Man In The Middle](https://fr.wikipedia.org/wiki/Attaque_de_l%27homme_du_milieu "Attaque Man In The Middle"), décrivant l'un des problèmes principal à ne pas utiliser sécuriser son site
 
+## Exercice 3: Découvrir Ajax
+
+ 1. Ouvre Microsoft Edge (ou ton navigateur préféré)
+ 2. Ouvre le [DevTools](../../#devtools)
+ 3. Clique sur l'onglet "Réseau"
+
+    <img src="images/devtools-reseau.png" style="height:4rem" />
+
+ 4. Clique sur l'icone représentant un rond barré "Clear network log"
+ 5. Clique dans la zone de texte
+ 6. Ecris "http"
+ 7. Qu'observes-tu ?
