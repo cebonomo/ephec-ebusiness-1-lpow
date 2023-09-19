@@ -9,7 +9,7 @@ Les différents exercices présentés dans cette partie visent à comprendre ce 
  3. Choisis une url non sécurisée.
  4. Clique sur l'indication "Non sécurisé" à gauche de la barre de navigation
     
-	![Image](images/http-non-securise.png)
+    <img src="images/http-non-securise.png" style="height:2rem" />
 
  6. Clique sur "La connexion à ce site n’est pas sécurisée" et lis ce qui est indiqué.
  
@@ -20,13 +20,12 @@ Les différents exercices présentés dans cette partie visent à comprendre ce 
  3. Une fois la page apparue, qu'observes-tu dans l'url ?
  4. Clique sur le cadenas qui se situe à gauche de la barre de navigation
 
-    ![Image](images/https-cadenas.png)
+    <img src="images/https-cadenas.png" style="height:2rem" />
 
  5. Clique sur "La connexion est sécurisée" et lis ce qui est indiqué
  6. Clique sur l'icône Certificat pour voir le certificat du site de l'EPHEC
 
-<img src="images/https-certificat.png" />
-    ![Image](images/https-certificat.png)
+    <img src="images/https-certificat.png" style="height:2rem" />
 
  7. Par quelle organisation le certificat a-t-il été émis ?
  8. Jusque quand est-il valable ?
