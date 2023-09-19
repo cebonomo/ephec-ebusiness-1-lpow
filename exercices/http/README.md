@@ -29,3 +29,15 @@ Les différents exercices présentés dans cette partie visent à comprendre ce 
 ```
  7. Par quelle organisation le certificat a-t-il été émis ?
  
+### Pour aller plus loin
+
+```html
+<ul>
+	<li><a href="https://fr.wikipedia.org/wiki/Hypertext_Transfer_Protocol" alt="HTTP">Page Wikipédia sur le HTTP</a></li>
+	<li><a href="https://fr.wikipedia.org/wiki/Hypertext_Transfer_Protocol_Secure" alt="HTTPS">Page Wikipédia sur le HTTPS (sécurisé)</a></li>
+	<li><a href="https://fr.wikipedia.org/wiki/Attaque_de_l%27homme_du_milieu" alt="Attaque Man In The Middle">Page Wikipédia sur l'attaque Man In The Middle, décrivant le problème à ne pas utiliser sécuriser son site</a></li>
+</ul>
+```
+
+
+
