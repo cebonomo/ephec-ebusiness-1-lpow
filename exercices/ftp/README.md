@@ -31,6 +31,8 @@ Les extensions de fichier ne sont pas affichées par défaut par les gestionnair
 
 Le statut de la réponse HTTP peut être connu via le [web tools](https://en.wikipedia.org/wiki/Web_development_tools) du navigateur.
 
+Suivez les [indications dans la page d'accueil](../../#devtools) pour ouvrir le web tools.
+
 ### Erreurs courantes
 
  1. "403 Forbidden" indique que le fichier `index.html` n'a pas été nommé correctement.
