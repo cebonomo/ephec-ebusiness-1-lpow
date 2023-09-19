@@ -2,12 +2,13 @@
 
 Est présenté ici le code développé durant les TP du cours de LPOW et PP de l'EPHEC.
 
- 1. [FTP](./exercices/ftp#exercices-ftp) 
- 2. [HTML](./exercices/html#exercices-html)
- 3. [CSS](./exercices/css#exercices-css)
- 4. [Principes de programmation](./exercices/pp#exercices-de-programmation)
- 5. [JavaScript](./exercices/js#exercices-js)
- 6. [PHP](./exercices/php#exercices-php)
+ 1. [HTTP](./exercices/http#exercices-http) 
+ 2. [FTP](./exercices/ftp#exercices-ftp) 
+ 3. [HTML](./exercices/html#exercices-html)
+ 4. [CSS](./exercices/css#exercices-css)
+ 5. [Principes de programmation](./exercices/pp#exercices-de-programmation)
+ 6. [JavaScript](./exercices/js#exercices-js)
+ 7. [PHP](./exercices/php#exercices-php)
 
 La matière théorique de ces exercices est disponible dans le cours [Moodle](https://moodle.ephec.be/) dédié, et définit le périmètre de l'examen.
 
