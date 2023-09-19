@@ -22,18 +22,18 @@ Ceci implique que le client FTP aient bien accès aux dossiers, ce qui n'est pas
 
 ## Exercice 3: téléverser
 
- 1. Créer puis téléverser un fichier `index.*` à la racine du projet. 
- 2. Naviguer sur la homepage de l'adresse HTTP du serveur et s'assurer du satut HTTP "200 OK".
+ 1. Créer puis téléverser un fichier `index.html` à la racine du projet. 
+ 2. Naviguer vers l'url du serveur (https://[MATRICULE].lpow.ephec.be/) et s'assurer du satut HTTP "200 OK" 
 
 ### Remarques
 
-Les extensions de fichier ne sont pas affichées par défaut par les gestionnaires de fichiers. Lire les [bonnes pratiques](../) à ce sujet.
+Les extensions de fichier ne sont pas affichées par défaut par les gestionnaires de fichiers. Lire les [bonnes pratiques](../../) à ce sujet.
 
 Le statut de la réponse HTTP peut être connu via le [web tools](https://en.wikipedia.org/wiki/Web_development_tools) du navigateur.
 
 ### Erreurs courantes
 
- 1. "403 Forbidden" indique que le fichier `index.*` n'a pas été nommé correctement.
+ 1. "403 Forbidden" indique que le fichier `index.html` n'a pas été nommé correctement.
 
 ## Exercice 4: télécharger
 

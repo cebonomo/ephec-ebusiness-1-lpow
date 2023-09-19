@@ -28,6 +28,7 @@ Les différents exercices présentés dans cette partie visent à comprendre ce 
 <img src="images/https-certificat.png" alt="http certificat">
 ```
  7. Par quelle organisation le certificat a-t-il été émis ?
+ 8. Jusque quand est-il valable ?
  
 ### Pour aller plus loin
 
