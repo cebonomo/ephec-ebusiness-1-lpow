@@ -33,6 +33,7 @@ Le statut de la réponse HTTP peut être connu via le [web tools](https://en.wik
 
 Suivez les [indications dans la page d'accueil](../../#devtools) pour ouvrir le web tools.
 
+
 ### Erreurs courantes
 
  1. "403 Forbidden" indique que le fichier `index.html` n'a pas été nommé correctement.
