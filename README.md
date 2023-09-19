@@ -1,6 +1,6 @@
 # EPHEC - LPOW/PP - TP
 
-Est présenté ici le code développé durant mes TP du cours de LPOW et PP de l'EPHEC.
+Est présenté ici le code développé durant les TP du cours de LPOW et PP de l'EPHEC.
 
  1. [FTP](./exercices/ftp#exercices-ftp) 
  2. [HTML](./exercices/html#exercices-html)
