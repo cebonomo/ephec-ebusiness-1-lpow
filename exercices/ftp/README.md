@@ -13,8 +13,9 @@ Les différents exercices présentés dans cette partie vise à utiliser de mani
 
 ## Exercice 2: ajouter la connexion au gestionnaire de sites
 
- 1. Enregistrer la connexion actuelle dans son gestionnaire de site.
- 2. Synchroniser le dossier racine distant avec un dossier local vierge et spécifique au projet.
+ 1. Créer un dossier vide sur votre PC, qui ne soit pas sous votre dossier OneDrive et que vous pouvez nommez "[MATRICULE].lpow.ephec.be"
+ 2. Enregistrer la connexion actuelle dans son gestionnaire de site.
+ 3. Dans l'onglet "Avancé" du gestionnaire de site, indiquer le dossier local par défaut par celui que vous venez de créer ("[MATRICULE].lpow.ephec.be")
 
 ### Erreurs courantes
 
@@ -22,8 +23,8 @@ Ceci implique que le client FTP aient bien accès aux dossiers, ce qui n'est pas
 
 ## Exercice 3: téléverser
 
- 1. Créer puis téléverser un fichier `index.html` à la racine du projet. 
- 2. Naviguer vers l'url du serveur (https://[MATRICULE].lpow.ephec.be/) et s'assurer du satut HTTP "200 OK" 
+ 1. Créer puis téléverser un fichier `index.html` à la racine du projet.
+ 2. Naviguer vers l'url du serveur (https://[MATRICULE].lpow.ephec.be/) et s'assurer du satut HTTP "200 OK"
 
 ### Remarques
 
@@ -33,12 +34,20 @@ Le statut de la réponse HTTP peut être connu via le [web tools](https://en.wik
 
 Suivez les [indications dans la page d'accueil](../../#devtools) pour ouvrir le web tools.
 
-
 ### Erreurs courantes
 
  1. "403 Forbidden" indique que le fichier `index.html` n'a pas été nommé correctement.
 
-## Exercice 4: télécharger
+## Exercice 4: Synchroniser
+
+ 1. Créer puis téléverser un dossier "Test"
+ 2. Dans le gestionnaire de site, modifier le site que vous venez de créer, aller dans l'onglet "Avancé" et utiliser la navigation synchronisée
+ 3. Reconnecter vous
+ 4. Cliquer sur le dossier "Test"
+ 5. Que remarquez-vous ?
+
+## Exercice 5: télécharger
 
  1. Télécharger les fichiers présents à la racine du serveur dans un dossier local vierge et spécifique au projet.
+
 
